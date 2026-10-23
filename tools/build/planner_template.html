@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explorer Planner</title>
+<style>
+:root {
+  --bg: #040819; --surface: #13192d; --variant: #21283d; --text: #f4ede6; --muted: #b9b2ab;
+  --accent: #da9e3f; --on-accent: #100300; --line: #2c3450; --warn: #f0a04b; --sea: #5bb8ea;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.4 "Segoe UI", system-ui, sans-serif; }
+header { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 14px 18px; border-bottom: 1px solid var(--line); position: sticky; top: 0; background: var(--bg); z-index: 5; }
+header h1 { font-size: 17px; letter-spacing: 3px; margin: 0 12px 0 0; font-weight: 700; }
+header h1 small { color: var(--accent); letter-spacing: 6px; font-size: 11px; margin-left: 6px; }
+button, select, input, textarea { font: inherit; color: var(--text); background: var(--variant); border: 1px solid var(--line); border-radius: 9px; padding: 7px 11px; }
+button { cursor: pointer; }
+button.primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); font-weight: 600; }
+button:hover { filter: brightness(1.12); }
+.week-label { font-weight: 600; min-width: 210px; text-align: center; }
+main { display: grid; grid-template-columns: 360px 1fr; gap: 16px; padding: 16px 18px; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px; }
+.tabs { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
+.tabs button.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+#search { width: 100%; margin-bottom: 8px; }
+#catalogue { max-height: calc(100vh - 230px); overflow: auto; }
+.item { display: flex; gap: 10px; padding: 8px 6px; border-bottom: 1px solid var(--line); align-items: flex-start; }
+.item:last-child { border-bottom: 0; }
+.item .t { font-weight: 600; }
+.item .s { color: var(--muted); font-size: 12.5px; }
+.item .meta { color: var(--accent); font-size: 12px; }
+.item button { margin-left: auto; padding: 4px 9px; flex: none; }
+.dot { width: 10px; height: 10px; border-radius: 50%; flex: none; margin-top: 6px; }
+.days { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; }
+.day { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px; min-height: 160px; }
+.day.today { border-color: var(--accent); }
+.day h3 { margin: 0; font-size: 15px; display: flex; justify-content: space-between; gap: 6px; }
+.day .wx { font-size: 12.5px; color: var(--muted); margin: 3px 0; }
+.day .wx.warn { color: var(--warn); }
+.day .tide { font-size: 12px; color: var(--sea); margin-bottom: 6px; }
+.plan { list-style: none; padding: 0; margin: 6px 0 0; }
+.plan li { background: var(--variant); border-radius: 9px; padding: 6px 8px; margin-bottom: 6px; font-size: 13.5px; display: flex; gap: 6px; }
+.plan li .when { color: var(--accent); font-size: 12px; white-space: nowrap; }
+.plan li .note { color: var(--muted); font-size: 12px; }
+.plan li button { margin-left: auto; padding: 0 7px; background: transparent; border: 0; color: var(--muted); }
+.free { color: var(--muted); font-size: 13px; }
+dialog { background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: 16px; max-width: 460px; width: calc(100% - 32px); }
+dialog::backdrop { background: rgba(0, 0, 0, .55); }
+dialog label { display: block; margin: 10px 0 4px; font-size: 13px; color: var(--muted); }
+dialog select, dialog input, dialog textarea { width: 100%; }
+.row { display: flex; gap: 8px; justify-content: flex-end; margin-top: 14px; flex-wrap: wrap; }
+#qr { background: #fff; padding: 12px; border-radius: 12px; display: inline-block; }
+#qr img, #qr svg { display: block; width: 300px; height: 300px; image-rendering: pixelated; }
+.hint { color: var(--muted); font-size: 12.5px; }
+.badge { font-size: 11px; color: var(--warn); }
+footer { color: var(--muted); font-size: 12px; padding: 4px 18px 20px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>INFINITE EXPLORER<small>NEXUS</small></h1>
+  <button id="prev" title="Previous week">◀</button>
+  <span class="week-label" id="weekLabel"></span>
+  <button id="next" title="Next week">▶</button>
+  <button id="suggest">✨ Suggest</button>
+  <button class="primary" id="send">📱 Send to iPhone</button>
+  <button id="importBtn">Import plan file</button>
+  <input type="file" id="importFile" accept=".explorerplan,application/json" hidden>
+  <button id="clear">Clear week</button>
+</header>
+<main>
+  <section class="panel">
+    <div class="tabs" id="tabs">
+      <button data-tab="places" class="on">Places</button>
+      <button data-tab="events">What's on</button>
+      <button data-tab="walks">Walks</button>
+      <button data-tab="photo">Photo &amp; hides</button>
+      <button data-tab="note">+ Note</button>
+    </div>
+    <input id="search" type="search" placeholder="Search…">
+    <div id="catalogue"></div>
+  </section>
+  <section>
+    <div class="days" id="days"></div>
+  </section>
+</main>
+<footer>
+  Everything stays in this browser. When the week is ready, press <b>Send to iPhone</b> and scan the QR code with the iPhone camera
+  (Explorer opens with the plan), or save the .explorerplan file and AirDrop / iCloud Drive / e-mail it.
+  Forecast: Met Office UK models via Open-Meteo (CC BY 4.0) when this PC is online. Data checked __BUILT__.
+</footer>
+
+<dialog id="addDlg">
+  <h3 id="addTitle" style="margin:0 0 4px"></h3>
+  <div class="hint" id="addHint"></div>
+  <label>Day</label><select id="addDay"></select>
+  <label>Part of the day</label>
+  <select id="addSlot"><option value="morning">Morning</option><option value="afternoon">Afternoon</option><option value="evening">Evening</option></select>
+  <label>Time (optional)</label><input id="addTime" type="time">
+  <label id="addNoteTitleLabel">Note</label><input id="addNoteTitle" placeholder="e.g. Lunch at the Minnis">
+  <label>Note (optional)</label><textarea id="addNote" rows="2"></textarea>
+  <div class="row"><button id="addCancel">Cancel</button><button class="primary" id="addOk">Add</button></div>
+</dialog>
+
+<dialog id="sendDlg">
+  <h3 style="margin:0 0 8px">Send this week to the iPhone</h3>
+  <div id="qr"></div>
+  <p class="hint">Open the iPhone camera, point it at the code and tap the yellow link: Explorer opens and asks whether to add or replace.</p>
+  <div class="row">
+    <button id="copyLink">Copy link</button>
+    <button id="download">Save .explorerplan file</button>
+    <button class="primary" id="sendClose">Close</button>
+  </div>
+</dialog>
+
+<script>__QRLIB__</script>
+<script>
+const DATA = __DATA__;
+const $ = s => document.querySelector(s);
+const WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+const SLOTS = ["morning", "afternoon", "evening"];
+const store = {
+  get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+};
+let plan = store.get("explorer-plan", []);
+let tab = "places";
+let weather = {};
+
+// ---- dates (local calendar) ----
+const pad = n => String(n).padStart(2, "0");
+const key = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const fromKey = k => { const [y, m, d] = k.split("-").map(Number); return new Date(y, m - 1, d); };
+const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+const monday = d => { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); const wd = (x.getDay() + 6) % 7; return addDays(x, -wd); };
+const fmt = (d, o) => d.toLocaleDateString("en-GB", o);
+let weekStart = monday(new Date());
+const weekDays = () => [...Array(7)].map((_, i) => addDays(weekStart, i));
+const todayKey = key(new Date());
+
+// ---- events: same rules as the app ----
+function occurs(e, d) {
+  const k = key(d), r = e.recurrence;
+  if (r) {
+    if (r.from && k < r.from) return null;
+    if (r.until && k > r.until) return null;
+    if (r.months && r.months.length && !r.months.includes(d.getMonth() + 1)) return null;
+    if (r.weekdays && r.weekdays.length && !r.weekdays.includes(WD[d.getDay()])) return null;
+    if (r.freq === "monthly") {
+      const nth = r.nth || [1], dom = d.getDate(), idx = Math.floor((dom - 1) / 7) + 1;
+      const dim = new Date(d.getFullYear(), d.getMonth() + 1, 0).getDate();
+      if (!(nth.includes(idx) || (dom + 7 > dim && nth.includes(-1)))) return null;
+    }
+    return { ongoing: (r.weekdays || []).length >= 6 };
+  }
+  if (!e.start) return null;
+  const end = e.end || e.start;
+  if (k < e.start || k > end) return null;
+  return { ongoing: (fromKey(end) - fromKey(e.start)) / 864e5 >= 4 };
+}
+function eventDays(e) { return weekDays().filter(d => occurs(e, d)); }
+function eventWhen(e) {
+  if (e.recurrence) {
+    const r = e.recurrence, days = (r.weekdays || []).join(", ");
+    if (r.freq === "monthly") return (r.nth || [1]).map(n => n === -1 ? "last" : ["", "1st", "2nd", "3rd", "4th", "5th"][n]).join(" & ") + " " + days + " of the month";
+    return (r.weekdays || []).length >= 7 ? "Daily" : "Every " + days;
+  }
+  const s = fromKey(e.start), en = e.end && e.end !== e.start ? fromKey(e.end) : null;
+  return en ? `${fmt(s, { day: "numeric", month: "short" })} – ${fmt(en, { day: "numeric", month: "short", year: "numeric" })}` : fmt(s, { weekday: "short", day: "numeric", month: "short", year: "numeric" });
+}
+
+const CAT_COLOR = { sight: "#E0A030", viewpoint: "#E0A030", history: "#9C6B4A", church: "#9C6B4A", museum: "#8E5BC2", beach: "#2E9BD6",
+  nature: "#3E9B4F", hide: "#3E9B4F", family: "#E5598F", photo: "#D9483B", pub: "#D9762B", cafe: "#D9762B", restaurant: "#D9762B",
+  food: "#D9762B", shop: "#4A7FC1", market: "#4A7FC1", daytrip: "#5E6B7A" };
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+// ---- catalogue ----
+function renderCatalogue() {
+  const q = $("#search").value.trim().toLowerCase();
+  const hit = (...f) => !q || f.some(x => (x || "").toLowerCase().includes(q));
+  let html = "";
+  if (tab === "places" || tab === "photo") {
+    const list = DATA.places.filter(p => (tab === "photo") === (p.category === "photo" || p.category === "hide"))
+      .filter(p => p.category !== "practical").filter(p => hit(p.name, p.town, p.summary, p.category));
+    html = list.map(p => `<div class="item"><span class="dot" style="background:${CAT_COLOR[p.category] || "#6E7781"}"></span>
+      <div><div class="t">${esc(p.name)}</div><div class="meta">${esc(p.category)} · ${esc(p.town)}</div><div class="s">${esc(p.summary)}</div></div>
+      <button data-add="place" data-id="${esc(p.id)}">+ Add</button></div>`).join("");
+  } else if (tab === "events") {
+    const days = weekDays();
+    const list = DATA.events.filter(e => hit(e.title, e.venue, e.town, e.category))
+      .map(e => ({ e, days: days.filter(d => occurs(e, d)) })).filter(x => x.days.length)
+      .sort((a, b) => a.days[0] - b.days[0]);
+    html = list.length ? list.map(({ e, days }) => `<div class="item"><span class="dot" style="background:var(--accent)"></span>
+      <div><div class="t">${esc(e.title)}</div><div class="meta">${esc(eventWhen(e))}${e.start_time ? " · " + esc(e.start_time) : ""}</div>
+      <div class="s">${esc(e.venue)} · ${esc(e.town)} — this week: ${days.map(d => WD[d.getDay()]).join(", ")}</div>
+      ${e.confidence === "expected" ? '<div class="badge">date expected, not yet confirmed</div>' : ""}</div>
+      <button data-add="event" data-id="${esc(e.id)}">+ Add</button></div>`).join("") : '<p class="hint">No events found in this week.</p>';
+  } else if (tab === "walks") {
+    html = DATA.walks.filter(w => hit(w.title, w.summary)).map(w => `<div class="item"><span class="dot" style="background:#3E9B4F"></span>
+      <div><div class="t">${esc(w.title)}</div><div class="meta">${w.km} km${w.circular ? " · circular" : ""}${w.tide ? " · check the tide" : ""}</div>
+      <div class="s">${esc(w.summary)}</div></div><button data-add="walk" data-id="${esc(w.id)}">+ Add</button></div>`).join("");
+  } else {
+    html = `<p class="hint">Add your own entry (lunch, a train, a visit to friends).</p><button class="primary" data-add="note">+ Add a note</button>`;
+  }
+  $("#catalogue").innerHTML = html;
+}
+
+// ---- week ----
+function forecastLine(w) {
+  if (!w) return "";
+  const wet = w.rain >= 4 || w.rainH >= 4, windy = w.gust >= 38;
+  return `<div class="wx ${wet || windy ? "warn" : ""}">${wxIcon(w.code)} ${Math.round(w.tmax)}° / ${Math.round(w.tmin)}° · ${w.rain >= 0.5 ? w.rain.toFixed(0) + " mm · " : ""}wind ${Math.round(w.wind)} mph${wet ? " · wet" : windy ? " · very windy" : ""}</div>`;
+}
+function wxIcon(c) {
+  if (c === 0) return "☀️"; if (c <= 2) return "⛅"; if (c === 3) return "☁️"; if (c === 45 || c === 48) return "🌫️";
+  if (c >= 51 && c <= 67 || c >= 80 && c <= 82) return "🌧️"; if (c >= 71 && c <= 77 || c === 85 || c === 86) return "🌨️"; if (c >= 95) return "⛈️"; return "☁️";
+}
+function renderWeek() {
+  const days = weekDays();
+  $("#weekLabel").textContent = `${fmt(days[0], { day: "numeric", month: "short" })} – ${fmt(days[6], { day: "numeric", month: "short", year: "numeric" })}`;
+  $("#days").innerHTML = days.map(d => {
+    const k = key(d);
+    const items = plan.filter(i => i.d === k).sort((a, b) => SLOTS.indexOf(a.s) - SLOTS.indexOf(b.s) || (a.tm || "99").localeCompare(b.tm || "99"));
+    const tides = (DATA.tides[k] || []).map(t => `${t[1] === "H" ? "HW" : "LW"} ${t[0]}`).join(" · ");
+    const sunset = DATA.sunset[k] ? ` · sunset ${DATA.sunset[k]}` : "";
+    return `<div class="day ${k === todayKey ? "today" : ""}"><h3><span>${fmt(d, { weekday: "long", day: "numeric", month: "short" })}</span></h3>
+      ${forecastLine(weather[k])}<div class="tide">${tides || ""}${sunset}</div>
+      ${items.length ? `<ul class="plan">${items.map(i => `<li><div><div class="when">${esc(i.tm || i.s[0].toUpperCase() + i.s.slice(1))}</div>${esc(i.t)}${i.n ? `<div class="note">${esc(i.n)}</div>` : ""}</div>
+        <button title="Remove" data-del="${esc(i.id)}">✕</button></li>`).join("")}</ul>` : '<div class="free">Free</div>'}</div>`;
+  }).join("");
+}
+function save() { store.set("explorer-plan", plan); renderWeek(); }
+function render() { renderCatalogue(); renderWeek(); }
+
+// ---- add dialog ----
+let adding = null;
+function openAdd(kind, id) {
+  let title = "", hint = "", days = weekDays(), time = "";
+  if (kind === "place") { const p = DATA.places.find(x => x.id === id); title = p.name; hint = p.town; }
+  if (kind === "walk") { const w = DATA.walks.find(x => x.id === id); title = w.title; hint = `${w.km} km` + (w.tide ? " — check the tide times on the day" : ""); }
+  if (kind === "event") { const e = DATA.events.find(x => x.id === id); title = e.title; hint = `${e.venue}, ${e.town}`; days = eventDays(e); time = e.start_time || ""; }
+  adding = { kind, id };
+  $("#addTitle").textContent = kind === "note" ? "Add a note" : title;
+  $("#addHint").textContent = hint;
+  $("#addDay").innerHTML = days.map(d => `<option value="${key(d)}">${fmt(d, { weekday: "long", day: "numeric", month: "short" })}</option>`).join("");
+  $("#addTime").value = time;
+  $("#addSlot").value = time ? (+time.slice(0, 2) < 12 ? "morning" : +time.slice(0, 2) < 17 ? "afternoon" : "evening") : "morning";
+  $("#addNote").value = "";
+  $("#addNoteTitle").value = "";
+  $("#addNoteTitle").style.display = $("#addNoteTitleLabel").style.display = kind === "note" ? "" : "none";
+  adding.title = title;
+  $("#addDlg").showModal();
+}
+$("#addOk").onclick = () => {
+  const t = adding.kind === "note" ? $("#addNoteTitle").value.trim() : adding.title;
+  if (!t || !$("#addDay").value) return;
+  const tm = $("#addTime").value || null;
+  plan.push({ id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now() + Math.random()), d: $("#addDay").value, k: adding.kind,
+    r: adding.kind === "note" ? null : adding.id, t, s: tm ? (+tm.slice(0, 2) < 12 ? "morning" : +tm.slice(0, 2) < 17 ? "afternoon" : "evening") : $("#addSlot").value,
+    tm, n: $("#addNote").value.trim() || null });
+  $("#addDlg").close(); save();
+};
+$("#addCancel").onclick = () => $("#addDlg").close();
+
+// ---- suggest (same rules as the app) ----
+function suggest() {
+  const usedP = new Set(plan.filter(i => i.k === "place").map(i => i.r));
+  const usedW = new Set(plan.filter(i => i.k === "walk").map(i => i.r));
+  const indoor = p => p.category === "museum" || (p.tags || []).includes("rainy-day");
+  const sight = DATA.places.filter(p => !["pub", "cafe", "restaurant", "food", "shop", "practical", "daytrip", "photo", "hide", "market"].includes(p.category));
+  const rank = p => (/(Birchington|Westgate)/.test(p.town) ? 3 : 0) + (["sight", "museum", "history"].includes(p.category) ? 2 : 0) + (["beach", "nature"].includes(p.category) ? 1 : 0);
+  const outdoor = sight.filter(p => !indoor(p)).sort((a, b) => rank(b) - rank(a));
+  const inside = DATA.places.filter(indoor).sort((a, b) => rank(b) - rank(a));
+  const exposed = w => w.tide || /cliff|sea wall|marsh/i.test(w.title + " " + w.summary);
+  const sunsets = DATA.places.filter(p => (p.subjects || []).some(s => s.includes("sunset")));
+  const slotOf = t => !t ? "afternoon" : +t.slice(0, 2) < 12 ? "morning" : +t.slice(0, 2) < 17 ? "afternoon" : "evening";
+  const add = (d, k, r, t, s, tm = null, n = null) => plan.push({ id: String(Math.random()).slice(2), d, k, r, t, s, tm, n });
+  weekDays().forEach((d, i) => {
+    const k = key(d);
+    if (k < todayKey || plan.some(x => x.d === k)) return;
+    const w = weather[k], wet = w && (w.rain >= 4 || w.rainH >= 4), windy = w && w.gust >= 38;
+    const occ = DATA.events.filter(e => { const o = occurs(e, d); return o && !o.ongoing; });
+    occ.slice(0, 2).forEach(e => add(k, "event", e.id, e.title, slotOf(e.start_time), e.start_time));
+    if (wet) {
+      inside.filter(p => !usedP.has(p.id)).slice(0, occ.length ? 1 : 2).forEach((p, j) => { usedP.add(p.id); add(k, "place", p.id, p.name, j ? "afternoon" : "morning", null, `Forecast: wet, ${Math.round(w.rain)} mm`); });
+      return;
+    }
+    const walkDay = i % 2 === 0 || (w && w.rain < 1.5 && w.gust < 32);
+    if (walkDay) {
+      const wk = DATA.walks.find(x => !usedW.has(x.id) && (!windy || !exposed(x)));
+      if (wk) {
+        usedW.add(wk.id);
+        const lw = (DATA.tides[k] || []).find(t => t[1] === "L");
+        add(k, "walk", wk.id, wk.title, "morning", null, [w ? `${Math.round(w.tmax)}°C` : null, wk.tide && lw ? `low water ${lw[0]} - go on a falling tide` : null].filter(Boolean).join("; ") || null);
+      }
+    }
+    if (!occ.length || !walkDay) {
+      const p = (windy ? inside.concat(outdoor) : outdoor).find(x => !usedP.has(x.id));
+      if (p) { usedP.add(p.id); add(k, "place", p.id, p.name, "afternoon"); }
+    }
+    const clear = w ? (w.cloudSunset ?? 50) < 75 : i % 3 === 0;
+    if (clear && !occ.some(e => slotOf(e.start_time) === "evening")) {
+      const s = sunsets.find(x => !usedP.has(x.id));
+      if (s) { usedP.add(s.id); add(k, "place", s.id, s.name, "evening", null, DATA.sunset[k] ? `Sunset ${DATA.sunset[k]}` : null); }
+    }
+  });
+  save();
+}
+
+// ---- send / import ----
+const b64url = bytes => { let s = ""; bytes.forEach(b => s += String.fromCharCode(b)); return btoa(s).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""); };
+function weekItems() { const ks = new Set(weekDays().map(key)); return plan.filter(i => ks.has(i.d)); }
+function wire(items) { return { v: 1, from: "Explorer PC planner", items: items.map(({ d, k, r, t, s, tm, n }) => ({ d, k, r, t, s, tm, n })) }; }
+async function link(items) {
+  const json = new TextEncoder().encode(JSON.stringify(wire(items)));
+  if (window.CompressionStream) {
+    try {
+      const cs = new Blob([json]).stream().pipeThrough(new CompressionStream("deflate-raw"));
+      const z = new Uint8Array(await new Response(cs).arrayBuffer());
+      return "explorernexus://plan?z=" + b64url(z);
+    } catch (e) {}
+  }
+  return "explorernexus://plan?j=" + b64url(json);
+}
+let lastLink = "";
+$("#send").onclick = async () => {
+  const items = weekItems();
+  if (!items.length) { alert("Nothing planned this week yet."); return; }
+  lastLink = await link(items);
+  try {
+    const q = qrcode(0, "L"); q.addData(lastLink); q.make();
+    $("#qr").innerHTML = q.createSvgTag({ cellSize: 4, margin: 2, scalable: true });
+  } catch (e) { $("#qr").innerHTML = '<p style="color:#000;max-width:300px">Too much for one QR code — save the file instead.</p>'; }
+  $("#sendDlg").showModal();
+};
+$("#sendClose").onclick = () => $("#sendDlg").close();
+$("#copyLink").onclick = () => navigator.clipboard?.writeText(lastLink);
+$("#download").onclick = () => {
+  const blob = new Blob([JSON.stringify(wire(weekItems()), null, 1)], { type: "application/json" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+  a.download = `Week ${fmt(weekStart, { day: "numeric", month: "short" })}.explorerplan`; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+};
+$("#importBtn").onclick = () => $("#importFile").click();
+$("#importFile").onchange = async e => {
+  const f = e.target.files[0]; if (!f) return;
+  try {
+    const w = JSON.parse(await f.text());
+    const items = (w.items || []).filter(i => i.d && i.t);
+    const replace = confirm(`${items.length} items. OK = replace my plan on those days, Cancel = add to it.`);
+    if (replace) { const ks = new Set(items.map(i => i.d)); plan = plan.filter(i => !ks.has(i.d)); }
+    items.forEach(i => { if (!plan.some(p => p.d === i.d && p.t === i.t)) plan.push({ ...i, id: String(Math.random()).slice(2) }); });
+    if (items.length) weekStart = monday(fromKey(items.map(i => i.d).sort()[0]));
+    save(); renderCatalogue();
+  } catch (err) { alert("That file could not be read."); }
+  e.target.value = "";
+};
+$("#clear").onclick = () => { if (confirm("Clear everything planned this week?")) { const ks = new Set(weekDays().map(key)); plan = plan.filter(i => !ks.has(i.d)); save(); } };
+$("#prev").onclick = () => { weekStart = addDays(weekStart, -7); render(); };
+$("#next").onclick = () => { weekStart = addDays(weekStart, 7); render(); };
+$("#suggest").onclick = suggest;
+$("#search").oninput = renderCatalogue;
+$("#tabs").onclick = e => { const b = e.target.closest("button"); if (!b) return; tab = b.dataset.tab; document.querySelectorAll("#tabs button").forEach(x => x.classList.toggle("on", x === b)); renderCatalogue(); };
+$("#catalogue").onclick = e => { const b = e.target.closest("[data-add]"); if (b) openAdd(b.dataset.add, b.dataset.id); };
+$("#days").onclick = e => { const b = e.target.closest("[data-del]"); if (b) { plan = plan.filter(i => i.id !== b.dataset.del); save(); } };
+
+// ---- forecast (online only) ----
+async function loadWeather() {
+  for (const model of ["ukmo_seamless", "best_match"]) {
+    try {
+      const u = `https://api.open-meteo.com/v1/forecast?latitude=51.377&longitude=1.305&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_hours,wind_speed_10m_max,wind_gusts_10m_max&hourly=cloud_cover&models=${model}&timezone=Europe%2FLondon&forecast_days=7&wind_speed_unit=mph`;
+      const r = await fetch(u); if (!r.ok) continue;
+      const j = await r.json(), d = j.daily;
+      d.time.forEach((t, i) => {
+        if (d.weather_code[i] == null) return;
+        const ss = DATA.sunset[t], hour = ss ? `${t}T${ss.slice(0, 2)}:00` : null, hi = hour ? j.hourly.time.indexOf(hour) : -1;
+        weather[t] = { code: d.weather_code[i], tmax: d.temperature_2m_max[i], tmin: d.temperature_2m_min[i], rain: d.precipitation_sum[i] || 0,
+          rainH: d.precipitation_hours[i] || 0, wind: d.wind_speed_10m_max[i] || 0, gust: d.wind_gusts_10m_max[i] || 0,
+          cloudSunset: hi >= 0 ? j.hourly.cloud_cover[hi] : null };
+      });
+      renderWeek(); return;
+    } catch (e) {}
+  }
+}
+render();
+loadWeather();
+</script>
+</body>
+</html>

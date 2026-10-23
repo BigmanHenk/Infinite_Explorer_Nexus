@@ -1,0 +1,7 @@
+tools/osm/
+tools/work/
+__pycache__/
+*.xcodeproj
+ios/ExplorerNexus/build/
+ios/ExplorerNexus/Payload/
+*.ipa

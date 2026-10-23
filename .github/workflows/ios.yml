@@ -1,0 +1,64 @@
+# Builds the iPhone app on GitHub's macOS runner and publishes an UNSIGNED .ipa
+# (artifact "Explorer-ipa"). Sideloadly (Windows) signs it with an Apple ID and installs it.
+name: iOS build
+
+# Manual only (Actions → iOS build → Run workflow): every Mac build minute counts 10x
+# against the private-repo allowance, so pushes are backups and do NOT build.
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Xcode version
+        run: xcodebuild -version
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate Xcode project
+        working-directory: ios/ExplorerNexus
+        run: xcodegen generate
+
+      - name: Build (unsigned, device)
+        working-directory: ios/ExplorerNexus
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project ExplorerNexus.xcodeproj \
+            -scheme ExplorerNexus \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            build | tee xcodebuild.log | grep -E "error:|warning: unre|BUILD (SUCCEEDED|FAILED)" || true
+          grep -q "BUILD SUCCEEDED" xcodebuild.log
+          test -d build/Build/Products/Release-iphoneos/Explorer.app
+          ls build/Build/Products/Release-iphoneos/Explorer.app | head -40
+          du -sh build/Build/Products/Release-iphoneos/Explorer.app
+
+      - name: Package .ipa
+        working-directory: ios/ExplorerNexus
+        run: |
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/Explorer.app Payload/
+          zip -qr Explorer.ipa Payload
+          ls -la Explorer.ipa
+
+      - name: Upload .ipa
+        uses: actions/upload-artifact@v4
+        with:
+          name: Explorer-ipa
+          path: ios/ExplorerNexus/Explorer.ipa
+          retention-days: 30
+
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-log
+          path: ios/ExplorerNexus/xcodebuild.log

@@ -1,0 +1,1506 @@
+[
+  {
+    "id": "birchington-village-heritage-walk",
+    "title": "Birchington Village Heritage Walk",
+    "distance_km": 4.0,
+    "duration_min": 90,
+    "difficulty": "easy",
+    "surface": "Pavements and tarmac paths with a short cliff-top section; Coleman Stairs has steps down to the beach (optional).",
+    "circular": true,
+    "start": "Birchington-on-Sea railway station",
+    "start_lat": 51.37697,
+    "start_lon": 1.30232,
+    "summary": "A gentle loop from the station past Rossetti's grave, the Square, Crispe Park and the cliff-top streets where England's early bungalows were built.",
+    "description": "This short circuit links the main stories of Birchington without leaving the village. From the station you walk down Station Road to the Square, the old heart of the village, where All Saints Church stands - the oldest building still standing in Birchington. The Pre-Raphaelite painter and poet Dante Gabriel Rossetti came here in 1882 hoping to recover his health and died soon afterwards; his grave, marked by a stone Celtic cross designed by Ford Madox Brown, is beside the south door, and a memorial window to him is inside. The route then heads north-east to Crispe Park, a small green that the council bought when Spurgeon's children's homes, which occupied Birchington Hall and its land from the 1920s until 1979, were sold for housing. Alpha Road and Epple Road bring you to Epple Bay. Turning west along the cliff top you reach Coleman Stairs and Spencer Road - the area where builder John Taylor and architect John Pollard Seddon put up some of the first bungalows in Britain in the 1870s and 1880s. Fair Outlook and the four Tower Bungalows are Grade II listed. Beresford Gap gives a view over the next bay before Beach Avenue and Rossetti Road lead back to the library, home of the Birchington Heritage Trust museum, and the station.",
+    "waypoints": [
+      {
+        "name": "Birchington-on-Sea station",
+        "lat": 51.37697,
+        "lon": 1.30232,
+        "note": "Start at the station forecourt on Station Approach."
+      },
+      {
+        "name": "Station Road",
+        "lat": 51.3756,
+        "lon": 1.3047,
+        "note": "Walk down Station Road, the village's shopping street, towards the Square."
+      },
+      {
+        "name": "All Saints Church and the Square",
+        "lat": 51.37403,
+        "lon": 1.30668,
+        "note": "All Saints Church is beside the Square: Rossetti's Celtic-cross grave is by the south door and a memorial window to him is inside."
+      },
+      {
+        "name": "Crispe Park",
+        "lat": 51.3758,
+        "lon": 1.30964,
+        "note": "Head along Albion Road and Neame Road to Crispe Park, a small green on land once belonging to Spurgeon's children's homes (closed 1979)."
+      },
+      {
+        "name": "Alpha Road",
+        "lat": 51.3774,
+        "lon": 1.31135,
+        "note": "Footpaths lead out of the park to Alpha Road."
+      },
+      {
+        "name": "Epple Bay",
+        "lat": 51.38028,
+        "lon": 1.31444,
+        "note": "Epple Road drops to Epple Bay, a sandy cove between chalk headlands."
+      },
+      {
+        "name": "Coleman Stairs",
+        "lat": 51.38021,
+        "lon": 1.3083,
+        "note": "Follow the cliff top west to Coleman Stairs, a gap leading down to the shore; the first bungalows were built either side of it around 1870."
+      },
+      {
+        "name": "Tower Bungalows",
+        "lat": 51.38025,
+        "lon": 1.30713,
+        "note": "The Tower Bungalows, by architect John Pollard Seddon (1881-82), are Grade II listed."
+      },
+      {
+        "name": "Spencer Road",
+        "lat": 51.3805,
+        "lon": 1.30488,
+        "note": "Spencer Road was the spine of the Victorian bungalow estate; Fair Outlook here is listed as one of the oldest surviving bungalows."
+      },
+      {
+        "name": "Beresford Gap",
+        "lat": 51.38129,
+        "lon": 1.30211,
+        "note": "Beresford Gap looks out over the beach; turn inland along Beach Avenue."
+      },
+      {
+        "name": "Birchington Library",
+        "lat": 51.37718,
+        "lon": 1.30382,
+        "note": "Birchington Library on Alpha Road houses the free Birchington Heritage Trust museum (open in library hours)."
+      },
+      {
+        "name": "Birchington-on-Sea station",
+        "lat": 51.37697,
+        "lon": 1.30232,
+        "note": "Back at the station."
+      }
+    ],
+    "toilets": "None confirmed on the route; public toilets at Minnis Bay are a short detour west.",
+    "refreshments": "Cafes, pubs and shops around Station Road and the Square.",
+    "parking": "Street parking in the village is limited; car parks at Minnis Bay.",
+    "public_transport": "Birchington-on-Sea station (Southeastern trains) at the start; buses stop at the Square.",
+    "dogs": "On leads along the streets.",
+    "accessibility": "Mostly level pavements; kerbs and a few uneven cliff-top surfaces. Avoid Coleman Stairs with a wheelchair or buggy.",
+    "tide_warning": null,
+    "source_urls": [
+      "https://www.visitthanet.co.uk/see-and-do/villages/birchington-and-acol/",
+      "https://britishlistedbuildings.co.uk/101094682-tomb-of-dante-gabriel-rossetti-in-churchyard-birchington",
+      "https://www.birchingtonheritage.org.uk/articles/bungalows.htm",
+      "https://heritage.kent.gov.uk/Monument/MKE35121",
+      "https://heritage.kent.gov.uk/Monument/MKE35099",
+      "https://birchingtonheritage.org.uk/images/Spurgeons/index.htm",
+      "https://childrenshomes.org.uk/Spurgeon/",
+      "https://www.visitthanet.co.uk/attractions/birchington-heritage-trust-1879",
+      "https://en.wikipedia.org/wiki/Listed_buildings_in_Birchington-on-Sea",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "minnis-bay-to-reculver-sea-wall",
+    "title": "Minnis Bay to Reculver Towers along the Sea Wall",
+    "distance_km": 6.2,
+    "duration_min": 95,
+    "difficulty": "easy",
+    "surface": "Concrete and tarmac sea wall all the way (shared with cyclists).",
+    "circular": false,
+    "start": "Minnis Bay, Birchington",
+    "start_lat": 51.37827,
+    "start_lon": 1.28074,
+    "summary": "Flat, traffic-free sea-wall walk across the old Wantsum Channel marshes to the twin medieval towers at Reculver.",
+    "description": "One of the best-known walks from Birchington, this linear route follows the Northern Sea Wall west from Minnis Bay to Reculver. It is part of the Viking Coastal Trail and the King Charles III England Coast Path, and the surface is a firm concrete or tarmac wall the whole way, so it suits buggies and wheelchairs. Inland lie the flat grazing marshes of the former Wantsum Channel, the sea strait that once made Thanet an island; seaward there is shingle, sand and wide views out to the offshore wind farm. The wall passes the outfalls of the Brooksend Stream and the River Wantsum before the twin towers of Reculver grow on the horizon. They are what remains of St Mary's Church, founded in 669 inside the Roman fort of Regulbium and pulled down in 1809; Trinity House bought the towers in 1810 and kept them as a landmark for shipping. Reculver also has a visitor centre, a pub and buses back towards Herne Bay and Birchington, or you can simply walk back the way you came (about 12 km in all). There is no shelter on the wall, so take water and something warm.",
+    "waypoints": [
+      {
+        "name": "Minnis Bay",
+        "lat": 51.37827,
+        "lon": 1.28074,
+        "note": "Start where the promenade meets the sea wall at the west end of Minnis Bay."
+      },
+      {
+        "name": "Sea wall west of Minnis Bay",
+        "lat": 51.37747,
+        "lon": 1.27722,
+        "note": "The Northern Sea Wall begins; marshes open up on your left."
+      },
+      {
+        "name": "Path to Brooks End",
+        "lat": 51.37733,
+        "lon": 1.27449,
+        "note": "A public footpath (TM35) leaves left across the marsh towards Brooks End - stay on the wall."
+      },
+      {
+        "name": "Brooksend outfall",
+        "lat": 51.37754,
+        "lon": 1.26329,
+        "note": "The Brooksend Stream reaches the sea here, near the old Plum Pudding Island area."
+      },
+      {
+        "name": "River Wantsum",
+        "lat": 51.3774,
+        "lon": 1.23521,
+        "note": "Mouth of the River Wantsum, whose channel once separated Thanet from mainland Kent; there is an information board."
+      },
+      {
+        "name": "Coldharbour bend",
+        "lat": 51.37911,
+        "lon": 1.22417,
+        "note": "The wall bends near Coldharbour; Reculver's towers are ahead."
+      },
+      {
+        "name": "Rushbourne sea wall",
+        "lat": 51.37971,
+        "lon": 1.20294,
+        "note": "Junction with the Rushbourne sea wall heading inland - keep along the coast."
+      },
+      {
+        "name": "Reculver Towers",
+        "lat": 51.37937,
+        "lon": 1.19867,
+        "note": "Reculver Towers: the twin towers of a 7th-century church built inside a Roman fort."
+      },
+      {
+        "name": "Reculver visitor centre",
+        "lat": 51.37868,
+        "lon": 1.19694,
+        "note": "Reculver visitor centre beside the car park, near the King Ethelbert Inn."
+      }
+    ],
+    "toilets": "At Minnis Bay and at Reculver Country Park.",
+    "refreshments": "Cafes and a restaurant at Minnis Bay; the King Ethelbert Inn and a cafe in the visitor centre at Reculver.",
+    "parking": "Car parks at Minnis Bay and Reculver.",
+    "public_transport": "Birchington-on-Sea station is about 1 km from Minnis Bay; buses run from Reculver towards Herne Bay.",
+    "dogs": "Allowed on the sea wall; keep under control as the route is shared with cyclists and borders grazing marsh.",
+    "accessibility": "Flat and hard-surfaced throughout; described by the National Trail as suitable for buggies and wheelchairs.",
+    "tide_warning": null,
+    "source_urls": [
+      "https://nationaltrail.co.uk/en_GB/?p=222528",
+      "https://www.walkingclub.org.uk/book_3/walk_28/",
+      "https://en.wikipedia.org/wiki/Viking_Coastal_Trail",
+      "https://en.wikipedia.org/wiki/Reculver",
+      "https://www.visitthanet.co.uk/see-and-do/villages/birchington-and-acol/",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "birchington-to-westgate-undercliff",
+    "title": "Birchington to Westgate-on-Sea by the Bays",
+    "distance_km": 5.9,
+    "duration_min": 90,
+    "difficulty": "easy",
+    "surface": "Concrete undercliff promenade, a cliff-top road section in Westgate and concrete promenade round St Mildred's Bay.",
+    "circular": false,
+    "start": "Minnis Bay, Birchington",
+    "start_lat": 51.37827,
+    "start_lon": 1.28074,
+    "summary": "Bay-hopping along the foot of the chalk cliffs from Minnis Bay past Grenham, Beresford Gap and Epple Bay to St Mildred's Bay.",
+    "description": "This linear walk strings together the sandy bays between Birchington and Westgate. From Minnis Bay a concrete promenade runs east along the foot of the low chalk cliffs, past Grenham Bay and Beresford Gap, to the sheltered cove at Epple Bay. Here the lower walkway stops, so the route climbs to the cliff top and follows Sea Road into Westgate, with open views across the water. At West Bay you drop back to the promenade, which curves around the headland to St Mildred's Bay, a popular family beach with a cafe. The whole stretch is part of the Thanet Coastal Path and the Viking Coastal Trail. Westgate-on-Sea station is a short walk inland, so you can return to Birchington by train, or retrace your steps. Look out for rock pools on the chalk platforms at low water.",
+    "waypoints": [
+      {
+        "name": "Minnis Bay",
+        "lat": 51.37827,
+        "lon": 1.28074,
+        "note": "Start at the east end of Minnis Bay where the undercliff promenade begins."
+      },
+      {
+        "name": "Undercliff promenade",
+        "lat": 51.38183,
+        "lon": 1.2869,
+        "note": "The promenade runs beneath the cliffs towards Grenham."
+      },
+      {
+        "name": "Grenham Bay",
+        "lat": 51.38232,
+        "lon": 1.29433,
+        "note": "Grenham Bay, a quieter sandy bay below Birchington's cliff-top houses."
+      },
+      {
+        "name": "Beresford Gap",
+        "lat": 51.38196,
+        "lon": 1.30264,
+        "note": "Beresford Gap, a slipway through the cliffs."
+      },
+      {
+        "name": "Undercliff east",
+        "lat": 51.38134,
+        "lon": 1.31002,
+        "note": "Continue under the cliffs towards Epple Bay."
+      },
+      {
+        "name": "Epple Bay",
+        "lat": 51.38028,
+        "lon": 1.31444,
+        "note": "Epple Bay: the lower promenade ends, climb to the cliff top."
+      },
+      {
+        "name": "Westgate cliff path",
+        "lat": 51.38224,
+        "lon": 1.32326,
+        "note": "Cliff-top path into Westgate with views over the sea."
+      },
+      {
+        "name": "West Bay",
+        "lat": 51.3829,
+        "lon": 1.33257,
+        "note": "West Bay, Westgate's main beach; rejoin the promenade."
+      },
+      {
+        "name": "Promenade round the headland",
+        "lat": 51.3863,
+        "lon": 1.33534,
+        "note": "The promenade swings round the headland between the two Westgate bays."
+      },
+      {
+        "name": "St Mildred promenade",
+        "lat": 51.38505,
+        "lon": 1.33938,
+        "note": "Approaching St Mildred's Bay."
+      },
+      {
+        "name": "St Mildred's Bay",
+        "lat": 51.38506,
+        "lon": 1.34494,
+        "note": "St Mildred's Bay: beach, cafe and the end of the walk; the station is about 600 m inland."
+      }
+    ],
+    "toilets": "At Minnis Bay; check locally for Westgate seafront facilities.",
+    "refreshments": "Minnis Bay cafes; West Bay Cafe; cafe at St Mildred's Bay.",
+    "parking": "Minnis Bay car park; on-street and seafront parking in Westgate.",
+    "public_transport": "Return by train from Westgate-on-Sea to Birchington-on-Sea (one stop).",
+    "dogs": "Fine on the promenade; seasonal dog restrictions apply on some Thanet beaches in summer - check signs.",
+    "accessibility": "Mostly level concrete; there are slopes and some steps at Epple Bay and West Bay.",
+    "tide_warning": "The undercliff promenade runs at the foot of the chalk cliffs right beside the beach. Around high water, especially with an onshore wind, waves can wash over it - check the tide and use the cliff-top streets if the sea is reaching the wall.",
+    "source_urls": [
+      "https://www.thanetcoast.org.uk/projects-and-issues/thanet-coastal-path/",
+      "https://en.wikipedia.org/wiki/Viking_Coastal_Trail",
+      "https://gps-routes.co.uk/routes/home.nsf/RoutesLinksWalks/thanet-coastal-path-walking-route",
+      "https://www.walkingclub.org.uk/book_3/walk_28/",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "westgate-to-margate-via-westbrook",
+    "title": "Westgate-on-Sea to Margate via Westbrook",
+    "distance_km": 4.9,
+    "duration_min": 75,
+    "difficulty": "easy",
+    "surface": "Promenade (concrete and tarmac) and seafront pavements.",
+    "circular": false,
+    "start": "Westgate-on-Sea station",
+    "start_lat": 51.38166,
+    "start_lon": 1.33722,
+    "summary": "Seafront stroll from Westgate past the Sunken Gardens and Westbrook Bay to Margate Sands, Turner Contemporary and the Harbour Arm.",
+    "description": "From Westgate station walk down to St Mildred's Bay and pick up the promenade heading east. It passes below the Royal Esplanade with the Sunken Gardens above, then runs along Westbrook Bay, a sandy beach in Margate's western suburb. Beyond Westbrook the promenade reaches the Nayland Rock shelter, a listed seafront shelter where T. S. Eliot wrote part of The Waste Land while recovering his health in Margate. Margate Main Sands opens up in front of the town, and the Jubilee Clock Tower, built for Queen Victoria's Golden Jubilee in 1887, marks the centre of the seafront. Continue past the Old Town to Turner Contemporary, the gallery built where the lodging house that Turner used once stood, and finish on the Harbour Arm, the stone pier with cafes and the visitor information centre at the Droit House. Margate station is a short walk back along the front.",
+    "waypoints": [
+      {
+        "name": "Westgate-on-Sea station",
+        "lat": 51.38166,
+        "lon": 1.33722,
+        "note": "Leave Westgate-on-Sea station and head down to the seafront."
+      },
+      {
+        "name": "St Mildred's Bay",
+        "lat": 51.38506,
+        "lon": 1.34494,
+        "note": "St Mildred's Bay; join the promenade going east."
+      },
+      {
+        "name": "Promenade east",
+        "lat": 51.38577,
+        "lon": 1.34597,
+        "note": "The promenade continues round towards Westbrook."
+      },
+      {
+        "name": "Sunken Gardens",
+        "lat": 51.38685,
+        "lon": 1.35391,
+        "note": "Below the Sunken Gardens on the Royal Esplanade."
+      },
+      {
+        "name": "Westbrook Bay",
+        "lat": 51.38585,
+        "lon": 1.36547,
+        "note": "Westbrook Bay, a wide sandy beach."
+      },
+      {
+        "name": "Nayland Rock Shelter",
+        "lat": 51.387,
+        "lon": 1.37279,
+        "note": "Nayland Rock shelter, where T. S. Eliot wrote part of The Waste Land."
+      },
+      {
+        "name": "Jubilee Clock Tower",
+        "lat": 51.38708,
+        "lon": 1.37868,
+        "note": "Jubilee Clock Tower (1887) on Marine Terrace, with its time-ball."
+      },
+      {
+        "name": "Turner Contemporary",
+        "lat": 51.39112,
+        "lon": 1.38152,
+        "note": "Turner Contemporary gallery; free entry except special exhibitions."
+      },
+      {
+        "name": "Harbour Arm",
+        "lat": 51.39082,
+        "lon": 1.37836,
+        "note": "Margate Harbour Arm with the Droit House (visitor information) and cafes."
+      }
+    ],
+    "toilets": "St Mildred's Bay, Marine Terrace near the Clock Tower, and the Harbour Arm.",
+    "refreshments": "Cafe at St Mildred's Bay; plenty in Margate including on the Harbour Arm and at Turner Contemporary.",
+    "parking": "Seafront parking in Westgate; pay car parks in Margate.",
+    "public_transport": "Trains from Margate back to Westgate and Birchington.",
+    "dogs": "Fine on the promenade; seasonal beach restrictions apply on main beaches.",
+    "accessibility": "Largely level promenade; a few ramps and steps at access points.",
+    "tide_warning": null,
+    "source_urls": [
+      "https://www.discoveringbritain.org/content/discoveringbritain/walk%20booklets/Margate%20walk%20-%20written%20guide.pdf",
+      "https://www.thanetcoast.org.uk/projects-and-issues/thanet-coastal-path/",
+      "https://gps-routes.co.uk/routes/home.nsf/RoutesLinksWalks/margate-walking-route",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "birchington-quex-park-circular",
+    "title": "Birchington to Quex Park Circular",
+    "distance_km": 2.8,
+    "duration_min": 60,
+    "difficulty": "easy",
+    "surface": "Pavement along Park Lane, estate drives and tracks, short public footpaths back into the village.",
+    "circular": true,
+    "start": "All Saints Church, Birchington",
+    "start_lat": 51.37363,
+    "start_lon": 1.30683,
+    "summary": "Short loop from the village church to the Quex Park estate, home of the Powell-Cotton Museum and the Waterloo Tower.",
+    "description": "Quex Park sits just south-east of Birchington: around 250 acres of parkland and gardens plus a large farmed estate. This loop leaves the church and follows Park Lane out of the village to the estate entrance, where Quex Barn farm shop and restaurant, the craft village and other attractions are grouped. Quex House, a Regency house that replaced an earlier mansion after 1814, holds the Powell-Cotton Museum, founded in 1896 by Major Percy Powell-Cotton to show the animals and objects he collected in Africa and Asia; it is famous for its natural history dioramas. Entry to the museum, house and gardens (lawns, a woodland walk and a walled kitchen garden) is by ticket, and in 2026 they open from mid-February to 1 November on selected days. The estate also contains the Waterloo Tower, a Grade II listed bell tower built by John Powell Powell with a later cast-iron spire. The walk returns along the estate drive to Park Road and short public footpaths back to Park Lane. Stay on the drives and paths and follow estate signs.",
+    "waypoints": [
+      {
+        "name": "All Saints Church",
+        "lat": 51.37363,
+        "lon": 1.30683,
+        "note": "Start by All Saints Church at the top of Park Lane."
+      },
+      {
+        "name": "Park Lane",
+        "lat": 51.37106,
+        "lon": 1.309,
+        "note": "Follow Park Lane south out of the village."
+      },
+      {
+        "name": "Quex Park entrance",
+        "lat": 51.36742,
+        "lon": 1.31011,
+        "note": "Entrance to the Quex Park estate."
+      },
+      {
+        "name": "Quex Barn",
+        "lat": 51.367,
+        "lon": 1.31062,
+        "note": "Quex Barn farm shop and restaurant, with the craft village nearby."
+      },
+      {
+        "name": "Powell-Cotton Museum",
+        "lat": 51.36659,
+        "lon": 1.31426,
+        "note": "Quex House and the Powell-Cotton Museum (ticketed; check opening days). The Waterloo Tower stands in the estate grounds to the south-east."
+      },
+      {
+        "name": "Estate drive",
+        "lat": 51.36751,
+        "lon": 1.31742,
+        "note": "Follow the estate drive north-east."
+      },
+      {
+        "name": "Park Road",
+        "lat": 51.37138,
+        "lon": 1.31668,
+        "note": "Join Park Road heading back towards the village."
+      },
+      {
+        "name": "Park Road north",
+        "lat": 51.37395,
+        "lon": 1.31036,
+        "note": "Near the end of Park Road take the public footpath on the left."
+      },
+      {
+        "name": "Footpath TBX17",
+        "lat": 51.37335,
+        "lon": 1.30863,
+        "note": "Footpath TBX17 between houses towards Park Lane."
+      },
+      {
+        "name": "Park Lane",
+        "lat": 51.37302,
+        "lon": 1.30736,
+        "note": "Back on Park Lane."
+      },
+      {
+        "name": "All Saints Church",
+        "lat": 51.37363,
+        "lon": 1.30683,
+        "note": "Return to the church."
+      }
+    ],
+    "toilets": "In the Quex Barn restaurant and museum for customers.",
+    "refreshments": "Quex Barn restaurant and cafe; pubs and cafes in the village.",
+    "parking": "Visitor parking at Quex Park; limited street parking in the village.",
+    "public_transport": "Bus stops named Quex Park on Park Lane; Birchington-on-Sea station is about 400 m north of the church via Station Road.",
+    "dogs": "On leads; check estate rules for the gardens and museum.",
+    "accessibility": "Mostly hard surfaces; estate tracks can be uneven.",
+    "tide_warning": null,
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Quex_Park",
+      "https://www.powell-cottonmuseum.org/",
+      "https://heritage.kent.gov.uk/Monument/MKE34619",
+      "https://www.quexpark.co.uk/",
+      "https://www.visitthanet.co.uk/see-and-do/villages/birchington-and-acol/",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "minnis-bay-brooks-end-wantsum-circular",
+    "title": "Minnis Bay and Brooks End Marshes Circular",
+    "distance_km": 8.7,
+    "duration_min": 150,
+    "difficulty": "moderate",
+    "surface": "Sea wall, then grass and earth field paths, farm tracks and bridleways; can be muddy after rain.",
+    "circular": true,
+    "start": "Minnis Bay, Birchington",
+    "start_lat": 51.37827,
+    "start_lon": 1.28074,
+    "summary": "Sea wall and marsh loop over the drained Wantsum Channel, out along the coast and back by bridleways past the hamlet of Brooks End.",
+    "description": "This loop gives a feel for the low, open country west of Birchington that was once under the sea. Brooks End, a hamlet now absorbed into Birchington about 1.6 km (1 mile) south-west of the centre, stands on land that was part of the Wantsum Channel, and is probably named after the many brooks that drain the area. The walk starts along the concrete Northern Sea Wall from Minnis Bay as far as the Brooksend Stream outfall, then turns inland on public footpath TE1 beside a drainage dyke across the grazing marsh. Bridleways TE12 and TE12A lead east along the edge of higher ground with wide views over the marsh, passing close to Little and Great Brooksend farms. Footpaths TE14 and TM35 then take you north-west across the fields back to the sea wall and Minnis Bay. Expect birds of farmland and marsh, big skies and very little shelter. Field paths can be wet and overgrown in places; check the Kent rights-of-way map if a path looks closed.",
+    "waypoints": [
+      {
+        "name": "Minnis Bay",
+        "lat": 51.37827,
+        "lon": 1.28074,
+        "note": "Start at the west end of Minnis Bay by the promenade."
+      },
+      {
+        "name": "Sea wall",
+        "lat": 51.37747,
+        "lon": 1.27722,
+        "note": "Join the Northern Sea Wall going west."
+      },
+      {
+        "name": "Footpath TM35 junction",
+        "lat": 51.37733,
+        "lon": 1.27449,
+        "note": "Footpath TM35 leaves inland here - you will come back this way."
+      },
+      {
+        "name": "Brooksend outfall",
+        "lat": 51.37754,
+        "lon": 1.26329,
+        "note": "Brooksend Stream outfall on the sea wall."
+      },
+      {
+        "name": "Footpath TE1",
+        "lat": 51.37445,
+        "lon": 1.26059,
+        "note": "Turn inland on public footpath TE1 beside the dyke."
+      },
+      {
+        "name": "TE1 south",
+        "lat": 51.36675,
+        "lon": 1.25789,
+        "note": "TE1 crosses the open marsh southwards."
+      },
+      {
+        "name": "Bridleway TE12",
+        "lat": 51.36381,
+        "lon": 1.25801,
+        "note": "Meet the bridleway (TE12) near Shuart Lane; turn left (east)."
+      },
+      {
+        "name": "Bridleway TE12 east",
+        "lat": 51.36345,
+        "lon": 1.27145,
+        "note": "Bridleway continues along the edge of the marsh."
+      },
+      {
+        "name": "Bridleway TE12A",
+        "lat": 51.36479,
+        "lon": 1.28329,
+        "note": "Bridleway TE12A towards Brooks End."
+      },
+      {
+        "name": "Little Brooksend",
+        "lat": 51.36397,
+        "lon": 1.29071,
+        "note": "Near Little Brooksend Farm; turn north on footpath TE14."
+      },
+      {
+        "name": "Footpath TE14",
+        "lat": 51.36605,
+        "lon": 1.28914,
+        "note": "Field path towards Great Brooksend Farm."
+      },
+      {
+        "name": "Footpath TM35",
+        "lat": 51.3675,
+        "lon": 1.28876,
+        "note": "Join footpath TM35 heading north-west across the fields."
+      },
+      {
+        "name": "Marsh field path",
+        "lat": 51.36947,
+        "lon": 1.28593,
+        "note": "Open marsh with the sea wall ahead."
+      },
+      {
+        "name": "Footpath TM35 north",
+        "lat": 51.37574,
+        "lon": 1.27367,
+        "note": "Back to the sea wall junction."
+      },
+      {
+        "name": "Sea wall",
+        "lat": 51.37747,
+        "lon": 1.27722,
+        "note": "Turn right along the sea wall."
+      },
+      {
+        "name": "Minnis Bay",
+        "lat": 51.37827,
+        "lon": 1.28074,
+        "note": "Finish at Minnis Bay."
+      }
+    ],
+    "toilets": "At Minnis Bay only.",
+    "refreshments": "Cafes, a bar-restaurant and a village shop at Minnis Bay; nothing on the marsh section.",
+    "parking": "Minnis Bay car park.",
+    "public_transport": "Birchington-on-Sea station about 1 km from Minnis Bay.",
+    "dogs": "On leads near livestock and during bird nesting season.",
+    "accessibility": "Not suitable for wheelchairs or buggies away from the sea wall; stiles or gates may be present on field paths (not confirmed).",
+    "tide_warning": null,
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Brooks_End",
+      "https://www.ramblers.org.uk/go-walking/group-walks/birchington-0",
+      "https://nationaltrail.co.uk/en_GB/?p=222528",
+      "https://www.komoot.com/guide/3641378/easy-hikes-around-birchington",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "reculver-country-park-bishopstone-glen",
+    "title": "Reculver Country Park to Bishopstone Glen",
+    "distance_km": 4.4,
+    "duration_min": 75,
+    "difficulty": "easy",
+    "surface": "Grass-paver cycle path and grassy cliff-top paths; gentle climb west of the towers.",
+    "circular": false,
+    "start": "Reculver visitor centre",
+    "start_lat": 51.37868,
+    "start_lon": 1.19694,
+    "summary": "Out-and-back along the cliffs of Reculver Country Park from the Roman fort and twin towers to the wooded Bishopstone Glen.",
+    "description": "Reculver Country Park is a 64-acre coastal reserve run by Canterbury City Council and Kent Wildlife Trust, known for its protected soft cliffs, wildlife and fossils. Start at the visitor centre, which has displays on local history and wildlife, and walk out to the twin towers - the remains of St Mary's Church, founded in 669 inside the Roman fort of Regulbium, which guarded the Wantsum Channel. The church was demolished in 1809 and the towers were kept by Trinity House as a navigation mark. Then head west on the Oyster Bay Trail, which climbs gently along the cliff top with views back to the towers and out to sea; during the Second World War prototype bouncing bombs were tested off this coast. The path continues to Bishopstone Glen, a small wooded valley cutting through the cliffs, with a viewpoint. Return the same way, or carry on along the coast path towards Herne Bay.",
+    "waypoints": [
+      {
+        "name": "Reculver visitor centre",
+        "lat": 51.37868,
+        "lon": 1.19694,
+        "note": "Reculver visitor centre: local history and wildlife displays, cafe and toilets nearby."
+      },
+      {
+        "name": "Reculver Towers",
+        "lat": 51.37937,
+        "lon": 1.19867,
+        "note": "Reculver Towers inside the Roman fort of Regulbium."
+      },
+      {
+        "name": "Cliff path",
+        "lat": 51.37731,
+        "lon": 1.19144,
+        "note": "Join the cliff path heading west."
+      },
+      {
+        "name": "Oyster Bay Trail",
+        "lat": 51.37533,
+        "lon": 1.17732,
+        "note": "The Oyster Bay Trail climbs along the cliff top."
+      },
+      {
+        "name": "Bishopstone Glen",
+        "lat": 51.37472,
+        "lon": 1.16958,
+        "note": "Bishopstone Glen viewpoint above the wooded valley - turn round here."
+      },
+      {
+        "name": "Oyster Bay Trail (return)",
+        "lat": 51.37533,
+        "lon": 1.17732,
+        "note": "Retrace the cliff-top trail eastwards with the towers ahead."
+      },
+      {
+        "name": "Reculver visitor centre",
+        "lat": 51.37868,
+        "lon": 1.19694,
+        "note": "Back at the visitor centre."
+      }
+    ],
+    "toilets": "At Reculver Country Park near the visitor centre.",
+    "refreshments": "Cafe in the visitor centre and the King Ethelbert Inn at Reculver.",
+    "parking": "Reculver car park; also a car park at Bishopstone.",
+    "public_transport": "Buses from Herne Bay to Reculver.",
+    "dogs": "Welcome; keep away from cliff edges and on leads near grazing.",
+    "accessibility": "Firm path for most of the way but with slopes; keep well back from the eroding cliff edge.",
+    "tide_warning": null,
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Reculver",
+      "https://www.canterbury.co.uk/attractions/reculver/",
+      "https://visitsoutheastengland.com/things-to-do/reculver-country-park-and-reculver-towers-p504311",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "st-nicholas-at-wade-wantsum-reculver-loop",
+    "title": "St Nicholas-at-Wade, Wantsum and Reculver Loop",
+    "distance_km": 13.9,
+    "duration_min": 230,
+    "difficulty": "moderate",
+    "surface": "Village lanes, farm tracks, grassy field paths and concrete sea wall; two railway crossings.",
+    "circular": true,
+    "start": "St Nicholas-at-Wade church",
+    "start_lat": 51.3545,
+    "start_lon": 1.25171,
+    "summary": "Long, flat loop from the village across the Wantsum marshes to the Reculver towers and back along the Northern Sea Wall.",
+    "description": "A big-sky walk across the former Wantsum Channel that links the old village of St Nicholas-at-Wade with Reculver. From the church walk out along Court Road and Potten Street Road to the hamlet of Chambers Wall, then follow farm tracks and field paths north-west over the marsh, crossing the railway (take great care at the foot crossings) and the River Wantsum. A path beside the railway leads to the Rushbourne sea wall, which brings you to the coast and the twin towers at Reculver - the remains of a 7th-century church within a Roman fort. The return follows the Northern Sea Wall east for about 4 km with the shingle shore on one side and grazing marsh on the other, before footpath TE1 heads back inland, over the railway again, to Shuart Lane and a footbridge over the A299 Thanet Way into the village. The route is based on a published loop that starts at Reculver; you can equally start there. Allow most of a day with a stop at Reculver.",
+    "waypoints": [
+      {
+        "name": "St Nicholas church",
+        "lat": 51.3545,
+        "lon": 1.25171,
+        "note": "Start at St Nicholas church in the village centre."
+      },
+      {
+        "name": "Court Road",
+        "lat": 51.35922,
+        "lon": 1.24471,
+        "note": "Walk north-west along Court Road."
+      },
+      {
+        "name": "Potten Street Road",
+        "lat": 51.36076,
+        "lon": 1.24501,
+        "note": "Turn onto Potten Street Road towards Chambers Wall."
+      },
+      {
+        "name": "Chambers Wall",
+        "lat": 51.36298,
+        "lon": 1.23728,
+        "note": "Chambers Wall hamlet; take the track north."
+      },
+      {
+        "name": "Footpath TE6",
+        "lat": 51.3672,
+        "lon": 1.23069,
+        "note": "Footpath TE6 across the marsh."
+      },
+      {
+        "name": "Railway crossing",
+        "lat": 51.369,
+        "lon": 1.2306,
+        "note": "Railway foot crossing - stop, look and listen."
+      },
+      {
+        "name": "Path by railway",
+        "lat": 51.37151,
+        "lon": 1.22526,
+        "note": "Path beside the railway towards the Rushbourne wall."
+      },
+      {
+        "name": "Rushbourne sea wall",
+        "lat": 51.37112,
+        "lon": 1.22017,
+        "note": "Rushbourne sea wall heading for the coast."
+      },
+      {
+        "name": "Reculver Towers",
+        "lat": 51.37937,
+        "lon": 1.19867,
+        "note": "Reculver Towers: stop for the visitor centre, cafe or pub."
+      },
+      {
+        "name": "Northern Sea Wall",
+        "lat": 51.37911,
+        "lon": 1.22417,
+        "note": "Return east along the Northern Sea Wall."
+      },
+      {
+        "name": "Wantsum mouth",
+        "lat": 51.3774,
+        "lon": 1.23521,
+        "note": "Mouth of the River Wantsum."
+      },
+      {
+        "name": "Footpath TE1",
+        "lat": 51.37696,
+        "lon": 1.26384,
+        "note": "Turn inland on footpath TE1 beside the Brooksend dyke, crossing the railway with care."
+      },
+      {
+        "name": "Field path south",
+        "lat": 51.36675,
+        "lon": 1.25789,
+        "note": "Field path south across the marsh."
+      },
+      {
+        "name": "Shuart Lane",
+        "lat": 51.36381,
+        "lon": 1.25801,
+        "note": "Shuart Lane; continue south and cross the A299 by the footbridge."
+      },
+      {
+        "name": "St Nicholas church",
+        "lat": 51.3545,
+        "lon": 1.25171,
+        "note": "Back at the church."
+      }
+    ],
+    "toilets": "Reculver Country Park only.",
+    "refreshments": "King Ethelbert Inn and visitor-centre cafe at Reculver.",
+    "parking": "Limited street parking in St Nicholas-at-Wade; pay car park at Reculver.",
+    "public_transport": "Buses run to Reculver from Herne Bay; check Kent Connected for services to St Nicholas-at-Wade.",
+    "dogs": "On leads near livestock and at the railway crossings.",
+    "accessibility": "Not suitable for wheelchairs: field paths, railway foot crossings and a footbridge with steps or ramps.",
+    "tide_warning": null,
+    "source_urls": [
+      "https://www.walkingbritain.co.uk/walk-2249-description",
+      "https://www.walkingbritain.co.uk/walk-2249-print",
+      "https://en.wikipedia.org/wiki/Reculver",
+      "https://en.wikipedia.org/wiki/Viking_Coastal_Trail",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "margate-old-town-and-seafront",
+    "title": "Margate Old Town and Seafront Heritage Walk",
+    "distance_km": 8.3,
+    "duration_min": 150,
+    "difficulty": "easy",
+    "surface": "Pavements, cobbled Old Town streets, promenades and lower promenade; some steps.",
+    "circular": true,
+    "start": "Margate railway station",
+    "start_lat": 51.38516,
+    "start_lon": 1.37195,
+    "summary": "From the station along Margate Sands into the Old Town, the Shell Grotto, Turner Contemporary, the Shell Lady and the Walpole Bay tidal pool.",
+    "description": "Margate grew into London's favourite seaside escape, and this loop takes in the highlights of that story. From the 1926 listed station walk down to the Nayland Rock shelter and along Margate Sands to the Jubilee Clock Tower of 1887. The Old Town begins behind the seafront: Duke Street and Market Place have cafes and independent shops, and the Margate Museum sits on the square. Climb through the streets to the mysterious Shell Grotto on Grotto Hill, an underground passage lined with millions of shells discovered in 1835 whose origin is still unknown, then return to King Street and the Tudor House, thought to have been a wealthy farmer's home. Turner Contemporary stands where the lodging house used by J. M. W. Turner once was, and the Harbour Arm (built 1812-15 by John Rennie) ends at the Shell Lady, a bronze honouring Turner's landlady Sophia Booth. The return heads east along the lower promenade beneath the cliffs past the old Lido to the Walpole Bay tidal pool, then back along the cliff-top Eastern Esplanade and Fort Crescent to Dreamland and the station.",
+    "waypoints": [
+      {
+        "name": "Margate station",
+        "lat": 51.38516,
+        "lon": 1.37195,
+        "note": "Margate station, a listed 1926 building with a Victorian water tower."
+      },
+      {
+        "name": "Nayland Rock Shelter",
+        "lat": 51.387,
+        "lon": 1.37279,
+        "note": "Nayland Rock shelter, where T. S. Eliot wrote part of The Waste Land."
+      },
+      {
+        "name": "Jubilee Clock Tower",
+        "lat": 51.38708,
+        "lon": 1.37868,
+        "note": "Jubilee Clock Tower (1887); its time-ball was restored in 2014."
+      },
+      {
+        "name": "Duke Street",
+        "lat": 51.38981,
+        "lon": 1.38101,
+        "note": "Duke Street, the way into the Old Town."
+      },
+      {
+        "name": "Market Place",
+        "lat": 51.38946,
+        "lon": 1.38219,
+        "note": "Market Place, heart of the Old Town, with Margate Museum."
+      },
+      {
+        "name": "Hawley Street",
+        "lat": 51.38829,
+        "lon": 1.38271,
+        "note": "Hawley Street leads uphill out of the Old Town."
+      },
+      {
+        "name": "Shell Grotto",
+        "lat": 51.38775,
+        "lon": 1.38943,
+        "note": "Shell Grotto on Grotto Hill (paid entry; check opening times)."
+      },
+      {
+        "name": "Tudor House",
+        "lat": 51.38962,
+        "lon": 1.38424,
+        "note": "Tudor House on King Street."
+      },
+      {
+        "name": "Turner Contemporary",
+        "lat": 51.39112,
+        "lon": 1.38152,
+        "note": "Turner Contemporary on the Rendezvous."
+      },
+      {
+        "name": "Shell Lady",
+        "lat": 51.39082,
+        "lon": 1.37836,
+        "note": "The Shell Lady statue at the end of the Harbour Arm."
+      },
+      {
+        "name": "Newgate Lower Promenade",
+        "lat": 51.39255,
+        "lon": 1.39111,
+        "note": "Newgate Lower Promenade below the cliffs, past the old Lido."
+      },
+      {
+        "name": "Walpole Bay Tidal Pool",
+        "lat": 51.39214,
+        "lon": 1.403,
+        "note": "Walpole Bay Tidal Pool, a large sea-water bathing pool."
+      },
+      {
+        "name": "Eastern Esplanade",
+        "lat": 51.3908,
+        "lon": 1.4021,
+        "note": "Climb to the Eastern Esplanade on the cliff top."
+      },
+      {
+        "name": "Fort Crescent",
+        "lat": 51.39177,
+        "lon": 1.3848,
+        "note": "Fort Crescent above the harbour, by the Winter Gardens."
+      },
+      {
+        "name": "Dreamland",
+        "lat": 51.38678,
+        "lon": 1.37646,
+        "note": "Dreamland amusement park on Marine Terrace."
+      },
+      {
+        "name": "Margate station",
+        "lat": 51.38516,
+        "lon": 1.37195,
+        "note": "Back to the station."
+      }
+    ],
+    "toilets": "Margate station, Marine Terrace near the Clock Tower, Harbour Arm, Cliftonville (Oval bandstand).",
+    "refreshments": "Many cafes in the Old Town, on the Harbour Arm and at Turner Contemporary; Walpole Bay Hotel serves teas.",
+    "parking": "Car parks around the seafront, including Dreamland.",
+    "public_transport": "Margate station (trains to Birchington, 2 stops); frequent buses.",
+    "dogs": "On leads in the town; seasonal restrictions on Main Sands.",
+    "accessibility": "Steps on parts of the lower promenade route; wheelchair users can stay on the cliff-top Eastern Esplanade instead.",
+    "tide_warning": "The lower promenade between the harbour and Walpole Bay sits at beach level with no railings or lifebuoys in places; in rough weather near high tide use the cliff-top road.",
+    "source_urls": [
+      "https://www.discoveringbritain.org/content/discoveringbritain/walk%20booklets/Margate%20walk%20-%20written%20guide.pdf",
+      "https://thanet.extended.agency/attractions/discover-margate-town-trail-1804",
+      "https://coastmagazine.co.uk/?p=12964",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "botany-bay-to-broadstairs-coast",
+    "title": "Botany Bay to Broadstairs by the Chalk Cliffs",
+    "distance_km": 5.3,
+    "duration_min": 90,
+    "difficulty": "easy",
+    "surface": "Grass cliff-top paths, quiet roads around North Foreland, promenade at Stone Bay; steps at some bays.",
+    "circular": false,
+    "start": "Botany Bay, Kingsgate",
+    "start_lat": 51.38864,
+    "start_lon": 1.43565,
+    "summary": "The 'Seven Bays' cliff walk: Botany Bay's chalk stacks, Kingsgate Bay and castle, Joss Bay, North Foreland lighthouse, Stone Bay and Viking Bay.",
+    "description": "Thanet's most dramatic stretch of chalk coast. Botany Bay, at the end of Percy Avenue in Kingsgate, has white cliffs and chalk stacks left behind as arches collapsed. A cliff-top path leads past part of the North Foreland golf course and flint follies built by Lord Holland in the 18th century to Kingsgate Bay, reached only by steps, with the Captain Digby inn above it. Kingsgate Castle, built for Lord Holland and rebuilt in the 1860s, is now apartments. Joss Bay has lower cliffs and a fine stretch of sand; it is said to be named after a local smuggler or an old farm. Beyond it the cliffs rise to North Foreland, where a light has warned ships since at least 1499; the present lighthouse became the last in the UK to be automated, in 1998. Past the private Foreland estate the route drops to Stone Bay and its lower promenade, then passes Bleak House - Dickens's holiday home when it was Fort House - above Viking Bay and the harbour in Broadstairs. Return by the Thanet Loop bus or extend the walk.",
+    "waypoints": [
+      {
+        "name": "Botany Bay",
+        "lat": 51.38864,
+        "lon": 1.43565,
+        "note": "Botany Bay: chalk stacks and white cliffs."
+      },
+      {
+        "name": "Kingsgate Bay",
+        "lat": 51.3848,
+        "lon": 1.4406,
+        "note": "Kingsgate Bay with its caves and the Captain Digby inn above."
+      },
+      {
+        "name": "Kingsgate Castle",
+        "lat": 51.38202,
+        "lon": 1.44285,
+        "note": "Kingsgate Castle, Lord Holland's mock castle, now flats."
+      },
+      {
+        "name": "Joss Bay",
+        "lat": 51.37919,
+        "lon": 1.44591,
+        "note": "Joss Bay: wide sandy beach with a car park and cafe."
+      },
+      {
+        "name": "North Foreland Lighthouse",
+        "lat": 51.37482,
+        "lon": 1.44499,
+        "note": "North Foreland Lighthouse, the last UK lighthouse to be automated (1998)."
+      },
+      {
+        "name": "Cliff Promenade",
+        "lat": 51.372,
+        "lon": 1.44778,
+        "note": "Cliff Promenade on the Foreland estate."
+      },
+      {
+        "name": "Stone Bay",
+        "lat": 51.36562,
+        "lon": 1.44485,
+        "note": "Stone Bay: chalk and sand bay with a wide lower promenade."
+      },
+      {
+        "name": "Bleak House",
+        "lat": 51.35987,
+        "lon": 1.44528,
+        "note": "Bleak House on the cliff above the harbour."
+      },
+      {
+        "name": "Viking Bay",
+        "lat": 51.35917,
+        "lon": 1.44457,
+        "note": "Viking Bay, the main beach of Broadstairs."
+      }
+    ],
+    "toilets": "Not confirmed along the cliffs; public toilets in Broadstairs near Viking Bay.",
+    "refreshments": "Botany Bay kiosk, Captain Digby pub, Joss Bay Cafe, many cafes in Broadstairs.",
+    "parking": "Pay parking at Joss Bay and near Botany Bay; car parks in Broadstairs.",
+    "public_transport": "Thanet Loop buses run between Margate, Broadstairs and Ramsgate; Broadstairs station is about 1 km from Viking Bay.",
+    "dogs": "Seasonal dog bans apply on several beaches; the cliff-top path is fine with dogs under control.",
+    "accessibility": "Grass paths and some steps; cliff edges are unfenced and eroding.",
+    "tide_warning": "If you choose to walk on the beaches between bays, check tide times: some sections are cut off at high water and the cliffs are prone to falls.",
+    "source_urls": [
+      "https://www.visitthanet.co.uk/media/117632/the-seven-bays-of-broadstairs-digital-version-final.pdf",
+      "https://gps-routes.co.uk/routes/home.nsf/routeslinkswalks/botany-bay-kent-walking-route",
+      "https://gps-routes.co.uk/routes/home.nsf/routeslinkswalks/margate-to-broadstairs-coastal-walk-walking-route",
+      "https://blog.komoot.com/highlight/682874",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "broadstairs-dickens-town-walk",
+    "title": "Broadstairs Dickens Town Walk",
+    "distance_km": 1.9,
+    "duration_min": 60,
+    "difficulty": "easy",
+    "surface": "Pavements and promenade with short steep paths and steps.",
+    "circular": true,
+    "start": "York Gate, Harbour Street",
+    "start_lat": 51.35929,
+    "start_lon": 1.44436,
+    "summary": "A short loop around Viking Bay linking York Gate, the Dickens House Museum, Victoria Gardens, the Royal Albion and Bleak House.",
+    "description": "Charles Dickens spent most summers in Broadstairs between 1837 and 1859, and this little circuit visits the places connected with him. Start at York Gate on Harbour Street, a defensive gateway of about 1540, and look at the harbour and its old jetty. A path climbs above Viking Bay to the Dickens House Museum on Victoria Parade, the cottage of Mary Pearson Strong, who inspired the character Betsey Trotwood in David Copperfield; it displays some of Dickens's possessions. Continue along the cliff top to Victoria Gardens and the bandstand, then Chandos Square with its flint-faced houses. Back along Victoria Parade you reach the Royal Albion Hotel, where Dickens stayed while working on Nicholas Nickleby, and the High Street. Albion Street and Fort Road lead up to Bleak House, known as Fort House when Dickens rented it and finished David Copperfield there (the house is viewed from outside). Finish down Harbour Street past the Old Curiosity Shop cafe. The Broadstairs Dickens Festival is held each June.",
+    "waypoints": [
+      {
+        "name": "York Gate",
+        "lat": 51.35929,
+        "lon": 1.44436,
+        "note": "York Gate, a defensive archway of about 1540."
+      },
+      {
+        "name": "Harbour",
+        "lat": 51.359,
+        "lon": 1.445,
+        "note": "The harbour and Tudor-era jetty."
+      },
+      {
+        "name": "Dickens House Museum",
+        "lat": 51.35829,
+        "lon": 1.44223,
+        "note": "Dickens House Museum, home of the real-life Betsey Trotwood."
+      },
+      {
+        "name": "Victoria Gardens",
+        "lat": 51.35676,
+        "lon": 1.44216,
+        "note": "Victoria Gardens and the bandstand above Viking Bay."
+      },
+      {
+        "name": "Chandos Square",
+        "lat": 51.35702,
+        "lon": 1.44148,
+        "note": "Chandos Square with flint-faced houses."
+      },
+      {
+        "name": "Royal Albion Hotel",
+        "lat": 51.35846,
+        "lon": 1.44202,
+        "note": "Royal Albion Hotel, where Dickens stayed while writing Nicholas Nickleby."
+      },
+      {
+        "name": "High Street",
+        "lat": 51.35898,
+        "lon": 1.43949,
+        "note": "High Street; a plaque marks another Dickens lodging."
+      },
+      {
+        "name": "Albion Street",
+        "lat": 51.35913,
+        "lon": 1.44271,
+        "note": "Albion Street."
+      },
+      {
+        "name": "Bleak House",
+        "lat": 51.35984,
+        "lon": 1.44497,
+        "note": "Bleak House (Fort House), Dickens's 'airy nest' - outside view only."
+      },
+      {
+        "name": "Old Curiosity Shop",
+        "lat": 51.3597,
+        "lon": 1.4438,
+        "note": "The Old Curiosity Shop cafe on Harbour Street."
+      },
+      {
+        "name": "York Gate",
+        "lat": 51.35929,
+        "lon": 1.44436,
+        "note": "Back at York Gate."
+      }
+    ],
+    "toilets": "Public toilets near Viking Bay.",
+    "refreshments": "Cafes, ice-cream parlours and pubs throughout the town.",
+    "parking": "Use car parks on the edge of town; central parking is congested in summer.",
+    "public_transport": "Broadstairs station is at the top of the High Street; Thanet Loop buses.",
+    "dogs": "On leads in town; seasonal ban on Viking Bay beach.",
+    "accessibility": "Short steep slopes and steps; mostly paved.",
+    "tide_warning": null,
+    "source_urls": [
+      "https://northamptonshirewalks.co.uk/walks-outside-northamptonshire/walk-81-a-dickens-of-a-lovely-place-broadstairs/",
+      "https://visitthanet.co.uk/literary-heroes/dickens-broadstairs",
+      "https://www.visitthanet.co.uk/media/117632/the-seven-bays-of-broadstairs-digital-version-final.pdf",
+      "https://www.broadstairs.gov.uk/wp-content/uploads/2024/03/broadstairs-town-trail.pdf",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "ramsgate-royal-harbour-pugin-walk",
+    "title": "Ramsgate Royal Harbour and Pugin Walk",
+    "distance_km": 3.1,
+    "duration_min": 75,
+    "difficulty": "easy",
+    "surface": "Pavements, harbour-side roads and the tiled Kent Steps (steps can be avoided by the road).",
+    "circular": false,
+    "start": "Victoria Parade, East Cliff",
+    "start_lat": 51.33519,
+    "start_lon": 1.42683,
+    "summary": "From the East Cliff down to the only 'Royal' harbour in Britain and up to the West Cliff, home of A. W. N. Pugin's house The Grange and St Augustine's church.",
+    "description": "This walk follows the idea of the Pugin Town Trail from the East Cliff to the West Cliff. It begins on Victoria Parade, where a marble bust of Edward Pugin stands, then drops down Madeira Walk and the Kent Steps, whose colourful tiles added in 2020 are inspired by Augustus Pugin's designs. At the bottom is the Royal Harbour - the only British harbour allowed to call itself Royal, an honour granted after George IV's visit in 1820 - with the obelisk, the Royal Victoria Pavilion and the Maritime Museum. Pugin kept his lugger Caroline here. Walk along Military Road beneath the harbour arches and past the Sailors' Church, then climb Royal Parade to the West Cliff. Along St Augustine's Road you reach The Grange, the Grade I listed house Pugin designed for his family after buying the land in 1841 with a lookout tower over the sea, and next to it St Augustine's church, which he built and where he is buried in the chantry with his wife Jane.",
+    "waypoints": [
+      {
+        "name": "Victoria Parade",
+        "lat": 51.33519,
+        "lon": 1.42683,
+        "note": "Victoria Parade on the East Cliff, start of the Pugin Town Trail."
+      },
+      {
+        "name": "Madeira Walk",
+        "lat": 51.33255,
+        "lon": 1.42201,
+        "note": "Madeira Walk winding down towards the harbour."
+      },
+      {
+        "name": "Kent Steps",
+        "lat": 51.33251,
+        "lon": 1.42278,
+        "note": "Kent Steps, tiled in 2020 with Pugin-inspired designs."
+      },
+      {
+        "name": "Obelisk",
+        "lat": 51.33182,
+        "lon": 1.42347,
+        "note": "The obelisk by the Royal Victoria Pavilion."
+      },
+      {
+        "name": "Maritime Museum",
+        "lat": 51.33151,
+        "lon": 1.42238,
+        "note": "Ramsgate Maritime Museum at the Clock House."
+      },
+      {
+        "name": "Military Road",
+        "lat": 51.33077,
+        "lon": 1.41783,
+        "note": "Military Road under the harbour arches."
+      },
+      {
+        "name": "Sailors Church",
+        "lat": 51.32989,
+        "lon": 1.41678,
+        "note": "The Sailors' Church."
+      },
+      {
+        "name": "Royal Parade",
+        "lat": 51.33077,
+        "lon": 1.41754,
+        "note": "Climb Royal Parade to the West Cliff."
+      },
+      {
+        "name": "Royal Esplanade",
+        "lat": 51.32823,
+        "lon": 1.40775,
+        "note": "Royal Esplanade along the West Cliff."
+      },
+      {
+        "name": "The Grange",
+        "lat": 51.32831,
+        "lon": 1.40977,
+        "note": "The Grange, Pugin's family home (Grade I)."
+      },
+      {
+        "name": "St Augustine's Church",
+        "lat": 51.32846,
+        "lon": 1.40988,
+        "note": "St Augustine's church and shrine, where Pugin is buried."
+      }
+    ],
+    "toilets": "Around the harbour.",
+    "refreshments": "Many cafes, pubs and fish-and-chip shops on Harbour Parade and the harbour.",
+    "parking": "Pay parking around the harbour and town.",
+    "public_transport": "Ramsgate station is about 1.6 km away; buses from Ramsgate Harbour.",
+    "dogs": "On leads in town.",
+    "accessibility": "Kent Steps and some slopes; step-free alternatives along Madeira Walk and Royal Parade.",
+    "tide_warning": null,
+    "source_urls": [
+      "https://visitthanet.co.uk/attractions/pugin-town-trail-2384",
+      "https://visitkent.co.uk/attractions/pugin-town-trail-2384",
+      "https://www.ramsgatetown.org/upload/docs/Pegwell%20Bay%20online%20Walk2.pdf",
+      "https://nationaltrail.co.uk/en_GB/?p=158100",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "pegwell-bay-to-ramsgate",
+    "title": "Pegwell Bay to Ramsgate Coast Walk",
+    "distance_km": 5.7,
+    "duration_min": 90,
+    "difficulty": "easy",
+    "surface": "Country-park paths, cliff-top grass and tarmac paths, then West Cliff streets; two gates.",
+    "circular": false,
+    "start": "Pegwell Bay Country Park",
+    "start_lat": 51.31966,
+    "start_lon": 1.35815,
+    "summary": "England Coast Path stretch from Pegwell Bay nature reserve past the Viking ship Hugin and Pegwell village to Ramsgate's Royal Harbour.",
+    "description": "A gentle section of the King Charles III England Coast Path. Pegwell Bay Country Park, beside the Sandwich and Pegwell Bay National Nature Reserve, has a cafe and toilets and looks over mudflats and saltmarsh rich in wading birds; at low tide a seal colony can often be seen near the mouth of the River Stour. The path follows the cliff top to the Hugin, a full-size replica longship that sailed from Denmark in 1949 to mark 1,500 years since the legendary landing of Hengist and Horsa. Continue past Pegwell village, where the Belle Vue Tavern is linked with smuggling stories and visits by Dickens, and along the Royal Esplanade on Ramsgate's West Cliff past St Augustine's church and The Grange, Pugin's home. Royal Parade then drops to the Royal Harbour, finishing at the obelisk by the Royal Victoria Pavilion. Please keep off the mudflats and saltmarsh, which are protected.",
+    "waypoints": [
+      {
+        "name": "Pegwell Bay Country Park",
+        "lat": 51.31966,
+        "lon": 1.35815,
+        "note": "Pegwell Bay Country Park: cafe, toilets and views over the nature reserve."
+      },
+      {
+        "name": "Hugin",
+        "lat": 51.32881,
+        "lon": 1.37294,
+        "note": "The Hugin, a replica Viking ship that sailed from Denmark in 1949."
+      },
+      {
+        "name": "Pegwell",
+        "lat": 51.32717,
+        "lon": 1.39169,
+        "note": "Pegwell village and the Belle Vue Tavern."
+      },
+      {
+        "name": "Royal Esplanade",
+        "lat": 51.32766,
+        "lon": 1.40229,
+        "note": "Royal Esplanade on the West Cliff."
+      },
+      {
+        "name": "St Augustine's",
+        "lat": 51.32851,
+        "lon": 1.40955,
+        "note": "St Augustine's church and The Grange, Pugin's buildings."
+      },
+      {
+        "name": "Royal Parade",
+        "lat": 51.33077,
+        "lon": 1.41754,
+        "note": "Royal Parade down to the harbour."
+      },
+      {
+        "name": "Obelisk",
+        "lat": 51.33182,
+        "lon": 1.42347,
+        "note": "The obelisk at the Royal Harbour - end of the walk."
+      }
+    ],
+    "toilets": "Pegwell Bay Country Park and around Ramsgate harbour.",
+    "refreshments": "Country park cafe, pubs in Pegwell, many options at the harbour.",
+    "parking": "Pay parking at Pegwell Bay Country Park and in Ramsgate.",
+    "public_transport": "Ramsgate station is about 1 mile (1.6 km) from the finish; buses from Ramsgate Harbour.",
+    "dogs": "Restrictions apply in the nature reserve; keep dogs on leads near the shore.",
+    "accessibility": "Mostly firm paths with gentle gradients; two gates.",
+    "tide_warning": "Do not walk out on the mudflats or the chalk at the cliff foot: the tide comes in quickly and the reserve has access restrictions.",
+    "source_urls": [
+      "https://nationaltrail.co.uk/en_GB/?p=158100",
+      "https://www.ramsgatetown.org/upload/docs/Pegwell%20Bay%20online%20Walk2.pdf",
+      "https://www.thanetcoast.org.uk/projects-and-issues/thanet-coastal-path/",
+      "https://broadstairs.gov.uk/wp-content/uploads/2024/07/Viking-Ship-Brochure.pdf",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "minnis-bay-accessible-sea-wall-stroll",
+    "title": "Minnis Bay Accessible Sea Wall Stroll",
+    "distance_km": 2.2,
+    "duration_min": 40,
+    "difficulty": "easy",
+    "surface": "Smooth concrete and tarmac, flat throughout.",
+    "circular": false,
+    "start": "Minnis Bay promenade",
+    "start_lat": 51.37827,
+    "start_lon": 1.28074,
+    "summary": "Short, level out-and-back on the hard-surfaced sea wall from Minnis Bay, ideal for wheelchairs, buggies and short legs.",
+    "description": "A simple, step-free stroll for anyone who wants sea air without hills or rough ground. From the promenade at Minnis Bay, a long sandy beach with a paddling pool and rock pools, head west onto the Northern Sea Wall. The surface is firm concrete or tarmac and the National Trail describes this stretch as suitable for buggies and wheelchairs. Within a few hundred metres the houses fall behind and the flat grazing marshes of the old Wantsum Channel open up inland, with Reculver's twin towers on the skyline ahead. Benches near the start make good resting points. Turn round at the Brooksend Stream outfall (about 1.1 km) or whenever you like, and return to the cafes at Minnis Bay. The wall is shared with cyclists, so keep to one side.",
+    "waypoints": [
+      {
+        "name": "Minnis Bay",
+        "lat": 51.37827,
+        "lon": 1.28074,
+        "note": "Start on the Minnis Bay promenade near the cafes."
+      },
+      {
+        "name": "Sea wall",
+        "lat": 51.37747,
+        "lon": 1.27722,
+        "note": "The sea wall begins - flat and hard-surfaced."
+      },
+      {
+        "name": "Brooks End path",
+        "lat": 51.37733,
+        "lon": 1.27449,
+        "note": "Junction with the footpath across the marsh; stay on the wall."
+      },
+      {
+        "name": "Turning point near Brooksend Stream",
+        "lat": 51.3776,
+        "lon": 1.266,
+        "note": "Turning point near the Brooksend Stream outfall, with views to Reculver."
+      },
+      {
+        "name": "Sea wall (return)",
+        "lat": 51.37747,
+        "lon": 1.27722,
+        "note": "Heading back east along the wall."
+      },
+      {
+        "name": "Minnis Bay",
+        "lat": 51.37827,
+        "lon": 1.28074,
+        "note": "Back at Minnis Bay."
+      }
+    ],
+    "toilets": "Public toilets at Minnis Bay.",
+    "refreshments": "Minnis Bay cafes, bar-restaurant and village store.",
+    "parking": "Minnis Bay car park.",
+    "public_transport": "Birchington-on-Sea station about 1 km away.",
+    "dogs": "Allowed on the sea wall; keep under control for cyclists.",
+    "accessibility": "Level and step-free on the wall; check the ramp you use from the car park or promenade onto the wall.",
+    "tide_warning": null,
+    "source_urls": [
+      "https://nationaltrail.co.uk/en_GB/?p=222528",
+      "https://www.visitthanet.co.uk/see-and-do/villages/birchington-and-acol/",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "turner-and-dickens-walk",
+    "title": "Turner and Dickens Walk: Margate to Broadstairs",
+    "distance_km": 6.2,
+    "duration_min": 100,
+    "difficulty": "easy",
+    "surface": "Town pavements and the long St Peter's Footpath (tarmac and earth, partly bridleway) across fields.",
+    "circular": false,
+    "start": "Turner Contemporary, Margate",
+    "start_lat": 51.39068,
+    "start_lon": 1.38168,
+    "summary": "Waymarked inland route linking Margate's Turner gallery with Dickens's Broadstairs via the village of St Peter's.",
+    "description": "The Turner and Dickens Walk joins two towns tied to two great figures: J. M. W. Turner, who painted Margate's skies, and Charles Dickens, who holidayed in Broadstairs. Starting at Turner Contemporary, the route passes through the Old Town's Market Place and climbs past Hawley Square, then leaves Margate on the old St Peter's Footpath, a long-established path that crosses open farmland between the two towns. It reaches the village of St Peter's, with its High Street, before following St Peter's Road and The Broadway into Broadstairs. The High Street runs down to the seafront above Viking Bay, close to the Dickens House Museum and the Royal Albion Hotel. The walk is described as about 4 miles; buses link the two towns for the return.",
+    "waypoints": [
+      {
+        "name": "Turner Contemporary",
+        "lat": 51.39068,
+        "lon": 1.38168,
+        "note": "Turner Contemporary, start of the walk."
+      },
+      {
+        "name": "Market Place",
+        "lat": 51.38946,
+        "lon": 1.38219,
+        "note": "Market Place in Margate Old Town."
+      },
+      {
+        "name": "Hawley Square",
+        "lat": 51.38633,
+        "lon": 1.38269,
+        "note": "Hawley Square, a Georgian square with the Theatre Royal nearby."
+      },
+      {
+        "name": "Church Street",
+        "lat": 51.38316,
+        "lon": 1.38563,
+        "note": "Church Street towards the edge of town."
+      },
+      {
+        "name": "St Peter's Footpath",
+        "lat": 51.38169,
+        "lon": 1.39022,
+        "note": "Start of the St Peter's Footpath."
+      },
+      {
+        "name": "St Peter's Footpath TM5",
+        "lat": 51.37763,
+        "lon": 1.39559,
+        "note": "The footpath (bridleway TM5) crosses open farmland."
+      },
+      {
+        "name": "Footpath TB19A",
+        "lat": 51.37215,
+        "lon": 1.4069,
+        "note": "St Peter's Footpath continues south-east."
+      },
+      {
+        "name": "Footpath TB19",
+        "lat": 51.36934,
+        "lon": 1.41119,
+        "note": "Approaching St Peter's village."
+      },
+      {
+        "name": "St Peter's High Street",
+        "lat": 51.36493,
+        "lon": 1.41955,
+        "note": "St Peter's High Street."
+      },
+      {
+        "name": "St Peter's Road",
+        "lat": 51.3613,
+        "lon": 1.42929,
+        "note": "St Peter's Road towards Broadstairs."
+      },
+      {
+        "name": "Broadstairs High Street",
+        "lat": 51.35959,
+        "lon": 1.43702,
+        "note": "Broadstairs High Street."
+      },
+      {
+        "name": "Broadstairs harbour",
+        "lat": 51.35846,
+        "lon": 1.44202,
+        "note": "Bottom of the High Street above Viking Bay and the harbour."
+      }
+    ],
+    "toilets": "Margate seafront and Broadstairs town centre.",
+    "refreshments": "Cafes in both towns and in St Peter's village.",
+    "parking": "Pay car parks in Margate and Broadstairs.",
+    "public_transport": "Thanet Loop buses between Broadstairs and Margate; trains link Broadstairs and Margate stations.",
+    "dogs": "On leads in towns and near fields.",
+    "accessibility": "Footpath sections can be muddy; mostly level.",
+    "tide_warning": null,
+    "source_urls": [
+      "https://visitthanet.co.uk/literary-heroes/dickens-broadstairs",
+      "https://www.openstreetmap.org/relation/2259117",
+      "https://www.kent.gov.uk/leisure_and_culture/countryside_and_coast/walking/turner_and_dickens.aspx",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  },
+  {
+    "id": "margate-to-botany-bay-cliftonville",
+    "title": "Margate to Botany Bay via Cliftonville",
+    "distance_km": 4.2,
+    "duration_min": 70,
+    "difficulty": "easy",
+    "surface": "Concrete lower promenade below the cliffs, then cliff-top grass and paths beyond Foreness Point.",
+    "circular": false,
+    "start": "Turner Contemporary, Margate",
+    "start_lat": 51.39112,
+    "start_lon": 1.38152,
+    "summary": "Below the Cliftonville cliffs past the Walpole Bay tidal pool and Palm Bay to Foreness Point and the chalk stacks of Botany Bay.",
+    "description": "This walk follows the first half of the Margate to Broadstairs coast route. From Turner Contemporary head east along the lower promenade beneath Fort Hill and the Cliftonville cliffs, past the old Lido to Walpole Bay, where a large tidal bathing pool is refilled by every tide. The promenade continues past Palm Bay, a quieter sandy bay, to Foreness Point, the headland at the entrance to the Thames Estuary. From here a cliff-top path leads on to Botany Bay, famous for its white chalk stacks and cliffs. Most of the route is on firm, flat paths. Continue to Kingsgate and Broadstairs on the Botany Bay to Broadstairs walk, or catch a bus back.",
+    "waypoints": [
+      {
+        "name": "Turner Contemporary",
+        "lat": 51.39112,
+        "lon": 1.38152,
+        "note": "Turner Contemporary on Margate seafront."
+      },
+      {
+        "name": "Newgate Lower Promenade",
+        "lat": 51.39255,
+        "lon": 1.39111,
+        "note": "Newgate Lower Promenade below the cliffs."
+      },
+      {
+        "name": "Walpole Bay Tidal Pool",
+        "lat": 51.39214,
+        "lon": 1.403,
+        "note": "Walpole Bay Tidal Pool."
+      },
+      {
+        "name": "Palm Bay",
+        "lat": 51.39192,
+        "lon": 1.41032,
+        "note": "Palm Bay promenade."
+      },
+      {
+        "name": "Foreness Point",
+        "lat": 51.39152,
+        "lon": 1.41925,
+        "note": "Foreness Point, at the mouth of the Thames Estuary."
+      },
+      {
+        "name": "Botany Bay",
+        "lat": 51.38864,
+        "lon": 1.43565,
+        "note": "Botany Bay and its chalk stacks."
+      }
+    ],
+    "toilets": "Margate seafront, Harbour Arm and the Oval bandstand in Cliftonville.",
+    "refreshments": "Cafes in Margate, Walpole Bay Hotel, Palm Bay Cafe, Botany Bay kiosk.",
+    "parking": "Pay car parks in Margate; parking near Botany Bay.",
+    "public_transport": "Thanet Loop buses from Kingsgate/Botany Bay area back to Margate.",
+    "dogs": "Seasonal restrictions on some beaches; fine on the promenade.",
+    "accessibility": "Lower promenade is level but reached by ramps and steps; cliff-top path at the end is grass.",
+    "tide_warning": "The lower promenade is at beach level with few railings or lifebuoys; avoid it in rough seas at high tide. If walking on the sand at Botany Bay, check the tide so you are not cut off below the cliffs.",
+    "source_urls": [
+      "https://gps-routes.co.uk/routes/home.nsf/routeslinkswalks/margate-to-broadstairs-coastal-walk-walking-route",
+      "https://www.discoveringbritain.org/content/discoveringbritain/walk%20booklets/Margate%20walk%20-%20written%20guide.pdf",
+      "https://www.visitthanet.co.uk/media/117632/the-seven-bays-of-broadstairs-digital-version-final.pdf",
+      "https://www.openstreetmap.org/"
+    ],
+    "verified": "2026-10-23"
+  }
+]

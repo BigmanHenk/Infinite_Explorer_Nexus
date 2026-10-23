@@ -1,0 +1,703 @@
+{
+ "places": [
+  {
+   "id": "birchington-on-sea-station",
+   "name": "Birchington-on-Sea railway station",
+   "category": "practical",
+   "town": "Birchington-on-Sea",
+   "lat": 51.3775,
+   "lon": 1.3009,
+   "summary": "Southeastern station on the Chatham Main Line with direct trains to London St Pancras, London Victoria, Margate and Ramsgate.",
+   "description": "Birchington's station opened on 5 October 1863 as plain 'Birchington' on the Kent Coast Railway and took the 'on-Sea' suffix in 1878. It sits on Station Approach at the seaward end of Station Road, about a fifteen-minute walk from the beach at Minnis Bay and a little less from the village Square. All trains are run by Southeastern. In a typical off-peak hour there is one high-speed train to London St Pancras International, one train to London Victoria and two trains to Ramsgate via Westgate-on-Sea and Margate, with extra peak trains to London Bridge and Cannon Street. The station has two platforms, both level with the entrance, plus toilets including an accessible toilet and a Changing Places facility, help points, ticket machines and a small car park. The ticket office is staffed only on weekday and Saturday mornings.",
+   "address": "Station Approach, Birchington-on-Sea",
+   "postcode": "CT7 9RD",
+   "phone": null,
+   "website": "https://www.nationalrail.co.uk/stations/birchington-on-sea/",
+   "opening_hours": "Staffed Mon-Fri 05:45-12:25, Sat 06:45-13:25, unstaffed Sun (National Rail). Ticket machines at other times.",
+   "price": "Car park: 28 spaces incl. 2 accessible (charges not checked)",
+   "dogs": null,
+   "accessibility": "Step-free category B2: platforms level with the main entrance, no lifts; accessible and Changing Places toilets, induction loop, tactile paving, Passenger Assistance meeting point",
+   "tips": "Journey times (Trainline averages): Margate ~7 min, Ramsgate ~24 min, London St Pancras ~1h39 (fastest ~1h30, direct), London Victoria ~1h47 (fastest ~1h35, direct).",
+   "duration_min": null,
+   "tags": [
+    "train",
+    "wheelchair",
+    "toilets"
+   ],
+   "source_urls": [
+    "https://www.nationalrail.co.uk/stations/birchington-on-sea/",
+    "https://en.wikipedia.org/wiki/Birchington-on-Sea_railway_station",
+    "https://www.thetrainline.com/en/train-times/birchington-on-sea-to-london-st-pancras",
+    "https://www.thetrainline.com/en/train-times/birchington-on-sea-to-london-victoria"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "westgate-on-sea-station",
+   "name": "Westgate-on-Sea railway station",
+   "category": "practical",
+   "town": "Westgate-on-Sea",
+   "lat": 51.38128,
+   "lon": 1.33823,
+   "summary": "Southeastern station in the centre of Westgate, one stop east of Birchington, with hourly trains to London Victoria and Ramsgate.",
+   "description": "Westgate-on-Sea station opened in April 1871 on the line between Birchington-on-Sea and Margate, and it sits in the middle of the little town on Station Road, five minutes' walk from the beaches at St Mildred's Bay and West Bay. Southeastern runs all trains. The basic off-peak pattern is one train an hour to London Victoria and one an hour towards Margate and Ramsgate, with a few high-speed trains to London St Pancras and some peak services to London Bridge and Cannon Street. Only a few high-speed trains to St Pancras call here, so for those Birchington or Margate are usually the better stations. Shops, cafés, Quince restaurant and the Carlton Cinema are all within a couple of minutes' walk, and a public defibrillator is mounted on the wall outside.",
+   "address": "Station Road, Westgate-on-Sea",
+   "postcode": null,
+   "phone": null,
+   "website": "https://www.nationalrail.co.uk/stations/westgate-on-sea/",
+   "opening_hours": null,
+   "price": null,
+   "dogs": null,
+   "accessibility": null,
+   "tips": "A public defibrillator is on the wall outside the station.",
+   "duration_min": null,
+   "tags": [
+    "train"
+   ],
+   "source_urls": [
+    "https://en.wikipedia.org/wiki/Westgate-on-Sea_railway_station",
+    "https://www.openstreetmap.org/#map=19/51.38128/1.33823"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "toilets-minnis-bay",
+   "name": "Public toilets, Minnis Bay",
+   "category": "practical",
+   "town": "Birchington-on-Sea",
+   "lat": 51.37767,
+   "lon": 1.28107,
+   "summary": "Free seafront toilets at Minnis Bay with a designated wheelchair-accessible toilet and baby changing.",
+   "description": "The Minnis Bay public toilets are on the seafront beside the Minnis Bay Bar & Brasserie and the pay-and-display car park on The Parade, at the heart of Birchington's Blue Flag beach. According to OpenStreetMap they are free to use, have separate male and female facilities, a designated wheelchair-accessible toilet and a baby-changing table in the women's side. They are run by Thanet District Council. The council's own toilet timetable could not be read when this entry was compiled, so opening hours are not confirmed; Thanet's coastal toilets typically keep longer hours in the summer season, and the council notes that toilets can shut up to fifteen minutes before the published closing time for cleaning. These are the last toilets before Reculver if you are walking or cycling west along the sea wall.",
+   "address": "The Parade, Minnis Bay, Birchington-on-Sea",
+   "postcode": "CT7 9QP",
+   "phone": "01843 577000",
+   "website": "https://www.thanet.gov.uk/info-pages/public-toilets/",
+   "opening_hours": "Not confirmed (council timetable unreadable); may close up to 15 min early for cleaning",
+   "price": "Free",
+   "dogs": null,
+   "accessibility": "Designated wheelchair-accessible toilet; baby changing (OpenStreetMap)",
+   "tips": "The next public toilets west along the coast are at Reculver Country Park.",
+   "duration_min": null,
+   "tags": [
+    "toilets",
+    "wheelchair",
+    "coast"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.37767/1.28107",
+    "https://www.thanet.gov.uk/info-pages/public-toilets/"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "toilets-birchington-village",
+   "name": "Public toilets, Birchington village centre",
+   "category": "practical",
+   "town": "Birchington-on-Sea",
+   "lat": 51.37618,
+   "lon": 1.30467,
+   "summary": "Unisex public toilet block just off Station Road in the middle of Birchington's shopping area.",
+   "description": "A small unisex public toilet block stands just off Station Road in the middle of Birchington's shopping street, between the Square and the railway station, beside a small car park. It is recorded on OpenStreetMap with a council property reference, which indicates it is a public facility rather than one belonging to a shop. Its opening hours, and whether it has an accessible cubicle, could not be confirmed because the council's toilet timetable could not be read when this entry was compiled. For guaranteed accessible and Changing Places facilities, Birchington-on-Sea station a few minutes away lists both, and the seafront block at Minnis Bay has a designated accessible toilet. Thanet District Council's general enquiries line can give current hours.",
+   "address": "Off Station Road, Birchington-on-Sea",
+   "postcode": null,
+   "phone": "01843 577000",
+   "website": "https://www.thanet.gov.uk/info-pages/public-toilets/",
+   "opening_hours": "Not confirmed",
+   "price": null,
+   "dogs": null,
+   "accessibility": "Not confirmed",
+   "tips": null,
+   "duration_min": null,
+   "tags": [
+    "toilets"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.37618/1.30467",
+    "https://www.thanet.gov.uk/info-pages/public-toilets/"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "toilets-westgate-station-road",
+   "name": "Public toilets, Station Road, Westgate-on-Sea",
+   "category": "practical",
+   "town": "Westgate-on-Sea",
+   "lat": 51.38158,
+   "lon": 1.34112,
+   "summary": "Free town-centre toilets near the junction of Station Road and Westbury Road, with accessible toilet and baby changing.",
+   "description": "Westgate's town-centre public toilets are close to where Westbury Road meets Station Road, a short walk east of the railway station and the shops. OpenStreetMap records them as free, with male and female facilities, a wheelchair-accessible toilet and a baby-changing table. They are a council facility, as shown by their property reference. Opening hours could not be confirmed from the council's timetable when this entry was compiled, so allow for the possibility that they close in the evening or are shut in bad winter weather; the council notes all opening times may change in snow or ice. For the beaches, there are further toilets on the promenades at St Mildred's Bay and West Bay.",
+   "address": "Station Road (near Westbury Road), Westgate-on-Sea",
+   "postcode": null,
+   "phone": "01843 577000",
+   "website": "https://www.thanet.gov.uk/info-pages/public-toilets/",
+   "opening_hours": "Not confirmed",
+   "price": "Free",
+   "dogs": null,
+   "accessibility": "Wheelchair-accessible toilet; baby changing (OpenStreetMap)",
+   "tips": null,
+   "duration_min": null,
+   "tags": [
+    "toilets",
+    "wheelchair"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.38158/1.34112",
+    "https://www.thanet.gov.uk/info-pages/public-toilets/"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "toilets-west-bay-westgate",
+   "name": "Public toilets, West Bay, Westgate-on-Sea",
+   "category": "practical",
+   "town": "Westgate-on-Sea",
+   "lat": 51.38255,
+   "lon": 1.33339,
+   "summary": "Free toilets at the top of West Bay near Westgate Bay Avenue, with wheelchair access.",
+   "description": "These public toilets serve West Bay, Westgate's western beach, and stand near the corner of Westgate Bay Avenue and Cedric Road, just above the promenade and close to the Swan by the Sea pub. OpenStreetMap records them as free and wheelchair accessible. West Bay holds a Seaside Award for 2026 and is popular for its west-facing sunsets, the promenade café and the sea-view Finbars restaurant. Opening hours were not confirmed from the council's timetable when this entry was compiled. Note that dogs are not allowed on West Bay beach from 10am to 6pm between 1 May and 30 September, and must be on a lead on the promenade.",
+   "address": "Westgate Bay Avenue / Cedric Road, Westgate-on-Sea",
+   "postcode": null,
+   "phone": "01843 577000",
+   "website": "https://www.thanet.gov.uk/info-pages/public-toilets/",
+   "opening_hours": "Not confirmed",
+   "price": "Free",
+   "dogs": null,
+   "accessibility": "Wheelchair accessible (OpenStreetMap)",
+   "tips": null,
+   "duration_min": null,
+   "tags": [
+    "toilets",
+    "wheelchair",
+    "coast"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.38255/1.33339",
+    "https://www.thanet.gov.uk/info-pages/dogs-and-our-beaches/"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "toilets-st-mildreds-bay",
+   "name": "Public toilets, St Mildred's Bay",
+   "category": "practical",
+   "town": "Westgate-on-Sea",
+   "lat": 51.38478,
+   "lon": 1.345,
+   "summary": "Seafront toilets at St Mildred's Bay beside the car park and promenade restaurant.",
+   "description": "St Mildred's Bay, the main beach of Westgate-on-Sea and a 2026 Seaside Award beach, has public toilets on the seafront next to the council car park and the St Mildred's Bay restaurant, at the eastern end of the bay. The NHS-led health walk that starts here also notes that toilets are available at the meeting point. Details such as accessibility and opening hours are not recorded on OpenStreetMap and could not be read from the council's toilet timetable when this entry was compiled, so treat them as unconfirmed. Out of season, hours at coastal toilets are usually shorter, and the council says toilets may close up to fifteen minutes early for cleaning.",
+   "address": "St Mildred's Gardens / seafront, Westgate-on-Sea",
+   "postcode": "CT8 8TP",
+   "phone": "01843 577000",
+   "website": "https://www.thanet.gov.uk/info-pages/public-toilets/",
+   "opening_hours": "Not confirmed",
+   "price": null,
+   "dogs": null,
+   "accessibility": "Not confirmed",
+   "tips": null,
+   "duration_min": null,
+   "tags": [
+    "toilets",
+    "coast"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.38478/1.345",
+    "https://www.kentcht.nhs.uk/location/st-mildreds-bay-walk/"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "toilets-reculver",
+   "name": "Public toilets, Reculver Country Park",
+   "category": "practical",
+   "town": "Reculver",
+   "lat": 51.37856,
+   "lon": 1.19647,
+   "summary": "Free accessible toilets by Reculver visitor centre, open 07:30 all year; Changing Places toilet nearby.",
+   "description": "The public toilets at Reculver are next to the country park visitor centre and HatHats café, a few minutes from Reculver Towers and the Roman fort, at the western end of the sea-wall path from Minnis Bay. OpenStreetMap records them as free, flush and wheelchair accessible, with opening hours of 07:30 to 19:30 from April to September and 07:30 to 16:00 from October to March. HatHats also points visitors to baby-changing facilities and a Changing Places toilet nearby. Reculver is in Canterbury district rather than Thanet, so facilities here are not on Thanet District Council's lists. There is a pay-and-display car park alongside.",
+   "address": "Reculver Lane, Reculver, Herne Bay",
+   "postcode": "CT6 6SS",
+   "phone": null,
+   "website": null,
+   "opening_hours": "Apr-Sep daily 07:30-19:30; Oct-Mar daily 07:30-16:00 (OpenStreetMap record)",
+   "price": "Free",
+   "dogs": null,
+   "accessibility": "Wheelchair accessible; Changing Places toilet nearby (HatHats)",
+   "tips": "Closes at 16:00 in winter - plan your walk from Minnis Bay accordingly.",
+   "duration_min": null,
+   "tags": [
+    "toilets",
+    "wheelchair"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.37856/1.19647",
+    "https://www.hathats.co.uk/"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "car-park-minnis-bay",
+   "name": "Minnis Bay car park (The Parade)",
+   "category": "practical",
+   "town": "Birchington-on-Sea",
+   "lat": 51.37757,
+   "lon": 1.28069,
+   "summary": "Council seafront pay-and-display car park at Minnis Bay; charged Apr-Oct, free for cars Nov-Mar.",
+   "description": "This Thanet District Council car park sits right on the seafront at Minnis Bay, next to the beach, toilets, the Minnis Bay Bar & Brasserie and the start of the sea-wall path to Reculver. It has disabled bays and five bays for caravans and motorhomes. Seasonal charges for cars apply from 1 April to 31 October, between 7am and 10pm; from 1 November to 31 March parking for cars is free. During the charging season the tariff is £1.40 for up to an hour, rising in proportion to £2.80 for two hours, £4.20 for three and £5.60 for four, with a maximum of £7.00 for up to fifteen hours. Payment is at the pay-and-display machine or by phone or app with RingGo. Blue Badge holders park free for three hours. It fills quickly on hot summer weekends.",
+   "address": "The Parade, Minnis Bay, Birchington-on-Sea",
+   "postcode": "CT7 9QP",
+   "phone": "01843 577471",
+   "website": "https://www.thanet.gov.uk/info-pages/car-park-charges/",
+   "opening_hours": "Charges 07:00-22:00, 1 Apr-31 Oct; free for cars 1 Nov-31 Mar",
+   "price": "Up to 1 h £1.40, 2 h £2.80, 3 h £4.20, 4 h £5.60, up to 15 h £7.00 (charged in 10-minute steps after the first hour)",
+   "dogs": null,
+   "accessibility": "Disabled bays; Blue Badge free for 3 hours",
+   "tips": "Arrive early on sunny weekends; caravan/motorhome bays have separate charges.",
+   "duration_min": null,
+   "tags": [
+    "parking",
+    "coast"
+   ],
+   "source_urls": [
+    "https://www.thanet.gov.uk/info-pages/car-park-charges/",
+    "https://www.openstreetmap.org/#map=18/51.37757/1.28069"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "car-park-albion-road-birchington",
+   "name": "Albion Road car park",
+   "category": "practical",
+   "town": "Birchington-on-Sea",
+   "lat": 51.37453,
+   "lon": 1.30757,
+   "summary": "Village-centre council pay-and-display car park by Birchington Square, charged all year; 20p for 30 minutes.",
+   "description": "Albion Road car park is Thanet District Council's short-stay car park for the centre of Birchington, just behind the Square, All Saints' Church and the Powell inn, and the most convenient place to park for the village shops, Fields Café and the church. It has 54 spaces including four disabled bays. Unlike the seafront car parks, charges apply all year round, from 7am to 10pm. A quick stop of up to 30 minutes costs only 20p; otherwise it is £1.40 for an hour, £2.80 for two, £4.20 for three, £5.60 for four and £7.00 for up to fifteen hours. Pay at the machine or with the RingGo app. Blue Badge holders park free for three hours.",
+   "address": "Albion Road, Birchington-on-Sea",
+   "postcode": null,
+   "phone": "01843 577471",
+   "website": "https://www.thanet.gov.uk/info-pages/car-park-charges/",
+   "opening_hours": "Charges 07:00-22:00 all year",
+   "price": "Up to 30 min 20p; 1 h £1.40; 2 h £2.80; 3 h £4.20; 4 h £5.60; up to 15 h £7.00",
+   "dogs": null,
+   "accessibility": "4 disabled bays; Blue Badge free for 3 hours",
+   "tips": "The 20p half-hour is ideal for a quick shop or coffee on the Square.",
+   "duration_min": null,
+   "tags": [
+    "parking"
+   ],
+   "source_urls": [
+    "https://www.thanet.gov.uk/info-pages/car-park-charges/",
+    "https://visitthanet.co.uk/attractions/fields-cafe-94105",
+    "https://www.openstreetmap.org/#map=18/51.37453/1.30757"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "car-park-st-mildreds-bay",
+   "name": "St Mildred's Bay car park",
+   "category": "practical",
+   "town": "Westgate-on-Sea",
+   "lat": 51.38475,
+   "lon": 1.34557,
+   "summary": "Council seafront car park at St Mildred's Bay, Westgate; charged Apr-Oct, free for cars Nov-Mar.",
+   "description": "St Mildred's Bay car park is the council car park on the seafront at Westgate-on-Sea's main beach, beside the public toilets and the St Mildred's Bay restaurant. It has 63 spaces, including five disabled bays and four bays for caravans and motorhomes. As at Minnis Bay, charges for cars apply only from 1 April to 31 October, between 7am and 10pm, and parking for cars is free from 1 November to 31 March. In season it costs £1.40 for up to an hour, £2.80 for two hours, £4.20 for three, £5.60 for four and £7.00 for up to fifteen hours, charged in ten-minute steps after the first hour. Pay at the machine or with RingGo. Blue Badge holders park free for three hours.",
+   "address": "St Mildred's Gardens, Westgate-on-Sea",
+   "postcode": "CT8 8TP",
+   "phone": "01843 577471",
+   "website": "https://www.thanet.gov.uk/info-pages/car-park-charges/",
+   "opening_hours": "Charges 07:00-22:00, 1 Apr-31 Oct; free for cars 1 Nov-31 Mar",
+   "price": "Up to 1 h £1.40, 2 h £2.80, 3 h £4.20, 4 h £5.60, up to 15 h £7.00",
+   "dogs": null,
+   "accessibility": "5 disabled bays; Blue Badge free for 3 hours",
+   "tips": null,
+   "duration_min": null,
+   "tags": [
+    "parking",
+    "coast"
+   ],
+   "source_urls": [
+    "https://www.thanet.gov.uk/info-pages/car-park-charges/",
+    "https://www.openstreetmap.org/#map=18/51.38475/1.34557"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "car-park-reculver",
+   "name": "Reculver Country Park car park",
+   "category": "practical",
+   "town": "Reculver",
+   "lat": 51.379,
+   "lon": 1.1974,
+   "summary": "Pay-and-display car park by Reculver Towers and the visitor centre; 2.11 m height barrier.",
+   "description": "The car park at Reculver serves the country park, the visitor centre with HatHats café and toilets, the King Ethelbert Inn and the twin towers of St Mary's church inside the Roman fort. It is a pay-and-display car park with a tarmac surface and a height restriction of 2.11 metres, according to OpenStreetMap, so tall vans and motorhomes should check before entering. Reculver lies in Canterbury district, so charges are set by Canterbury City Council rather than Thanet; the current tariff could not be confirmed for this entry. It is a good alternative starting point for walking or cycling the sea wall east to Minnis Bay.",
+   "address": "Reculver Lane, Reculver, Herne Bay",
+   "postcode": "CT6 6SS",
+   "phone": null,
+   "website": null,
+   "opening_hours": null,
+   "price": "Pay and display (tariff not confirmed)",
+   "dogs": null,
+   "accessibility": null,
+   "tips": "Height barrier 2.11 m.",
+   "duration_min": null,
+   "tags": [
+    "parking"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=18/51.379/1.1974",
+    "https://www.hathats.co.uk/"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "defibrillator-birchington-square",
+   "name": "Defibrillator, The Square (yellow phone box)",
+   "category": "practical",
+   "town": "Birchington-on-Sea",
+   "lat": 51.37399,
+   "lon": 1.30654,
+   "summary": "Public-access defibrillator inside the listed K6 phone box, painted yellow, on Birchington Square.",
+   "description": "Birchington's village-centre defibrillator is housed inside the old K6 telephone box on the Square, outside the Powell and opposite All Saints' Church. The Grade II listed kiosk has been painted yellow so it is easy to spot, and listed-building consent was granted in 2020 for its new use. OpenStreetMap records it as publicly accessible and it is registered on The Circuit, the national defibrillator network. In an emergency, always ring 999 first: the ambulance call handler will confirm the nearest available defibrillator and give you any code needed to open the cabinet, then talk you through using it.",
+   "address": "The Square, Birchington-on-Sea",
+   "postcode": "CT7 9AB",
+   "phone": "999",
+   "website": null,
+   "opening_hours": "24 hours (public access)",
+   "price": null,
+   "dogs": null,
+   "accessibility": null,
+   "tips": "Call 999 first; the operator gives the cabinet code.",
+   "duration_min": null,
+   "tags": [
+    "defibrillator",
+    "emergency"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.37399/1.30654"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "defibrillator-minnis-bay",
+   "name": "Defibrillator, Minnis Bay seafront",
+   "category": "practical",
+   "town": "Birchington-on-Sea",
+   "lat": 51.37798,
+   "lon": 1.28107,
+   "summary": "Outdoor defibrillator on the wall of the Minnis Bay Bar & Brasserie, by the beach.",
+   "description": "The nearest defibrillator to the beach at Minnis Bay is mounted outdoors on the wall of the Minnis Bay Bar & Brasserie on The Parade, beside the car park and public toilets, according to OpenStreetMap. It is the key piece of life-saving equipment for the busy Blue Flag beach and for the sea-wall path, where the next defibrillator to the west is at the Reculver visitor centre. In an emergency, ring 999 first. The ambulance call handler will check where the nearest working defibrillator is, give you the access code if the cabinet is locked, and guide you through CPR and using the device step by step. If someone is in difficulty in the water, ask instead for the Coastguard.",
+   "address": "The Parade, Minnis Bay, Birchington-on-Sea",
+   "postcode": "CT7 9QP",
+   "phone": "999",
+   "website": null,
+   "opening_hours": "24 hours (outdoor cabinet)",
+   "price": null,
+   "dogs": null,
+   "accessibility": null,
+   "tips": "Call 999 first; the operator gives the cabinet code.",
+   "duration_min": null,
+   "tags": [
+    "defibrillator",
+    "emergency",
+    "coast"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.37798/1.28107"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "defibrillator-westgate-station",
+   "name": "Defibrillator, Westgate-on-Sea station",
+   "category": "practical",
+   "town": "Westgate-on-Sea",
+   "lat": 51.38136,
+   "lon": 1.33819,
+   "summary": "Public-access defibrillator on the wall outside Westgate-on-Sea railway station.",
+   "description": "A public-access defibrillator is fixed to the outside wall of Westgate-on-Sea railway station on Station Road, in the centre of the town, according to OpenStreetMap. It is the closest recorded public defibrillator to the shops, cafés and the Carlton Cinema, and it is about five minutes' walk from the beaches at St Mildred's Bay and West Bay. No defibrillator is recorded on OpenStreetMap directly on either Westgate promenade, so this may be the nearest one for beach users, though restaurants and cafés on the seafront may hold their own. Always call 999 first in a cardiac emergency; the call handler will direct you to the nearest available device and give any code needed to open it.",
+   "address": "Westgate-on-Sea station, Station Road, Westgate-on-Sea",
+   "postcode": null,
+   "phone": "999",
+   "website": null,
+   "opening_hours": "24 hours (outdoor)",
+   "price": null,
+   "dogs": null,
+   "accessibility": null,
+   "tips": "Call 999 first.",
+   "duration_min": null,
+   "tags": [
+    "defibrillator",
+    "emergency"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.38136/1.33819"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "defibrillator-reculver",
+   "name": "Defibrillator, Reculver visitor centre",
+   "category": "practical",
+   "town": "Reculver",
+   "lat": 51.37856,
+   "lon": 1.19621,
+   "summary": "Outdoor defibrillator next to the entrance of the Reculver Country Park visitor centre.",
+   "description": "At Reculver, a defibrillator is mounted outside the country park visitor centre, next to the entrance, according to OpenStreetMap. The building also houses HatHats café, with the public toilets alongside and Reculver Towers a few minutes' walk away. This is the westernmost defibrillator on the coastal route from Minnis Bay, and together with the one on the wall of the Minnis Bay Bar & Brasserie it covers both ends of the sea-wall path. In any emergency ring 999 first; the call handler will confirm the nearest defibrillator, give you the cabinet code if it is locked and talk you through what to do. For anyone in trouble in the sea or cut off by the tide, ask for the Coastguard.",
+   "address": "Reculver Lane, Reculver, Herne Bay",
+   "postcode": "CT6 6SS",
+   "phone": "999",
+   "website": null,
+   "opening_hours": "24 hours (outdoor)",
+   "price": null,
+   "dogs": null,
+   "accessibility": null,
+   "tips": "Call 999 first.",
+   "duration_min": null,
+   "tags": [
+    "defibrillator",
+    "emergency",
+    "coast"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.37856/1.19621"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "courts-pharmacy-birchington",
+   "name": "Courts Pharmacy, Birchington",
+   "category": "practical",
+   "town": "Birchington-on-Sea",
+   "lat": 51.37556,
+   "lon": 1.30493,
+   "summary": "Community pharmacy on Birchington's Station Road.",
+   "description": "Courts Pharmacy is the community chemist on Station Road in the middle of Birchington's shopping street, between the Square and the station. As an NHS community pharmacy it can dispense prescriptions and give advice on minor illnesses. Opening hours were not confirmed from the sources checked, so phone ahead or check the NHS website, especially on Saturday afternoons and Sundays. For urgent medical advice when the pharmacy is shut, call NHS 111. Birchington Medical Centre, the village GP surgery, is on Minnis Road.",
+   "address": "67-69 Station Road, Birchington-on-Sea",
+   "postcode": "CT7 9RE",
+   "phone": null,
+   "website": null,
+   "opening_hours": "Not confirmed",
+   "price": null,
+   "dogs": null,
+   "accessibility": null,
+   "tips": "Out of hours, call NHS 111.",
+   "duration_min": null,
+   "tags": [
+    "pharmacy",
+    "health"
+   ],
+   "source_urls": [
+    "https://api.ratings.food.gov.uk/Establishments?address=Birchington",
+    "https://www.openstreetmap.org/#map=19/51.37556/1.30493"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "paydens-pharmacy-westgate",
+   "name": "Paydens Pharmacy, Westgate-on-Sea",
+   "category": "practical",
+   "town": "Westgate-on-Sea",
+   "lat": 51.38222,
+   "lon": 1.33701,
+   "summary": "Community pharmacy on St Mildred's Road, Westgate; weekdays and Saturday mornings.",
+   "description": "Paydens is a community pharmacy on St Mildred's Road, Westgate-on-Sea's main shopping street. The hours recorded on OpenStreetMap are 9am to 6pm on weekdays and 9am to 12.30pm on Saturdays, with Sundays closed, so it is worth planning ahead at weekends. Like other NHS community pharmacies it dispenses prescriptions and can advise on minor ailments. Boots also has a branch on the same street at number 36, which offers a second option. Westgate Surgery, the town's GP practice, is close by. When pharmacies are closed and you need urgent medical advice, call NHS 111; in an emergency call 999.",
+   "address": "76 St Mildred's Road, Westgate-on-Sea",
+   "postcode": "CT8 8RF",
+   "phone": null,
+   "website": null,
+   "opening_hours": "Mon-Fri 09:00-18:00, Sat 09:00-12:30, Sun closed (OpenStreetMap record)",
+   "price": null,
+   "dogs": null,
+   "accessibility": null,
+   "tips": "Boots is a few doors away at 36 St Mildred's Road.",
+   "duration_min": null,
+   "tags": [
+    "pharmacy",
+    "health"
+   ],
+   "source_urls": [
+    "https://www.openstreetmap.org/#map=19/51.38222/1.33701",
+    "https://api.ratings.food.gov.uk/Establishments?address=Westgate"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "birchington-medical-centre",
+   "name": "Birchington Medical Centre (GP)",
+   "category": "practical",
+   "town": "Birchington-on-Sea",
+   "lat": 51.37621,
+   "lon": 1.29767,
+   "summary": "NHS GP surgery for Birchington on Minnis Road.",
+   "description": "Birchington Medical Centre is the NHS general practice for the village, on Minnis Road between the station and Minnis Bay. It serves registered patients; for most holiday health problems the faster routes are a local pharmacy for minor illnesses or NHS 111 for urgent advice, which can book you into the right service. For serious injuries or illness, the nearest emergency department is at the Queen Elizabeth The Queen Mother Hospital in Margate. In a life-threatening emergency, call 999. Check the practice website for current opening times.",
+   "address": "Minnis Road, Birchington-on-Sea",
+   "postcode": "CT7 9HQ",
+   "phone": null,
+   "website": "https://www.birchingtonmc.nhs.uk/",
+   "opening_hours": "See practice website",
+   "price": null,
+   "dogs": null,
+   "accessibility": null,
+   "tips": "Not registered? Use NHS 111 for urgent advice.",
+   "duration_min": null,
+   "tags": [
+    "health",
+    "gp"
+   ],
+   "source_urls": [
+    "https://www.birchingtonmc.nhs.uk/",
+    "https://www.openstreetmap.org/#map=19/51.37621/1.29767",
+    "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "westgate-surgery",
+   "name": "Westgate Surgery (GP)",
+   "category": "practical",
+   "town": "Westgate-on-Sea",
+   "lat": 51.38307,
+   "lon": 1.33749,
+   "summary": "NHS GP surgery in the centre of Westgate-on-Sea.",
+   "description": "Westgate Surgery is the NHS general practice for Westgate-on-Sea, in the town centre a short walk north of the station and St Mildred's Road. Like any GP practice, it serves its registered patients first,. For most minor holiday ailments a pharmacy such as Paydens or Boots on St Mildred's Road is quicker, and NHS 111 can give urgent medical advice and direct you to a GP, urgent treatment centre or pharmacy at any time. Serious injuries and illnesses are handled at the emergency department of the Queen Elizabeth The Queen Mother Hospital in Margate. Call 999 in a life-threatening emergency.",
+   "address": "Westgate-on-Sea",
+   "postcode": null,
+   "phone": null,
+   "website": "https://www.westgatesurgery.nhs.uk/",
+   "opening_hours": "See practice website",
+   "price": null,
+   "dogs": null,
+   "accessibility": null,
+   "tips": null,
+   "duration_min": null,
+   "tags": [
+    "health",
+    "gp"
+   ],
+   "source_urls": [
+    "https://www.westgatesurgery.nhs.uk/",
+    "https://www.openstreetmap.org/#map=19/51.38307/1.33749",
+    "https://www.nhs.uk/nhs-services/urgent-and-emergency-care-services/when-to-use-111/"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "qeqm-hospital-margate",
+   "name": "Queen Elizabeth The Queen Mother Hospital (QEQM), Margate",
+   "category": "practical",
+   "town": "Margate",
+   "lat": 51.37717,
+   "lon": 1.38918,
+   "summary": "Thanet's main NHS hospital, with an emergency department, on St Peter's Road, Margate.",
+   "description": "The Queen Elizabeth The Queen Mother Hospital, known locally as QEQM, is the main acute hospital for Thanet and the nearest emergency department to Birchington and Westgate, in Margate. It is run by East Kent Hospitals University NHS Foundation Trust and stands on St Peter's Road. Go to the emergency department only for serious injuries or illness; for urgent but non-life-threatening problems, call NHS 111, which can direct you to the right place, including urgent treatment centres or pharmacies. In a life-threatening emergency, call 999 for an ambulance rather than driving yourself.",
+   "address": "St Peter's Road, Margate",
+   "postcode": null,
+   "phone": null,
+   "website": "https://www.ekhuft.nhs.uk/",
+   "opening_hours": "Emergency department (hours not confirmed for this entry; emergency departments normally run 24/7)",
+   "price": null,
+   "dogs": null,
+   "accessibility": null,
+   "tips": "Non-emergency? Call 111 first.",
+   "duration_min": null,
+   "tags": [
+    "health",
+    "hospital",
+    "emergency"
+   ],
+   "source_urls": [
+    "https://en.wikipedia.org/wiki/Queen_Elizabeth_The_Queen_Mother_Hospital",
+    "https://nominatim.openstreetmap.org/search?q=Queen+Elizabeth+The+Queen+Mother+Hospital,+Margate&format=json"
+   ],
+   "verified": "2026-10-23"
+  },
+  {
+   "id": "visit-thanet-visitor-information-centre",
+   "name": "Visit Thanet Visitor Information Centre, Droit House",
+   "category": "practical",
+   "town": "Margate",
+   "lat": 51.39121,
+   "lon": 1.38123,
+   "summary": "Thanet's tourist information centre in the historic Droit House at the start of Margate's Harbour Arm.",
+   "description": "Thanet's official visitor information centre is in the Droit House, the small building at the landward end of Margate's Stone Pier and Harbour Arm, next to Turner Contemporary. There is no tourist office in Birchington or Westgate, so this is the place for leaflets, maps, event information and local advice, and staff also answer questions by phone, email and social media. Hours are seasonal: staff respond between 10am and 5pm, Tuesday to Sunday in October 2026 (daily during the half-term week of 26 to 30 October) and Wednesday to Sunday in November. The Visit Thanet website carries listings of attractions, beaches, food and events for the whole isle.",
+   "address": "The Droit House, Stone Pier, Margate",
+   "postcode": "CT9 1JD",
+   "phone": "01843 577577",
+   "website": "https://www.visitthanet.co.uk/plan-your-visit/visitor-information-services/",
+   "opening_hours": "10:00-17:00; Oct 2026 Tue-Sun (daily 26-30 Oct); Nov 2026 Wed-Sun. Other months not checked.",
+   "price": "Free",
+   "dogs": null,
+   "accessibility": null,
+   "tips": "Email visitorinformation@thanet.gov.uk for questions before you travel.",
+   "duration_min": 15,
+   "tags": [
+    "tourist-info",
+    "free"
+   ],
+   "source_urls": [
+    "https://www.visitthanet.co.uk/",
+    "https://nominatim.openstreetmap.org/search?q=Droit+House,+Margate&format=json"
+   ],
+   "verified": "2026-10-23"
+  }
+ ],
+ "facts": [
+  {
+   "topic": "Emergency numbers",
+   "text": "Life-threatening emergency (ambulance, fire, police): call 999. If someone is in trouble in the sea, cut off by the tide, stuck in mud or you see a cliff fall, call 999 and ask for the Coastguard. Urgent but not life-threatening medical problem: call NHS 111 or use 111 online; it can direct you to a GP, urgent treatment centre, pharmacy or self-care. Text relay: 18001 111. Thanet District Council general line: 01843 577000."
+  },
+  {
+   "topic": "Water safety (RNLI / Thanet council)",
+   "text": "Swim at lifeguarded beaches between the red and yellow flags. If you see someone in difficulty: call 999 and ask for the Coastguard, tell them to float on their back and stay calm, and throw them a life ring or throw-line if one is nearby - never go in after them. Do not 'tombstone' (jump) from piers or harbour walls: rocks, debris and changing tide depths make it dangerous, especially for teenagers. Source: Thanet District Council 'Stay safe this summer', 7 Aug 2026."
+  },
+  {
+   "topic": "Lifeguards 2026",
+   "text": "In 2026 the RNLI provided daily lifeguard cover across Thanet's main bathing bays from Monday 20 July (Thanet District Council, 7 Aug 2026). The council post does not list the individual beaches or the end date and daily hours, and the RNLI beach pages could not be checked, so which bays (e.g. Minnis Bay, West Bay, St Mildred's Bay) were patrolled and for how long is NOT confirmed. In late October there are no lifeguards; outside the summer season assume no lifeguard cover anywhere."
+  },
+  {
+   "topic": "Tides, cliffs and mud",
+   "text": "Thanet's council advises checking tide times before any beach or foreshore walk and knowing the risks; never use a cliff face as a shortcut and keep away from the top and foot of the chalk cliffs, which are weakened by rain, frost and storms. If a cliff fall starts, leave the area and report it to the Coastguard via 999. Walkers on the foreshore at Minnis Bay, Reculver and Botany Bay should time visits with the tide table. (Site-specific cut-off and mud warnings for Minnis Bay, Reculver and Botany Bay could not be confirmed from an official page for this file; general advice from Thanet District Council, 'Staying safe on our coastline', Feb 2021.)"
+  },
+  {
+   "topic": "Beach dog restrictions (current rules, 1 May - 30 September)",
+   "text": "Thanet District Council: dogs banned all day on Minnis Bay (main area, Birchington), Viking Bay (Broadstairs), Margate Main Sands and Ramsgate Main Sands (harbour end). Dogs banned 10:00-18:00 on Botany Bay, Joss Bay and Stone Bay (Broadstairs) and West Bay and St Mildred's Bay (Westgate). Dogs on a lead 10:00-18:00 on Louisa Bay (Broadstairs), Westbrook Bay and Walpole Bay (Margate). Dogs allowed all year at any time on Grenham Bay and Epple Bay (Birchington), Dumpton Gap and Kingsgate Bay (Broadstairs), Foreness Point, Sacketts Gap and Palm Bay (Cliftonville), Fulsom Rock (Margate) and Eastcliff and Western Undercliff (Ramsgate). Dogs must be on a lead on promenades alongside these beaches. Failing to pick up after your dog carries a £100 fine. From 1 October to 30 April there are no seasonal beach bans listed."
+  },
+  {
+   "topic": "Proposed dog rule changes (consultation 2026)",
+   "text": "On 28 August 2026 Thanet District Council opened a consultation on a new dog-control order. Proposals include keeping the 1 May-30 September beach exclusions, adding a new year-round 'no dogs on the beach' restriction (the council's news item does not say which beach), and requiring dogs to be on leads on the Northern Sea Wall between Cold Harbour and Plum Pudding at Birchington, to protect birds. Cabinet is due to decide later in 2026; no start date has been announced. Check yourvoice.thanet.gov.uk for the outcome before relying on the current rules in 2027."
+  },
+  {
+   "topic": "Blue Flag and Seaside Award beaches 2026",
+   "text": "Announced 15 May 2026 by Thanet District Council. Blue Flag (plus Seaside Award): Minnis Bay (Birchington), Botany Bay and Joss Bay (Broadstairs), Ramsgate Main Sands. Seaside Award: West Bay and St Mildred's Bay (Westgate-on-Sea), Westbrook Bay, Margate Main Sands and Walpole Bay (Margate), Stone Bay, Viking Bay and Louisa Bay (Broadstairs)."
+  },
+  {
+   "topic": "Bathing water notices",
+   "text": "Thanet District Council occasionally advises against bathing after pollution incidents. On 21 October 2026 the council lifted advice against bathing that had applied to seven beaches between Western Undercliff (Ramsgate) and Stone Bay (Broadstairs). Check the council's news page or the Environment Agency's Swimfo service before swimming, especially after heavy rain."
+  },
+  {
+   "topic": "Trains",
+   "text": "Southeastern runs all trains. From Birchington-on-Sea a typical off-peak hour has 1 high-speed train to London St Pancras International, 1 train to London Victoria and 2 trains to Margate and Ramsgate; Westgate-on-Sea mainly has the hourly Victoria and Ramsgate trains (few St Pancras stops). Typical journey times from Birchington (Trainline averages, Oct 2026): Margate ~7 min (fastest 5), Ramsgate ~24 min (fastest 17), London St Pancras ~1h39 (fastest ~1h30, direct), London Victoria ~1h47 (fastest ~1h35, direct). Canterbury: no direct train - change at Faversham for Canterbury East (Trainline average ~1h14, fastest 42 min) or at Ramsgate for Canterbury West (about 45 min). The Stagecoach 8/8A bus runs direct to Canterbury."
+  },
+  {
+   "topic": "Buses",
+   "text": "Routes serving Birchington (bustimes.org, Oct 2026): Stagecoach 8 and 8A Westwood Cross - Margate - Westgate - Birchington - St Nicholas-at-Wade area - Canterbury (8X also listed on the same Westwood Cross - Canterbury route); Stagecoach 32 Margate - Garlinge - Westgate - Birchington - Minnis Bay (the bus to Minnis Bay); Stagecoach 48 Dumpton - Birchington; YMS Travel 36 Herne Bay - Westcliff; National Express coach 022 London - Ramsgate. 48A, 932, 942 and 944 are school-day routes. Westgate also has Regent Coaches 35 to Westwood Cross. The 8/8A stop on Birchington Square; the Bell Inn at St Nicholas-at-Wade is within 500 m of an 8/8A stop."
+  },
+  {
+   "topic": "Parking charges (Thanet council, 2026)",
+   "text": "Council car parks charge 07:00-22:00. Seafront car parks at Minnis Bay and St Mildred's Bay are charged 1 April-31 October and free for cars 1 November-31 March: £1.40 up to 1 h, £2.80 2 h, £4.20 3 h, £5.60 4 h, £7.00 up to 15 h. Birchington village car parks Albion Road (54 spaces) and Alpha Road (43 spaces) charge all year at the same rates (Albion Road also 20p for 30 minutes). After the first hour charges rise in 10-minute steps. Pay by machine or RingGo app. Blue Badge holders park free for 3 hours in council car parks. On-street pay bays in Birchington (Crescent Road, Station Road, Eastfield Road, Paddock Road, Station Approach Road): 50p first 10 min, rising to max £6 for 2 h, 09:00-18:00 all year. Free time-limited on-street bays exist in Birchington (e.g. Albion Road, Minnis Road) and Westgate (Cuthbert Road, St Mildred's Road, Station Road). Reculver is in Canterbury district with its own charges (not checked)."
+  },
+  {
+   "topic": "Tourist information",
+   "text": "There is no tourist information office in Birchington or Westgate. The Visit Thanet Visitor Information Centre is in the Droit House, Stone Pier, Margate CT9 1JD (01843 577577, visitorinformation@thanet.gov.uk), 10:00-17:00 on its seasonal opening days. Reculver Country Park has its own visitor centre with café and toilets."
+  },
+  {
+   "topic": "Health services",
+   "text": "Nearest emergency department: Queen Elizabeth The Queen Mother Hospital (QEQM), St Peter's Road, Margate, run by East Kent Hospitals University NHS Foundation Trust. Pharmacies: Courts Pharmacy, 67-69 Station Road, Birchington; Paydens (76) and Boots (36) St Mildred's Road, Westgate. GP surgeries: Birchington Medical Centre (Minnis Road) and Westgate Surgery. For urgent non-emergency advice call NHS 111."
+  },
+  {
+   "topic": "Food & drink notes 2026",
+   "text": "Felicity's Café at Quex Park closes at the end of October 2026 (planning permission issue, Isle of Thanet News 2 Sept 2026); Quex Barn remains the main food stop on the estate. Acol has no pub: the Crown and Sceptre closed in 2012 and is now housing. The Powell on Birchington Square reopened in July 2025."
+  }
+ ]
+}
