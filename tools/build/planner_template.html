@@ -412,7 +412,12 @@ $("#days").onclick = e => {
 
 // ---- details panel ----
 let detailMap = null, overviewMap = null;
-const OSM = { url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png", attribution: "© OpenStreetMap contributors" };
+// The app's own map (same tiles as the iPhone), served from this repo's GitHub Pages site:
+// 512-px images on the 256 grid, z9-12 Faversham-Dover, z13-16 Herne Bay-Sandwich, z17 Thanet.
+const TILES = "https://bigmanhenk.github.io/Infinite_Explorer_Nexus/tiles/{z}/{x}/{y}.png";
+const OSM = { url: TILES, attribution: "© OpenStreetMap contributors" };
+const DETAIL_BOX = [[51.26, 1.10], [51.41, 1.46]];
+const inDetail = (lat, lon) => lat >= 51.26 && lat <= 51.41 && lon >= 1.10 && lon <= 1.46;
 const accent = () => getComputedStyle(document.documentElement).getPropertyValue("--accent").trim() || "#da9e3f";
 function gallery(ph) {
   if (!ph || !ph.length) return "";
@@ -445,14 +450,14 @@ function openDetail(kind, id) {
               ["Opening", p.opening_hours], ["Price", p.price], ["Typical visit", p.duration_min ? p.duration_min + " min" : null],
               ["Tip", p.tips], ["Dogs", p.dogs], ["Access", p.accessibility], ["Address", [p.address, p.postcode].filter(Boolean).join(", ")]])}
       ${links(p)}<div class="map" id="dmap"></div>${sources(p.source_urls)}`;
-    map = { center: [p.lat, p.lon], zoom: 16, label: p.name };
+    map = { center: [p.lat, p.lon], zoom: inDetail(p.lat, p.lon) ? 16 : 12, label: p.name };
   } else if (kind === "event") {
     const e = DATA.events.find(x => x.id === id); if (!e) return;
     h = `<h2>${esc(e.title)}</h2><div class="sub">${esc(e.venue)} · ${esc(e.town)}</div>
       ${e.confidence === "expected" ? '<div class="warn">Date expected from previous years — not yet confirmed by the organiser.</div>' : ""}
       ${rows([["When", eventWhen(e)], ["Time", [e.start_time, e.end_time].filter(Boolean).join("–")], ["Price", e.price], ["Booking", e.booking]])}
       <div class="desc">${esc(e.description || "")}</div>${links(e)}${e.lat ? '<div class="map" id="dmap"></div>' : ""}${sources(e.source_urls)}`;
-    if (e.lat) map = { center: [e.lat, e.lon], zoom: 16, label: e.venue };
+    if (e.lat) map = { center: [e.lat, e.lon], zoom: inDetail(e.lat, e.lon) ? 16 : 12, label: e.venue };
   } else if (kind === "walk") {
     const w = DATA.walks.find(x => x.id === id); if (!w) return;
     h = `<h2>${esc(w.title)}</h2><div class="sub">${w.km} km${w.duration_min ? " · " + w.duration_min + " min" : ""} · ${esc(w.difficulty || "")} · ${w.circular ? "circular" : "one way"}</div>
@@ -474,7 +479,7 @@ function openDetail(kind, id) {
   if (detailMap) { detailMap.remove(); detailMap = null; }
   if (map && window.L && $("#dmap")) {
     detailMap = L.map("dmap", { scrollWheelZoom: false });
-    L.tileLayer(OSM.url, { maxZoom: 19, attribution: OSM.attribution }).addTo(detailMap);
+    L.tileLayer(OSM.url, { minZoom: 9, maxZoom: 19, maxNativeZoom: 17, attribution: OSM.attribution, errorTileUrl: "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" }).addTo(detailMap);
     if (map.route) {
       const line = L.polyline(map.route, { color: accent(), weight: 5 }).addTo(detailMap);
       map.points.forEach((pt, i) => L.marker([pt.lat, pt.lon], { icon: L.divIcon({ className: "", html: `<div class="wp-icon">${i + 1}</div>`, iconSize: [22, 22] }) })
@@ -498,7 +503,7 @@ function showOverview() {
   el.style.display = "block";
   if (overviewMap) { setTimeout(() => overviewMap.invalidateSize(), 50); return; }
   overviewMap = L.map("overview", { scrollWheelZoom: false });
-  L.tileLayer(OSM.url, { maxZoom: 19, attribution: OSM.attribution }).addTo(overviewMap);
+  L.tileLayer(OSM.url, { minZoom: 9, maxZoom: 19, maxNativeZoom: 17, attribution: OSM.attribution, errorTileUrl: "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" }).addTo(overviewMap);
   const colors = ["#da9e3f", "#2e9bd6", "#3e9b4f", "#d9483b", "#8e5bc2", "#e5598f"];
   const all = [];
   DATA.walks.forEach((w, i) => {
