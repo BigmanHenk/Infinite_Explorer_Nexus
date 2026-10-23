@@ -177,12 +177,11 @@ struct PickedCard: View {
                     EmptyView()
                 }
                 Button("Make this my base") { base.set(hit.title, hit.coordinate) }.buttonStyle(.bordered)
-                Button {
-                    var s = "http://maps.apple.com/?daddr=\(hit.coordinate.latitude),\(hit.coordinate.longitude)&dirflg=w"
-                    if base.mode == .fixed || location.location == nil { s += "&saddr=\(base.lat),\(base.lon)" }
-                    if let u = URL(string: s) { UIApplication.shared.open(u) }
-                } label: { Image(systemName: "arrow.triangle.turn.up.right.diamond") }
-                .buttonStyle(.bordered)
+                NavigateMenu(to: hit.coordinate, name: hit.title) {
+                    Image(systemName: "arrow.triangle.turn.up.right.diamond")
+                        .padding(.horizontal, 10).padding(.vertical, 7)
+                        .background(theme.t.surfaceVariant, in: RoundedRectangle(cornerRadius: 8))
+                }
             }
         }
         .padding(14)

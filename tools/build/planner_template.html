@@ -658,8 +658,11 @@ function travel(lat, lon, name) {
   return `<h3 style="margin:14px 0 2px">Getting there</h3>
     <div class="hint">${d < 1 ? Math.round(d * 1000) + " m" : d.toFixed(1) + " km"} from ${esc(base.name)} (change the base top right)</div>
     <div class="travel"><div>🚶<b>${f(t(1.30, 4.8, 0))}</b>walk</div><div>🚲<b>${f(t(1.30, 14, 1))}</b>bike</div><div>🚗<b>${f(t(1.40, 38, 3))}</b>car</div></div>
-    <div class="dirs">Exact directions: <a href="${dir("walking")}" target="_blank" rel="noopener">Walking</a><a href="${dir("driving")}" target="_blank" rel="noopener">Driving</a>
-      <a href="${dir("transit")}" target="_blank" rel="noopener">Bus &amp; train</a><a href="${dir("bicycling")}" target="_blank" rel="noopener">Cycling</a></div>`;
+    <div class="dirs">Directions (Google Maps): <a href="${dir("walking")}" target="_blank" rel="noopener">Walking</a><a href="${dir("driving")}" target="_blank" rel="noopener">Driving</a>
+      <a href="${dir("transit")}" target="_blank" rel="noopener">Bus &amp; train</a><a href="${dir("bicycling")}" target="_blank" rel="noopener">Cycling</a>
+      <a href="https://waze.com/ul?ll=${lat},${lon}&navigate=yes" target="_blank" rel="noopener">🚙 Waze</a>
+      <a href="https://maps.apple.com/?daddr=${lat},${lon}&saddr=${base.lat},${base.lon}" target="_blank" rel="noopener">Apple Maps</a></div>
+    <div class="hint">Google Maps and Waze links also open on your phone if you send them there (Edge/Chrome: "Send to your devices").</div>`;
 }
 function moreInfo(o, name, town) {
   const out = [];

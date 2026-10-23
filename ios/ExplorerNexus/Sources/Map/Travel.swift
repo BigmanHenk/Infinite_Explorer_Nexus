@@ -45,13 +45,8 @@ struct TravelCard: View {
                 mode("bicycle", TravelEstimate.text(est.bikeMin), est.metres < 40_000)
                 mode("car.fill", TravelEstimate.text(est.carMin), true)
             }
-            Menu {
-                Button { open("w") } label: { Label("Walking", systemImage: "figure.walk") }
-                Button { open("d") } label: { Label("Driving", systemImage: "car") }
-                Button { open("r") } label: { Label("Bus & train", systemImage: "tram") }
-                Button { open("c") } label: { Label("Cycling", systemImage: "bicycle") }
-            } label: {
-                Label("Exact directions in Apple Maps (needs signal)", systemImage: "arrow.triangle.turn.up.right.diamond")
+            NavigateMenu(to: to, name: name) {
+                Label("Directions: Apple Maps, Google Maps or Waze", systemImage: "arrow.triangle.turn.up.right.diamond")
                     .font(.subheadline.weight(.semibold))
             }
             Text("Times are estimates for the usual roads and paths.")
@@ -70,14 +65,59 @@ struct TravelCard: View {
         .opacity(sensible ? 1 : 0.45)
     }
 
-    /// dirflg w walk, d drive, r transit, c cycle; from the fixed base, or the phone's position.
-    private func open(_ flag: String) {
+}
+
+/// Send the destination to Apple Maps, Google Maps or Waze (official links; they open the app
+/// when it is installed, the website otherwise). Apple and Google start from the fixed base;
+/// with GPS as the base they start from where the phone is.
+struct NavigateMenu<Label: View>: View {
+    @EnvironmentObject var base: BaseStore
+    @EnvironmentObject var location: LocationModel
+    let to: CLLocationCoordinate2D
+    let name: String
+    @ViewBuilder var label: Label
+
+    private var fromBase: Bool { base.mode == .fixed || location.location == nil }
+
+    var body: some View {
+        Menu {
+            Section("Apple Maps") {
+                Button { apple("w") } label: { SwiftUI.Label("Walking", systemImage: "figure.walk") }
+                Button { apple("d") } label: { SwiftUI.Label("Driving", systemImage: "car") }
+                Button { apple("r") } label: { SwiftUI.Label("Bus & train", systemImage: "tram") }
+                Button { apple("c") } label: { SwiftUI.Label("Cycling", systemImage: "bicycle") }
+            }
+            Section("Google Maps") {
+                Button { google("driving") } label: { SwiftUI.Label("Driving", systemImage: "car") }
+                Button { google("walking") } label: { SwiftUI.Label("Walking", systemImage: "figure.walk") }
+                Button { google("transit") } label: { SwiftUI.Label("Bus & train", systemImage: "tram") }
+                Button { google("bicycling") } label: { SwiftUI.Label("Cycling", systemImage: "bicycle") }
+            }
+            Section("Waze") {
+                Button { waze() } label: { SwiftUI.Label("Drive with Waze", systemImage: "car.circle") }
+            }
+        } label: { label }
+    }
+
+    private func go(_ s: String) { if let u = URL(string: s) { UIApplication.shared.open(u) } }
+
+    /// dirflg w walk, d drive, r transit, c cycle
+    private func apple(_ flag: String) {
         var s = "http://maps.apple.com/?daddr=\(to.latitude),\(to.longitude)&dirflg=\(flag)"
-        if base.mode == .fixed || location.location == nil {
-            s += "&saddr=\(base.lat),\(base.lon)"
-        }
+        if fromBase { s += "&saddr=\(base.lat),\(base.lon)" }
         if let q = name.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) { s += "&q=\(q)" }
-        if let u = URL(string: s) { UIApplication.shared.open(u) }
+        go(s)
+    }
+
+    private func google(_ mode: String) {
+        var s = "https://www.google.com/maps/dir/?api=1&destination=\(to.latitude),\(to.longitude)&travelmode=\(mode)"
+        if fromBase { s += "&origin=\(base.lat),\(base.lon)" }
+        go(s)
+    }
+
+    /// Waze always navigates from where the phone is.
+    private func waze() {
+        go("https://waze.com/ul?ll=\(to.latitude),\(to.longitude)&navigate=yes")
     }
 }
 
