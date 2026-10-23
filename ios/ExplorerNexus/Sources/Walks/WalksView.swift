@@ -113,6 +113,7 @@ struct WalkDetailView: View {
     let walk: Walk
     @State private var planning: PlanTarget?
     @State private var following = false
+    @State private var fullMap = false
 
     private var coords: [CLLocationCoordinate2D] { walk.route.isEmpty ? walk.points.map(\.coordinate) : walk.route }
 
@@ -130,6 +131,7 @@ struct WalkDetailView: View {
                                focus: MapFocus.fit(coords))
                     .frame(height: 300)
                     .clipShape(RoundedRectangle(cornerRadius: 14))
+                    .overlay(alignment: .topTrailing) { ExpandMapButton { fullMap = true } }
                 PhotoGallery(owner: "walk:" + walk.id, height: 200)
                 if let t = walk.tideWarning { tideCard(t) }
                 HStack(spacing: 10) {
@@ -182,6 +184,7 @@ struct WalkDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .sheet(item: $planning) { AddToPlanSheet(target: $0) }
         .fullScreenCover(isPresented: $following) { WalkFollowView(walk: walk) }
+        .fullScreenCover(isPresented: $fullMap) { FullScreenMap(title: walk.title, walk: walk, focus: MapFocus.fit(coords)) }
     }
 
     private func stat(_ symbol: String, _ text: String) -> some View {

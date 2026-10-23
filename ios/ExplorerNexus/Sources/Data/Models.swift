@@ -125,7 +125,7 @@ struct Fact: Identifiable, Hashable {
 /// Category look-up: label, SF Symbol and colour, used by lists, chips and map pins.
 enum Cat {
     static let order = ["sight", "history", "museum", "church", "beach", "nature", "viewpoint", "family",
-                        "photo", "hide", "pub", "brewery", "vineyard", "cafe", "restaurant", "food", "shop", "market", "daytrip", "practical"]
+                        "photo", "hide", "pub", "brewery", "vineyard", "cafe", "restaurant", "food", "shop", "market", "daytrip", "ev", "practical"]
 
     static func label(_ c: String) -> String {
         switch c {
@@ -148,6 +148,7 @@ enum Cat {
         case "shop": return "Shops"
         case "market": return "Markets"
         case "daytrip": return "Day trips"
+        case "ev": return "EV charging"
         case "practical": return "Practical"
         default: return c.capitalized
         }
@@ -174,6 +175,7 @@ enum Cat {
         case "shop": return "bag.fill"
         case "market": return "basket.fill"
         case "daytrip": return "car.fill"
+        case "ev": return "bolt.car.fill"
         case "practical": return "info.circle.fill"
         default: return "mappin"
         }
@@ -193,6 +195,7 @@ enum Cat {
         case "vineyard": return Color(hex: 0x8E2F55)
         case "shop", "market": return Color(hex: 0x4A7FC1)
         case "daytrip": return Color(hex: 0x5E6B7A)
+        case "ev": return Color(hex: 0x1FA67A)
         default: return Color(hex: 0x6E7781)
         }
     }

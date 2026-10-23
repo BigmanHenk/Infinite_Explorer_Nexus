@@ -91,6 +91,8 @@ dialog select, dialog input, dialog textarea { width: 100%; }
 .base { display: inline-flex; gap: 6px; align-items: center; margin-left: auto; }
 .item .dist { color: var(--muted); font-size: 12px; }
 #pickMap { height: 420px; border-radius: 12px; }
+.map-full { position: fixed !important; inset: 0; z-index: 100; height: 100vh !important; width: 100vw !important; border-radius: 0 !important; margin: 0 !important; }
+.fs-btn { background: #fff; color: #222; border: 0; width: 34px; height: 34px; font-size: 18px; line-height: 34px; padding: 0; cursor: pointer; }
 footer { color: var(--muted); font-size: 12px; padding: 4px 18px 20px; }
 </style>
 </head>
@@ -115,6 +117,7 @@ footer { color: var(--muted); font-size: 12px; padding: 4px 18px 20px; }
       <button data-tab="events">What's on</button>
       <button data-tab="walks">Walks</button>
       <button data-tab="photo">Photo &amp; hides</button>
+      <button data-tab="ev">⚡ EV</button>
       <button data-tab="note">+ Note</button>
     </div>
     <input id="search" type="search" placeholder="Search…">
@@ -252,12 +255,13 @@ function renderCatalogue() {
   const q = $("#search").value.trim().toLowerCase();
   const hit = (...f) => !q || f.some(x => (x || "").toLowerCase().includes(q));
   let html = "";
-  if (tab === "places" || tab === "photo") {
-    const list = DATA.places.filter(p => (tab === "photo") === (p.category === "photo" || p.category === "hide"))
+  if (tab === "places" || tab === "photo" || tab === "ev") {
+    const kindOf = p => p.category === "photo" || p.category === "hide" ? "photo" : p.category === "ev" ? "ev" : "places";
+    const list = DATA.places.filter(p => kindOf(p) === tab)
       .filter(p => p.category !== "practical").filter(p => hit(p.name, p.town, p.summary, p.category))
       .filter(p => inRange(p.lat, p.lon)).sort((a, b) => km(a.lat, a.lon) - km(b.lat, b.lon));
     html = list.map(p => `<div class="item">${thumb(p.photos) || `<span class="dot" style="background:${CAT_COLOR[p.category] || "#6E7781"}"></span>`}
-      <div class="open" data-open="place" data-id="${esc(p.id)}"><div class="t">${esc(p.name)}</div><div class="meta">${esc(p.category)} · ${esc(p.town)} <span class="dist">· ${distText(p.lat, p.lon)}</span></div><div class="s">${esc(p.summary)}</div></div>
+      <div class="open" data-open="place" data-id="${esc(p.id)}"><div class="t">${esc(p.name)}</div><div class="meta">${esc(p.category)} · ${esc(p.town)} <span class="dist">· ${distText(p.lat, p.lon)}</span></div><div class="s">${esc(p.summary)}</div>${(p.tags || []).includes("allstar") ? '<div class="badge" style="color:#1FA67A">✔ Allstar card accepted</div>' : ""}</div>
       <button data-add="place" data-id="${esc(p.id)}">+ Add</button></div>`).join("");
   } else if (tab === "events") {
     const days = weekDays();
@@ -515,8 +519,9 @@ function openDetail(kind, id) {
   $("#dadd").onclick = () => openAdd(kind, id);
   if (detailMap) { detailMap.remove(); detailMap = null; }
   if (map && window.L && $("#dmap")) {
-    detailMap = L.map("dmap", { scrollWheelZoom: false });
+    detailMap = L.map("dmap", { scrollWheelZoom: true });
     L.tileLayer(OSM.url, { minZoom: 9, maxZoom: 19, maxNativeZoom: 17, attribution: OSM.attribution, errorTileUrl: "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" }).addTo(detailMap);
+    addFullscreen(detailMap);
     if (map.route) {
       const line = L.polyline(map.route, { color: accent(), weight: 5 }).addTo(detailMap);
       map.points.forEach((pt, i) => L.marker([pt.lat, pt.lon], { icon: L.divIcon({ className: "", html: `<div class="wp-icon">${i + 1}</div>`, iconSize: [22, 22] }) })
@@ -531,7 +536,23 @@ function openDetail(kind, id) {
     $("#dmap").outerHTML = '<p class="hint">The map needs an internet connection on this PC.</p>';
   }
 }
-document.addEventListener("keydown", e => { if (e.key === "Escape") $("#detail").classList.remove("open"); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !document.querySelector(".map-full")) $("#detail").classList.remove("open"); });
+
+
+// full-screen toggle for any Leaflet map (button top-right; Esc leaves)
+function addFullscreen(m) {
+  const Btn = L.Control.extend({ options: { position: "topright" }, onAdd() {
+    const b = L.DomUtil.create("button", "fs-btn leaflet-bar"); b.title = "Full screen"; b.textContent = "⛶";
+    L.DomEvent.disableClickPropagation(b);
+    b.onclick = () => { m.getContainer().classList.toggle("map-full"); b.textContent = m.getContainer().classList.contains("map-full") ? "✕" : "⛶"; setTimeout(() => m.invalidateSize(), 60); };
+    m._fsBtn = b; return b; } });
+  m.addControl(new Btn());
+}
+document.addEventListener("keydown", e => {
+  if (e.key !== "Escape") return;
+  document.querySelectorAll(".map-full").forEach(el => { el.classList.remove("map-full"); });
+  [detailMap, overviewMap, pickMap].forEach(m => { if (m && m._fsBtn) { m._fsBtn.textContent = "⛶"; setTimeout(() => m.invalidateSize(), 60); } });
+});
 
 // all walks on one map (Walks tab); click a route for its details
 function showOverview() {
@@ -539,8 +560,9 @@ function showOverview() {
   if (tab !== "walks" || !window.L) { el.style.display = "none"; return; }
   el.style.display = "block";
   if (overviewMap) { setTimeout(() => overviewMap.invalidateSize(), 50); return; }
-  overviewMap = L.map("overview", { scrollWheelZoom: false });
+  overviewMap = L.map("overview", { scrollWheelZoom: true });
   L.tileLayer(OSM.url, { minZoom: 9, maxZoom: 19, maxNativeZoom: 17, attribution: OSM.attribution, errorTileUrl: "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" }).addTo(overviewMap);
+  addFullscreen(overviewMap);
   const colors = ["#da9e3f", "#2e9bd6", "#3e9b4f", "#d9483b", "#8e5bc2", "#e5598f"];
   const all = [];
   DATA.walks.forEach((w, i) => {
@@ -575,7 +597,7 @@ $("#baseSel").onchange = e => {
     if (!window.L) { alert("The map needs an internet connection."); return; }
     $("#pickDlg").showModal();
     if (!pickMap) {
-      pickMap = L.map("pickMap");
+      pickMap = L.map("pickMap", { scrollWheelZoom: true });
       L.tileLayer(OSM.url, { minZoom: 9, maxZoom: 19, maxNativeZoom: 17, attribution: OSM.attribution }).addTo(pickMap);
       let mk = null;
       pickMap.on("click", ev => { picked = ev.latlng; if (mk) mk.remove(); mk = L.marker(picked).addTo(pickMap); $("#pickOk").disabled = false; });

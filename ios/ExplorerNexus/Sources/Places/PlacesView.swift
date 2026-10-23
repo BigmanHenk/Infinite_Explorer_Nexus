@@ -53,7 +53,7 @@ struct PlacesView: View {
                 }
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
-                        ForEach([("free", "Free"), ("rainy-day", "Rainy day"), ("kids", "Kids"), ("dogs", "Dogs"), ("wheelchair", "Step-free")], id: \.0) { t in
+                        ForEach([("free", "Free"), ("rainy-day", "Rainy day"), ("kids", "Kids"), ("dogs", "Dogs"), ("wheelchair", "Step-free"), ("allstar", "Allstar EV")], id: \.0) { t in
                             Chip(text: t.1, on: tag == t.0) { tag = tag == t.0 ? nil : t.0 }
                         }
                     }
@@ -117,6 +117,7 @@ struct PlaceDetailView: View {
     @EnvironmentObject var location: LocationModel
     let place: Place
     @State private var planning: PlanTarget?
+    @State private var fullMap = false
 
     var body: some View {
         ScrollView {
@@ -137,6 +138,7 @@ struct PlaceDetailView: View {
                     .frame(height: 190)
                     .clipShape(RoundedRectangle(cornerRadius: 14))
                     .allowsHitTesting(false)
+                    .overlay(alignment: .topTrailing) { ExpandMapButton { fullMap = true } }
                     .overlay(alignment: .bottomTrailing) {
                         Button {
                             router.showOnMap([CLLocationCoordinate2DBox(place.coordinate)])
@@ -181,6 +183,9 @@ struct PlaceDetailView: View {
         .background(theme.t.background)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(item: $planning) { AddToPlanSheet(target: $0) }
+        .fullScreenCover(isPresented: $fullMap) {
+            FullScreenMap(title: place.name, places: [place], focus: MapFocus(center: place.coordinate, meters: 900))
+        }
     }
 
     private var photoCard: some View {

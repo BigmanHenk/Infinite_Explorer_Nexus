@@ -1,0 +1,2765 @@
+[
+ {
+  "id": "ev-node-3692600505",
+  "name": "Mill Lane Car Park Charger",
+  "category": "ev",
+  "town": "",
+  "lat": 51.3864,
+  "lon": 1.381919,
+  "summary": "Charge Your Car: connectors not recorded; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Charge Your Car (OpenStreetMap). Allstar lists the Source (formerly Swarco / Charge Your Car) network as accepted (Source logo and a dedicated network section on the Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": "07:00 - 19:00",
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/3692600505",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-3695870016",
+  "name": "Pod Point;POD Point charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.356278,
+  "lon": 1.39427,
+  "summary": "Pod Point;POD Point: Type 2 ×2 7 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point;POD Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: no.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": "24/7",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/3695870016"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-3993546500",
+  "name": "Folkestone - Eurotunnel Terminal Supercharger",
+  "category": "ev",
+  "town": "Folkestone",
+  "lat": 51.096002,
+  "lon": 1.120928,
+  "summary": "Tesla: CCS ×8 150 kW, Tesla ×8 150 kW; 8 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Tesla (OpenStreetMap). Allstar lists the Tesla Supercharger network as accepted (Accepted since March 2024, but only by adding the Allstar card in the Tesla app (not by tapping the card). Non-Tesla cars can use only the sites open to other cars.). Fee: yes.",
+  "address": "Ashford Road",
+  "postcode": "CT18 8XX",
+  "phone": null,
+  "website": "https://www.tesla.com/findus/location/supercharger/folkestonesupercharger",
+  "opening_hours": "24/7",
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/3993546500",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-4077516724",
+  "name": "Eurotunnel - Public charging station",
+  "category": "ev",
+  "town": "",
+  "lat": 51.096165,
+  "lon": 1.121057,
+  "summary": "Vianeo: CCS ×8 210 kW; 8 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Vianeo (OpenStreetMap). Allstar lists the GeniePoint network as accepted (Logo on Allstar coverage page (GeniePoint, an Equans company).). Fee: yes. Price: 0.50 GBP/kwh. Contactless payment.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "0.50 GBP/kwh",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/4077516724",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-6680325771",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.148477,
+  "lon": 0.874572,
+  "summary": "Unknown operator: connectors not recorded; 2 bays",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/6680325771"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-6680326076",
+  "name": "BP Pulse charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.155437,
+  "lon": 0.899723,
+  "summary": "BP Pulse: connectors not recorded; 2 bays",
+  "description": "Public EV charge point operated by BP Pulse (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/6680326076"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-6680330320",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.128251,
+  "lon": 0.899003,
+  "summary": "Unknown operator: connectors not recorded; 1 bays",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/6680330320"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-6900159747",
+  "name": "EV Dot charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.281616,
+  "lon": 1.070325,
+  "summary": "EV Dot: connectors not recorded",
+  "description": "Public EV charge point operated by EV Dot (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: 0.30.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/6900159747"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-7775010822",
+  "name": "St Radigunds Car Park",
+  "category": "ev",
+  "town": "",
+  "lat": 51.282814,
+  "lon": 1.080796,
+  "summary": "Unknown operator: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/7775010822"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-8176987640",
+  "name": "Pod Point charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.360416,
+  "lon": 1.411688,
+  "summary": "Pod Point: Type 2 ×2 7 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": "24/7",
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/8176987640"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-8375925948",
+  "name": "Swarco charge point",
+  "category": "ev",
+  "town": "Margate",
+  "lat": 51.388899,
+  "lon": 1.381442,
+  "summary": "Swarco: Type 2 22 kW, CCS 51 kW, CHAdeMO 51 kW; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Swarco (OpenStreetMap). Allstar lists the Source (formerly Swarco / Charge Your Car) network as accepted (Source logo and a dedicated network section on the Allstar coverage page.). Fee: yes. Price: 0.25 GBP/kWh.",
+  "address": "Market Street",
+  "postcode": "CT9 1ED",
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "0.25 GBP/kWh",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/8375925948",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-8377003643",
+  "name": "Pod Point charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.360378,
+  "lon": 1.411711,
+  "summary": "Pod Point: Type 2 ×2 7 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": "24/7",
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/8377003643"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-8377012207",
+  "name": "Pod Point charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.358969,
+  "lon": 1.392824,
+  "summary": "Pod Point: Type 2 ×2 7 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": "24/7",
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/8377012207"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-8377012208",
+  "name": "Pod Point charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.356299,
+  "lon": 1.3942,
+  "summary": "Pod Point: Type 2 ×2 7 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: no.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": "24/7",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/8377012208"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-8377012209",
+  "name": "Pod Point charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.356316,
+  "lon": 1.39414,
+  "summary": "Pod Point: Type 2 ×2 7 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: no.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": "24/7",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/8377012209"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-8757862095",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.281387,
+  "lon": 1.077629,
+  "summary": "Unknown operator: connectors not recorded",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/8757862095"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-8867577048",
+  "name": "EV Dot charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.281214,
+  "lon": 1.08808,
+  "summary": "EV Dot: connectors not recorded; 2 bays",
+  "description": "Public EV charge point operated by EV Dot (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: 0.30.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/8867577048"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9160789120",
+  "name": "Chargemaster",
+  "category": "ev",
+  "town": "",
+  "lat": 51.293753,
+  "lon": 1.10926,
+  "summary": "BP Pulse: Type 2 ×2",
+  "description": "Public EV charge point operated by BP Pulse (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9160789120"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9160826638",
+  "name": "e-taxi recharging point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.277699,
+  "lon": 1.082611,
+  "summary": "Swarco: CCS 50 kW, CHAdeMO 50 kW, Type 2 (tethered) 43 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by Swarco (OpenStreetMap). Allstar lists the Source (formerly Swarco / Charge Your Car) network as accepted (Source logo and a dedicated network section on the Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": "https://www.swarcoeconnect.org/",
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9160826638",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9211275060",
+  "name": "Fastned Spitfire Way",
+  "category": "ev",
+  "town": "",
+  "lat": 51.287922,
+  "lon": 1.338322,
+  "summary": "Fastned: CCS ×3 150 kW, CHAdeMO ×2 50 kW; 3 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Fastned (OpenStreetMap). Allstar lists the Fastned network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": "https://fastnedcharging.com",
+  "opening_hours": "24/7",
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9211275060",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9367032082",
+  "name": "Connected Kerb charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.123935,
+  "lon": 1.314653,
+  "summary": "Connected Kerb: connectors not recorded; 3 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Connected Kerb (OpenStreetMap). Allstar lists the Connected Kerb network as accepted (Logo on Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9367032082",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9387690932",
+  "name": "MFG charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.270948,
+  "lon": 1.062316,
+  "summary": "MFG: CHAdeMO ×2 50; 2 bays",
+  "description": "Public EV charge point operated by MFG (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Contactless payment.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9387690932"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9387690971",
+  "name": "Swarco charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.273422,
+  "lon": 1.067291,
+  "summary": "Swarco: CHAdeMO 50 kW, CCS1 50 kW; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Swarco (OpenStreetMap). Allstar lists the Source (formerly Swarco / Charge Your Car) network as accepted (Source logo and a dedicated network section on the Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9387690971",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9387690972",
+  "name": "Pod Point charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.272674,
+  "lon": 1.065422,
+  "summary": "Pod Point: connectors not recorded; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9387690972"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9482093612",
+  "name": "e-taxi recharging point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.276345,
+  "lon": 1.080913,
+  "summary": "Swarco: CCS 50 kW, CHAdeMO 50 kW, Type 2 (tethered) 43 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by Swarco (OpenStreetMap). Allstar lists the Source (formerly Swarco / Charge Your Car) network as accepted (Source logo and a dedicated network section on the Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": "https://www.swarco-econnect.com/",
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9482093612",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9629666250",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.287616,
+  "lon": 1.012303,
+  "summary": "Unknown operator: connectors not recorded; 2 bays",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9629666250"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9629838269",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.124758,
+  "lon": 1.314904,
+  "summary": "Unknown operator: connectors not recorded; 2 bays",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9629838269"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9631149233",
+  "name": "Connected Kerb charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.122105,
+  "lon": 1.314409,
+  "summary": "Connected Kerb: Type 2 ×3; 3 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Connected Kerb (OpenStreetMap). Allstar lists the Connected Kerb network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9631149233",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9631332989",
+  "name": "Connected Kerb charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.080861,
+  "lon": 1.185673,
+  "summary": "Connected Kerb: Type 2 ×2; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Connected Kerb (OpenStreetMap). Allstar lists the Connected Kerb network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9631332989",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9631332990",
+  "name": "Connected Kerb charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.080858,
+  "lon": 1.185744,
+  "summary": "Connected Kerb: Type 2 ×2; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Connected Kerb (OpenStreetMap). Allstar lists the Connected Kerb network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9631332990",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-9688297813",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.084011,
+  "lon": 1.19632,
+  "summary": "Unknown operator: connectors not recorded; 4 bays",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/9688297813"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10206809081",
+  "name": "Otis-Demi",
+  "category": "ev",
+  "town": "",
+  "lat": 51.347238,
+  "lon": 1.041814,
+  "summary": "Pod Point: Type 2 ×2 22 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10206809081"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10206809082",
+  "name": "Myla-Jude",
+  "category": "ev",
+  "town": "",
+  "lat": 51.347231,
+  "lon": 1.041813,
+  "summary": "Pod Point: Type 2 ×2 7 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10206809082"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10206809083",
+  "name": "Krew-Edil",
+  "category": "ev",
+  "town": "",
+  "lat": 51.347229,
+  "lon": 1.041884,
+  "summary": "Pod Point: CHAdeMO, CCS1; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Contactless payment.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10206809083"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10665416268",
+  "name": "Alfen charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.285219,
+  "lon": 1.086725,
+  "summary": "Alfen: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by Alfen (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10665416268"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10665416269",
+  "name": "Alfen charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.285203,
+  "lon": 1.086669,
+  "summary": "Alfen: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by Alfen (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10665416269"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10665416270",
+  "name": "Alfen charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.285188,
+  "lon": 1.086612,
+  "summary": "Alfen: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by Alfen (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10665416270"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10665416271",
+  "name": "Alfen charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.285172,
+  "lon": 1.086555,
+  "summary": "Alfen: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by Alfen (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10665416271"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10665416272",
+  "name": "Alfen charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.285156,
+  "lon": 1.086499,
+  "summary": "Alfen: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by Alfen (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10665416272"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10665416273",
+  "name": "Alfen charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.285141,
+  "lon": 1.086442,
+  "summary": "Alfen: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by Alfen (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10665416273"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10665443004",
+  "name": "EVlink charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.362088,
+  "lon": 1.028822,
+  "summary": "EVlink: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by EVlink (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10665443004"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10665446505",
+  "name": "EVlink charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.362078,
+  "lon": 1.028759,
+  "summary": "EVlink: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by EVlink (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10665446505"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10895731018",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.261763,
+  "lon": 1.101884,
+  "summary": "Unknown operator: Type 2",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10895731018"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10898672621",
+  "name": "MFG charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.325595,
+  "lon": 0.985586,
+  "summary": "MFG: CHAdeMO ×8, CCS1 ×8",
+  "description": "Public EV charge point operated by MFG (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10898672621"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10924947816",
+  "name": "EVlink charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.277272,
+  "lon": 1.08793,
+  "summary": "EVlink: Type 2 ×4 22 kW; 4 bays",
+  "description": "Public EV charge point operated by EVlink (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10924947816"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10968376284",
+  "name": "ev dot charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.372933,
+  "lon": 1.131993,
+  "summary": "bmm: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by bmm (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10968376284"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-10969394323",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.255806,
+  "lon": 1.018982,
+  "summary": "Unknown operator: connectors not recorded; 2 bays",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/10969394323"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11013477910",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.275322,
+  "lon": 1.075931,
+  "summary": "Unknown operator: connectors not recorded; 2 bays",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11013477910"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11013477911",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.275288,
+  "lon": 1.075881,
+  "summary": "Unknown operator: connectors not recorded; 2 bays",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11013477911"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11020446721",
+  "name": "BP Pulse charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.088823,
+  "lon": 1.13536,
+  "summary": "BP Pulse: CCS ×2; 2 bays",
+  "description": "Public EV charge point operated by BP Pulse (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Contactless payment.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11020446721"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11035332946",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.361961,
+  "lon": 1.025162,
+  "summary": "Unknown operator: connectors not recorded; 2 bays",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11035332946"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11063060783",
+  "name": "Mer",
+  "category": "ev",
+  "town": "",
+  "lat": 51.094648,
+  "lon": 1.151368,
+  "summary": "Mer: connectors not recorded; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Mer (OpenStreetMap). Allstar lists the MER network as accepted (Logo on Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11063060783",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11063060792",
+  "name": "Instavolt charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.094358,
+  "lon": 1.152508,
+  "summary": "InstaVolt: connectors not recorded; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by InstaVolt (OpenStreetMap). Allstar lists the InstaVolt network as accepted (Logo and text on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11063060792",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11069701394",
+  "name": "Connected Kerb charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.275246,
+  "lon": 1.343833,
+  "summary": "Connected Kerb: Type 2 ×4; 4 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Connected Kerb (OpenStreetMap). Allstar lists the Connected Kerb network as accepted (Logo on Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11069701394",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11076058208",
+  "name": "Shell Recharge Solutions charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.145165,
+  "lon": 1.329352,
+  "summary": "Shell Recharge Solutions: connectors not recorded — Allstar card accepted",
+  "description": "Public EV charge point operated by Shell Recharge Solutions (OpenStreetMap). Allstar lists the Shell Recharge network as accepted (Logo on Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11076058208",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11205073359",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.378189,
+  "lon": 1.19513,
+  "summary": "Unknown operator: connectors not recorded",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11205073359"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11340925945",
+  "name": "Lidl Plus",
+  "category": "ev",
+  "town": "",
+  "lat": 51.151749,
+  "lon": 1.306349,
+  "summary": "Unknown operator: CCS 50 kW, CHAdeMO 50 kW, Type 2 (tethered) 43 kW",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Contactless payment.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11340925945"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11372891177",
+  "name": "Connected Kerb charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.128926,
+  "lon": 1.309662,
+  "summary": "Connected Kerb: Type 2 ×2; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Connected Kerb (OpenStreetMap). Allstar lists the Connected Kerb network as accepted (Logo on Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11372891177",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11377238542",
+  "name": "Cromwell Road",
+  "category": "ev",
+  "town": "",
+  "lat": 51.361298,
+  "lon": 1.028967,
+  "summary": "EVDot: connectors not recorded",
+  "description": "Public EV charge point operated by EVDot (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11377238542"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11377271834",
+  "name": "Pod Point charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.316426,
+  "lon": 0.894026,
+  "summary": "Pod Point: Type 2 ×2 7 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11377271834"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11377271835",
+  "name": "Pod Point charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.316488,
+  "lon": 0.89405,
+  "summary": "Pod Point: Type 2 ×2 22 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11377271835"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11377271836",
+  "name": "Pod Point charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.316551,
+  "lon": 0.894074,
+  "summary": "Pod Point: Type 2 ×2 22 kW; 2 bays",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11377271836"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11586942685",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.34129,
+  "lon": 1.011936,
+  "summary": "Unknown operator: connectors not recorded",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11586942685"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11777866164",
+  "name": "Podpoint charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.15403,
+  "lon": 1.299321,
+  "summary": "Podpoint: connectors not recorded; 4 bays",
+  "description": "Public EV charge point operated by Podpoint (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11777866164"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11871952454",
+  "name": "Smart Charge charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.361842,
+  "lon": 1.152103,
+  "summary": "Sainsbury's: connectors not recorded — Allstar card accepted",
+  "description": "Public EV charge point operated by Sainsbury's (OpenStreetMap). Allstar lists the Smart Charge network as accepted (Logo on coverage page (green plug 'Smart Charge' logo, no alt text). Unclear whether this is Sainsbury's Smart Charge or another company with the same name, so the match is low-confidence.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11871952454",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11879620768",
+  "name": "EVlink charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.271303,
+  "lon": 1.061287,
+  "summary": "EVlink: Type 2 ×4 22 kW; 4 bays",
+  "description": "Public EV charge point operated by EVlink (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11879620768"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-11919270195",
+  "name": "EVlink charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.283198,
+  "lon": 1.078638,
+  "summary": "EVlink: Type 2 ×4 22 kW",
+  "description": "Public EV charge point operated by EVlink (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/11919270195"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-12157102758",
+  "name": "myenergi charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.251534,
+  "lon": 1.009507,
+  "summary": "myenergi: Type 2 ×2; 2 bays",
+  "description": "Public EV charge point operated by myenergi (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/12157102758"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-12244305781",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.359503,
+  "lon": 1.063048,
+  "summary": "Unknown operator: connectors not recorded",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/12244305781"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-12244325217",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.359696,
+  "lon": 1.063363,
+  "summary": "Unknown operator: connectors not recorded",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/12244325217"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-12372332717",
+  "name": "MFG charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.289225,
+  "lon": 0.995289,
+  "summary": "MFG: CHAdeMO ×8, CCS1 ×8",
+  "description": "Public EV charge point operated by MFG (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless. Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/12372332717"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-12794023235",
+  "name": "EVPower charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.368688,
+  "lon": 1.299919,
+  "summary": "MFG: connectors not recorded; 4 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by MFG (OpenStreetMap). Allstar lists the EV Power network as accepted (Logo on Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/12794023235",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-12915555083",
+  "name": "Gridserve charge point",
+  "category": "ev",
+  "town": "Ashford",
+  "lat": 51.162758,
+  "lon": 0.871362,
+  "summary": "Gridserve: CCS ×5 180 kW, CHAdeMO 80 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by Gridserve (OpenStreetMap). Allstar lists the GRIDSERVE (Electric Highway) network as accepted (Logo on coverage page. A 2022 press release says it was the first third-party payment card accepted on the Electric Highway.).",
+  "address": null,
+  "postcode": "TN25 4BN",
+  "phone": "+44 800 240 4242",
+  "website": "https://electrichighway.gridserve.com",
+  "opening_hours": "24/7",
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/12915555083",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-13019450017",
+  "name": "Connected Kerb charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.274059,
+  "lon": 1.339872,
+  "summary": "Connected Kerb: connectors not recorded; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Connected Kerb (OpenStreetMap). Allstar lists the Connected Kerb network as accepted (Logo on Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/13019450017",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-13057745535",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.335698,
+  "lon": 1.349452,
+  "summary": "Unknown operator: connectors not recorded",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/13057745535"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-13373970138",
+  "name": "Connected Kerb charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.080855,
+  "lon": 1.185815,
+  "summary": "Connected Kerb: Type 2 ×2; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Connected Kerb (OpenStreetMap). Allstar lists the Connected Kerb network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/13373970138",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-13624038257",
+  "name": "Folkestone Supercharger",
+  "category": "ev",
+  "town": "",
+  "lat": 51.08952,
+  "lon": 1.123867,
+  "summary": "Tesla: CCS ×8 150 kW; 12 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Tesla (OpenStreetMap). Allstar lists the Tesla Supercharger network as accepted (Accepted since March 2024, but only by adding the Allstar card in the Tesla app (not by tapping the card). Non-Tesla cars can use only the sites open to other cars.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": "https://www.tesla.com/findus/location/supercharger/30435",
+  "opening_hours": "24/7",
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/13624038257",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-13740279280",
+  "name": "Unknown operator charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.141475,
+  "lon": 0.902472,
+  "summary": "Unknown operator: connectors not recorded",
+  "description": "Public EV charge point operated by Unknown operator (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/13740279280"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-14068722557",
+  "name": "Raw Charging charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.27906,
+  "lon": 1.229829,
+  "summary": "Raw Charging: Type 2 ×2 22 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by Raw Charging (OpenStreetMap). Allstar lists the RAW Charging network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/14068722557",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-14068722558",
+  "name": "Raw Charging charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.279059,
+  "lon": 1.229684,
+  "summary": "Raw Charging: Type 2 ×2 22 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by Raw Charging (OpenStreetMap). Allstar lists the RAW Charging network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/14068722558",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-14068722559",
+  "name": "Raw Charging charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.279059,
+  "lon": 1.229538,
+  "summary": "Raw Charging: Type 2 ×2 22 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by Raw Charging (OpenStreetMap). Allstar lists the RAW Charging network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/14068722559",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-14068722560",
+  "name": "Raw Charging charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.279059,
+  "lon": 1.229392,
+  "summary": "Raw Charging: Type 2 ×2 22 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by Raw Charging (OpenStreetMap). Allstar lists the RAW Charging network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/14068722560",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-14068722561",
+  "name": "Raw Charging charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.279058,
+  "lon": 1.229246,
+  "summary": "Raw Charging: Type 2 ×2 22 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by Raw Charging (OpenStreetMap). Allstar lists the RAW Charging network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/14068722561",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-node-14068722562",
+  "name": "Raw Charging charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.279058,
+  "lon": 1.2291,
+  "summary": "Raw Charging: Type 2 ×2 22 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by Raw Charging (OpenStreetMap). Allstar lists the RAW Charging network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/node/14068722562",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-area-1296354722",
+  "name": "Podpoint charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.312632,
+  "lon": 0.888742,
+  "summary": "Pod Point: connectors not recorded",
+  "description": "Public EV charge point operated by Pod Point (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/way/1296354722"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-area-18822992",
+  "name": "EV Power charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.290684,
+  "lon": 1.100196,
+  "summary": "MFG: CHAdeMO ×4, CCS1 ×4; 4 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by MFG (OpenStreetMap). Allstar lists the EV Power network as accepted (Logo on Allstar coverage page.).",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/way/18822992",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-area-1395332736",
+  "name": "Gridserve charge point",
+  "category": "ev",
+  "town": "Hythe",
+  "lat": 51.095113,
+  "lon": 1.045345,
+  "summary": "Gridserve: Type 2 ×2 22 kW, CCS ×2 50 kW, CHAdeMO ×2 50 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by Gridserve (OpenStreetMap). Allstar lists the GRIDSERVE (Electric Highway) network as accepted (Logo on coverage page. A 2022 press release says it was the first third-party payment card accepted on the Electric Highway.). Fee: yes.",
+  "address": null,
+  "postcode": "CT21 4BL",
+  "phone": "+44 800 240 4242",
+  "website": "https://electrichighway.gridserve.com",
+  "opening_hours": "24/7",
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/way/1395332736",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-area-1418344513",
+  "name": "EVC charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.095098,
+  "lon": 1.165619,
+  "summary": "EVC: connectors not recorded",
+  "description": "Public EV charge point operated by EVC (OpenStreetMap). This network is not on Allstar's accepted list, so pay by the operator's app or contactless.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": null,
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/way/1418344513"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-area-1446788702",
+  "name": "EV Power",
+  "category": "ev",
+  "town": "",
+  "lat": 51.27022,
+  "lon": 1.063301,
+  "summary": "mfg: CCS ×8 300 kW; 8 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by mfg (OpenStreetMap). Allstar lists the EV Power network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/way/1446788702",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-area-1460009270",
+  "name": "mer charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.130558,
+  "lon": 0.904974,
+  "summary": "mer: CCS ×8 150 kW — Allstar card accepted",
+  "description": "Public EV charge point operated by mer (OpenStreetMap). Allstar lists the MER network as accepted (Logo on Allstar coverage page.). Fee: yes. Contactless payment.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/way/1460009270",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-area-1473322723",
+  "name": "Tesla Supercharger",
+  "category": "ev",
+  "town": "",
+  "lat": 51.305471,
+  "lon": 0.902138,
+  "summary": "Tesla: CCS ×15 250 kW; 15 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Tesla (OpenStreetMap). Allstar lists the Tesla Supercharger network as accepted (Accepted since March 2024, but only by adding the Allstar card in the Tesla app (not by tapping the card). Non-Tesla cars can use only the sites open to other cars.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/way/1473322723",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-area-1496733963",
+  "name": "Connected Kerb charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.213269,
+  "lon": 1.400002,
+  "summary": "Connected Kerb: Type 2 ×4; 2 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Connected Kerb (OpenStreetMap). Allstar lists the Connected Kerb network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/way/1496733963",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ },
+ {
+  "id": "ev-area-1496733964",
+  "name": "Connected Kerb charge point",
+  "category": "ev",
+  "town": "",
+  "lat": 51.213595,
+  "lon": 1.398358,
+  "summary": "Connected Kerb: Type 2 ×4; 4 bays — Allstar card accepted",
+  "description": "Public EV charge point operated by Connected Kerb (OpenStreetMap). Allstar lists the Connected Kerb network as accepted (Logo on Allstar coverage page.). Fee: yes.",
+  "address": null,
+  "postcode": null,
+  "phone": null,
+  "website": null,
+  "opening_hours": null,
+  "price": "Paid",
+  "dogs": null,
+  "accessibility": null,
+  "tips": "Check the operator's app for live availability before you go.",
+  "duration_min": null,
+  "tags": [
+   "ev",
+   "allstar"
+  ],
+  "source_urls": [
+   "https://www.openstreetmap.org/way/1496733964",
+   "https://allstarcard.co.uk/ev-network-coverage",
+   "https://allstarcard.co.uk/solutions/ev/allstar-chargepass",
+   "https://allstarcard.co.uk/tools/site-locator",
+   "https://forecourttrader.co.uk/latest-news/allstar-customers-gain-access-to-teslas-supercharger-network/689440.article",
+   "https://www.zapmap.com/news/allstar-one-electric-gridserve",
+   "https://evfleetworld.co.uk/allstar-expands-network-for-charging-payment-card-with-allego-alliance/"
+  ],
+  "verified": "2026-10-23"
+ }
+]

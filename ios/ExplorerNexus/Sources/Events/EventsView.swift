@@ -144,6 +144,7 @@ struct EventDetailView: View {
     @EnvironmentObject var router: Router
     let event: EventItem
     @State private var planning: PlanTarget?
+    @State private var fullMap = false
 
     var body: some View {
         ScrollView {
@@ -188,6 +189,7 @@ struct EventDetailView: View {
                         .frame(height: 170)
                         .clipShape(RoundedRectangle(cornerRadius: 14))
                         .allowsHitTesting(false)
+                        .overlay(alignment: .topTrailing) { ExpandMapButton { fullMap = true } }
                         .overlay(alignment: .bottomTrailing) {
                             Button { router.showOnMap([CLLocationCoordinate2DBox(c)]) } label: {
                                 Label("Open map", systemImage: "map").font(.caption.weight(.semibold))
@@ -208,5 +210,9 @@ struct EventDetailView: View {
         .background(theme.t.background)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(item: $planning) { AddToPlanSheet(target: $0) }
+        .fullScreenCover(isPresented: $fullMap) {
+            FullScreenMap(title: event.venue, events: [event],
+                          focus: MapFocus(center: event.coordinate ?? Sun.birchington, meters: 900))
+        }
     }
 }

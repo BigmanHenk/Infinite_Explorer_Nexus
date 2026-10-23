@@ -23,7 +23,7 @@ import osmium
 
 from common import CONTENT, DETAIL, OSM_FILE, RESEARCH, WIDE, WORK
 
-PLACE_FILES = ["places_birchington.json", "places_thanet.json", "places_food.json", "places_drink.json", "photo_spots.json"]
+PLACE_FILES = ["places_birchington.json", "places_thanet.json", "places_food.json", "places_drink.json", "photo_spots.json", "places_ev.json"]
 EVENT_FILES = ["events_winter.json", "events_2027.json"]
 
 
