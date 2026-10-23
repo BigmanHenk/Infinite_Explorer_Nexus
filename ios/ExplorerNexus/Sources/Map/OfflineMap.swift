@@ -162,8 +162,10 @@ struct OfflineMapView: UIViewRepresentable {
         init(_ p: OfflineMapView) { parent = p }
 
         func sync(_ map: MKMapView) {
-            let key = parent.places.map(\.id).joined(separator: ",") + "|" + parent.events.map(\.id).joined(separator: ",")
-                + "|" + (parent.walk?.id ?? "") + "|\(parent.showWaypoints)"
+            let placeIDs: String = parent.places.map(\.id).joined(separator: ",")
+            let eventIDs: String = parent.events.map(\.id).joined(separator: ",")
+            let walkID: String = parent.walk?.id ?? ""
+            let key = "\(placeIDs)|\(eventIDs)|\(walkID)|\(parent.showWaypoints)"
             guard key != shownKey else { return }
             shownKey = key
             map.removeAnnotations(map.annotations.filter { $0 is PinAnnotation })
