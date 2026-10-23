@@ -32,9 +32,17 @@ struct Place: Identifiable, Hashable {
     let tide: String?
     let wildlife: String?
     let facilities: String?
+    // structured hours (OSM syntax), menu link, Food Standards Agency hygiene rating
+    let hoursOSM: String?
+    let menuURL: String?
+    let hygiene: String?
+    let hygieneDate: String?
+    let hygieneURL: String?
 
     var coordinate: CLLocationCoordinate2D { .init(latitude: lat, longitude: lon) }
     var isPhoto: Bool { category == "photo" || category == "hide" }
+    var hours: OpeningHours { OpeningHours(hoursOSM) }
+    var isEatDrink: Bool { ["pub", "cafe", "restaurant", "food", "brewery", "vineyard"].contains(category) }
 }
 
 struct Recurrence: Codable, Hashable {

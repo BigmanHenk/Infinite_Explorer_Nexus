@@ -1,0 +1,1619 @@
+[
+ {
+  "id": "minnis-bay-beach",
+  "name": "Minnis Bay beach",
+  "category": "beach",
+  "opening_hours": "Open access. Council-listed toilet hours: Apr-Sep 08:00-21:00, Oct-Mar 08:00-17:40 (older council page).",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "grenham-bay",
+  "name": "Grenham Bay",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "beresford-gap",
+  "name": "Beresford Gap",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "epple-bay",
+  "name": "Epple Bay",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "st-mildreds-bay-westgate",
+  "name": "St Mildred's Bay",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "west-bay-westgate",
+  "name": "West Bay, Westgate-on-Sea",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "westbrook-bay-margate",
+  "name": "Westbrook Bay",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Margate"
+ },
+ {
+  "id": "margate-main-sands",
+  "name": "Margate Main Sands",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Margate"
+ },
+ {
+  "id": "walpole-bay-tidal-pool",
+  "name": "Walpole Bay Tidal Pool",
+  "category": "beach",
+  "opening_hours": "Open access; usable for swimming at mid to low tide.",
+  "town": "Cliftonville"
+ },
+ {
+  "id": "botany-bay-kingsgate",
+  "name": "Botany Bay",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Kingsgate, Broadstairs"
+ },
+ {
+  "id": "kingsgate-bay",
+  "name": "Kingsgate Bay",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Kingsgate, Broadstairs"
+ },
+ {
+  "id": "joss-bay",
+  "name": "Joss Bay",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "stone-bay-broadstairs",
+  "name": "Stone Bay",
+  "category": "beach",
+  "opening_hours": "Open access; beach covered at high tide.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "viking-bay-broadstairs",
+  "name": "Viking Bay",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "ramsgate-main-sands",
+  "name": "Ramsgate Main Sands",
+  "category": "beach",
+  "opening_hours": "Open access",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "gadds-ramsgate-brewery-tasting-room",
+  "name": "Gadds' – The Ramsgate Brewery (beer shop & tasting room)",
+  "category": "brewery",
+  "opening_hours": "Shop/tasting room (as published Oct 2026): Thu 12:00-16:00, Fri 12:00-17:00, Sat 12:00-15:00.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "shivering-sands-brewery-tap-room",
+  "name": "Shivering Sands Brewery & Tap Room",
+  "category": "brewery",
+  "opening_hours": "Per Thanet CAMRA (2026): Fri 12:00-18:00, Sat 12:00-17:00, closed Sun-Thu. Has closed for winter in past years.",
+  "town": "Manston"
+ },
+ {
+  "id": "lifeboat-ale-cider-house-margate",
+  "name": "The Lifeboat Ale & Cider House (Floc), Margate",
+  "category": "brewery",
+  "opening_hours": "Per Floc (Oct 2026): Wed 12:00-22:00, Thu 12:00-23:00, Fri-Sat 12:00-00:00, Sun 12:00-22:00; closed Mon-Tue.",
+  "town": "Margate"
+ },
+ {
+  "id": "floc-brewery-taproom-canterbury",
+  "name": "Floc Brewery & Taproom, Canterbury",
+  "category": "brewery",
+  "opening_hours": "Per Floc (Oct 2026): Thu 17:00-22:00, Fri-Sat 13:00-22:00, Sun 13:00-20:00. Pizza until 20:30 Thu-Sat, 17:30 Sun.",
+  "town": "Canterbury"
+ },
+ {
+  "id": "foundry-canterbury-brewers-distillers",
+  "name": "The Foundry Brew Pub – Canterbury Brewers & Distillers",
+  "category": "brewery",
+  "opening_hours": "Per its website (Oct 2026): Mon-Thu 12:00-22:00, Fri-Sat 12:00-23:30, Sun 12:00-19:00.",
+  "town": "Canterbury"
+ },
+ {
+  "id": "shepherd-neame-brewery-tours-faversham",
+  "name": "Shepherd Neame Brewery Tours & Visitor Centre, Faversham",
+  "category": "brewery",
+  "opening_hours": "Scheduled morning and afternoon tours; Visit Swale lists Wednesday to Saturday. Check the online booking calendar.",
+  "town": "Faversham"
+ },
+ {
+  "id": "woolton-farm-kentish-pip",
+  "name": "Woolton Farm & Kentish Pip Cider, Bekesbourne",
+  "category": "brewery",
+  "opening_hours": null,
+  "town": "Bekesbourne"
+ },
+ {
+  "id": "time-and-tide-taphouse-sandwich",
+  "name": "Time & Tide Taphouse, Sandwich (and brewery taproom)",
+  "category": "brewery",
+  "opening_hours": "Taphouse: hours differ between listings – check the website or social media. Farm taproom (Statenborough Farm, Felderland Lane, CT14 0BX): per CAMRA Fri 15:00-18:00, Sat 12:00-18:00, mainly in summer.",
+  "town": "Sandwich"
+ },
+ {
+  "id": "docker-brewery-taproom-folkestone",
+  "name": "Docker Brewery & Taproom, Folkestone",
+  "category": "brewery",
+  "opening_hours": "Per CAMRA (updated June 2026): Fri 15:00-21:00, Sat 12:00-21:00, Sun 12:00-18:00; closed Mon-Thu.",
+  "town": "Folkestone"
+ },
+ {
+  "id": "goody-ales-herne",
+  "name": "Goody Ales Brewery & 'The Cathedral' Taproom, Herne",
+  "category": "brewery",
+  "opening_hours": "Last published by CAMRA (May 2024): Mon-Fri 16:00-19:00, Sat 10:00-18:00, Sun closed – not confirmed for 2026.",
+  "town": "Herne"
+ },
+ {
+  "id": "xylo-margate-brewbar",
+  "name": "Xylo, Margate (bar with cellar microbrewery)",
+  "category": "brewery",
+  "opening_hours": "Per CAMRA (updated June 2025): Mon-Thu 15:00-22:00, Fri 15:00-23:00, Sat 13:00-23:00, Sun 13:00-21:00.",
+  "town": "Margate"
+ },
+ {
+  "id": "morellis-broadstairs",
+  "name": "Morelli's",
+  "category": "cafe",
+  "opening_hours": "Monday-Friday 8am-5pm, weekends 8am-6pm (Visit Thanet listing; longer hours in summer have been listed elsewhere - check).",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "waves-bar-minnis-bay",
+  "name": "The Waves (bar, café and B&B)",
+  "category": "cafe",
+  "opening_hours": "Per CAMRA (Aug 2025): bar Sun-Thu 10:00-20:00, Fri-Sat 10:00-22:00; food roughly 08:00-19:00 (to 20:00 Fri-Sat). Hours vary by season.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "wagtails-cafe-bar",
+  "name": "Wagtails Cafe & Bar",
+  "category": "cafe",
+  "opening_hours": "Not published online",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "the-parlour-birchington",
+  "name": "The Parlour",
+  "category": "cafe",
+  "opening_hours": "Tue-Sat 09:30-16:00 (Visit Thanet listing); closed Sun-Mon",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "fields-cafe-birchington",
+  "name": "Fields Café",
+  "category": "cafe",
+  "opening_hours": "Wed-Sat 09:00-15:00, Sun 10:00-15:00 (Visit Thanet listing); closed Mon-Tue",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "village-square-cafe-birchington",
+  "name": "Village Square Cafe",
+  "category": "cafe",
+  "opening_hours": "Not published online",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "fredericks-tea-rooms-westgate",
+  "name": "Fredericks Tea Rooms",
+  "category": "cafe",
+  "opening_hours": "Visit Thanet listing: Mon-Sat 09:30-17:00 (revised hours - check before visiting)",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "best-beano-cafe-westgate",
+  "name": "The Best Beano Cafe",
+  "category": "cafe",
+  "opening_hours": "Mon-Sat 07:00-18:00, Sun 08:00-18:00, bank holidays 08:00-17:00 (OpenStreetMap record)",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "west-bay-cafe-westgate",
+  "name": "West Bay Cafe",
+  "category": "cafe",
+  "opening_hours": "Listed as open daily from 09:00 (closing times vary by season)",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "hathats-reculver",
+  "name": "HatHats Coffee, Reculver",
+  "category": "cafe",
+  "opening_hours": "Summer (clocks forward): daily 08:00-19:00. Winter: Mon-Fri 08:00-16:00, Sat-Sun 08:00-17:00. Open 364 days.",
+  "town": "Reculver"
+ },
+ {
+  "id": "chiappinis-broadstairs",
+  "name": "Chiappini's",
+  "category": "cafe",
+  "opening_hours": "Mon-Fri 09:00-16:00, Sat-Sun 09:00-18:00 (Visit Thanet listing)",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "all-saints-church-birchington",
+  "name": "All Saints' Church, Birchington",
+  "category": "church",
+  "opening_hours": null,
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "st-mildreds-church-acol",
+  "name": "St Mildred's Church, Acol",
+  "category": "church",
+  "opening_hours": null,
+  "town": "Acol"
+ },
+ {
+  "id": "st-mary-magdalene-monkton",
+  "name": "St Mary Magdalene Church, Monkton",
+  "category": "church",
+  "opening_hours": null,
+  "town": "Monkton"
+ },
+ {
+  "id": "st-nicholas-church-st-nicholas-at-wade",
+  "name": "St Nicholas Church, St Nicholas-at-Wade",
+  "category": "church",
+  "opening_hours": null,
+  "town": "St Nicholas-at-Wade"
+ },
+ {
+  "id": "st-saviours-church-westgate",
+  "name": "St Saviour's Church, Westgate-on-Sea",
+  "category": "church",
+  "opening_hours": null,
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "st-augustines-church-ramsgate",
+  "name": "St Augustine's Church & Shrine",
+  "category": "church",
+  "opening_hours": "Shrine and visitor centre: 12.30pm-3.30pm daily except Tuesday and Sunday (Visit Thanet, Oct 2026).",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "minster-abbey",
+  "name": "Minster Abbey",
+  "category": "church",
+  "opening_hours": "Guided tours Saturdays 11am-12 noon all year, other times by appointment. Chapel open daily for prayer. Tearoom/exhibition Mon-Fri 10am-4pm (entrance on Bedlam Court Lane); hours vary in winter - ring ahead.",
+  "town": "Minster-in-Thanet"
+ },
+ {
+  "id": "richborough-roman-fort",
+  "name": "Richborough Roman Fort & Amphitheatre",
+  "category": "daytrip",
+  "opening_hours": "Open daily 10am-5pm, last entry 4.30pm (English Heritage, late Oct 2026). Winter opening from November not confirmed - check before going.",
+  "town": "Sandwich"
+ },
+ {
+  "id": "sandwich-medieval-town",
+  "name": "Sandwich (Cinque Port town)",
+  "category": "daytrip",
+  "opening_hours": "Town streets open access; individual sights vary.",
+  "town": "Sandwich"
+ },
+ {
+  "id": "sandwich-guildhall",
+  "name": "Sandwich Guildhall",
+  "category": "daytrip",
+  "opening_hours": "Not confirmed - contact Sandwich Town Council for museum/charter viewing times.",
+  "town": "Sandwich"
+ },
+ {
+  "id": "canterbury-cathedral",
+  "name": "Canterbury Cathedral",
+  "category": "daytrip",
+  "opening_hours": "Mon-Sat 10am-5pm (last admission 4pm); Sun 11.30am-5pm, church from 12.30pm (last admission 4pm). Subject to change.",
+  "town": "Canterbury"
+ },
+ {
+  "id": "westgate-towers-canterbury",
+  "name": "Westgate Towers",
+  "category": "daytrip",
+  "opening_hours": null,
+  "town": "Canterbury"
+ },
+ {
+  "id": "canterbury-roman-museum",
+  "name": "Canterbury Roman Museum",
+  "category": "daytrip",
+  "opening_hours": "Monday-Sunday 10am-5pm, last admission 4.30pm (official site, 2026).",
+  "town": "Canterbury"
+ },
+ {
+  "id": "st-augustines-abbey-canterbury",
+  "name": "St Augustine's Abbey",
+  "category": "daytrip",
+  "opening_hours": "Open daily 10am-5pm, last entry 4.30pm (English Heritage, late Oct 2026). Winter hours not confirmed.",
+  "town": "Canterbury"
+ },
+ {
+  "id": "st-martins-church-canterbury",
+  "name": "St Martin's Church, Canterbury",
+  "category": "daytrip",
+  "opening_hours": null,
+  "town": "Canterbury"
+ },
+ {
+  "id": "beaney-canterbury",
+  "name": "The Beaney House of Art & Knowledge",
+  "category": "daytrip",
+  "opening_hours": null,
+  "town": "Canterbury"
+ },
+ {
+  "id": "reculver-towers",
+  "name": "Reculver Towers & Roman Fort",
+  "category": "daytrip",
+  "opening_hours": "Exterior viewable during daylight hours; North Tower interior on selected days April-October.",
+  "town": "Reculver"
+ },
+ {
+  "id": "herne-bay-pier",
+  "name": "Herne Bay Pier",
+  "category": "daytrip",
+  "opening_hours": "Pier shore end open access; kiosk hours vary.",
+  "town": "Herne Bay"
+ },
+ {
+  "id": "whitstable-harbour",
+  "name": "Whitstable Harbour & seafront",
+  "category": "daytrip",
+  "opening_hours": "Harbour area open access; stall and shop hours vary.",
+  "town": "Whitstable"
+ },
+ {
+  "id": "tankerton-slopes-the-street",
+  "name": "Tankerton Slopes & The Street",
+  "category": "daytrip",
+  "opening_hours": "Open access",
+  "town": "Whitstable"
+ },
+ {
+  "id": "wingham-wildlife-park",
+  "name": "Wingham Wildlife Park",
+  "category": "daytrip",
+  "opening_hours": "Winter (October-March) 9am-4pm; summer (April-September) 9am-6pm; last admission one hour before closing. Open daily except 25 December.",
+  "town": "Wingham"
+ },
+ {
+  "id": "howletts-wild-animal-park",
+  "name": "Howletts Wild Animal Park",
+  "category": "daytrip",
+  "opening_hours": "Daily 10am-5pm until 1 November 2026; winter mostly 10am-4pm (Fri-Sun only 4 Jan-12 Feb and 22 Feb-25 Mar 2027). Last entry 2 hours before closing.",
+  "town": "Bekesbourne, Canterbury"
+ },
+ {
+  "id": "dover-castle",
+  "name": "Dover Castle",
+  "category": "daytrip",
+  "opening_hours": "Open daily 10am-5pm, last entry 4pm (English Heritage, late Oct 2026). Reduced winter opening from November not confirmed - check before going.",
+  "town": "Dover"
+ },
+ {
+  "id": "minnis-bay-play-area-paddling-pool",
+  "name": "Minnis Bay play area & paddling pool",
+  "category": "family",
+  "opening_hours": "Open access",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "birchington-memorial-ground",
+  "name": "Birchington Memorial Recreation Ground",
+  "category": "family",
+  "opening_hours": "Open access",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "dreamland-margate",
+  "name": "Dreamland Margate",
+  "category": "family",
+  "opening_hours": "2026 season: weekends and school holidays to the end of October; open every day for October half term, Sat 24 Oct - Sun 1 Nov 2026, roughly 10:30-16:00 (varies by day). Winter opening not confirmed; check the website.",
+  "town": "Margate"
+ },
+ {
+  "id": "quex-barn-farm-shop-restaurant",
+  "name": "Quex Barn Farm Shop & Restaurant",
+  "category": "food",
+  "opening_hours": "As listed by Visit Thanet: farm shop & cafe Sun-Mon 09:00-17:00, Tue-Sat 09:00-17:30; restaurant daily 09:00-15:00; pizzeria Thu-Sat 13:00-19:30. Check website.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "windshack-minnis-bay",
+  "name": "The Windshack",
+  "category": "food",
+  "opening_hours": "Not published; seasonal and weather dependent",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "minnis-bay-fish-and-chips",
+  "name": "Minnis Bay Fish & Chips",
+  "category": "food",
+  "opening_hours": "Not published online",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "westgate-fish-bar",
+  "name": "Westgate Fish Bar",
+  "category": "food",
+  "opening_hours": "Not confirmed",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "the-fish-inn-westgate",
+  "name": "The Fish Inn",
+  "category": "food",
+  "opening_hours": "Not confirmed",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "whitstable-oyster-farm-tour",
+  "name": "Whitstable Oyster Farm Tour",
+  "category": "food",
+  "opening_hours": "Year-round on scheduled dates (book online).",
+  "town": "Whitstable"
+ },
+ {
+  "id": "brogdale-national-fruit-collection",
+  "name": "Brogdale Collections – National Fruit Collection, Faversham",
+  "category": "food",
+  "opening_hours": "Orchard walks Tue-Sun 10:00-16:00; guided tours weekends 11:30 and 14:00 until 1 Nov 2026. Tiddly Pomme shop Tue-Sun 10:00-16:00, closed 2 Nov 2026-28 Feb 2027. Café Tue-Sun 10:00-15:00.",
+  "town": "Faversham"
+ },
+ {
+  "id": "kakawa-chocolate-whitstable",
+  "name": "Kakawa Artisan Chocolate, Whitstable",
+  "category": "food",
+  "opening_hours": "Whitstable shop listed as open daily 10:00-16:00 (Produced in Kent listing; check before visiting).",
+  "town": "Whitstable"
+ },
+ {
+  "id": "macknade-food-hall-faversham",
+  "name": "Macknade Food Hall & Food Village, Faversham",
+  "category": "food",
+  "opening_hours": "Food Village 2026 season (from 3 Apr): Thu-Sun 10:00-16:00, first Friday of month 10:00-22:00. Food hall: listings give Mon-Sat 09:00-18:00 (to 20:00 Thu-Fri), Sun 10:00-16:00 – check before visiting.",
+  "town": "Faversham"
+ },
+ {
+  "id": "hide-pegwell-bay-country-park",
+  "name": "Pegwell Bay Country Park bird hide",
+  "category": "hide",
+  "opening_hours": "Open all day, all year.",
+  "town": "Ramsgate (Cliffsend)"
+ },
+ {
+  "id": "hide-pegwell-stonelees-seal-viewpoint",
+  "name": "Stonelees seal viewpoint, Pegwell Bay",
+  "category": "hide",
+  "opening_hours": "Open access.",
+  "town": "Ramsgate (Cliffsend)"
+ },
+ {
+  "id": "hide-sandwich-bay-bird-observatory",
+  "name": "Sandwich Bay Bird Observatory",
+  "category": "hide",
+  "opening_hours": "Field centre welcomes visitors daily (hours not published on the pages checked; ring ahead).",
+  "town": "Sandwich Bay"
+ },
+ {
+  "id": "hide-stodmarsh-village-end",
+  "name": "Stodmarsh NNR: Reedbed, Tower and Marsh hides (Stodmarsh car park end)",
+  "category": "hide",
+  "opening_hours": "Reserve open at all times.",
+  "town": "Stodmarsh"
+ },
+ {
+  "id": "hide-stodmarsh-grove-ferry",
+  "name": "Stodmarsh NNR: Grove Ferry hides (David Feast's and Harrison's Drove)",
+  "category": "hide",
+  "opening_hours": "Reserve open at all times.",
+  "town": "Upstreet / Grove Ferry"
+ },
+ {
+  "id": "hide-oare-marshes",
+  "name": "Oare Marshes (Kent Wildlife Trust): East Flood and Sea Wall hides",
+  "category": "hide",
+  "opening_hours": "Open at all times. Volunteer work parties on Mondays and Wednesdays can be noisy.",
+  "town": "Faversham"
+ },
+ {
+  "id": "hide-capel-fleet-raptor-viewpoint",
+  "name": "Capel Fleet Raptor Viewpoint, Isle of Sheppey",
+  "category": "hide",
+  "opening_hours": "Open access roadside viewpoint.",
+  "town": "Isle of Sheppey (Harty)"
+ },
+ {
+  "id": "waterloo-tower-quex-park",
+  "name": "Waterloo Tower, Quex Park",
+  "category": "history",
+  "opening_hours": null,
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "rossetti-grave-birchington",
+  "name": "Grave of Dante Gabriel Rossetti",
+  "category": "history",
+  "opening_hours": "Churchyard visible at any reasonable time",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "minnis-bay-bronze-age-site",
+  "name": "Minnis Bay Bronze Age settlement site",
+  "category": "history",
+  "opening_hours": null,
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "wantsum-channel",
+  "name": "The Wantsum Channel & River Wantsum",
+  "category": "history",
+  "opening_hours": "Open access along the sea wall",
+  "town": "St Nicholas-at-Wade"
+ },
+ {
+  "id": "reculver-towers-roman-fort",
+  "name": "Reculver Towers & Roman Fort",
+  "category": "history",
+  "opening_hours": "Exterior any reasonable time in daylight; North Tower interior on selected days April-October (see English Heritage).",
+  "town": "Reculver"
+ },
+ {
+  "id": "reculver-bouncing-bomb-trials",
+  "name": "Reculver bouncing bomb test range",
+  "category": "history",
+  "opening_hours": null,
+  "town": "Reculver"
+ },
+ {
+  "id": "adrian-square-louis-wain-westgate",
+  "name": "Adrian Square (Louis Wain's Westgate)",
+  "category": "history",
+  "opening_hours": null,
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "royal-sea-bathing-hospital-margate",
+  "name": "Royal Sea Bathing Hospital (former)",
+  "category": "history",
+  "opening_hours": "Private residences; exterior only",
+  "town": "Margate"
+ },
+ {
+  "id": "shell-grotto-margate",
+  "name": "Shell Grotto",
+  "category": "history",
+  "opening_hours": "Daily 10am-5pm from 21 Oct to 1 Nov (2026 half term); after that Thursday-Sunday 11am-4pm, according to the grotto's own site. Visit Thanet lists Wednesday-Sunday 10am-5pm, so check before going.",
+  "town": "Margate"
+ },
+ {
+  "id": "margate-caves",
+  "name": "Margate Caves",
+  "category": "history",
+  "opening_hours": "Wednesday-Sunday 10am-5pm, last entry 4.30pm; daily during half term 24 Oct - 1 Nov (2026).",
+  "town": "Margate"
+ },
+ {
+  "id": "tudor-house-margate",
+  "name": "Tudor House",
+  "category": "history",
+  "opening_hours": "Closed until further notice - external viewing only (Visit Thanet, Oct 2026).",
+  "town": "Margate"
+ },
+ {
+  "id": "theatre-royal-margate",
+  "name": "Theatre Royal Margate",
+  "category": "history",
+  "opening_hours": "Closed to the public since April 2022; restoration planned (no reopening date confirmed by the council).",
+  "town": "Margate"
+ },
+ {
+  "id": "winter-gardens-margate",
+  "name": "Winter Gardens",
+  "category": "history",
+  "opening_hours": "Closed for refurbishment; reopening announced for March 2027 (Aug 2026 reports).",
+  "town": "Margate"
+ },
+ {
+  "id": "cliftonville-lido",
+  "name": "Cliftonville Lido & Clifton Baths",
+  "category": "history",
+  "opening_hours": "Not open as an attraction; view from the promenade and clifftop.",
+  "town": "Cliftonville"
+ },
+ {
+  "id": "bleak-house-broadstairs",
+  "name": "Bleak House",
+  "category": "history",
+  "opening_hours": "Private home - external viewing only.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "ramsgate-tunnels",
+  "name": "Ramsgate Tunnels",
+  "category": "history",
+  "opening_hours": "October: Mon-Fri 10am-2pm, Sat-Sun 10am-4pm. 1 Nov - 31 Mar: Wednesday-Monday 10am-2pm (closed Tuesdays, Christmas and New Year). May-Sep: daily 10am-4pm. Pre-booking recommended.",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "the-grange-ramsgate",
+  "name": "The Grange (Pugin's house)",
+  "category": "history",
+  "opening_hours": "Holiday let; open only on Landmark Trust open days (2026: 5-8 June and 11-14 September) and by appointment.",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "powell-cotton-museum-quex-house",
+  "name": "Powell-Cotton Museum, Quex House & Gardens",
+  "category": "museum",
+  "opening_hours": "2026 season 14 Feb - 1 Nov: term time Fri-Sun and bank holidays 11:00-16:00; school holidays Wed-Sun 11:00-16:00; Tuesdays closed. Festive weekends 21 Nov - 13 Dec. Check website.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "birchington-heritage-trust-museum",
+  "name": "Birchington Heritage Museum (Burley Gallery)",
+  "category": "museum",
+  "opening_hours": "Museum open during library opening hours; archives staffed Mon (not bank holidays), Thu and Sat 09:30-12:30.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "spitfire-hurricane-memorial-museum",
+  "name": "Spitfire & Hurricane Memorial Museum",
+  "category": "museum",
+  "opening_hours": "Visit Thanet lists daily 10:00-16:00; other listings give longer summer hours. Check the museum website.",
+  "town": "Manston"
+ },
+ {
+  "id": "raf-manston-history-museum",
+  "name": "RAF Manston History Museum",
+  "category": "museum",
+  "opening_hours": "Summer: daily 10:00-16:00 (last entry 15:15). Winter: Mon-Fri 10:00-15:00 (last entry 14:15), Sat-Sun 10:00-16:00. Subject to volunteer availability.",
+  "town": "Manston"
+ },
+ {
+  "id": "turner-contemporary",
+  "name": "Turner Contemporary",
+  "category": "museum",
+  "opening_hours": "Summer (April-October): Tuesday-Sunday and bank holidays 11am-5pm. Winter (November-March): Wednesday-Sunday and bank holidays 11am-5pm. May close fully or partly between exhibitions (gallery's own visit page, Oct 2026; some older listings say 10am).",
+  "town": "Margate"
+ },
+ {
+  "id": "crab-museum-margate",
+  "name": "Crab Museum",
+  "category": "museum",
+  "opening_hours": "Friday-Sunday 11am-5pm, last entry 4.30pm; extra days in school holidays (e.g. Wed 28 and Thu 29 Oct 2026).",
+  "town": "Margate"
+ },
+ {
+  "id": "dickens-house-museum-broadstairs",
+  "name": "Dickens House Museum",
+  "category": "museum",
+  "opening_hours": "2026 season: Wednesday 1 April - Sunday 1 November, Wednesday-Sunday 1pm-4.30pm (last entry 4pm). Closed in winter.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "crampton-tower-museum",
+  "name": "Crampton Tower Museum",
+  "category": "museum",
+  "opening_hours": "2026 season: Friday 3 April - Sunday 1 November, Friday-Sunday and bank holiday Mondays 2pm-4.30pm (last entry 4pm). Closed in winter.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "ramsgate-clock-house-maritime-museum",
+  "name": "The Clock House (Ramsgate Maritime Museum)",
+  "category": "museum",
+  "opening_hours": "Closed for restoration; reopening targeted for autumn 2026, no date announced as of Oct 2026.",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "plum-pudding-island-northern-sea-wall",
+  "name": "Plumpudding Island & the Northern Sea Wall",
+  "category": "nature",
+  "opening_hours": "Open access",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "viking-coastal-trail-reculver-margate",
+  "name": "Viking Coastal Trail: Reculver to Margate section",
+  "category": "nature",
+  "opening_hours": "Open all year",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "monkton-nature-reserve",
+  "name": "Monkton Nature Reserve",
+  "category": "nature",
+  "opening_hours": "Tue, Thu, Sat, Sun 10:00-16:00 (last entry 15:00); Fridays in school holidays only; closed bank holidays.",
+  "town": "Monkton"
+ },
+ {
+  "id": "reculver-country-park",
+  "name": "Reculver Country Park & Visitor Centre",
+  "category": "nature",
+  "opening_hours": "Park open access; visitor centre and cafe hours not confirmed.",
+  "town": "Reculver"
+ },
+ {
+  "id": "bishopstone-cliffs-glen",
+  "name": "Bishopstone Cliffs & Glen",
+  "category": "nature",
+  "opening_hours": "Open access",
+  "town": "Reculver"
+ },
+ {
+  "id": "northdown-park-margate",
+  "name": "Northdown Park",
+  "category": "nature",
+  "opening_hours": "Public park",
+  "town": "Margate"
+ },
+ {
+  "id": "pegwell-bay-country-park",
+  "name": "Pegwell Bay Country Park",
+  "category": "nature",
+  "opening_hours": "Reserve open 8.30am-7pm, or dusk if earlier.",
+  "town": "Cliffsend, Ramsgate"
+ },
+ {
+  "id": "photo-minnis-bay-sunset",
+  "name": "Minnis Bay sunset and the Reculver Towers silhouette",
+  "category": "photo",
+  "opening_hours": "Open access beach and promenade.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "photo-minnis-bay-winter-waders",
+  "name": "Minnis Bay groynes and reef: winter waders",
+  "category": "photo",
+  "opening_hours": "Open access.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "photo-grenham-epple-bays",
+  "name": "Grenham Bay and Epple Bay chalk coves",
+  "category": "photo",
+  "opening_hours": "Open access.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "photo-reculver-towers-sunset",
+  "name": "Reculver Towers at sunset",
+  "category": "photo",
+  "opening_hours": "Exterior of towers and fort site open access at any reasonable time.",
+  "town": "Reculver"
+ },
+ {
+  "id": "photo-reculver-astro",
+  "name": "Reculver Towers: astrophotography and night skies",
+  "category": "photo",
+  "opening_hours": "Open access; check car park terms for overnight stays.",
+  "town": "Reculver"
+ },
+ {
+  "id": "photo-wantsum-marshes-dark-sky",
+  "name": "Wantsum marshes sea wall (Minnis Bay to Reculver)",
+  "category": "photo",
+  "opening_hours": "Open access on the public coastal path.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "photo-reculver-country-park-bishopstone-glen",
+  "name": "Reculver Country Park and Bishopstone Glen",
+  "category": "photo",
+  "opening_hours": "Open access country park.",
+  "town": "Herne Bay"
+ },
+ {
+  "id": "photo-westgate-west-bay-st-mildreds",
+  "name": "Westgate cliffs: West Bay and St Mildred's Bay",
+  "category": "photo",
+  "opening_hours": "Open access.",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "photo-margate-harbour-arm-turner-blue-hour",
+  "name": "Margate Harbour Arm and Turner Contemporary (blue hour)",
+  "category": "photo",
+  "opening_hours": "Harbour arm open access. Turner Contemporary: Tue-Sun and bank holidays 10:00-17:00, closed Monday (per OSM; check gallery site). Droit House 10:00-17:00.",
+  "town": "Margate"
+ },
+ {
+  "id": "photo-walpole-bay-tidal-pool",
+  "name": "Walpole Bay Tidal Pool, Cliftonville",
+  "category": "photo",
+  "opening_hours": "Open access (pool usable when the tide is out).",
+  "town": "Margate (Cliftonville)"
+ },
+ {
+  "id": "photo-foreness-point",
+  "name": "Foreness Point",
+  "category": "photo",
+  "opening_hours": "Open access along the clifftop.",
+  "town": "Margate (Cliftonville)"
+ },
+ {
+  "id": "photo-botany-bay-chalk-stacks",
+  "name": "Botany Bay chalk stacks",
+  "category": "photo",
+  "opening_hours": "Open access.",
+  "town": "Broadstairs (Kingsgate)"
+ },
+ {
+  "id": "photo-kingsgate-bay",
+  "name": "Kingsgate Bay and Kingsgate Castle",
+  "category": "photo",
+  "opening_hours": "Open access to the beach; Kingsgate Castle is private.",
+  "town": "Broadstairs (Kingsgate)"
+ },
+ {
+  "id": "photo-joss-bay",
+  "name": "Joss Bay",
+  "category": "photo",
+  "opening_hours": "Open access beach.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "photo-north-foreland-lighthouse",
+  "name": "North Foreland Lighthouse",
+  "category": "photo",
+  "opening_hours": "Exterior view only from public roads; the lighthouse is not open to visitors.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "photo-viking-bay-broadstairs",
+  "name": "Viking Bay, Broadstairs",
+  "category": "photo",
+  "opening_hours": "Open access beach.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "photo-dumpton-gap-rock-pools",
+  "name": "Dumpton Gap and Thanet chalk-reef rock pools",
+  "category": "photo",
+  "opening_hours": "Open access; low tide only for the reef.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "photo-ramsgate-royal-harbour-night",
+  "name": "Ramsgate Royal Harbour at night",
+  "category": "photo",
+  "opening_hours": "Harbour piers and promenade open access (pier access may close in storms).",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "photo-hugin-viking-ship",
+  "name": "Hugin Viking ship replica, Pegwell Bay",
+  "category": "photo",
+  "opening_hours": "Viewable from the green at any time.",
+  "town": "Ramsgate (Cliffsend)"
+ },
+ {
+  "id": "photo-ramsgate-seal-boat-trips",
+  "name": "Seal-watching boat trips from Ramsgate and Sandwich",
+  "category": "photo",
+  "opening_hours": "Seasonal; Sea Searcher from 1 April. Book direct with each operator.",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "photo-monkton-nature-reserve",
+  "name": "Monkton Nature Reserve (orchids, butterflies, bats)",
+  "category": "photo",
+  "opening_hours": "Tue, Thu, Sat and Sun 10:00-16:00 (last entry 15:00); Fridays in school holidays only; closed bank holidays.",
+  "town": "Monkton"
+ },
+ {
+  "id": "photo-sevenscore-minster-marshes",
+  "name": "Minster and Sevenscore marshes",
+  "category": "photo",
+  "opening_hours": "Public footpaths only; the farmland is private.",
+  "town": "Minster-in-Thanet"
+ },
+ {
+  "id": "photo-quex-park-gardens",
+  "name": "Quex Park gardens and Waterloo Tower",
+  "category": "photo",
+  "opening_hours": "Museum and gardens 2026 season 14 Feb - 1 Nov: term time Fri-Sun and bank holidays 11:00-16:00; school holidays Wed-Sun 11:00-16:00. Check website.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "photo-northdown-park",
+  "name": "Northdown Park, Cliftonville",
+  "category": "photo",
+  "opening_hours": "Public park; daytime opening.",
+  "town": "Margate (Cliftonville)"
+ },
+ {
+  "id": "photo-margate-main-sands-sunset",
+  "name": "Margate Main Sands sunset",
+  "category": "photo",
+  "opening_hours": "Open access beach.",
+  "town": "Margate"
+ },
+ {
+  "id": "photo-stone-bay-broadstairs",
+  "name": "Stone Bay, Broadstairs",
+  "category": "photo",
+  "opening_hours": "Open access.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "photo-noctilucent-north-coast",
+  "name": "Thanet north coast: noctilucent clouds and northern horizon",
+  "category": "photo",
+  "opening_hours": "Open access.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "photo-westbrook-undercliff",
+  "name": "Westbrook Undercliffe Nature Park, Margate",
+  "category": "photo",
+  "opening_hours": "Open access.",
+  "town": "Margate (Westbrook)"
+ },
+ {
+  "id": "birchington-on-sea-station",
+  "name": "Birchington-on-Sea railway station",
+  "category": "practical",
+  "opening_hours": null,
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "westgate-on-sea-station",
+  "name": "Westgate-on-Sea railway station",
+  "category": "practical",
+  "opening_hours": null,
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "toilets-minnis-bay",
+  "name": "Public toilets, Minnis Bay",
+  "category": "practical",
+  "opening_hours": "Not confirmed (council timetable unreadable); may close up to 15 min early for cleaning",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "toilets-birchington-village",
+  "name": "Public toilets, Birchington village centre",
+  "category": "practical",
+  "opening_hours": "Not confirmed",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "toilets-westgate-station-road",
+  "name": "Public toilets, Station Road, Westgate-on-Sea",
+  "category": "practical",
+  "opening_hours": "Not confirmed",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "toilets-west-bay-westgate",
+  "name": "Public toilets, West Bay, Westgate-on-Sea",
+  "category": "practical",
+  "opening_hours": "Not confirmed",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "toilets-st-mildreds-bay",
+  "name": "Public toilets, St Mildred's Bay",
+  "category": "practical",
+  "opening_hours": "Not confirmed",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "toilets-reculver",
+  "name": "Public toilets, Reculver Country Park",
+  "category": "practical",
+  "opening_hours": "Apr-Sep daily 07:30-19:30; Oct-Mar daily 07:30-16:00 (OpenStreetMap record)",
+  "town": "Reculver"
+ },
+ {
+  "id": "car-park-minnis-bay",
+  "name": "Minnis Bay car park (The Parade)",
+  "category": "practical",
+  "opening_hours": "Charges 07:00-22:00, 1 Apr-31 Oct; free for cars 1 Nov-31 Mar",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "car-park-albion-road-birchington",
+  "name": "Albion Road car park",
+  "category": "practical",
+  "opening_hours": "Charges 07:00-22:00 all year",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "car-park-st-mildreds-bay",
+  "name": "St Mildred's Bay car park",
+  "category": "practical",
+  "opening_hours": "Charges 07:00-22:00, 1 Apr-31 Oct; free for cars 1 Nov-31 Mar",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "car-park-reculver",
+  "name": "Reculver Country Park car park",
+  "category": "practical",
+  "opening_hours": null,
+  "town": "Reculver"
+ },
+ {
+  "id": "defibrillator-birchington-square",
+  "name": "Defibrillator, The Square (yellow phone box)",
+  "category": "practical",
+  "opening_hours": "24 hours (public access)",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "defibrillator-minnis-bay",
+  "name": "Defibrillator, Minnis Bay seafront",
+  "category": "practical",
+  "opening_hours": "24 hours (outdoor cabinet)",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "defibrillator-westgate-station",
+  "name": "Defibrillator, Westgate-on-Sea station",
+  "category": "practical",
+  "opening_hours": "24 hours (outdoor)",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "defibrillator-reculver",
+  "name": "Defibrillator, Reculver visitor centre",
+  "category": "practical",
+  "opening_hours": "24 hours (outdoor)",
+  "town": "Reculver"
+ },
+ {
+  "id": "courts-pharmacy-birchington",
+  "name": "Courts Pharmacy, Birchington",
+  "category": "practical",
+  "opening_hours": "Not confirmed",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "paydens-pharmacy-westgate",
+  "name": "Paydens Pharmacy, Westgate-on-Sea",
+  "category": "practical",
+  "opening_hours": "Mon-Fri 09:00-18:00, Sat 09:00-12:30, Sun closed (OpenStreetMap record)",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "birchington-medical-centre",
+  "name": "Birchington Medical Centre (GP)",
+  "category": "practical",
+  "opening_hours": "See practice website",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "westgate-surgery",
+  "name": "Westgate Surgery (GP)",
+  "category": "practical",
+  "opening_hours": "See practice website",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "qeqm-hospital-margate",
+  "name": "Queen Elizabeth The Queen Mother Hospital (QEQM), Margate",
+  "category": "practical",
+  "opening_hours": "Emergency department (hours not confirmed for this entry; emergency departments normally run 24/7)",
+  "town": "Margate"
+ },
+ {
+  "id": "visit-thanet-visitor-information-centre",
+  "name": "Visit Thanet Visitor Information Centre, Droit House",
+  "category": "practical",
+  "opening_hours": "10:00-17:00; Oct 2026 Tue-Sun (daily 26-30 Oct); Nov 2026 Wed-Sun. Other months not checked.",
+  "town": "Margate"
+ },
+ {
+  "id": "king-ethelbert-inn-reculver",
+  "name": "King Ethelbert Inn, Reculver",
+  "category": "pub",
+  "opening_hours": "Daily 11:00-23:00 (CAMRA listing)",
+  "town": "Reculver"
+ },
+ {
+  "id": "minnis-bay-bar-brasserie",
+  "name": "Minnis Bay Bar & Brasserie",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (updated Sept 2025): Mon-Thu 09:00-22:00, Fri-Sat 09:00-23:00, Sun 09:00-22:00; food 09:00-11:00 and 12:00-21:00. Seafront kiosk 12:00-18:00 daily, weather permitting.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "old-bay-alehouse",
+  "name": "Old Bay Alehouse",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (Mar 2025): Wed-Sat 16:00-21:00, Sun 12:00-16:00, closed Mon-Tue. Occasionally closed for private parties - check its social media.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "christies-wine-bar",
+  "name": "Christies Wine Bar",
+  "category": "pub",
+  "opening_hours": "Per CAMRA: Sun-Thu 11:00-21:00, Fri-Sat 11:00-23:00; food 12:00-15:00 daily; upstairs restaurant evenings by booking.",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "seaview-birchington",
+  "name": "The Seaview",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (May 2025): Sun-Thu 12:00-23:00, Fri-Sat 12:00-00:00",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "wheel-alehouse",
+  "name": "The Wheel Alehouse",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (May 2025): Mon-Thu 17:00-21:00, Fri 17:00-22:00, Sat-Sun 12:00-22:00",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "the-powell-birchington",
+  "name": "The Powell",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (updated Jan 2026): daily 12:00-23:00; check food times with the pub",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "bake-and-alehouse-westgate",
+  "name": "The Bake & Alehouse",
+  "category": "pub",
+  "opening_hours": "Per Thanet CAMRA: Mon, Wed, Thu, Sun 12:00-19:00; Fri-Sat 12:00-21:30; closed Tue",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "gingers-westgate",
+  "name": "Ginger's",
+  "category": "pub",
+  "opening_hours": "Thu-Sun 17:30-23:30 (OpenStreetMap record; not confirmed by venue)",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "swan-by-the-sea-westgate",
+  "name": "The Swan by the Sea",
+  "category": "pub",
+  "opening_hours": "Per Thanet CAMRA: Mon-Thu 12:00-21:00, Fri-Sat 12:00-23:00, Sun 12:00-21:00; Sunday roasts 12:00-16:00",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "sun-inn-st-nicholas-at-wade",
+  "name": "The Sun Inn",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (Mar 2026): daily 12:00-15:00 and 17:00-23:00. Food: lunch 12:00-14:30 daily; evenings Tue-Sat 18:00-20:00.",
+  "town": "St Nicholas-at-Wade"
+ },
+ {
+  "id": "bell-inn-st-nicholas-at-wade",
+  "name": "The Bell Inn",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (June 2026): Mon-Sat 12:00-23:00, Sun 12:00-21:00; food Sun 12:00-17:00",
+  "town": "St Nicholas-at-Wade"
+ },
+ {
+  "id": "wantsum-brewery-tap-kent-barn",
+  "name": "Wantsum Brewery Tap & The Kent Barn",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (Mar 2026): taproom Fri-Sat 14:00-20:00, Sun 12:00-18:00, closed Mon-Thu. Shop: Mon-Thu 12:00-16:00, Fri-Sat 14:00-20:00, Sun 11:00-17:00.",
+  "town": "St Nicholas-at-Wade"
+ },
+ {
+  "id": "two-halves-margate",
+  "name": "The Two Halves",
+  "category": "pub",
+  "opening_hours": "Weekdays from 15:00, weekends from 13:00, closing 22:30 (Visit Thanet listing)",
+  "town": "Margate"
+ },
+ {
+  "id": "mechanical-elephant-margate",
+  "name": "The Mechanical Elephant (Wetherspoon)",
+  "category": "pub",
+  "opening_hours": "Sun-Thu 08:00-00:00, Fri-Sat 08:00-01:00",
+  "town": "Margate"
+ },
+ {
+  "id": "tartar-frigate-broadstairs",
+  "name": "The Tartar Frigate",
+  "category": "pub",
+  "opening_hours": "Restaurant Mon-Sat 12:00-13:45 and 19:00-21:15; Sun two sittings 12:30 and 15:30 (Visit Thanet listing). Pub listed by CAMRA as 11:00-23:00 daily.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "magnet-micropub-broadstairs",
+  "name": "The Magnet Micropub",
+  "category": "pub",
+  "opening_hours": "Mon-Thu 12:00-22:30, Fri-Sat 12:00-23:00, Sun 12:00-22:00 (Visit Thanet listing)",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "royal-victoria-pavilion-ramsgate",
+  "name": "Royal Victoria Pavilion (Wetherspoon)",
+  "category": "pub",
+  "opening_hours": "Sun-Thu 08:00-00:00, Fri-Sat 08:00-01:00 (Visit Ramsgate listing)",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "montefiore-arms-ramsgate",
+  "name": "The Montefiore Arms",
+  "category": "pub",
+  "opening_hours": "Not confirmed; see website",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "fez-micropub-margate",
+  "name": "Fez micropub, Margate",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (updated June 2026): Mon-Thu 15:00-23:00, Fri-Sat 12:00-23:30, Sun 12:00-22:00.",
+  "town": "Margate"
+ },
+ {
+  "id": "ales-of-the-unexpected-margate",
+  "name": "Ales of the Unexpected, Westbrook (Margate)",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (updated June 2026): Mon-Sat 17:00-22:00, Sun 12:00-15:30.",
+  "town": "Margate"
+ },
+ {
+  "id": "laughing-barrel-cliftonville",
+  "name": "The Laughing Barrel, Cliftonville",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (last updated Aug 2024): Wed-Thu 18:00-21:00, Fri 18:00-22:00, Sat 15:00-22:00, Sun 12:00-18:00; closed Mon-Tue. Check before visiting.",
+  "town": "Margate"
+ },
+ {
+  "id": "hair-of-the-dog-minster",
+  "name": "Hair of the Dog micropub, Minster-in-Thanet",
+  "category": "pub",
+  "opening_hours": "Per CAMRA: Mon-Sat 12:00-15:00 and 17:00-21:00, Sun 12:00-15:00.",
+  "town": "Minster-in-Thanet"
+ },
+ {
+  "id": "conqueror-alehouse-ramsgate",
+  "name": "The Conqueror Alehouse, Ramsgate",
+  "category": "pub",
+  "opening_hours": "Per Kent CAMRA: Sun-Thu 12:00-21:00, Fri-Sat 12:00-22:00.",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "hovelling-boat-inn-ramsgate",
+  "name": "The Hovelling Boat Inn, Ramsgate",
+  "category": "pub",
+  "opening_hours": "Per Kent CAMRA: Mon-Thu 11:30-21:00, Fri-Sat 11:30-22:00, Sun 12:00-21:00.",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "the-pub-micropub-ramsgate",
+  "name": "The Pub, Ramsgate (micropub)",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (updated Oct 2026): Tue-Thu 16:00-22:00, Fri 12:00-22:00, Sat 12:00-23:00, Sun 12:00-21:00; closed Mon.",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "mind-the-gap-broadstairs",
+  "name": "Mind the Gap micropub, Broadstairs",
+  "category": "pub",
+  "opening_hours": "Per CAMRA: Wed-Sat 14:00-22:30; Tuesday alternate weeks only (Kent CAMRA). Check Sun-Mon hours locally.",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "butchers-arms-herne-first-micropub",
+  "name": "The Butcher's Arms, Herne – the first micropub",
+  "category": "pub",
+  "opening_hours": "Per CAMRA (updated July 2026, new management from May 2026): Wed-Fri 18:00-21:00, Sat-Sun 12:00-15:00; closed Mon-Tue.",
+  "town": "Herne"
+ },
+ {
+  "id": "the-minnis-restaurant",
+  "name": "The Minnis (bar & restaurant)",
+  "category": "restaurant",
+  "opening_hours": null,
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "cow-shed-bar-grill-birchington",
+  "name": "The Cow Shed Bar & Grill",
+  "category": "restaurant",
+  "opening_hours": "SquareMeal listing: daily 12:00-21:00 (not confirmed by the restaurant)",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "smugglers-restaurant-birchington",
+  "name": "The Smugglers",
+  "category": "restaurant",
+  "opening_hours": "Not confirmed; check the website or OpenTable",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "tandoori-nite-birchington",
+  "name": "Tandoori Nite",
+  "category": "restaurant",
+  "opening_hours": "Not confirmed",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "hot-wood-pizza-westgate",
+  "name": "Hot Wood Pizza",
+  "category": "restaurant",
+  "opening_hours": "Not confirmed",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "regency-tandoori-westgate",
+  "name": "Regency Tandoori",
+  "category": "restaurant",
+  "opening_hours": "Daily 12:00-14:00; evenings Sun-Thu 17:30-23:00, Fri-Sat 17:30-23:30 (OpenStreetMap record; check before visiting)",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "pauls-bar-bistro-westgate",
+  "name": "Paul's Bar & Bistro",
+  "category": "restaurant",
+  "opening_hours": "Not confirmed",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "finbars-westgate",
+  "name": "Finbars Restaurant",
+  "category": "restaurant",
+  "opening_hours": "Not confirmed",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "st-mildreds-bay-restaurant",
+  "name": "The St Mildred's Bay",
+  "category": "restaurant",
+  "opening_hours": "Listed (AAA): Mon-Sat 08:30-20:15, Sun 08:30-17:45; hours vary between listings, check before visiting",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "angelas-of-margate",
+  "name": "Angela's of Margate",
+  "category": "restaurant",
+  "opening_hours": "Daily: lunch from 12:00, dinner from 18:00 (Visit Thanet listing)",
+  "town": "Margate"
+ },
+ {
+  "id": "sargasso-margate",
+  "name": "Sargasso",
+  "category": "restaurant",
+  "opening_hours": "Winter pattern per Visit Thanet: lunch Fri-Mon 12:00-15:30; dinner Fri-Sat 17:30-21:30, Sun-Mon 17:30-20:30. Summer: lunch and dinner daily.",
+  "town": "Margate"
+ },
+ {
+  "id": "bottega-caruso-margate",
+  "name": "Bottega Caruso & Cantina Caruso",
+  "category": "restaurant",
+  "opening_hours": "Restaurant Wed-Sat 12:00-15:00 and 18:00-21:00. Cantina shop Wed-Thu 11:00-17:00, Fri-Sat 11:00-22:00, Sun 12:00-16:00; bar Fri evening and Sat-Sun (Visit Thanet listing).",
+  "town": "Margate"
+ },
+ {
+  "id": "gb-pizza-margate",
+  "name": "GB Pizza Co",
+  "category": "restaurant",
+  "opening_hours": "From 21 Sept 2026: Mon-Thu 16:00-21:00, Fri-Sat 12:00-21:00, Sun 12:00-18:00 (Visit Thanet listing)",
+  "town": "Margate"
+ },
+ {
+  "id": "buoy-and-oyster-margate",
+  "name": "Buoy and Oyster",
+  "category": "restaurant",
+  "opening_hours": "Not published on website; book online. Beach Buoys kiosk Thu-Sun (website, Oct 2026).",
+  "town": "Margate"
+ },
+ {
+  "id": "mori-mori-margate",
+  "name": "Mori Mori",
+  "category": "restaurant",
+  "opening_hours": "Not confirmed; see website",
+  "town": "Margate"
+ },
+ {
+  "id": "kebbells-broadstairs",
+  "name": "Kebbells Seafood Bar",
+  "category": "restaurant",
+  "opening_hours": "Tue-Thu 12:00-15:00 and 18:00-21:00; Fri-Sun 10:00-21:00; Mon not listed (Visit Thanet listing)",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "marc-pierres-kitchen-ramsgate",
+  "name": "Marc-Pierre's Kitchen",
+  "category": "restaurant",
+  "opening_hours": "Tue from 17:30; Wed-Thu 11:30-14:00 and from 17:30; Fri-Sat from 11:30; last orders 21:30; Sun from 12:00 (last orders 16:00); Mon not listed (Visit Thanet listing)",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "harbour-bakery-driftwood-cafe",
+  "name": "Harbour Bakery & Driftwood Cafe",
+  "category": "shop",
+  "opening_hours": "Not published online",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "mandys-deli-birchington",
+  "name": "Mandy's Deli",
+  "category": "shop",
+  "opening_hours": "Not published online",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "rc-wale-butchers-birchington",
+  "name": "R C Wale & Son (butcher)",
+  "category": "shop",
+  "opening_hours": "Not published online",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "montys-greengrocers-birchington",
+  "name": "Monty's Greengrocers",
+  "category": "shop",
+  "opening_hours": "Not published online",
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "staple-stores-westgate",
+  "name": "Staple Stores (bakery)",
+  "category": "shop",
+  "opening_hours": "Published: Mon-Sat 08:00-14:30, Sun 08:00-13:00 (check before visiting)",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "dadds-butchers-westgate",
+  "name": "Dadd's Family Butchers",
+  "category": "shop",
+  "opening_hours": "Not published online",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "j-prentis-greengrocers-westgate",
+  "name": "J. Prentis Greengrocers",
+  "category": "shop",
+  "opening_hours": "Mon-Sat 07:00-17:00, Sun 10:00-14:00 (OpenStreetMap record; not confirmed by shop)",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "birchington-square-village-centre",
+  "name": "The Square, Birchington village centre",
+  "category": "sight",
+  "opening_hours": null,
+  "town": "Birchington-on-Sea"
+ },
+ {
+  "id": "westgate-birchington-golf-club",
+  "name": "Westgate & Birchington Golf Club",
+  "category": "sight",
+  "opening_hours": null,
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "acol-village",
+  "name": "Acol village",
+  "category": "sight",
+  "opening_hours": null,
+  "town": "Acol"
+ },
+ {
+  "id": "st-nicholas-at-wade-village",
+  "name": "St Nicholas-at-Wade village",
+  "category": "sight",
+  "opening_hours": null,
+  "town": "St Nicholas-at-Wade"
+ },
+ {
+  "id": "sarre-windmill",
+  "name": "Sarre Windmill",
+  "category": "sight",
+  "opening_hours": "Not open to the public (exterior view only)",
+  "town": "Sarre"
+ },
+ {
+  "id": "westgate-on-sea-town",
+  "name": "Westgate-on-Sea",
+  "category": "sight",
+  "opening_hours": null,
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "carlton-cinema-westgate",
+  "name": "Carlton Cinema, Westgate-on-Sea",
+  "category": "sight",
+  "opening_hours": "Box office staffed weekdays after 14:00, weekends after 11:00; see website for screenings.",
+  "town": "Westgate-on-Sea"
+ },
+ {
+  "id": "margate-old-town",
+  "name": "Margate Old Town",
+  "category": "sight",
+  "opening_hours": "Open streets; shop and café hours vary.",
+  "town": "Margate"
+ },
+ {
+  "id": "kingsgate-castle",
+  "name": "Kingsgate Castle",
+  "category": "sight",
+  "opening_hours": "Private residences - external viewing only.",
+  "town": "Kingsgate, Broadstairs"
+ },
+ {
+  "id": "north-foreland-lighthouse",
+  "name": "North Foreland Lighthouse",
+  "category": "sight",
+  "opening_hours": "Working lighthouse - not regularly open to the public (public access not confirmed).",
+  "town": "Broadstairs"
+ },
+ {
+  "id": "ramsgate-royal-harbour",
+  "name": "Ramsgate Royal Harbour",
+  "category": "sight",
+  "opening_hours": "Open access",
+  "town": "Ramsgate"
+ },
+ {
+  "id": "hugin-viking-ship",
+  "name": "Viking Ship Hugin",
+  "category": "sight",
+  "opening_hours": "External viewing only, any time; the ship is covered over the winter months.",
+  "town": "Pegwell Bay, Ramsgate"
+ },
+ {
+  "id": "margate-harbour-arm",
+  "name": "Margate Harbour Arm",
+  "category": "viewpoint",
+  "opening_hours": "Open access (individual businesses on the arm keep their own hours).",
+  "town": "Margate"
+ },
+ {
+  "id": "simpsons-wine-estate-barham",
+  "name": "Simpsons' Wine Estate, Barham",
+  "category": "vineyard",
+  "opening_hours": "Office/cellar door 09:00-17:00 for wine purchases and collections; all tastings must be pre-booked.",
+  "town": "Barham"
+ },
+ {
+  "id": "barnsole-vineyard-staple",
+  "name": "Barnsole Vineyard, Staple",
+  "category": "vineyard",
+  "opening_hours": null,
+  "town": "Staple"
+ },
+ {
+  "id": "chartham-vineyard",
+  "name": "Chartham Vineyard",
+  "category": "vineyard",
+  "opening_hours": "Vineyard shop Saturdays 10:30-17:00 (2026 website). Tours Saturdays at 11:00 and 14:00, pre-booked.",
+  "town": "Chartham"
+ },
+ {
+  "id": "offvine-kent-wine-tours",
+  "name": "Offvine wine tours (from Ramsgate/Margate)",
+  "category": "vineyard",
+  "opening_hours": "Scheduled group tours until end of September; private tours on request. Dates via online booking.",
+  "town": "Ramsgate"
+ }
+]

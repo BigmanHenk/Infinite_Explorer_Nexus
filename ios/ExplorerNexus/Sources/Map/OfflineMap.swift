@@ -89,7 +89,7 @@ final class OfflineTileOverlay: MKTileOverlay {
 
 /// A pin on the map.
 final class PinAnnotation: NSObject, MKAnnotation {
-    enum Ref { case place(Place), event(EventItem), waypoint(Int, WalkPoint) }
+    enum Ref { case place(Place), event(EventItem), waypoint(Int, WalkPoint), marker(String, CLLocationCoordinate2D) }
     let ref: Ref
     let coordinate: CLLocationCoordinate2D
     let title: String?
@@ -104,6 +104,8 @@ final class PinAnnotation: NSObject, MKAnnotation {
             coordinate = e.coordinate ?? Sun.birchington; title = e.title; subtitle = e.venue
         case .waypoint(let i, let w):
             coordinate = w.coordinate; title = "\(i + 1). \(w.name)"; subtitle = nil
+        case .marker(let name, let c):
+            coordinate = c; title = name; subtitle = nil
         }
     }
 }
@@ -121,6 +123,8 @@ struct OfflineMapView: UIViewRepresentable {
     var followUser = false
     /// The search-radius circle around the base (Map tab).
     var radius: MapRadius? = nil
+    /// A search result pin.
+    var marker: (String, CLLocationCoordinate2D)? = nil
     var onSelect: (PinAnnotation.Ref) -> Void = { _ in }
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
@@ -179,7 +183,8 @@ struct OfflineMapView: UIViewRepresentable {
             let placeIDs: String = parent.places.map(\.id).joined(separator: ",")
             let eventIDs: String = parent.events.map(\.id).joined(separator: ",")
             let walkID: String = parent.walk?.id ?? ""
-            let key = "\(placeIDs)|\(eventIDs)|\(walkID)|\(parent.showWaypoints)"
+            let markerKey: String = parent.marker.map { "\($0.0)@\($0.1.latitude),\($0.1.longitude)" } ?? ""
+            let key = "\(placeIDs)|\(eventIDs)|\(walkID)|\(parent.showWaypoints)|\(markerKey)"
             guard key != shownKey else { return }
             shownKey = key
             map.removeAnnotations(map.annotations.filter { $0 is PinAnnotation })
@@ -195,6 +200,7 @@ struct OfflineMapView: UIViewRepresentable {
                 map.addOverlay(line, level: .aboveLabels)
                 routeLine = line
             }
+            if let m = parent.marker { pins.append(PinAnnotation(.marker(m.0, m.1))) }
             map.addAnnotations(pins)
         }
 
@@ -256,6 +262,16 @@ struct OfflineMapView: UIViewRepresentable {
                 v?.clusteringIdentifier = "events"
                 v?.canShowCallout = true
                 v?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+                return v
+            case .marker:
+                let v = mapView.dequeueReusableAnnotationView(withIdentifier: "wp", for: pin) as? MKMarkerAnnotationView
+                v?.markerTintColor = .systemRed
+                v?.glyphImage = UIImage(systemName: "mappin")
+                v?.glyphText = nil
+                v?.clusteringIdentifier = nil
+                v?.displayPriority = .required
+                v?.canShowCallout = true
+                v?.rightCalloutAccessoryView = nil
                 return v
             case .waypoint(let i, _):
                 let v = mapView.dequeueReusableAnnotationView(withIdentifier: "wp", for: pin) as? MKMarkerAnnotationView

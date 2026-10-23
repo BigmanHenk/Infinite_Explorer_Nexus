@@ -1,0 +1,207 @@
+{
+ "minnis-bay-bar-brasserie": {
+  "menu_url": "https://www.theminnis.co.uk/menus",
+  "kind": "own site",
+  "note": null
+ },
+ "waves-bar-minnis-bay": {
+  "menu_url": "https://www.the-waves-bedbreakfast.com/menus.html",
+  "kind": "own site",
+  "note": null
+ },
+ "christies-wine-bar": {
+  "menu_url": "https://christieswinebar.wixsite.com/my-site-1/menu",
+  "kind": "own site",
+  "note": null
+ },
+ "fields-cafe-birchington": {
+  "menu_url": "https://fieldscafe.co.uk/menus",
+  "kind": "own site",
+  "note": null
+ },
+ "smugglers-restaurant-birchington": {
+  "menu_url": "https://www.smugglersbirchington.co.uk/foodanddrinkmenus",
+  "kind": "own site",
+  "note": "Food, wine & cocktail menus page"
+ },
+ "tartar-frigate-broadstairs": {
+  "menu_url": "https://www.tartarfrigate.co.uk/s/REST-WEB.pdf",
+  "kind": "pdf",
+  "note": "Main restaurant menu; bar menu at /s/BAR.pdf, wine list at /s/Wine-List.pdf"
+ },
+ "foundry-canterbury-brewers-distillers": {
+  "menu_url": "https://canterburybrewers-distillers.co.uk/pages/food",
+  "kind": "own site",
+  "note": "Drinks list at /pages/drinks"
+ },
+ "angelas-of-margate": {
+  "menu_url": "https://angelasofmargate.com/angelas-menu",
+  "kind": "own site",
+  "note": null
+ },
+ "sargasso-margate": {
+  "menu_url": "https://www.sargasso.bar/menu/",
+  "kind": "own site",
+  "note": null
+ },
+ "bottega-caruso-margate": {
+  "menu_url": "https://www.bottegacaruso.com/menu",
+  "kind": "own site",
+  "note": null
+ },
+ "gb-pizza-margate": {
+  "menu_url": "https://greatbritishpizza.com/home-margate-menu-margate-2/",
+  "kind": "own site",
+  "note": "Margate food & drink menu"
+ },
+ "buoy-and-oyster-margate": {
+  "menu_url": "https://www.buoyandoyster.co.uk/menus",
+  "kind": "own site",
+  "note": null
+ },
+ "mechanical-elephant-margate": {
+  "menu_url": "https://www.jdwetherspoon.com/pub-menus/the-mechanical-elephant-margate/",
+  "kind": "own site",
+  "note": "Wetherspoon pub-specific menu"
+ },
+ "mori-mori-margate": {
+  "menu_url": "https://www.mori-mori.co.uk/evening-menu/",
+  "kind": "own site",
+  "note": null
+ },
+ "marc-pierres-kitchen-ramsgate": {
+  "menu_url": "https://www.marcpierreskitchen.com/menus",
+  "kind": "own site",
+  "note": "Kent beers & wines at /kent-beers-and-wines"
+ },
+ "quex-barn-farm-shop-restaurant": {
+  "menu_url": "https://www.quexbarn.com/partnerbusinesses-1",
+  "kind": "own site",
+  "note": "Dining page links breakfast, lunch, pizza and Sunday roast menu PDFs"
+ },
+ "kebbells-broadstairs": {
+  "menu_url": "https://kebbells.com/plates",
+  "kind": "own site",
+  "note": "Also /brunch, /desserts, /lunch-on-sundays, /drinks"
+ },
+ "macknade-food-hall-faversham": {
+  "menu_url": "https://macknade.com/pages/macknade-faversham",
+  "kind": "own site",
+  "note": "Food Hall & Café page; links seasonal café menu PDF (dated, changes)"
+ },
+ "montefiore-arms-ramsgate": {
+  "menu_url": "https://montefiorearms.co.uk/our%20beers.htm",
+  "kind": "own site",
+  "note": "Our Beers page (cask, keg, bottles)"
+ },
+ "gadds-ramsgate-brewery-tasting-room": {
+  "menu_url": "https://www.ramsgatebrewery.co.uk/our-cask-regulars",
+  "kind": "own site",
+  "note": "Beer list; also /our-bottles-cans and /online-store"
+ },
+ "time-and-tide-taphouse-sandwich": {
+  "menu_url": "https://www.timeandtidebrewing.co.uk/beers",
+  "kind": "own site",
+  "note": "Beer range/shop; taphouse page has no tap list (points to social media)"
+ },
+ "wantsum-brewery-tap-kent-barn": {
+  "menu_url": "https://wantsumbrewery.co.uk/wordpress/product-category/bottles/",
+  "kind": "own site",
+  "note": "Brewery beer shop (listed /tap-room URL is 404; site moved to /wordpress/)"
+ },
+ "simpsons-wine-estate-barham": {
+  "menu_url": "https://simpsonswine.com/pages/shop-all",
+  "kind": "own site",
+  "note": "Wine shop; tastings at /pages/experiences"
+ },
+ "woolton-farm-kentish-pip": {
+  "menu_url": "https://www.wooltonfarm.co.uk/collections/wine-and-cider-flights-at-the-barn",
+  "kind": "own site",
+  "note": "Tasting flights at the barn"
+ },
+ "chartham-vineyard": {
+  "menu_url": "https://shop.charthamvineyard.co.uk/collections/all",
+  "kind": "own site",
+  "note": "Online wine shop (full range); tastings at /group_tours_and_tastings.html"
+ },
+ "barnsole-vineyard-staple": {
+  "menu_url": "https://www.barnsole.co.uk/wines.html",
+  "kind": "own site",
+  "note": "Our wines page; shop at barnsole.myshopify.com"
+ },
+ "floc-brewery-taproom-canterbury": {
+  "menu_url": "https://flocbrewing.com/collections/all",
+  "kind": "own site",
+  "note": "Beer shop (fresh beer range); no taproom tap list on site"
+ },
+ "hathats-reculver": {
+  "menu_url": "https://hathats.co.uk/collections/coffee",
+  "kind": "own site",
+  "note": "Coffee shop online store only; no café menu on site"
+ },
+ "morellis-broadstairs": {
+  "menu_url": "https://www.morellisgelato.com/our-products",
+  "kind": "own site",
+  "note": "Gelato products page; no Broadstairs café menu"
+ },
+ "royal-victoria-pavilion-ramsgate": {
+  "menu_url": "https://www.jdwetherspoon.com/pub-menus/royal-victoria-pavilion-ramsgate/",
+  "kind": "own site",
+  "note": "Wetherspoon pub-specific menu"
+ },
+ "shepherd-neame-brewery-tours-faversham": {
+  "menu_url": "https://www.shepherdneame.co.uk/brewery/tours",
+  "kind": "own site",
+  "note": "Tour & tutored tasting page (beers vary by season)"
+ },
+ "the-minnis-restaurant": {
+  "menu_url": "https://www.theminnis.co.uk/menus",
+  "kind": "own site",
+  "note": "Same venue as Minnis Bay Bar & Brasserie"
+ },
+ "cow-shed-bar-grill-birchington": {
+  "menu_url": "https://thecowshedbarandgrill.co.uk/wp-content/uploads/2025/11/Cow-Shed-Menu-Nov-2025-A3-v12.pdf",
+  "kind": "pdf",
+  "note": "Main menu PDF from own site thecowshedbarandgrill.co.uk (filename dated; breakfast menu also linked)"
+ },
+ "king-ethelbert-inn-reculver": {
+  "menu_url": "https://kingethelbertinn.co.uk/menu/",
+  "kind": "own site",
+  "note": "Own site kingethelbertinn.co.uk"
+ },
+ "docker-brewery-taproom-folkestone": {
+  "menu_url": "https://dockerbrewery.com/collections/all",
+  "kind": "own site",
+  "note": "Own site dockerbrewery.com, drinks shop/beer range"
+ },
+ "goody-ales-herne": {
+  "menu_url": "https://goodyales.co.uk/product-category/core-beers/",
+  "kind": "own site",
+  "note": "Own site goodyales.co.uk, core beers list"
+ },
+ "minnis-bay-fish-and-chips": {
+  "menu_url": "https://thebayfishbar.co.uk/order-now",
+  "kind": "ordering",
+  "note": "The Bay Fish Bar, Minnis Bay CT7 9NS; own Foodhub-powered ordering site (assumed same chippy)"
+ },
+ "bake-and-alehouse-westgate": {
+  "menu_url": "https://bakeandalehouse.com/current",
+  "kind": "own site",
+  "note": "Own site bakeandalehouse.com: current & pending drinks; food at /food"
+ },
+ "gingers-westgate": {
+  "menu_url": "https://www.gingerswestgate.co.uk/drinks",
+  "kind": "own site",
+  "note": "Own site gingerswestgate.co.uk (JS app); drinks page route, also /cheeseboard"
+ },
+ "tandoori-nite-birchington": {
+  "menu_url": "https://www.just-eat.co.uk/restaurants-tandoori-nite-birchington/menu",
+  "kind": "ordering",
+  "note": "Just Eat listing (64 Station Road, CT7 9RA)"
+ },
+ "offvine-kent-wine-tours": {
+  "menu_url": "https://www.offvine.co.uk/tours",
+  "kind": "own site",
+  "note": "Wine tours page (no food/drink menu as such)"
+ }
+}

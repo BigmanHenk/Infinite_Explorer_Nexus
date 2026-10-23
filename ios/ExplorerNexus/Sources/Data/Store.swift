@@ -27,7 +27,8 @@ final class Store: ObservableObject {
             db.query("""
                 SELECT id, name, category, town, lat, lon, summary, description, address, postcode, phone, website,
                        opening_hours, price, dogs, accessibility, tips, duration_min, tags, source_urls, verified,
-                       subjects, best_time, tide, wildlife, facilities
+                       subjects, best_time, tide, wildlife, facilities,
+                       hours_osm, menu_url, hygiene, hygiene_date, hygiene_url
                 FROM places ORDER BY name
                 """) { r in
                 places.append(Place(
@@ -38,7 +39,9 @@ final class Store: ObservableObject {
                     tips: r.string(16), durationMin: r.int(17), tags: Store.list(r.string(18), ","),
                     sources: Store.list(r.string(19), "\n"), verified: r.string(20),
                     subjects: Store.list(r.string(21), ","), bestTime: r.string(22), tide: r.string(23),
-                    wildlife: r.string(24), facilities: r.string(25)))
+                    wildlife: r.string(24), facilities: r.string(25),
+                    hoursOSM: r.string(26), menuURL: r.string(27), hygiene: r.string(28),
+                    hygieneDate: r.string(29), hygieneURL: r.string(30)))
             }
             let dec = JSONDecoder()
             db.query("""

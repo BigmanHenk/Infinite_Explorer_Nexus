@@ -31,7 +31,7 @@ struct PlannerView: View {
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 Button {
-                    planner.suggestWeek(store: store, weather: weather) { base.within($0, location) }
+                    planner.suggestWeek(store: store, weather: weather, origin: base.origin(location)) { base.within($0, location) }
                 } label: { Label("Suggest", systemImage: "wand.and.stars") }
             }
             ToolbarItem(placement: .topBarTrailing) {

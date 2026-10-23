@@ -13,6 +13,8 @@ struct MapScreen: View {
     @State private var shown: Set<String> = MapScreen.sightseeing
     @State private var showEvents = false
     @State private var sheet: MapSheet?
+    @State private var searchText = ""
+    @State private var picked: SearchHit?
 
     static let sightseeing: Set<String> = ["sight", "history", "museum", "church", "beach", "nature", "viewpoint", "family", "photo", "hide"]
 
@@ -27,15 +29,22 @@ struct MapScreen: View {
             OfflineMapView(places: places, events: events, walk: router.mapWalk,
                            routeColor: UIColor(theme.t.primary), accent: UIColor(theme.t.primary),
                            focus: router.mapFocus,
-                           radius: base.radiusKm > 0 ? MapRadius(center: base.origin(location), meters: base.radiusKm * 1000) : nil) { ref in
+                           radius: base.radiusKm > 0 ? MapRadius(center: base.origin(location), meters: base.radiusKm * 1000) : nil,
+                           marker: picked.map { ($0.title, $0.coordinate) }) { ref in
                 switch ref {
                 case .place(let p): sheet = MapSheet(place: p)
                 case .event(let e): sheet = MapSheet(event: e)
-                case .waypoint: break
+                default: break
                 }
             }
             .ignoresSafeArea(edges: .top)
             VStack(spacing: 6) {
+                MapSearchBar(text: $searchText) { hit in
+                    picked = hit
+                    if case .walk(let w) = hit.kind { router.mapWalk = w }
+                    router.focus(hit.coordinate, meters: 700)
+                }
+                .padding(.horizontal, 12)
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 6) {
                         BaseChip()
@@ -68,6 +77,20 @@ struct MapScreen: View {
             }
             .padding(.top, 6)
         }
+        .overlay(alignment: .bottom) {
+            if let h = picked {
+                PickedCard(hit: h, onDetails: {
+                    switch h.kind {
+                    case .place(let p): sheet = MapSheet(place: p)
+                    case .event(let e): sheet = MapSheet(event: e)
+                    case .walk(let w): sheet = MapSheet(walk: w)
+                    default: break
+                    }
+                }, onClose: { picked = nil })
+                .padding(.bottom, 10)
+                .padding(.trailing, 60)
+            }
+        }
         .overlay(alignment: .bottomTrailing) {
             VStack(spacing: 10) {
                 Button {
@@ -94,6 +117,7 @@ struct MapScreen: View {
                 Group {
                     if let p = s.place { PlaceDetailView(place: p) }
                     else if let e = s.event { EventDetailView(event: e) }
+                    else if let w = s.walk { WalkDetailView(walk: w) }
                 }
                 .explorerDestinations()
             }
@@ -105,5 +129,6 @@ struct MapScreen: View {
 private struct MapSheet: Identifiable {
     var place: Place? = nil
     var event: EventItem? = nil
-    var id: String { place?.id ?? event?.id ?? "" }
+    var walk: Walk? = nil
+    var id: String { place?.id ?? event?.id ?? walk?.id ?? "" }
 }

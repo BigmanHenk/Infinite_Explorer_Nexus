@@ -96,13 +96,16 @@ final class PlannerStore: ObservableObject {
     /// Office forecast when there is one - a walk or beach on dry days, museums and indoor
     /// places on wet days, nothing exposed on very windy days, and a sunset spot on evenings
     /// that are not overcast.
-    func suggestWeek(store: Store, weather: WeatherStore, inRange: (CLLocationCoordinate2D?) -> Bool = { _ in true }) {
+    func suggestWeek(store: Store, weather: WeatherStore, origin: CLLocationCoordinate2D = Sun.birchington,
+                     inRange: (CLLocationCoordinate2D?) -> Bool = { _ in true }) {
         var usedPlaces = Set(items.compactMap { $0.kind == .place ? $0.refID : nil })
         var usedWalks = Set(items.compactMap { $0.kind == .walk ? $0.refID : nil })
         let outdoor = store.sightseeing.filter { !["daytrip", "photo", "hide", "market"].contains($0.category) && !isIndoor($0) && inRange($0.coordinate) }
             .sorted { rank($0) > rank($1) }
         let indoor = store.places.filter { isIndoor($0) && inRange($0.coordinate) }.sorted { rank($0) > rank($1) }
+        // nearest first, so "any distance" still picks the closest sunset spot
         let sunsetSpots = store.photoSpots.filter { p in p.subjects.contains { $0.contains("sunset") } && inRange(p.coordinate) }
+            .sorted { $0.coordinate.distance(to: origin) < $1.coordinate.distance(to: origin) }
         let walks = store.walks.filter { inRange($0.points.first?.coordinate) }
         let today = Day.start(Date())
         for (i, day) in weekDays.enumerated() where day >= today && items(on: day).isEmpty {

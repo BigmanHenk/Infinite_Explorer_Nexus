@@ -12,6 +12,8 @@ struct PlacesView: View {
     @State private var search = ""
     @State private var sortNear = true
     @State private var tag: String? = nil
+    @StateObject private var openFilter = OpenFilter()
+    @State private var showOpen = false
 
     private var categories: [String] {
         let present = Set(store.places.map(\.category))
@@ -22,6 +24,7 @@ struct PlacesView: View {
         var list = store.places.filter { base.within($0.coordinate, location) }
         if let category { list = list.filter { $0.category == category } }
         if let tag { list = list.filter { $0.tags.contains(tag) } }
+        if openFilter.on { list = list.filter { openFilter.matches($0) } }
         let q = search.trimmingCharacters(in: .whitespaces).lowercased()
         if !q.isEmpty {
             list = list.filter {
@@ -39,7 +42,13 @@ struct PlacesView: View {
     var body: some View {
         List {
             Section {
-                BaseChip()
+                HStack(spacing: 8) {
+                    BaseChip()
+                    Button { showOpen = true } label: {
+                        ChipLabel(text: openFilter.label, symbol: "clock", on: openFilter.on)
+                    }
+                    .buttonStyle(.plain)
+                }
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
                         Chip(text: "All", on: category == nil) { category = nil }
@@ -83,6 +92,7 @@ struct PlacesView: View {
         }
         .themedList()
         .searchable(text: $search, prompt: "Search places")
+        .sheet(isPresented: $showOpen) { OpenFilterSheet(filter: openFilter) }
         .navigationTitle("Explore")
         .explorerDestinations()
     }
@@ -99,6 +109,11 @@ struct PlaceRow: View {
             VStack(alignment: .leading, spacing: 2) {
                 Text(place.name).font(.subheadline.weight(.semibold)).foregroundStyle(theme.t.onBackground)
                 Text(place.summary).font(.caption).lineLimit(2).foregroundStyle(theme.t.onSurfaceVariant.opacity(0.8))
+                if let t = place.hours.text(on: Date()) {
+                    Text((place.hours.openNow() == true ? "Open now · " : "Closed now · ") + "today \(t)")
+                        .font(.caption2.weight(.semibold))
+                        .foregroundStyle(place.hours.openNow() == true ? Color(hex: 0x3E9B4F) : .orange)
+                }
                 HStack(spacing: 6) {
                     Text(place.town)
                     Text("· \(distanceText(base.distance(to: place.coordinate, location)))")
@@ -151,6 +166,8 @@ struct PlaceDetailView: View {
                     }
 
                 PlanButton { planning = PlanTarget(kind: .place, refID: place.id, title: place.name) }
+                TravelCard(to: place.coordinate, name: place.name)
+                PlaceExtras(place: place)
 
                 if place.isPhoto { photoCard }
 
@@ -174,8 +191,10 @@ struct PlaceDetailView: View {
                     }
                 }
                 Card {
-                    LinksBlock(website: place.website, phone: place.phone,
-                               directions: (place.lat, place.lon, place.name), sources: place.sources, verified: place.verified)
+                    MoreInfoLinks(name: place.name, town: place.town, website: place.website, sources: place.sources)
+                }
+                Card {
+                    LinksBlock(website: nil, phone: place.phone, directions: nil, sources: place.sources, verified: place.verified)
                 }
             }
             .padding(16)

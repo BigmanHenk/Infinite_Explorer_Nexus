@@ -180,6 +180,7 @@ struct EventDetailView: View {
                     }
                     planning = PlanTarget(kind: .event, refID: event.id, title: event.title, time: event.startTime, days: days)
                 }
+                if let c = event.coordinate { TravelCard(to: c, name: event.venue) }
                 Card {
                     Text(event.description).foregroundStyle(theme.t.onBackground)
                         .fixedSize(horizontal: false, vertical: true).textSelection(.enabled)
@@ -200,9 +201,10 @@ struct EventDetailView: View {
                         }
                 }
                 Card {
-                    LinksBlock(website: event.website, phone: nil,
-                               directions: event.coordinate.map { ($0.latitude, $0.longitude, event.venue) },
-                               sources: event.sources, verified: event.verified)
+                    MoreInfoLinks(name: event.title, town: event.town, website: event.website, sources: event.sources)
+                }
+                Card {
+                    LinksBlock(website: nil, phone: nil, directions: nil, sources: event.sources, verified: event.verified)
                 }
             }
             .padding(16)

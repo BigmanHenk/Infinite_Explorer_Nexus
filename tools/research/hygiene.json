@@ -1,0 +1,352 @@
+{
+ "king-ethelbert-inn-reculver": {
+  "rating": "3",
+  "date": "2026-08-04",
+  "fhrsid": 1102372,
+  "fsa_name": "The King Ethelbert Inn",
+  "url": "https://ratings.food.gov.uk/business/1102372"
+ },
+ "waves-bar-minnis-bay": {
+  "rating": "5",
+  "date": "2025-05-02",
+  "fhrsid": 928480,
+  "fsa_name": "The Waves Bar,Cafe, B & B Hotel  2",
+  "url": "https://ratings.food.gov.uk/business/928480"
+ },
+ "windshack-minnis-bay": {
+  "rating": "5",
+  "date": "2025-06-19",
+  "fhrsid": 448880,
+  "fsa_name": "The Windshack",
+  "url": "https://ratings.food.gov.uk/business/448880"
+ },
+ "wagtails-cafe-bar": {
+  "rating": "5",
+  "date": "2026-05-01",
+  "fhrsid": 1938289,
+  "fsa_name": "Wagtails Cafe & Bar Ltd",
+  "url": "https://ratings.food.gov.uk/business/1938289"
+ },
+ "the-parlour-birchington": {
+  "rating": "5",
+  "date": "2026-06-24",
+  "fhrsid": 681914,
+  "fsa_name": "The Parlour",
+  "url": "https://ratings.food.gov.uk/business/681914"
+ },
+ "christies-wine-bar": {
+  "rating": "5",
+  "date": "2025-07-28",
+  "fhrsid": 608213,
+  "fsa_name": "Christies",
+  "url": "https://ratings.food.gov.uk/business/608213"
+ },
+ "seaview-birchington": {
+  "rating": "5",
+  "date": "2024-04-26",
+  "fhrsid": 1042040,
+  "fsa_name": "Seaview Hotel",
+  "url": "https://ratings.food.gov.uk/business/1042040"
+ },
+ "wheel-alehouse": {
+  "rating": "5",
+  "date": "2026-05-19",
+  "fhrsid": 575975,
+  "fsa_name": "The Wheel Alehouse",
+  "url": "https://ratings.food.gov.uk/business/575975"
+ },
+ "the-powell-birchington": {
+  "rating": "5",
+  "date": "2025-08-01",
+  "fhrsid": 1859209,
+  "fsa_name": "The Powell",
+  "url": "https://ratings.food.gov.uk/business/1859209"
+ },
+ "fields-cafe-birchington": {
+  "rating": "5",
+  "date": "2024-11-29",
+  "fhrsid": 810440,
+  "fsa_name": "Fields Cafe",
+  "url": "https://ratings.food.gov.uk/business/810440"
+ },
+ "village-square-cafe-birchington": {
+  "rating": "5",
+  "date": "2025-07-09",
+  "fhrsid": 608391,
+  "fsa_name": "Village Square Cafe",
+  "url": "https://ratings.food.gov.uk/business/608391"
+ },
+ "cow-shed-bar-grill-birchington": {
+  "rating": "4",
+  "date": "2026-05-07",
+  "fhrsid": 1042038,
+  "fsa_name": "The Cow Shed Bar & Grill",
+  "url": "https://ratings.food.gov.uk/business/1042038"
+ },
+ "smugglers-restaurant-birchington": {
+  "rating": "5",
+  "date": "2026-10-01",
+  "fhrsid": 1999811,
+  "fsa_name": "Smugglers Retreat",
+  "url": "https://ratings.food.gov.uk/business/1999811"
+ },
+ "harbour-bakery-driftwood-cafe": {
+  "rating": "5",
+  "date": "2026-08-05",
+  "fhrsid": 637833,
+  "fsa_name": "Harbour Bakery & Driftwood Cafe",
+  "url": "https://ratings.food.gov.uk/business/637833"
+ },
+ "mandys-deli-birchington": {
+  "rating": "5",
+  "date": "2026-04-24",
+  "fhrsid": 868537,
+  "fsa_name": "Mandy's Deli",
+  "url": "https://ratings.food.gov.uk/business/868537"
+ },
+ "rc-wale-butchers-birchington": {
+  "rating": "5",
+  "date": "2026-03-26",
+  "fhrsid": 620158,
+  "fsa_name": "R C Wale & Son",
+  "url": "https://ratings.food.gov.uk/business/620158"
+ },
+ "minnis-bay-fish-and-chips": {
+  "rating": "5",
+  "date": "2025-05-09",
+  "fhrsid": 555407,
+  "fsa_name": "Minnis Bay Fish & Chips",
+  "url": "https://ratings.food.gov.uk/business/555407"
+ },
+ "tandoori-nite-birchington": {
+  "rating": "5",
+  "date": "2024-12-12",
+  "fhrsid": 658601,
+  "fsa_name": "Tandoori Nite",
+  "url": "https://ratings.food.gov.uk/business/658601"
+ },
+ "bake-and-alehouse-westgate": {
+  "rating": "5",
+  "date": "2025-06-13",
+  "fhrsid": 909660,
+  "fsa_name": "The Bake & Alehouse",
+  "url": "https://ratings.food.gov.uk/business/909660"
+ },
+ "staple-stores-westgate": {
+  "rating": "5",
+  "date": "2025-07-10",
+  "fhrsid": 1390481,
+  "fsa_name": "Staple Stores",
+  "url": "https://ratings.food.gov.uk/business/1390481"
+ },
+ "hot-wood-pizza-westgate": {
+  "rating": "5",
+  "date": "2026-02-11",
+  "fhrsid": 1252140,
+  "fsa_name": "Hot Wood Pizza",
+  "url": "https://ratings.food.gov.uk/business/1252140"
+ },
+ "regency-tandoori-westgate": {
+  "rating": "5",
+  "date": "2026-08-05",
+  "fhrsid": 455644,
+  "fsa_name": "Regency Tandoori",
+  "url": "https://ratings.food.gov.uk/business/455644"
+ },
+ "best-beano-cafe-westgate": {
+  "rating": "5",
+  "date": "2025-02-04",
+  "fhrsid": 742199,
+  "fsa_name": "The Best Beano Cafe",
+  "url": "https://ratings.food.gov.uk/business/742199"
+ },
+ "westgate-fish-bar": {
+  "rating": "5",
+  "date": "2026-07-13",
+  "fhrsid": 637677,
+  "fsa_name": "Westgate Fish Bar",
+  "url": "https://ratings.food.gov.uk/business/637677"
+ },
+ "the-fish-inn-westgate": {
+  "rating": "5",
+  "date": "2025-05-15",
+  "fhrsid": 620201,
+  "fsa_name": "The Fish Inn",
+  "url": "https://ratings.food.gov.uk/business/620201"
+ },
+ "pauls-bar-bistro-westgate": {
+  "rating": "5",
+  "date": "2026-07-27",
+  "fhrsid": 370783,
+  "fsa_name": "Paul's Bar & Bistro",
+  "url": "https://ratings.food.gov.uk/business/370783"
+ },
+ "gingers-westgate": {
+  "rating": "5",
+  "date": "2026-01-08",
+  "fhrsid": 947212,
+  "fsa_name": "Ginger's",
+  "url": "https://ratings.food.gov.uk/business/947212"
+ },
+ "swan-by-the-sea-westgate": {
+  "rating": "5",
+  "date": "2026-03-27",
+  "fhrsid": 1001597,
+  "fsa_name": "The Swan by the Sea",
+  "url": "https://ratings.food.gov.uk/business/1001597"
+ },
+ "west-bay-cafe-westgate": {
+  "rating": "5",
+  "date": "2024-10-17",
+  "fhrsid": 637794,
+  "fsa_name": "West Bay Cafe",
+  "url": "https://ratings.food.gov.uk/business/637794"
+ },
+ "finbars-westgate": {
+  "rating": "5",
+  "date": "2025-09-08",
+  "fhrsid": 1199871,
+  "fsa_name": "Finbars Restaurant",
+  "url": "https://ratings.food.gov.uk/business/1199871"
+ },
+ "sun-inn-st-nicholas-at-wade": {
+  "rating": "5",
+  "date": "2026-06-10",
+  "fhrsid": 637632,
+  "fsa_name": "Sun Inn",
+  "url": "https://ratings.food.gov.uk/business/637632"
+ },
+ "bell-inn-st-nicholas-at-wade": {
+  "rating": "5",
+  "date": "2026-03-03",
+  "fhrsid": 370768,
+  "fsa_name": "The Bell Inn",
+  "url": "https://ratings.food.gov.uk/business/370768"
+ },
+ "hathats-reculver": {
+  "rating": "5",
+  "date": "2026-02-09",
+  "fhrsid": 1103503,
+  "fsa_name": "Hathats Coffee Company",
+  "url": "https://ratings.food.gov.uk/business/1103503"
+ },
+ "angelas-of-margate": {
+  "rating": "5",
+  "date": "2025-10-07",
+  "fhrsid": 1010330,
+  "fsa_name": "Angela's of Margate",
+  "url": "https://ratings.food.gov.uk/business/1010330"
+ },
+ "sargasso-margate": {
+  "rating": "5",
+  "date": "2026-09-11",
+  "fhrsid": 1199876,
+  "fsa_name": "The Sargasso",
+  "url": "https://ratings.food.gov.uk/business/1199876"
+ },
+ "buoy-and-oyster-margate": {
+  "rating": "5",
+  "date": "2024-10-19",
+  "fhrsid": 830474,
+  "fsa_name": "Buoy and Oyster",
+  "url": "https://ratings.food.gov.uk/business/830474"
+ },
+ "two-halves-margate": {
+  "rating": "5",
+  "date": "2024-09-24",
+  "fhrsid": 782952,
+  "fsa_name": "The Two Halves Margate",
+  "url": "https://ratings.food.gov.uk/business/782952"
+ },
+ "tartar-frigate-broadstairs": {
+  "rating": "5",
+  "date": "2024-03-25",
+  "fhrsid": 265665,
+  "fsa_name": "Tartar Frigate",
+  "url": "https://ratings.food.gov.uk/business/265665"
+ },
+ "magnet-micropub-broadstairs": {
+  "rating": "5",
+  "date": "2019-03-08",
+  "fhrsid": 1126629,
+  "fsa_name": "The Magnet Micropub",
+  "url": "https://ratings.food.gov.uk/business/1126629"
+ },
+ "royal-victoria-pavilion-ramsgate": {
+  "rating": "5",
+  "date": "2025-07-28",
+  "fhrsid": 1001586,
+  "fsa_name": "Royal Victoria Pavilion",
+  "url": "https://ratings.food.gov.uk/business/1001586"
+ },
+ "marc-pierres-kitchen-ramsgate": {
+  "rating": "5",
+  "date": "2025-09-18",
+  "fhrsid": 1199875,
+  "fsa_name": "Marc-Pierres Kitchen",
+  "url": "https://ratings.food.gov.uk/business/1199875"
+ },
+ "montefiore-arms-ramsgate": {
+  "rating": "5",
+  "date": "2025-07-16",
+  "fhrsid": 608366,
+  "fsa_name": "Montefiore Arms",
+  "url": "https://ratings.food.gov.uk/business/608366"
+ },
+ "lifeboat-ale-cider-house-margate": {
+  "rating": "5",
+  "date": "2024-06-15",
+  "fhrsid": 608223,
+  "fsa_name": "The Lifeboat Ale and Cider House",
+  "url": "https://ratings.food.gov.uk/business/608223"
+ },
+ "simpsons-wine-estate-barham": {
+  "rating": "5",
+  "date": "2025-10-01",
+  "fhrsid": 1102194,
+  "fsa_name": "Simpsons Wine Estate",
+  "url": "https://ratings.food.gov.uk/business/1102194"
+ },
+ "time-and-tide-taphouse-sandwich": {
+  "rating": "4",
+  "date": "2026-07-10",
+  "fhrsid": 1592563,
+  "fsa_name": "Time & Tide Taphouse",
+  "url": "https://ratings.food.gov.uk/business/1592563"
+ },
+ "laughing-barrel-cliftonville": {
+  "rating": "4",
+  "date": "2024-08-15",
+  "fhrsid": 1050599,
+  "fsa_name": "The Laughing Barrel",
+  "url": "https://ratings.food.gov.uk/business/1050599"
+ },
+ "conqueror-alehouse-ramsgate": {
+  "rating": "5",
+  "date": "2025-10-07",
+  "fhrsid": 584532,
+  "fsa_name": "Conqueror Alehouse",
+  "url": "https://ratings.food.gov.uk/business/584532"
+ },
+ "hovelling-boat-inn-ramsgate": {
+  "rating": "5",
+  "date": "2024-08-13",
+  "fhrsid": 575974,
+  "fsa_name": "The Hovelling Boat Inn",
+  "url": "https://ratings.food.gov.uk/business/575974"
+ },
+ "butchers-arms-herne-first-micropub": {
+  "rating": "5",
+  "date": "2026-08-07",
+  "fhrsid": 1966091,
+  "fsa_name": "The Butchers Arms",
+  "url": "https://ratings.food.gov.uk/business/1966091"
+ },
+ "brogdale-national-fruit-collection": {
+  "rating": "5",
+  "date": "2018-01-09",
+  "fhrsid": 1016392,
+  "fsa_name": "Brogdale Collections (Charity)",
+  "url": "https://ratings.food.gov.uk/business/1016392"
+ }
+}

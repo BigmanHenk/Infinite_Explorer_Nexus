@@ -237,7 +237,8 @@ def main():
     CREATE TABLE places (id TEXT PRIMARY KEY, name TEXT, category TEXT, town TEXT, lat REAL, lon REAL,
         summary TEXT, description TEXT, address TEXT, postcode TEXT, phone TEXT, website TEXT, opening_hours TEXT,
         price TEXT, dogs TEXT, accessibility TEXT, tips TEXT, duration_min INTEGER, tags TEXT, source_urls TEXT,
-        verified TEXT, subjects TEXT, best_time TEXT, tide TEXT, wildlife TEXT, facilities TEXT);
+        verified TEXT, subjects TEXT, best_time TEXT, tide TEXT, wildlife TEXT, facilities TEXT,
+        hours_osm TEXT, menu_url TEXT, hygiene TEXT, hygiene_date TEXT, hygiene_url TEXT);
     CREATE TABLE events (id TEXT PRIMARY KEY, title TEXT, category TEXT, venue TEXT, town TEXT, lat REAL, lon REAL,
         start_date TEXT, end_date TEXT, start_time TEXT, end_time TEXT, recurrence TEXT, price TEXT, website TEXT,
         booking TEXT, description TEXT, confidence TEXT, source_urls TEXT, verified TEXT);
@@ -251,6 +252,7 @@ def main():
     CREATE TABLE photos (owner TEXT, seq INTEGER, point INTEGER, data BLOB, title TEXT, author TEXT, licence TEXT,
         page TEXT, url TEXT);
     CREATE INDEX photos_owner ON photos (owner);
+    CREATE TABLE streets (name TEXT, town TEXT, lat REAL, lon REAL);
     """)
 
     # places
@@ -263,7 +265,17 @@ def main():
     for f in PLACE_FILES:
         all_places += load(f)
     all_places += prac_places
+    def opt(name):
+        f = RESEARCH / name
+        return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    hours = opt("hours.json")        # structured opening_hours (OSM syntax) per id
+    menus = opt("menus.json")
+    hygiene = opt("hygiene.json")
+    # websites found dead or hijacked (menu research 2026-10-23)
+    DEAD_SITES = ("conqueror-alehouse.co.uk", "thepubmicropub.com", "kakawaartisan.com")
     for p in all_places:
+        if p.get("website") and any(d in p["website"] for d in DEAD_SITES):
+            p["website"] = None
         pid = p.get("id")
         if not pid or pid in seen:
             continue
@@ -274,7 +286,9 @@ def main():
         cat = p.get("category") or "sight"
         if cat == "takeaway":
             cat = "food"
-        db.execute("INSERT INTO places VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+        hy = hygiene.get(pid) or {}
+        h_osm = hours.get(pid) or (p.get("opening_hours") if cat == "ev" else None) or ("24/7" if cat == "ev" else None)
+        db.execute("INSERT INTO places VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
             pid, p.get("name"), cat, p.get("town") or "", p["lat"], p["lon"], s(p.get("summary")) or "",
             s(p.get("description")) or "", s(p.get("address")), s(p.get("postcode")), s(p.get("phone")),
             s(p.get("website")), s(p.get("opening_hours")), s(p.get("price")), s(p.get("dogs")),
@@ -282,7 +296,8 @@ def main():
             p.get("duration_min") if isinstance(p.get("duration_min"), int) else None,
             ",".join(p.get("tags") or []), "\n".join(p.get("source_urls") or []), p.get("verified"),
             ",".join(p.get("subjects") or []), s(p.get("best_time")), s(p.get("tide")), s(p.get("wildlife")),
-            s(p.get("facilities"))))
+            s(p.get("facilities")), h_osm, (menus.get(pid) or {}).get("menu_url"),
+            str(hy["rating"]) if hy else None, hy.get("date"), hy.get("url")))
         n_places += 1
     for f in facts:
         db.execute("INSERT INTO facts VALUES (?,?)", (f.get("topic"), f.get("text")))
@@ -346,6 +361,33 @@ def main():
             db.execute("INSERT INTO meta VALUES (?,?)", (k, v))
     else:
         print("  (no tides.pkl - run s03_tides.py)")
+
+    # street index for map search: every named road/path in the detailed area, one point per
+    # street and town (the middle of its longest piece), town = nearest village/town/suburb node
+    fp = WORK / "features.pkl"
+    if fp.exists():
+        feats = pickle.load(open(fp, "rb"))
+        towns = [(n, p.y, p.x) for k, n, p in feats["places"] if k in ("town", "village", "suburb", "hamlet", "city")]
+        best = {}
+        for kind, name, g in feats["features"]:
+            if not name or kind not in ("road_major", "road_mid", "road_minor", "path", "track", "steps") or name[:1].isdigit():
+                continue
+            if len(name) <= 4 and name[:1] in "ABM" and name[1:2].isdigit():
+                continue   # bare road numbers (A28) - not a street name
+            lines = [g] if g.geom_type == "LineString" else list(getattr(g, "geoms", []))
+            for l in lines:
+                if l.is_empty:
+                    continue
+                c = l.interpolate(0.5, normalized=True)
+                if not (DETAIL[1] <= c.y <= DETAIL[3] and DETAIL[0] <= c.x <= DETAIL[2]):
+                    continue
+                town = min(towns, key=lambda t: (t[1] - c.y) ** 2 + ((t[2] - c.x) * 0.62) ** 2)[0] if towns else ""
+                key = (name, town)
+                if key not in best or l.length > best[key][0]:
+                    best[key] = (l.length, c.y, c.x)
+        db.executemany("INSERT INTO streets VALUES (?,?,?,?)",
+                       [(n, t, round(la, 6), round(lo, 6)) for (n, t), (_, la, lo) in sorted(best.items())])
+        print(f"  {len(best)} streets in the search index")
 
     # photos (s07_photos.py): owner = place id or "walk:<id>"
     pj = WORK / "photos.json"

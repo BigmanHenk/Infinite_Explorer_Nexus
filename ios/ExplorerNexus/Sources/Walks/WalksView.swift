@@ -144,6 +144,7 @@ struct WalkDetailView: View {
                     .buttonStyle(.plain)
                     PlanButton { planning = PlanTarget(kind: .walk, refID: walk.id, title: walk.title) }
                 }
+                if let s = walk.points.first { TravelCard(to: s.coordinate, name: walk.start) }
                 Card {
                     Text(walk.description).foregroundStyle(theme.t.onBackground)
                         .fixedSize(horizontal: false, vertical: true).textSelection(.enabled)
@@ -174,8 +175,7 @@ struct WalkDetailView: View {
                     }
                 }
                 Card {
-                    LinksBlock(website: nil, phone: nil,
-                               directions: walk.points.first.map { ($0.lat, $0.lon, walk.start) }, sources: walk.sources)
+                    MoreInfoLinks(name: walk.title, town: "Kent walk", website: nil, sources: walk.sources)
                 }
             }
             .padding(16)

@@ -59,7 +59,8 @@ def main():
         photos.setdefault(owner, []).append(dict(u=url, a=author, l=licence, p=page))
     pcols = ["id", "name", "category", "town", "lat", "lon", "summary", "description", "address", "postcode", "phone",
              "website", "opening_hours", "price", "dogs", "accessibility", "tips", "duration_min", "tags", "source_urls",
-             "subjects", "best_time", "tide", "wildlife", "facilities"]
+             "subjects", "best_time", "tide", "wildlife", "facilities", "hours_osm", "menu_url", "hygiene",
+             "hygiene_date", "hygiene_url"]
     places = []
     for r in q("SELECT " + ", ".join(pcols) + " FROM places ORDER BY name"):
         d = {k: v for k, v in zip(pcols, r) if v not in (None, "")}
@@ -116,7 +117,8 @@ def main():
         sunsets[d.isoformat()] = sunset(d)
         d += timedelta(days=1)
 
-    data = dict(places=places, events=events, walks=walks, tides=tides, sunset=sunsets)
+    streets = [[n, t, la, lo] for n, t, la, lo in q("SELECT name, town, lat, lon FROM streets")]
+    data = dict(places=places, events=events, walks=walks, tides=tides, sunset=sunsets, streets=streets)
     html = (TOOLS / "build" / "planner_template.html").read_text(encoding="utf-8")
     qrlib = (TOOLS / "vendor" / "qrcode.min.js").read_text(encoding="utf-8")
     html = html.replace("__QRLIB__", qrlib).replace("__BUILT__", built)
