@@ -89,7 +89,9 @@ struct PlannerView: View {
                 }
             }
             if let w {
-                Text(w.advice + (w.rainMM >= 0.5 ? String(format: " · %.0f mm", w.rainMM) : "") + " · wind \(Int(w.windMph.rounded())) mph")
+                let rain: String = w.rainMM >= 0.5 ? String(format: " · %.0f mm", w.rainMM) : ""
+                let line: String = w.advice + rain + " · wind \(Int(w.windMph.rounded())) mph"
+                Text(line)
                     .font(.caption).foregroundStyle(w.isWet || w.isWindy ? .orange : theme.t.onSurfaceVariant.opacity(0.8))
             }
             HStack(spacing: 10) {

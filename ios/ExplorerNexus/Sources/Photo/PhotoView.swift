@@ -70,8 +70,8 @@ struct PhotoView: View {
                 row("Golden hour", "camera.aperture", t.morningGolden, t.eveningGolden)
                 GridRow {
                     Label("Sun", systemImage: "sun.horizon").foregroundStyle(theme.t.primary)
-                    Text(t.sunrise.map { "↑ \(Day.time($0))" + (t.sunriseAzimuth.map { " \(Sun.compass($0)) \(Int($0))°" } ?? "") } ?? "–")
-                    Text(t.sunset.map { "↓ \(Day.time($0))" + (t.sunsetAzimuth.map { " \(Sun.compass($0)) \(Int($0))°" } ?? "") } ?? "–")
+                    Text(sunText("↑", t.sunrise, t.sunriseAzimuth))
+                    Text(sunText("↓", t.sunset, t.sunsetAzimuth))
                 }
             }
             .font(.caption.monospacedDigit())
@@ -91,6 +91,13 @@ struct PhotoView: View {
             Text("Thanet's north coast faces north: in summer the sun sets over the sea to the north-west (Minnis Bay, Reculver); in winter it rises and sets further south, so try Pegwell Bay and Ramsgate.")
                 .font(.caption2).foregroundStyle(theme.t.onSurfaceVariant.opacity(0.7)).fixedSize(horizontal: false, vertical: true)
         }
+    }
+
+    private func sunText(_ arrow: String, _ d: Date?, _ az: Double?) -> String {
+        guard let d else { return "–" }
+        var s = "\(arrow) \(Day.time(d))"
+        if let az { s += " \(Sun.compass(az)) \(Int(az))°" }
+        return s
     }
 
     private func row(_ title: String, _ symbol: String, _ a: (Date, Date)?, _ b: (Date, Date)?) -> some View {

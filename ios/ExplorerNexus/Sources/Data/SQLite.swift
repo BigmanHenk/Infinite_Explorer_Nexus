@@ -10,6 +10,7 @@ final class SQLiteDB {
         let flags = SQLITE_OPEN_READONLY | SQLITE_OPEN_FULLMUTEX
         guard sqlite3_open_v2(path, &db, flags, nil) == SQLITE_OK else {
             sqlite3_close(db)
+            db = nil
             return nil
         }
     }
