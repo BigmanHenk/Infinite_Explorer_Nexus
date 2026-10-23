@@ -128,6 +128,8 @@ struct PlaceDetailView: View {
                 }
                 Text(place.summary).font(.headline.weight(.regular)).foregroundStyle(theme.t.onSurfaceVariant)
 
+                PhotoGallery(owner: place.id)
+
                 OfflineMapView(places: [place], accent: UIColor(theme.t.primary),
                                focus: MapFocus(center: place.coordinate, meters: 900))
                     .frame(height: 190)

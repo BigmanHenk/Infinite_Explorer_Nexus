@@ -23,7 +23,7 @@ import osmium
 
 from common import CONTENT, DETAIL, OSM_FILE, RESEARCH, WIDE, WORK
 
-PLACE_FILES = ["places_birchington.json", "places_thanet.json", "places_food.json", "photo_spots.json"]
+PLACE_FILES = ["places_birchington.json", "places_thanet.json", "places_food.json", "places_drink.json", "photo_spots.json"]
 EVENT_FILES = ["events_winter.json", "events_2027.json"]
 
 
@@ -248,6 +248,9 @@ def main():
     CREATE TABLE walk_points (walk_id TEXT, seq INTEGER, name TEXT, lat REAL, lon REAL, note TEXT);
     CREATE TABLE facts (topic TEXT, text TEXT);
     CREATE TABLE tide_days (day TEXT PRIMARY KEY, heights BLOB, extremes TEXT);
+    CREATE TABLE photos (owner TEXT, seq INTEGER, point INTEGER, data BLOB, title TEXT, author TEXT, licence TEXT,
+        page TEXT, url TEXT);
+    CREATE INDEX photos_owner ON photos (owner);
     """)
 
     # places
@@ -343,6 +346,24 @@ def main():
             db.execute("INSERT INTO meta VALUES (?,?)", (k, v))
     else:
         print("  (no tides.pkl - run s03_tides.py)")
+
+    # photos (s07_photos.py): owner = place id or "walk:<id>"
+    pj = WORK / "photos.json"
+    n_photos = 0
+    if pj.exists():
+        ph = json.loads(pj.read_text(encoding="utf-8"))
+        groups = [(k, v) for k, v in ph.get("places", {}).items()] + [("walk:" + k, v) for k, v in ph.get("walks", {}).items()]
+        for owner, items in groups:
+            for i, it in enumerate(items):
+                f = WORK / "photos" / it.get("file", "")
+                if not it.get("file") or not f.exists():
+                    continue
+                db.execute("INSERT INTO photos VALUES (?,?,?,?,?,?,?,?,?)", (
+                    owner, i, it.get("point"), f.read_bytes(), it["title"], it["author"], it["licence"], it["page"], it["thumb"]))
+                n_photos += 1
+        print(f"  {n_photos} photos")
+    else:
+        print("  (no photos.json - run s07_photos.py)")
 
     db.execute("INSERT INTO meta VALUES ('built', ?)", (date.today().isoformat(),))
     db.execute("INSERT INTO meta VALUES ('version', '1')")

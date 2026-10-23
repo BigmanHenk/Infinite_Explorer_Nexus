@@ -125,7 +125,7 @@ struct Fact: Identifiable, Hashable {
 /// Category look-up: label, SF Symbol and colour, used by lists, chips and map pins.
 enum Cat {
     static let order = ["sight", "history", "museum", "church", "beach", "nature", "viewpoint", "family",
-                        "photo", "hide", "pub", "cafe", "restaurant", "food", "shop", "market", "daytrip", "practical"]
+                        "photo", "hide", "pub", "brewery", "vineyard", "cafe", "restaurant", "food", "shop", "market", "daytrip", "practical"]
 
     static func label(_ c: String) -> String {
         switch c {
@@ -140,6 +140,8 @@ enum Cat {
         case "photo": return "Photo spots"
         case "hide": return "Wildlife hides"
         case "pub": return "Pubs"
+        case "brewery": return "Breweries & distilleries"
+        case "vineyard": return "Vineyards & wine"
         case "cafe": return "Cafés"
         case "restaurant": return "Restaurants"
         case "food": return "Food"
@@ -164,6 +166,8 @@ enum Cat {
         case "photo": return "camera.fill"
         case "hide": return "bird.fill"
         case "pub": return "mug.fill"
+        case "brewery": return "drop.fill"
+        case "vineyard": return "wineglass.fill"
         case "cafe": return "cup.and.saucer.fill"
         case "restaurant": return "fork.knife"
         case "food": return "takeoutbag.and.cup.and.straw.fill"
@@ -185,6 +189,8 @@ enum Cat {
         case "family": return Color(hex: 0xE5598F)
         case "photo": return Color(hex: 0xD9483B)
         case "pub", "cafe", "restaurant", "food": return Color(hex: 0xD9762B)
+        case "brewery": return Color(hex: 0xB8862E)
+        case "vineyard": return Color(hex: 0x8E2F55)
         case "shop", "market": return Color(hex: 0x4A7FC1)
         case "daytrip": return Color(hex: 0x5E6B7A)
         default: return Color(hex: 0x6E7781)

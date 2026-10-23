@@ -112,6 +112,6 @@ final class Store: ObservableObject {
     func event(_ id: String) -> EventItem? { events.first { $0.id == id } }
     func walk(_ id: String) -> Walk? { walks.first { $0.id == id } }
 
-    var sightseeing: [Place] { places.filter { !["pub", "cafe", "restaurant", "food", "shop", "practical"].contains($0.category) } }
+    var sightseeing: [Place] { places.filter { !["pub", "brewery", "vineyard", "cafe", "restaurant", "food", "shop", "practical"].contains($0.category) } }
     var photoSpots: [Place] { places.filter { $0.isPhoto } }
 }

@@ -127,6 +127,7 @@ struct WalkDetailView: View {
                                focus: MapFocus.fit(coords))
                     .frame(height: 300)
                     .clipShape(RoundedRectangle(cornerRadius: 14))
+                PhotoGallery(owner: "walk:" + walk.id, height: 200)
                 if let t = walk.tideWarning { tideCard(t) }
                 HStack(spacing: 10) {
                     Button { following = true } label: {

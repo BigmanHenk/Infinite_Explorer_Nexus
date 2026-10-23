@@ -37,7 +37,7 @@ struct MapScreen: View {
                     HStack(spacing: 6) {
                         Menu {
                             Button("Sightseeing") { shown = MapScreen.sightseeing }
-                            Button("Food & drink") { shown = ["pub", "cafe", "restaurant", "food", "shop", "market"] }
+                            Button("Food & drink") { shown = ["pub", "brewery", "vineyard", "cafe", "restaurant", "food", "shop", "market"] }
                             Button("Everything") { shown = Set(Cat.order) }
                             Button("Nothing") { shown = [] }
                         } label: { ChipLabel(text: "Show", symbol: "slider.horizontal.3", on: true) }

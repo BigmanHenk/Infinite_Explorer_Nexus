@@ -54,14 +54,46 @@ def sunset(d):
 def main():
     db = sqlite3.connect(CONTENT / "explorer.sqlite")
     q = lambda sql: db.execute(sql).fetchall()
-    places = [dict(id=r[0], name=r[1], category=r[2], town=r[3], summary=r[4], tags=(r[5] or "").split(","),
-                   subjects=(r[6] or "").split(","))
-              for r in q("SELECT id, name, category, town, summary, tags, subjects FROM places ORDER BY name")]
-    events = [dict(id=r[0], title=r[1], category=r[2], venue=r[3], town=r[4], start=r[5], end=r[6], start_time=r[7],
-                   recurrence=json.loads(r[8]) if r[8] else None, confidence=r[9])
-              for r in q("SELECT id, title, category, venue, town, start_date, end_date, start_time, recurrence, confidence FROM events")]
-    walks = [dict(id=r[0], title=r[1], km=r[2], circular=bool(r[3]), tide=bool(r[4]), summary=r[5])
-             for r in q("SELECT id, title, distance_km, circular, tide_warning IS NOT NULL, summary FROM walks ORDER BY distance_km")]
+    photos = {}
+    for owner, title, author, licence, page, url in q("SELECT owner, title, author, licence, page, url FROM photos ORDER BY owner, seq"):
+        photos.setdefault(owner, []).append(dict(u=url, a=author, l=licence, p=page))
+    pcols = ["id", "name", "category", "town", "lat", "lon", "summary", "description", "address", "postcode", "phone",
+             "website", "opening_hours", "price", "dogs", "accessibility", "tips", "duration_min", "tags", "source_urls",
+             "subjects", "best_time", "tide", "wildlife", "facilities"]
+    places = []
+    for r in q("SELECT " + ", ".join(pcols) + " FROM places ORDER BY name"):
+        d = {k: v for k, v in zip(pcols, r) if v not in (None, "")}
+        d["tags"] = (d.get("tags") or "").split(",")
+        d["subjects"] = (d.get("subjects") or "").split(",")
+        d["source_urls"] = (d.get("source_urls") or "").split(chr(10))
+        d["photos"] = photos.get(d["id"], [])
+        places.append(d)
+    ecols = ["id", "title", "category", "venue", "town", "lat", "lon", "start_date", "end_date", "start_time", "end_time",
+             "recurrence", "price", "website", "booking", "description", "confidence", "source_urls"]
+    events = []
+    for r in q("SELECT " + ", ".join(ecols) + " FROM events"):
+        d = {k: v for k, v in zip(ecols, r) if v not in (None, "")}
+        d["start"], d["end"] = d.pop("start_date", None), d.pop("end_date", None)
+        d["recurrence"] = json.loads(d["recurrence"]) if d.get("recurrence") else None
+        d["source_urls"] = (d.get("source_urls") or "").split(chr(10))
+        events.append(d)
+    import struct
+    wcols = ["id", "title", "distance_km", "duration_min", "difficulty", "surface", "circular", "start", "summary",
+             "description", "toilets", "refreshments", "parking", "public_transport", "dogs", "accessibility",
+             "tide_warning", "source_urls", "route"]
+    walks = []
+    for r in q("SELECT " + ", ".join(wcols) + " FROM walks ORDER BY distance_km"):
+        d = {k: v for k, v in zip(wcols, r) if v not in (None, "")}
+        blob = d.pop("route", b"") or b""
+        d["route"] = [[round(a, 5), round(b, 5)] for a, b in struct.iter_unpack("<ff", blob)]
+        d["km"] = d.pop("distance_km")
+        d["circular"] = bool(d.get("circular"))
+        d["tide"] = d.get("tide_warning")
+        d["source_urls"] = (d.get("source_urls") or "").split(chr(10))
+        d["points"] = [dict(name=a, lat=b, lon=c, note=e) for a, b, c, e in
+                       db.execute("SELECT name, lat, lon, note FROM walk_points WHERE walk_id = ? ORDER BY seq", (d["id"],))]
+        d["photos"] = photos.get("walk:" + d["id"], [])
+        walks.append(d)
     built = (q("SELECT value FROM meta WHERE key = 'built'") or [("?",)])[0][0]
 
     # tides & sunsets, local days, from today - 7 to 15 months ahead
