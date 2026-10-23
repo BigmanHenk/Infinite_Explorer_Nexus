@@ -2,9 +2,11 @@
 # (artifact "Explorer-ipa"). Sideloadly (Windows) signs it with an Apple ID and installs it.
 name: iOS build
 
-# Manual only (Actions → iOS build → Run workflow): every Mac build minute counts 10x
-# against the private-repo allowance, so pushes are backups and do NOT build.
+# Public repo: macOS minutes are free, so every push that touches the app builds;
+# Actions -> iOS build -> Run workflow builds by hand.
 on:
+  push:
+    paths: ["ios/**", ".github/workflows/ios.yml"]
   workflow_dispatch:
 
 jobs:
