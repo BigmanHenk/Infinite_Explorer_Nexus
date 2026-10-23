@@ -9,22 +9,25 @@ struct MapScreen: View {
     @EnvironmentObject var store: Store
     @EnvironmentObject var router: Router
     @EnvironmentObject var location: LocationModel
+    @EnvironmentObject var base: BaseStore
     @State private var shown: Set<String> = MapScreen.sightseeing
     @State private var showEvents = false
     @State private var sheet: MapSheet?
 
     static let sightseeing: Set<String> = ["sight", "history", "museum", "church", "beach", "nature", "viewpoint", "family", "photo", "hide"]
 
-    private var places: [Place] { store.places.filter { shown.contains($0.category) } }
+    private var places: [Place] { store.places.filter { shown.contains($0.category) && base.within($0.coordinate, location) } }
     private var events: [EventItem] {
-        showEvents ? EventCalendar.on(Date(), events: store.events).map(\.event).filter { $0.coordinate != nil } : []
+        showEvents ? EventCalendar.on(Date(), events: store.events).map(\.event)
+            .filter { $0.coordinate != nil && base.within($0.coordinate, location) } : []
     }
 
     var body: some View {
         ZStack(alignment: .top) {
             OfflineMapView(places: places, events: events, walk: router.mapWalk,
                            routeColor: UIColor(theme.t.primary), accent: UIColor(theme.t.primary),
-                           focus: router.mapFocus) { ref in
+                           focus: router.mapFocus,
+                           radius: base.radiusKm > 0 ? MapRadius(center: base.origin(location), meters: base.radiusKm * 1000) : nil) { ref in
                 switch ref {
                 case .place(let p): sheet = MapSheet(place: p)
                 case .event(let e): sheet = MapSheet(event: e)
@@ -35,6 +38,7 @@ struct MapScreen: View {
             VStack(spacing: 6) {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 6) {
+                        BaseChip()
                         Menu {
                             Button("Sightseeing") { shown = MapScreen.sightseeing }
                             Button("Food & drink") { shown = ["pub", "brewery", "vineyard", "cafe", "restaurant", "food", "shop", "market"] }

@@ -119,6 +119,8 @@ struct OfflineMapView: UIViewRepresentable {
     /// Change the value to move the camera (centre, metres across).
     var focus: MapFocus? = nil
     var followUser = false
+    /// The search-radius circle around the base (Map tab).
+    var radius: MapRadius? = nil
     var onSelect: (PinAnnotation.Ref) -> Void = { _ in }
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
@@ -158,10 +160,22 @@ struct OfflineMapView: UIViewRepresentable {
         private var shownKey = ""
         private var focusKey: String?
         private var routeLine: MKPolyline?
+        private var circle: MKCircle?
+        private var circleKey = ""
 
         init(_ p: OfflineMapView) { parent = p }
 
         func sync(_ map: MKMapView) {
+            let ck = parent.radius.map { String(format: "%.5f,%.5f,%.0f", $0.center.latitude, $0.center.longitude, $0.meters) } ?? ""
+            if ck != circleKey {
+                circleKey = ck
+                if let c = circle { map.removeOverlay(c); circle = nil }
+                if let r = parent.radius {
+                    let c = MKCircle(center: r.center, radius: r.meters)
+                    map.addOverlay(c, level: .aboveLabels)
+                    circle = c
+                }
+            }
             let placeIDs: String = parent.places.map(\.id).joined(separator: ",")
             let eventIDs: String = parent.events.map(\.id).joined(separator: ",")
             let walkID: String = parent.walk?.id ?? ""
@@ -196,6 +210,14 @@ struct OfflineMapView: UIViewRepresentable {
 
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
             if let t = overlay as? MKTileOverlay { return MKTileOverlayRenderer(tileOverlay: t) }
+            if let c = overlay as? MKCircle {
+                let r = MKCircleRenderer(circle: c)
+                r.strokeColor = parent.accent.withAlphaComponent(0.9)
+                r.fillColor = parent.accent.withAlphaComponent(0.06)
+                r.lineWidth = 2
+                r.lineDashPattern = [8, 6]
+                return r
+            }
             if let l = overlay as? MKPolyline {
                 let r = MKPolylineRenderer(polyline: l)
                 r.strokeColor = parent.routeColor.withAlphaComponent(0.9)
@@ -253,6 +275,12 @@ struct OfflineMapView: UIViewRepresentable {
             parent.onSelect(pin.ref)
         }
     }
+}
+
+/// The radius circle drawn on the map.
+struct MapRadius {
+    let center: CLLocationCoordinate2D
+    let meters: CLLocationDistance
 }
 
 /// A camera move request. Two requests for the same view are equal (views can rebuild

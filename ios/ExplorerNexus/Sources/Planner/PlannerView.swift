@@ -8,6 +8,8 @@ struct PlannerView: View {
     @EnvironmentObject var store: Store
     @EnvironmentObject var planner: PlannerStore
     @EnvironmentObject var weather: WeatherStore
+    @EnvironmentObject var base: BaseStore
+    @EnvironmentObject var location: LocationModel
     @State private var editing: PlanItem?
     @State private var confirmClear = false
     @State private var showQR = false
@@ -16,6 +18,7 @@ struct PlannerView: View {
         ScrollView {
             VStack(spacing: 12) {
                 weekHeader
+                HStack { BaseChip(); Spacer() }
                 if let e = weather.error { Text(e).font(.caption).foregroundStyle(.orange) }
                 ForEach(planner.weekDays, id: \.self) { day in dayCard(day) }
                 Text("Suggest fills only empty days. Forecast: Met Office UK models via Open-Meteo, refreshed when you have signal.")
@@ -27,7 +30,9 @@ struct PlannerView: View {
         .navigationTitle("My week")
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button { planner.suggestWeek(store: store, weather: weather) } label: { Label("Suggest", systemImage: "wand.and.stars") }
+                Button {
+                    planner.suggestWeek(store: store, weather: weather) { base.within($0, location) }
+                } label: { Label("Suggest", systemImage: "wand.and.stars") }
             }
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {

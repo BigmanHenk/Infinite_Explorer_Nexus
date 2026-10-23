@@ -7,10 +7,12 @@ struct WalksView: View {
     @EnvironmentObject var theme: ThemeStore
     @EnvironmentObject var store: Store
     @EnvironmentObject var location: LocationModel
+    @EnvironmentObject var base: BaseStore
     @State private var filter = 0     // 0 all, 1 short, 2 circular, 3 step-free
 
     private var list: [Walk] {
         store.walks.filter { w in
+            guard base.within(w.points.first?.coordinate, location) else { return false }
             switch filter {
             case 1: return w.distanceKm <= 4
             case 2: return w.circular
@@ -23,6 +25,7 @@ struct WalksView: View {
     var body: some View {
         List {
             Section {
+                BaseChip()
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
                         Chip(text: "All", on: filter == 0) { filter = 0 }
@@ -40,7 +43,7 @@ struct WalksView: View {
                     NavigationLink(value: w) { WalkRow(walk: w) }
                         .listRowBackground(theme.t.surface)
                 }
-            } header: { SectionHead("\(list.count) walks · maps work offline") }
+            } header: { SectionHead("\(list.count) walks · start within \(base.radiusText)") }
         }
         .themedList()
         .navigationTitle("Walks")

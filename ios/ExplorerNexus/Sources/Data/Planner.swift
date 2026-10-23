@@ -1,4 +1,5 @@
 import Combine
+import CoreLocation
 import Foundation
 
 /// One thing planned on one day.
@@ -95,13 +96,14 @@ final class PlannerStore: ObservableObject {
     /// Office forecast when there is one - a walk or beach on dry days, museums and indoor
     /// places on wet days, nothing exposed on very windy days, and a sunset spot on evenings
     /// that are not overcast.
-    func suggestWeek(store: Store, weather: WeatherStore) {
+    func suggestWeek(store: Store, weather: WeatherStore, inRange: (CLLocationCoordinate2D?) -> Bool = { _ in true }) {
         var usedPlaces = Set(items.compactMap { $0.kind == .place ? $0.refID : nil })
         var usedWalks = Set(items.compactMap { $0.kind == .walk ? $0.refID : nil })
-        let outdoor = store.sightseeing.filter { !["daytrip", "photo", "hide", "market"].contains($0.category) && !isIndoor($0) }
+        let outdoor = store.sightseeing.filter { !["daytrip", "photo", "hide", "market"].contains($0.category) && !isIndoor($0) && inRange($0.coordinate) }
             .sorted { rank($0) > rank($1) }
-        let indoor = store.places.filter(isIndoor).sorted { rank($0) > rank($1) }
-        let sunsetSpots = store.photoSpots.filter { $0.subjects.contains { $0.contains("sunset") } }
+        let indoor = store.places.filter { isIndoor($0) && inRange($0.coordinate) }.sorted { rank($0) > rank($1) }
+        let sunsetSpots = store.photoSpots.filter { p in p.subjects.contains { $0.contains("sunset") } && inRange(p.coordinate) }
+        let walks = store.walks.filter { inRange($0.points.first?.coordinate) }
         let today = Day.start(Date())
         for (i, day) in weekDays.enumerated() where day >= today && items(on: day).isEmpty {
             let key = Day.key(day)
@@ -109,7 +111,7 @@ final class PlannerStore: ObservableObject {
             let wet = w?.isWet ?? false
             let windy = w?.isWindy ?? false
             // 1. one-off events that day (not exhibitions or daily cinemas)
-            let occ = EventCalendar.on(day, events: store.events).filter { !$0.ongoing }
+            let occ = EventCalendar.on(day, events: store.events).filter { !$0.ongoing && inRange($0.event.coordinate) }
             for o in occ.prefix(2) {
                 add(PlanItem(day: key, kind: .event, refID: o.event.id, title: o.event.title,
                              slot: slotFor(time: o.event.startTime), time: o.event.startTime))
@@ -126,7 +128,7 @@ final class PlannerStore: ObservableObject {
             }
             // 2b. dry: a walk on alternate days (sheltered ones when it is windy), else a sight
             let walkDay = i % 2 == 0 || (w?.isFine ?? false)
-            if walkDay, let wk = store.walks.first(where: { !usedWalks.contains($0.id) && (!windy || !isExposed($0)) }) {
+            if walkDay, let wk = walks.first(where: { !usedWalks.contains($0.id) && (!windy || !isExposed($0)) }) {
                 usedWalks.insert(wk.id)
                 var notes: [String] = []
                 if let w { notes.append("\(w.text), \(Int(w.tMax.rounded()))°C") }

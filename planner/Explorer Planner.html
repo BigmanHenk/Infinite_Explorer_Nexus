@@ -88,6 +88,9 @@ dialog select, dialog input, dialog textarea { width: 100%; }
 #detail .srcs { font-size: 12px; color: var(--muted); word-break: break-all; }
 .wp-icon { background: var(--accent); color: var(--on-accent); border-radius: 50%; width: 22px; height: 22px; line-height: 22px;
   text-align: center; font: 700 12px "Segoe UI", sans-serif; border: 2px solid #fff; }
+.base { display: inline-flex; gap: 6px; align-items: center; margin-left: auto; }
+.item .dist { color: var(--muted); font-size: 12px; }
+#pickMap { height: 420px; border-radius: 12px; }
 footer { color: var(--muted); font-size: 12px; padding: 4px 18px 20px; }
 </style>
 </head>
@@ -102,6 +105,8 @@ footer { color: var(--muted); font-size: 12px; padding: 4px 18px 20px; }
   <button id="importBtn">Import plan file</button>
   <input type="file" id="importFile" accept=".explorerplan,application/json" hidden>
   <button id="clear">Clear week</button>
+  <span class="base">📍 <select id="baseSel" title="Distances are measured from here"></select>
+    <select id="radiusSel" title="Only show and suggest things within this distance"></select></span>
 </header>
 <main>
   <section class="panel">
@@ -140,6 +145,13 @@ footer { color: var(--muted); font-size: 12px; padding: 4px 18px 20px; }
   <div class="row"><button id="addCancel">Cancel</button><button class="primary" id="addOk">Add</button></div>
 </dialog>
 
+<dialog id="pickDlg" style="max-width:720px">
+  <h3 style="margin:0 0 8px">Click the map where your base is</h3>
+  <div id="pickMap"></div>
+  <label>Name</label><input id="pickName" value="Our base">
+  <div class="row"><button id="pickCancel">Cancel</button><button class="primary" id="pickOk" disabled>Use this spot</button></div>
+</dialog>
+
 <dialog id="sendDlg">
   <h3 style="margin:0 0 8px">Send this week to the iPhone</h3>
   <div id="qr"></div>
@@ -164,6 +176,29 @@ const store = {
 let plan = store.get("explorer-plan", []);
 let tab = "places";
 let weather = {};
+
+// ---- my base & radius (same towns and radii as the iPhone app) ----
+const TOWNS = [["Birchington-on-Sea", 51.3770, 1.3050], ["Minnis Bay", 51.3810, 1.2850], ["Westgate-on-Sea", 51.3810, 1.3380],
+  ["Margate", 51.3890, 1.3830], ["Cliftonville", 51.3920, 1.4080], ["Broadstairs", 51.3590, 1.4390], ["Ramsgate", 51.3340, 1.4170],
+  ["Minster", 51.3300, 1.3160], ["St Nicholas-at-Wade", 51.3530, 1.2510], ["Reculver", 51.3790, 1.1990], ["Herne Bay", 51.3720, 1.1270],
+  ["Sandwich", 51.2740, 1.3400], ["Canterbury", 51.2800, 1.0790]];
+const RADII = [0, 1, 2, 3, 5, 8, 10, 15, 20, 30, 50];
+let base = store.get("explorer-base", { name: "Birchington-on-Sea", lat: 51.3770, lon: 1.3050, radius: 0 });
+function km(lat, lon) {
+  const R = 6371, dLat = (lat - base.lat) * Math.PI / 180, dLon = (lon - base.lon) * Math.PI / 180;
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos(base.lat * Math.PI / 180) * Math.cos(lat * Math.PI / 180) * Math.sin(dLon / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+const inRange = (lat, lon) => !base.radius || lat == null || km(lat, lon) <= base.radius;
+const distText = (lat, lon) => lat == null ? "" : (() => { const d = km(lat, lon); return d < 1 ? `${Math.round(d * 1000 / 10) * 10} m` : `${d.toFixed(1)} km`; })();
+function renderBase() {
+  const known = TOWNS.some(t => t[0] === base.name);
+  $("#baseSel").innerHTML = TOWNS.map(t => `<option ${t[0] === base.name ? "selected" : ""}>${t[0]}</option>`).join("")
+    + (known ? "" : `<option selected>${esc(base.name)}</option>`)
+    + `<option value="__gps">My location (this PC)…</option><option value="__pick">Pick on the map…</option>`;
+  $("#radiusSel").innerHTML = RADII.map(r => `<option value="${r}" ${r === base.radius ? "selected" : ""}>${r ? "within " + r + " km" : "any distance"}</option>`).join("");
+}
+function setBase(b) { base = { ...base, ...b }; store.set("explorer-base", base); renderBase(); render(); if (overviewMap) drawBaseOn(overviewMap); }
 
 // ---- dates (local calendar) ----
 const pad = n => String(n).padStart(2, "0");
@@ -219,13 +254,14 @@ function renderCatalogue() {
   let html = "";
   if (tab === "places" || tab === "photo") {
     const list = DATA.places.filter(p => (tab === "photo") === (p.category === "photo" || p.category === "hide"))
-      .filter(p => p.category !== "practical").filter(p => hit(p.name, p.town, p.summary, p.category));
+      .filter(p => p.category !== "practical").filter(p => hit(p.name, p.town, p.summary, p.category))
+      .filter(p => inRange(p.lat, p.lon)).sort((a, b) => km(a.lat, a.lon) - km(b.lat, b.lon));
     html = list.map(p => `<div class="item">${thumb(p.photos) || `<span class="dot" style="background:${CAT_COLOR[p.category] || "#6E7781"}"></span>`}
-      <div class="open" data-open="place" data-id="${esc(p.id)}"><div class="t">${esc(p.name)}</div><div class="meta">${esc(p.category)} · ${esc(p.town)}</div><div class="s">${esc(p.summary)}</div></div>
+      <div class="open" data-open="place" data-id="${esc(p.id)}"><div class="t">${esc(p.name)}</div><div class="meta">${esc(p.category)} · ${esc(p.town)} <span class="dist">· ${distText(p.lat, p.lon)}</span></div><div class="s">${esc(p.summary)}</div></div>
       <button data-add="place" data-id="${esc(p.id)}">+ Add</button></div>`).join("");
   } else if (tab === "events") {
     const days = weekDays();
-    const list = DATA.events.filter(e => hit(e.title, e.venue, e.town, e.category))
+    const list = DATA.events.filter(e => hit(e.title, e.venue, e.town, e.category) && inRange(e.lat, e.lon))
       .map(e => ({ e, days: days.filter(d => occurs(e, d)) })).filter(x => x.days.length)
       .sort((a, b) => a.days[0] - b.days[0]);
     html = list.length ? list.map(({ e, days }) => `<div class="item"><span class="dot" style="background:var(--accent)"></span>
@@ -234,8 +270,8 @@ function renderCatalogue() {
       ${e.confidence === "expected" ? '<div class="badge">date expected, not yet confirmed</div>' : ""}</div>
       <button data-add="event" data-id="${esc(e.id)}">+ Add</button></div>`).join("") : '<p class="hint">No events found in this week.</p>';
   } else if (tab === "walks") {
-    html = DATA.walks.filter(w => hit(w.title, w.summary)).map(w => `<div class="item">${thumb(w.photos) || '<span class="dot" style="background:#3E9B4F"></span>'}
-      <div class="open" data-open="walk" data-id="${esc(w.id)}"><div class="t">${esc(w.title)}</div><div class="meta">${w.km} km${w.circular ? " · circular" : ""}${w.tide ? " · check the tide" : ""}</div>
+    html = DATA.walks.filter(w => hit(w.title, w.summary) && inRange(w.points[0]?.lat, w.points[0]?.lon)).map(w => `<div class="item">${thumb(w.photos) || '<span class="dot" style="background:#3E9B4F"></span>'}
+      <div class="open" data-open="walk" data-id="${esc(w.id)}"><div class="t">${esc(w.title)}</div><div class="meta">${w.km} km${w.circular ? " · circular" : ""} <span class="dist">· start ${distText(w.points[0]?.lat, w.points[0]?.lon)} away</span>${w.tide ? " · check the tide" : ""}</div>
       <div class="s">${esc(w.summary)}</div></div><button data-add="walk" data-id="${esc(w.id)}">+ Add</button></div>`).join("");
   } else {
     html = `<p class="hint">Add your own entry (lunch, a train, a visit to friends).</p><button class="primary" data-add="note">+ Add a note</button>`;
@@ -307,19 +343,20 @@ function suggest() {
   const usedP = new Set(plan.filter(i => i.k === "place").map(i => i.r));
   const usedW = new Set(plan.filter(i => i.k === "walk").map(i => i.r));
   const indoor = p => p.category === "museum" || (p.tags || []).includes("rainy-day");
-  const sight = DATA.places.filter(p => !["pub", "cafe", "restaurant", "food", "shop", "practical", "daytrip", "photo", "hide", "market"].includes(p.category));
+  const sight = DATA.places.filter(p => inRange(p.lat, p.lon)).filter(p => !["pub", "cafe", "restaurant", "food", "shop", "practical", "daytrip", "photo", "hide", "market"].includes(p.category));
   const rank = p => (/(Birchington|Westgate)/.test(p.town) ? 3 : 0) + (["sight", "museum", "history"].includes(p.category) ? 2 : 0) + (["beach", "nature"].includes(p.category) ? 1 : 0);
   const outdoor = sight.filter(p => !indoor(p)).sort((a, b) => rank(b) - rank(a));
-  const inside = DATA.places.filter(indoor).sort((a, b) => rank(b) - rank(a));
+  const inside = DATA.places.filter(p => indoor(p) && inRange(p.lat, p.lon)).sort((a, b) => rank(b) - rank(a));
   const exposed = w => w.tide || /cliff|sea wall|marsh/i.test(w.title + " " + w.summary);
-  const sunsets = DATA.places.filter(p => (p.subjects || []).some(s => s.includes("sunset")));
+  const sunsets = DATA.places.filter(p => (p.subjects || []).some(s => s.includes("sunset")) && inRange(p.lat, p.lon));
+  const walksNear = DATA.walks.filter(w => inRange(w.points[0]?.lat, w.points[0]?.lon));
   const slotOf = t => !t ? "afternoon" : +t.slice(0, 2) < 12 ? "morning" : +t.slice(0, 2) < 17 ? "afternoon" : "evening";
   const add = (d, k, r, t, s, tm = null, n = null) => plan.push({ id: String(Math.random()).slice(2), d, k, r, t, s, tm, n });
   weekDays().forEach((d, i) => {
     const k = key(d);
     if (k < todayKey || plan.some(x => x.d === k)) return;
     const w = weather[k], wet = w && (w.rain >= 4 || w.rainH >= 4), windy = w && w.gust >= 38;
-    const occ = DATA.events.filter(e => { const o = occurs(e, d); return o && !o.ongoing; });
+    const occ = DATA.events.filter(e => { const o = occurs(e, d); return o && !o.ongoing && inRange(e.lat, e.lon); });
     occ.slice(0, 2).forEach(e => add(k, "event", e.id, e.title, slotOf(e.start_time), e.start_time));
     if (wet) {
       inside.filter(p => !usedP.has(p.id)).slice(0, occ.length ? 1 : 2).forEach((p, j) => { usedP.add(p.id); add(k, "place", p.id, p.name, j ? "afternoon" : "morning", null, `Forecast: wet, ${Math.round(w.rain)} mm`); });
@@ -327,7 +364,7 @@ function suggest() {
     }
     const walkDay = i % 2 === 0 || (w && w.rain < 1.5 && w.gust < 32);
     if (walkDay) {
-      const wk = DATA.walks.find(x => !usedW.has(x.id) && (!windy || !exposed(x)));
+      const wk = walksNear.find(x => !usedW.has(x.id) && (!windy || !exposed(x)));
       if (wk) {
         usedW.add(wk.id);
         const lw = (DATA.tides[k] || []).find(t => t[1] === "L");
@@ -514,7 +551,45 @@ function showOverview() {
     all.push(...w.route);
   });
   if (all.length) overviewMap.fitBounds(all, { padding: [10, 10] });
+  drawBaseOn(overviewMap);
 }
+let baseLayer = null;
+function drawBaseOn(m) {
+  if (!window.L) return;
+  if (baseLayer) baseLayer.remove();
+  baseLayer = L.layerGroup().addTo(m);
+  L.circleMarker([base.lat, base.lon], { radius: 7, color: "#fff", weight: 2, fillColor: accent(), fillOpacity: 1 }).bindTooltip("Base: " + esc(base.name)).addTo(baseLayer);
+  if (base.radius) L.circle([base.lat, base.lon], { radius: base.radius * 1000, color: accent(), weight: 2, dashArray: "8 6", fillOpacity: 0.05 }).addTo(baseLayer);
+}
+
+// base pickers
+let pickMap = null, picked = null;
+$("#baseSel").onchange = e => {
+  const v = e.target.value;
+  if (v === "__gps") {
+    if (!navigator.geolocation) { alert("This browser cannot share its location."); renderBase(); return; }
+    navigator.geolocation.getCurrentPosition(p => setBase({ name: "My location", lat: p.coords.latitude, lon: p.coords.longitude }),
+      () => { alert("Location not available - pick on the map instead."); renderBase(); }, { timeout: 10000 });
+  } else if (v === "__pick") {
+    renderBase();
+    if (!window.L) { alert("The map needs an internet connection."); return; }
+    $("#pickDlg").showModal();
+    if (!pickMap) {
+      pickMap = L.map("pickMap");
+      L.tileLayer(OSM.url, { minZoom: 9, maxZoom: 19, maxNativeZoom: 17, attribution: OSM.attribution }).addTo(pickMap);
+      let mk = null;
+      pickMap.on("click", ev => { picked = ev.latlng; if (mk) mk.remove(); mk = L.marker(picked).addTo(pickMap); $("#pickOk").disabled = false; });
+    }
+    pickMap.setView([base.lat, base.lon], 14);
+    setTimeout(() => pickMap.invalidateSize(), 200);
+  } else {
+    const t = TOWNS.find(x => x[0] === v);
+    if (t) setBase({ name: t[0], lat: t[1], lon: t[2] });
+  }
+};
+$("#pickOk").onclick = () => { if (picked) setBase({ name: $("#pickName").value.trim() || "Our base", lat: picked.lat, lon: picked.lng }); $("#pickDlg").close(); };
+$("#pickCancel").onclick = () => $("#pickDlg").close();
+$("#radiusSel").onchange = e => setBase({ radius: +e.target.value });
 
 
 // ---- forecast (online only) ----
@@ -535,6 +610,7 @@ async function loadWeather() {
     } catch (e) {}
   }
 }
+renderBase();
 render();
 loadWeather();
 </script>

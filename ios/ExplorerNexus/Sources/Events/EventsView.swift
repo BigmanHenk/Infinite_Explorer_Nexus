@@ -5,6 +5,8 @@ import UIKit
 struct EventsView: View {
     @EnvironmentObject var theme: ThemeStore
     @EnvironmentObject var store: Store
+    @EnvironmentObject var base: BaseStore
+    @EnvironmentObject var location: LocationModel
     @State private var mode = 0           // 0 = by day, 1 = coming up
     @State private var day = Day.start(Date())
     @State private var category: String? = nil
@@ -17,6 +19,7 @@ struct EventsView: View {
     private func keep(_ e: EventItem) -> Bool {
         if let category, e.category != category { return false }
         if let town, e.town != town { return false }
+        if !base.within(e.coordinate, location) { return false }
         let q = search.lowercased()
         if !q.isEmpty, !(e.title.lowercased().contains(q) || e.venue.lowercased().contains(q) || e.description.lowercased().contains(q)) {
             return false
@@ -32,6 +35,7 @@ struct EventsView: View {
                     Text("Coming up").tag(1)
                 }
                 .pickerStyle(.segmented)
+                BaseChip()
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
                         Menu {

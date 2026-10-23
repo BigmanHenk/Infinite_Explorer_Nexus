@@ -7,6 +7,7 @@ struct PlacesView: View {
     @EnvironmentObject var theme: ThemeStore
     @EnvironmentObject var store: Store
     @EnvironmentObject var location: LocationModel
+    @EnvironmentObject var base: BaseStore
     @State private var category: String? = nil
     @State private var search = ""
     @State private var sortNear = true
@@ -18,7 +19,7 @@ struct PlacesView: View {
     }
 
     private var filtered: [Place] {
-        var list = store.places
+        var list = store.places.filter { base.within($0.coordinate, location) }
         if let category { list = list.filter { $0.category == category } }
         if let tag { list = list.filter { $0.tags.contains(tag) } }
         let q = search.trimmingCharacters(in: .whitespaces).lowercased()
@@ -28,8 +29,9 @@ struct PlacesView: View {
                     || $0.summary.lowercased().contains(q) || $0.description.lowercased().contains(q)
             }
         }
-        if sortNear, let loc = location.location {
-            list.sort { $0.coordinate.distance(to: loc.coordinate) < $1.coordinate.distance(to: loc.coordinate) }
+        if sortNear {
+            let o = base.origin(location)
+            list.sort { $0.coordinate.distance(to: o) < $1.coordinate.distance(to: o) }
         }
         return list
     }
@@ -37,6 +39,7 @@ struct PlacesView: View {
     var body: some View {
         List {
             Section {
+                BaseChip()
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
                         Chip(text: "All", on: category == nil) { category = nil }
@@ -73,10 +76,8 @@ struct PlacesView: View {
                 HStack {
                     SectionHead("\(filtered.count) places")
                     Spacer()
-                    if location.location != nil {
-                        Button(sortNear ? "Nearest first" : "A–Z") { sortNear.toggle() }
-                            .font(.caption.weight(.semibold))
-                    }
+                    Button(sortNear ? "Nearest first" : "A–Z") { sortNear.toggle() }
+                        .font(.caption.weight(.semibold))
                 }
             }
         }
@@ -90,6 +91,7 @@ struct PlacesView: View {
 struct PlaceRow: View {
     @EnvironmentObject var theme: ThemeStore
     @EnvironmentObject var location: LocationModel
+    @EnvironmentObject var base: BaseStore
     let place: Place
     var body: some View {
         HStack(spacing: 12) {
@@ -99,7 +101,7 @@ struct PlaceRow: View {
                 Text(place.summary).font(.caption).lineLimit(2).foregroundStyle(theme.t.onSurfaceVariant.opacity(0.8))
                 HStack(spacing: 6) {
                     Text(place.town)
-                    if let d = location.distance(to: place.coordinate) { Text("· \(distanceText(d))") }
+                    Text("· \(distanceText(base.distance(to: place.coordinate, location)))")
                 }
                 .font(.caption2).foregroundStyle(theme.t.primary.opacity(0.9))
             }

@@ -6,6 +6,8 @@ struct PhotoView: View {
     @EnvironmentObject var theme: ThemeStore
     @EnvironmentObject var store: Store
     @EnvironmentObject var weather: WeatherStore
+    @EnvironmentObject var base: BaseStore
+    @EnvironmentObject var location: LocationModel
     @State private var day = Day.start(Date())
     @State private var subject: String? = nil
     @State private var hidesOnly = false
@@ -19,6 +21,7 @@ struct PhotoView: View {
     private var spots: [Place] {
         store.photoSpots.filter { p in
             (!hidesOnly || p.category == "hide") && (subject == nil || p.subjects.contains(subject!))
+                && base.within(p.coordinate, location)
         }
     }
 
@@ -28,6 +31,7 @@ struct PhotoView: View {
             Section {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
+                        BaseChip()
                         Chip(text: "Hides", symbol: "bird", on: hidesOnly) { hidesOnly.toggle() }
                         ForEach(subjects, id: \.self) { s in
                             Chip(text: s.capitalized, on: subject == s) { subject = subject == s ? nil : s }
