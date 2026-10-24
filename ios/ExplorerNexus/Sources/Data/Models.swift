@@ -38,9 +38,10 @@ struct Place: Identifiable, Hashable {
     let hygiene: String?
     let hygieneDate: String?
     let hygieneURL: String?
+    let drink: DrinkInfo?
 
     var coordinate: CLLocationCoordinate2D { .init(latitude: lat, longitude: lon) }
-    var isPhoto: Bool { category == "photo" || category == "hide" }
+    var isPhoto: Bool { category == "photo" || category == "hide" || category == "viewpoint" }
     var hours: OpeningHours { OpeningHours(hoursOSM) }
     var isEatDrink: Bool { ["pub", "cafe", "restaurant", "food", "brewery", "vineyard"].contains(category) }
 }
@@ -143,10 +144,10 @@ enum Cat {
         case "church": return "Churches"
         case "beach": return "Beaches"
         case "nature": return "Nature"
-        case "viewpoint": return "Viewpoints"
+        case "viewpoint": return "Beauty spots & views"
         case "family": return "Family"
         case "photo": return "Photo spots"
-        case "hide": return "Wildlife hides"
+        case "hide": return "Wildlife & hides"
         case "pub": return "Pubs"
         case "brewery": return "Breweries & distilleries"
         case "vineyard": return "Vineyards & wine"

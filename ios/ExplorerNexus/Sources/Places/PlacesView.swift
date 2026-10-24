@@ -168,6 +168,7 @@ struct PlaceDetailView: View {
                 PlanButton { planning = PlanTarget(kind: .place, refID: place.id, title: place.name) }
                 TravelCard(to: place.coordinate, name: place.name)
                 PlaceExtras(place: place)
+                if place.category != "ev" { ParkingCard(to: place.coordinate) }
 
                 if place.isPhoto { photoCard }
 

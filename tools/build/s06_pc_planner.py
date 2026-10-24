@@ -60,7 +60,7 @@ def main():
     pcols = ["id", "name", "category", "town", "lat", "lon", "summary", "description", "address", "postcode", "phone",
              "website", "opening_hours", "price", "dogs", "accessibility", "tips", "duration_min", "tags", "source_urls",
              "subjects", "best_time", "tide", "wildlife", "facilities", "hours_osm", "menu_url", "hygiene",
-             "hygiene_date", "hygiene_url"]
+             "hygiene_date", "hygiene_url", "drink"]
     places = []
     for r in q("SELECT " + ", ".join(pcols) + " FROM places ORDER BY name"):
         d = {k: v for k, v in zip(pcols, r) if v not in (None, "")}
@@ -68,6 +68,8 @@ def main():
         d["subjects"] = (d.get("subjects") or "").split(",")
         d["source_urls"] = (d.get("source_urls") or "").split(chr(10))
         d["photos"] = photos.get(d["id"], [])
+        if d.get("drink"):
+            d["drink"] = json.loads(d["drink"])
         places.append(d)
     ecols = ["id", "title", "category", "venue", "town", "lat", "lon", "start_date", "end_date", "start_time", "end_time",
              "recurrence", "price", "website", "booking", "description", "confidence", "source_urls"]
@@ -118,7 +120,8 @@ def main():
         d += timedelta(days=1)
 
     streets = [[n, t, la, lo] for n, t, la, lo in q("SELECT name, town, lat, lon FROM streets")]
-    data = dict(places=places, events=events, walks=walks, tides=tides, sunset=sunsets, streets=streets)
+    parking = [list(r) for r in q("SELECT name, lat, lon, fee, capacity, disabled, maxstay FROM parking")]
+    data = dict(places=places, events=events, walks=walks, tides=tides, sunset=sunsets, streets=streets, parking=parking)
     html = (TOOLS / "build" / "planner_template.html").read_text(encoding="utf-8")
     qrlib = (TOOLS / "vendor" / "qrcode.min.js").read_text(encoding="utf-8")
     html = html.replace("__QRLIB__", qrlib).replace("__BUILT__", built)

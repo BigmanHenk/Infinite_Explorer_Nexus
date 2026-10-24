@@ -132,6 +132,7 @@ footer { color: var(--muted); font-size: 12px; padding: 4px 18px 20px; }
   <span class="week-label" id="weekLabel"></span>
   <button id="next" title="Next week">▶</button>
   <button id="suggest">✨ Suggest</button>
+  <button id="tourBtn">🗺️ Tour builder</button>
   <button class="primary" id="send">📱 Send to iPhone</button>
   <button id="importBtn">Import plan file</button>
   <input type="file" id="importFile" accept=".explorerplan,application/json" hidden>
@@ -145,7 +146,7 @@ footer { color: var(--muted); font-size: 12px; padding: 4px 18px 20px; }
       <button data-tab="places" class="on">Places</button>
       <button data-tab="events">What's on</button>
       <button data-tab="walks">Walks</button>
-      <button data-tab="photo">Photo &amp; hides</button>
+      <button data-tab="photo">Wildlife, photo &amp; views</button>
       <button data-tab="ev">⚡ EV</button>
       <button data-tab="note">+ Note</button>
     </div>
@@ -225,6 +226,7 @@ const TOWNS = [["Birchington-on-Sea", 51.3770, 1.3050], ["Minnis Bay", 51.3810, 
   ["Sandwich", 51.2740, 1.3400], ["Canterbury", 51.2800, 1.0790]];
 const RADII = [0, 1, 2, 3, 5, 8, 10, 15, 20, 30, 50];
 let base = store.get("explorer-base", { name: "Birchington-on-Sea", lat: 51.3770, lon: 1.3050, radius: 0 });
+let home = store.get("explorer-home", null);   // {lat, lon}
 function km(lat, lon) {
   const R = 6371, dLat = (lat - base.lat) * Math.PI / 180, dLon = (lon - base.lon) * Math.PI / 180;
   const a = Math.sin(dLat / 2) ** 2 + Math.cos(base.lat * Math.PI / 180) * Math.cos(lat * Math.PI / 180) * Math.sin(dLon / 2) ** 2;
@@ -234,9 +236,10 @@ const inRange = (lat, lon) => !base.radius || lat == null || km(lat, lon) <= bas
 const distText = (lat, lon) => lat == null ? "" : (() => { const d = km(lat, lon); return d < 1 ? `${Math.round(d * 1000 / 10) * 10} m` : `${d.toFixed(1)} km`; })();
 function renderBase() {
   const known = TOWNS.some(t => t[0] === base.name);
-  $("#baseSel").innerHTML = TOWNS.map(t => `<option ${t[0] === base.name ? "selected" : ""}>${t[0]}</option>`).join("")
-    + (known ? "" : `<option selected>${esc(base.name)}</option>`)
-    + `<option value="__gps">My location (this PC)…</option><option value="__pick">Pick on the map…</option>`;
+  $("#baseSel").innerHTML = (home ? `<option value="__home" ${base.name === "Home" ? "selected" : ""}>🏠 Home</option>` : "") + TOWNS.map(t => `<option ${t[0] === base.name ? "selected" : ""}>${t[0]}</option>`).join("")
+    + (known || base.name === "Home" ? "" : `<option selected>${esc(base.name)}</option>`)
+    + `<option value="__gps">My location (this PC)…</option><option value="__pick">Pick on the map…</option>`
+    + `<option value="__sethome">🏠 Set home on the map…</option>` + (base.name !== "Home" ? `<option value="__homehere">🏠 Make the current base my home</option>` : "");
   $("#radiusSel").innerHTML = RADII.map(r => `<option value="${r}" ${r === base.radius ? "selected" : ""}>${r ? "within " + r + " km" : "any distance"}</option>`).join("");
 }
 function setBase(b) { base = { ...base, ...b }; store.set("explorer-base", base); renderBase(); render(); drawBase(); if (current) openDetail(current.kind, current.id, current.loc, true); }
@@ -381,8 +384,9 @@ function renderCatalogue() {
   const hit = (...f) => !q || f.some(x => (x || "").toLowerCase().includes(q));
   let html = "";
   if (tab === "places" || tab === "photo" || tab === "ev") {
-    const kindOf = p => p.category === "photo" || p.category === "hide" ? "photo" : p.category === "ev" ? "ev" : "places";
-    const list = DATA.places.filter(p => kindOf(p) === tab)
+    const inTab = p => tab === "photo" ? ["photo", "hide", "viewpoint"].includes(p.category)
+                     : tab === "ev" ? p.category === "ev" : p.category !== "ev";
+    const list = DATA.places.filter(inTab)
       .filter(p => p.category !== "practical").filter(p => hit(p.name, p.town, p.summary, p.category))
       .filter(p => inRange(p.lat, p.lon) && openMatch(p)).sort((a, b) => km(a.lat, a.lon) - km(b.lat, b.lon));
     shown = list.map(p => ({ k: "place", id: p.id, lat: p.lat, lon: p.lon, c: CAT_COLOR[p.category] || (p.category === "ev" ? "#1FA67A" : "#6E7781"), t: p.name }));
@@ -570,7 +574,8 @@ $("#importFile").onchange = async e => {
 $("#clear").onclick = () => { if (confirm("Clear everything planned this week?")) { const ks = new Set(weekDays().map(key)); plan = plan.filter(i => !ks.has(i.d)); save(); } };
 $("#prev").onclick = () => { weekStart = addDays(weekStart, -7); render(); };
 $("#next").onclick = () => { weekStart = addDays(weekStart, 7); render(); };
-$("#suggest").onclick = suggest;
+$("#suggest").onclick = () => openSuggest();
+$("#tourBtn").onclick = () => openTour();
 $("#search").oninput = renderCatalogue;
 $("#tabs").onclick = e => { const b = e.target.closest("button"); if (!b) return; tab = b.dataset.tab; document.querySelectorAll("#tabs button").forEach(x => x.classList.toggle("on", x === b)); renderCatalogue(); };
 $("#catalogue").onclick = e => {
@@ -593,7 +598,7 @@ let mainMap = null, shownLayer = null, selLayer = null, baseLayer = null, curren
 
 function initMap() {
   if (!window.L) { $("#bigmap").innerHTML = '<p class="hint" style="padding:16px">The map needs an internet connection on this PC.</p>'; return; }
-  mainMap = L.map("bigmap", { scrollWheelZoom: true, minZoom: 9, maxBounds: [[50.95, 0.6], [51.6, 1.75]] }).setView([base.lat, base.lon], 13);
+  mainMap = L.map("bigmap", { preferCanvas: true, scrollWheelZoom: true, minZoom: 9, maxBounds: [[50.95, 0.6], [51.6, 1.75]] }).setView([base.lat, base.lon], 13);
   L.tileLayer(OSM.url, { minZoom: 9, maxZoom: 19, maxNativeZoom: 17, attribution: OSM.attribution, errorTileUrl: BLANK }).addTo(mainMap);
   addFullscreen(mainMap);
   shownLayer = L.layerGroup().addTo(mainMap);
@@ -664,6 +669,21 @@ function travel(lat, lon, name) {
       <a href="https://maps.apple.com/?daddr=${lat},${lon}&saddr=${base.lat},${base.lon}" target="_blank" rel="noopener">Apple Maps</a></div>
     <div class="hint">Google Maps and Waze links also open on your phone if you send them there (Edge/Chrome: "Send to your devices").</div>`;
 }
+function parkingNear(lat, lon) {
+  if (lat == null) return "";
+  const near = DATA.parking.map(p => ({ p, d: (() => { const o = base; base = { ...base, lat, lon }; const v = km(p[1], p[2]); base = o; return v; })() }))
+    .filter(x => x.d <= 1.5).sort((a, b) => a.d - b.d).slice(0, 3);
+  if (!near.length) return "";
+  return `<h3 style="margin:14px 0 4px">🅿️ Parking nearby</h3>` + near.map(({ p, d }) => {
+    const [name, la, lo, fee, cap, dis, maxstay] = p;
+    const info = [fee, cap ? cap + " spaces" : null, dis ? dis + " disabled" : null, maxstay ? "max " + maxstay : null].filter(Boolean).join(" · ");
+    return `<div style="margin:6px 0"><b>${esc(name)}</b> <span class="hint">🚶 ${Math.max(1, Math.round(d * 1.3 / 4.8 * 60))} min to here · ${(d * 1000).toFixed(0)} m</span>
+      ${info ? `<div class="hint">${esc(info)}</div>` : ""}
+      <div class="dirs" style="margin:3px 0"><a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&origin=${base.lat},${base.lon}&destination=${la},${lo}&travelmode=driving">Drive: Google Maps</a>
+      <a target="_blank" rel="noopener" href="https://waze.com/ul?ll=${la},${lo}&navigate=yes">Waze</a>
+      <a target="_blank" rel="noopener" href="https://maps.apple.com/?daddr=${la},${lo}&saddr=${base.lat},${base.lon}&dirflg=d">Apple Maps</a></div></div>`;
+  }).join("") + '<div class="hint">Car parks from OpenStreetMap; charges can change.</div>';
+}
 function moreInfo(o, name, town) {
   const out = [];
   if (o.website) out.push(`<a class="web" href="${esc(o.website)}" target="_blank" rel="noopener">🌐 Official website</a>`);
@@ -676,6 +696,12 @@ function moreInfo(o, name, town) {
 }
 function extras(p) {
   let h = "";
+  if (p.drink) {
+    const b = drinkBadges(p.drink);
+    if (b.length) h += `<div class="badge" style="color:var(--accent);font-size:13px;margin:6px 0">${esc(b.join(" · "))}</div>`;
+    if (p.drink.notes) h += `<div class="hint">${esc(p.drink.notes)}</div>`;
+    if ((p.drink.awards || []).length) h += `<div class="hint">🏅 ${esc(p.drink.awards.join("; "))}</div>`;
+  }
   if (p.menu_url) h += `<a class="web" href="${esc(p.menu_url)}" target="_blank" rel="noopener">🍽️ Menu</a> `;
   if (parseHours(p.hours_osm)) {
     const o = openNow(p.hours_osm);
@@ -715,7 +741,7 @@ function openDetail(kind, id, loc, keepView) {
     const p = DATA.places.find(x => x.id === id); if (!p) return;
     h = `<h2>${esc(p.name)}</h2><div class="sub">${esc(p.category)} · ${esc(p.town)}</div>${gallery(p.photos)}
       ${(p.tags || []).includes("allstar") ? '<div class="badge" style="color:#1FA67A;font-size:13px">✔ Allstar card accepted on this network</div>' : ""}
-      <p><b>${esc(p.summary || "")}</b></p>${moreInfo(p, p.name, p.town)}${extras(p)}${travel(p.lat, p.lon, p.name)}<div class="desc">${esc(p.description || "")}</div>
+      <p><b>${esc(p.summary || "")}</b></p>${moreInfo(p, p.name, p.town)}${extras(p)}${travel(p.lat, p.lon, p.name)}${p.category !== "ev" ? parkingNear(p.lat, p.lon) : ""}<div class="desc">${esc(p.description || "")}</div>
       ${rows([["Best time & light", p.best_time], ["Tide", p.tide], ["Wildlife", p.wildlife], ["Hides & access", p.facilities],
               ["Opening", p.opening_hours], ["Price", p.price], ["Typical visit", p.duration_min ? p.duration_min + " min" : null],
               ["Tip", p.tips], ["Dogs", p.dogs], ["Access", p.accessibility], ["Address", [p.address, p.postcode].filter(Boolean).join(", ")]])}`;
@@ -725,14 +751,14 @@ function openDetail(kind, id, loc, keepView) {
     h = `<h2>${esc(e.title)}</h2><div class="sub">${esc(e.venue)} · ${esc(e.town)}</div>
       ${e.confidence === "expected" ? '<div class="warn">Date expected from previous years — not yet confirmed by the organiser.</div>' : ""}
       ${rows([["When", eventWhen(e)], ["Time", [e.start_time, e.end_time].filter(Boolean).join("–")], ["Price", e.price], ["Booking", e.booking]])}
-      ${moreInfo(e, e.title, e.town)}${travel(e.lat, e.lon, e.venue)}<div class="desc">${esc(e.description || "")}</div>`;
+      ${moreInfo(e, e.title, e.town)}${travel(e.lat, e.lon, e.venue)}${parkingNear(e.lat, e.lon)}<div class="desc">${esc(e.description || "")}</div>`;
     if (e.lat) sel = { lat: e.lat, lon: e.lon, label: e.venue };
   } else if (kind === "walk") {
     const w = DATA.walks.find(x => x.id === id); if (!w) return;
     const st = w.points[0] || {};
     h = `<h2>${esc(w.title)}</h2><div class="sub">${w.km} km${w.duration_min ? " · " + w.duration_min + " min" : ""} · ${esc(w.difficulty || "")} · ${w.circular ? "circular" : "one way"}</div>
       ${gallery(w.photos)}${w.tide ? `<div class="warn">⚠ ${esc(w.tide)}</div>` : ""}
-      <p><b>${esc(w.summary || "")}</b></p>${travel(st.lat, st.lon, w.start)}
+      <p><b>${esc(w.summary || "")}</b></p>${travel(st.lat, st.lon, w.start)}${parkingNear(st.lat, st.lon)}
       <div class="desc">${esc(w.description || "")}</div>
       <h3>The route <span class="hint">(numbers on the map)</span></h3><ol class="pts">${w.points.map(pt => `<li><b>${esc(pt.name)}</b>${pt.note ? `<div class="n">${esc(pt.note)}</div>` : ""}</li>`).join("")}</ol>
       ${rows([["Start", w.start], ["Surface", w.surface], ["Toilets", w.toilets], ["Refreshments", w.refreshments], ["Parking", w.parking],
@@ -755,6 +781,273 @@ function openDetail(kind, id, loc, keepView) {
   if ($("#dbase")) $("#dbase").onclick = () => setBase({ name: loc.name, lat: loc.lat, lon: loc.lon });
   if (!wasOpen && mainMap) setTimeout(() => { mainMap.invalidateSize(); if (sel && !keepView) showOnMap(sel); }, 80);
   else if (sel && !keepView) showOnMap(sel);
+}
+
+
+// ---- tour builder: same rules as TourPlanner.swift ----
+const TOUR_THEMES = {
+  pubs: { name: "Pub crawl", start: 1110, hours: 3.5, ok: p => ["pub", "brewery"].includes(p.category) },
+  craft: { name: "Craft beer trail", start: 1110, hours: 3.5, ok: p => ["pub", "brewery"].includes(p.category) && !!p.drink && (p.drink.craft || p.drink.taproom || p.drink.micropub) },
+  sights: { name: "Sightseeing", start: 600, hours: 6, ok: p => ["sight", "history", "museum", "church", "viewpoint", "beach", "nature", "family"].includes(p.category) },
+  cafes: { name: "Cafés & treats", start: 840, hours: 2, ok: p => ["cafe", "food"].includes(p.category) },
+  photo: { name: "Photo spots", start: 900, hours: 3, ok: p => ["photo", "viewpoint"].includes(p.category) },
+  wildlife: { name: "Wildlife & hides", start: 480, hours: 5, ok: p => ["hide", "nature"].includes(p.category) },
+  mixed: { name: "Mixed day out", start: 600, hours: 6, ok: p => ["sight", "history", "museum", "church", "viewpoint", "beach", "cafe", "pub"].includes(p.category) },
+};
+const DWELL = { pub: 45, brewery: 60, vineyard: 75, cafe: 40, food: 25, restaurant: 90, museum: 90, family: 90, history: 40, church: 25, beach: 40, nature: 40, viewpoint: 15, photo: 30, hide: 60 };
+const dwell = p => DWELL[p.category] || 30;
+function legMin(a, b, drive) {
+  const d = (() => { const R = 6371, dLat = (b.lat - a.lat) * Math.PI / 180, dLon = (b.lon - a.lon) * Math.PI / 180;
+    const x = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * Math.PI / 180) * Math.cos(b.lat * Math.PI / 180) * Math.sin(dLon / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(x)); })();
+  const m = drive ? Math.max(1, Math.round(d * 1.4 / 38 * 60 + 3)) : Math.max(1, Math.round(d * 1.3 / 4.8 * 60));
+  return [m, d * 1000];
+}
+function tourScore(p, theme) {
+  let s = 1;
+  const d = p.drink;
+  if (d) {
+    s += Math.min((d.awards || []).length, 3) * 1.5;
+    if (d.gbg) s += 2;
+    if (d.craft) s += theme === "craft" ? 2 : 0.5;
+    if (d.real_ale) s += 0.7;
+    if (d.micropub) s += 0.5;
+    if (d.taproom) s += 0.8;
+  }
+  if (p.hygiene === "5") s += 0.3;
+  if (["museum", "history", "sight"].includes(p.category)) s += 0.6;
+  if (!parseHours(p.hours_osm)) s -= 1;
+  return s;
+}
+const openFor = (p, day, a, b) => { const r = isOpen(p.hours_osm, day, a, Math.min(b, 1440), true); return r === null ? true : r; };
+function timed(order, start, day, t0, end, drive, back) {
+  const out = []; let here = start, now = t0;
+  for (const p of order) {
+    const [leg, m] = legMin(here, p, drive), arrive = now + leg, leave = arrive + dwell(p);
+    if (!openFor(p, day, arrive, leave)) return null;
+    out.push({ p, arrive, leave, leg, m }); here = p; now = leave;
+  }
+  if (back) now += legMin(here, start, drive)[0];
+  return now <= end ? out : null;
+}
+function tourPlan({ theme, start, day, t0, hours, drive, back, exclude }) {
+  const end = t0 + Math.round(hours * 60), maxLeg = drive ? 30 : 25, th = TOUR_THEMES[theme];
+  let pool = DATA.places.filter(p => th.ok(p) && !exclude.has(p.id) && inRange(p.lat, p.lon) && legMin(start, p, drive)[0] <= (drive ? 45 : 40));
+  let stops = [], here = start, now = t0, lastCat = "";
+  while (stops.length < 8) {
+    let best = null;
+    for (const p of pool) {
+      if (stops.some(s => s.p.id === p.id)) continue;
+      const [leg, m] = legMin(here, p, drive);
+      if (leg > maxLeg) continue;
+      const arrive = now + leg, leave = arrive + dwell(p);
+      let finish = leave; if (back) finish += legMin(p, start, drive)[0];
+      if (finish > end || !openFor(p, day, arrive, leave)) continue;
+      let v = tourScore(p, theme) - leg * (drive ? 0.05 : 0.14);
+      if (theme === "mixed" && p.category === lastCat) v -= 1;
+      if (theme === "mixed" && ["pub", "cafe"].includes(p.category) && stops.some(s => s.p.category === p.category)) v -= 2;
+      if (!best || v > best.v) best = { v, p, leg, m };
+    }
+    if (!best) break;
+    const arrive = now + best.leg;
+    stops.push({ p: best.p, arrive, leave: arrive + dwell(best.p), leg: best.leg, m: best.m });
+    here = best.p; now = arrive + dwell(best.p); lastCat = best.p.category;
+  }
+  // 2-opt
+  if (stops.length >= 3) {
+    let improved = true, rounds = 0, bestT = stops.reduce((a, s) => a + s.leg, 0);
+    while (improved && rounds++ < 20) {
+      improved = false;
+      for (let i = 0; i < stops.length - 1; i++) for (let j = i + 1; j < stops.length; j++) {
+        const order = stops.map(s => s.p); const mid = order.slice(i, j + 1).reverse(); order.splice(i, j - i + 1, ...mid);
+        const t = timed(order, start, day, t0, end, drive, back);
+        if (t) { const tt = t.reduce((a, s) => a + s.leg, 0); if (tt < bestT) { stops = t; bestT = tt; improved = true; } }
+      }
+    }
+  }
+  const backMin = back && stops.length ? legMin(stops[stops.length - 1].p, start, drive)[0] : 0;
+  return { stops, start, t0, end, backMin };
+}
+
+let tourState = { theme: "pubs", day: 0, t0: 1110, hours: 3.5, drive: false, back: true, exclude: new Set() }, lastTour = null;
+const hm = m => `${pad(Math.floor(m / 60) % 24)}:${pad(m % 60)}`;
+function tourForm() {
+  const th = Object.entries(TOUR_THEMES).map(([k, v]) => `<option value="${k}" ${k === tourState.theme ? "selected" : ""}>${v.name}</option>`).join("");
+  const days = [...Array(14)].map((_, i) => `<option value="${i}" ${i == tourState.day ? "selected" : ""}>${i ? fmt(addDays(new Date(), i), { weekday: "short", day: "numeric", month: "short" }) : "Today"}</option>`).join("");
+  const times = [...Array(67)].map((_, i) => 360 + i * 15).map(m => `<option value="${m}" ${m === tourState.t0 ? "selected" : ""}>${hm(m)}</option>`).join("");
+  const hrs = [1, 1.5, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8, 10].map(h => `<option value="${h}" ${h === tourState.hours ? "selected" : ""}>${h} h</option>`).join("");
+  return `<h2>🗺️ Tour builder</h2><div class="hint">A timed route through the best places that are open when you arrive, in the shortest order, from your base (${esc(base.name)}${base.radius ? ", within " + base.radius + " km" : ""}).</div>
+    <dl><dt>Theme</dt><dd><select id="tTheme">${th}</select></dd><dt>Day</dt><dd><select id="tDay">${days}</select></dd>
+    <dt>Start</dt><dd><select id="tStart">${times}</select></dd><dt>Time available</dt><dd><select id="tHours">${hrs}</select></dd>
+    <dt>Travel</dt><dd><select id="tDrive"><option value="0">On foot</option><option value="1" ${tourState.drive ? "selected" : ""}>By car</option></select></dd>
+    <dt>Finish</dt><dd><label><input type="checkbox" id="tBack" ${tourState.back ? "checked" : ""}> back where I started</label></dd></dl>
+    <button class="primary" id="tGo">Build my tour</button>
+    <div id="tOut"></div>
+    <p class="hint">Ranked on facts (CAMRA Good Beer Guide, awards, craft/real ale, taproom, hygiene rating), not on review scores — each stop has its TripAdvisor/Google review links in its details.</p>`;
+}
+function openTour() {
+  current = null;
+  $("#detailIn").innerHTML = `<button class="close" id="dclose">✕ Close</button>` + tourForm();
+  $("#detail").classList.add("open");
+  $("#dclose").onclick = closeDetail;
+  setTimeout(() => mainMap && mainMap.invalidateSize(), 80);
+  $("#tTheme").onchange = e => { const t = TOUR_THEMES[e.target.value]; tourState.theme = e.target.value; tourState.t0 = t.start; tourState.hours = t.hours; tourState.exclude = new Set(); openTour(); };
+  $("#tGo").onclick = () => { readTour(); runTour(); };
+  if (lastTour && lastTour.theme === tourState.theme) runTour();
+}
+function readTour() {
+  tourState.day = +$("#tDay").value; tourState.t0 = +$("#tStart").value; tourState.hours = +$("#tHours").value;
+  tourState.drive = $("#tDrive").value === "1"; tourState.back = $("#tBack").checked;
+}
+function runTour() {
+  const day = addDays(new Date(), tourState.day);
+  const t = tourPlan({ theme: tourState.theme, start: { lat: base.lat, lon: base.lon }, day, t0: tourState.t0, hours: tourState.hours,
+                       drive: tourState.drive, back: tourState.back, exclude: tourState.exclude });
+  lastTour = { ...t, theme: tourState.theme, day };
+  if (!t.stops.length) { $("#tOut").innerHTML = '<p class="warn">Nothing fits — try a longer time, another day, a wider radius or by car.</p>'; return; }
+  const finish = t.stops[t.stops.length - 1].leave + t.backMin, km = t.stops.reduce((a, s) => a + s.m, 0) / 1000;
+  const mode = tourState.drive ? "🚗" : "🚶";
+  $("#tOut").innerHTML = `<h3 style="margin:14px 0 2px">${t.stops.length} stops · ${hm(t.t0)}–${hm(finish)}</h3>
+    <div class="hint">${km.toFixed(1)} km, ${t.stops.reduce((a, s) => a + s.leg, 0) + t.backMin} min ${tourState.drive ? "driving" : "walking"} in total</div>
+    <ol class="pts">${t.stops.map((s, i) => `<li><div class="n">${mode} ${s.leg} min</div><b class="ttl" data-open="place" data-id="${esc(s.p.id)}" style="cursor:pointer">${esc(s.p.name)}</b>
+      <span class="hint"> ${hm(s.arrive)}–${hm(s.leave)} · ${esc(s.p.town)}</span>
+      ${s.p.drink ? `<div class="n">${esc(drinkBadges(s.p.drink).slice(0, 4).join(" · "))}</div>` : ""}
+      ${parseHours(s.p.hours_osm) ? "" : '<div class="n" style="color:var(--warn)">Opening hours not known — check first</div>'}
+      <button data-swap="${esc(s.p.id)}" title="Swap for another place" style="padding:1px 7px;font-size:12px">⟳ swap</button></li>`).join("")}</ol>
+    ${t.backMin ? `<div class="hint">Back to the start: ${t.backMin} min</div>` : ""}
+    <div class="row" style="justify-content:flex-start"><button class="primary" id="tAdd">+ Add all to my week</button>
+      <a class="web" style="margin:0" target="_blank" rel="noopener" href="${tourGoogle(t)}">Google Maps route</a></div>`;
+  $("#tOut").onclick = e => {
+    const sw = e.target.closest("[data-swap]"); if (sw) { tourState.exclude.add(sw.dataset.swap); runTour(); return; }
+    const o = e.target.closest("[data-open]"); if (o) openDetail("place", o.dataset.id);
+  };
+  $("#tAdd").onclick = () => {
+    const k = key(day);
+    t.stops.forEach(s => plan.push({ id: String(Math.random()).slice(2), d: k, k: "place", r: s.p.id, t: s.p.name,
+      s: s.arrive < 720 ? "morning" : s.arrive < 1020 ? "afternoon" : "evening", tm: hm(s.arrive), n: TOUR_THEMES[tourState.theme].name }));
+    weekStart = monday(day); save(); render(); $("#tAdd").textContent = "✓ Added"; $("#tAdd").disabled = true;
+  };
+  drawTour(t);
+}
+function tourGoogle(t) {
+  const pts = t.stops.map(s => `${s.p.lat},${s.p.lon}`);
+  const dest = tourState.back ? `${t.start.lat},${t.start.lon}` : pts.pop();
+  return `https://www.google.com/maps/dir/?api=1&origin=${t.start.lat},${t.start.lon}&destination=${dest}&travelmode=${tourState.drive ? "driving" : "walking"}` +
+    (pts.length ? `&waypoints=${encodeURIComponent(pts.slice(0, 9).join("|"))}` : "");
+}
+function drawTour(t) {
+  if (!mainMap) return;
+  selLayer.clearLayers();
+  const line = [[t.start.lat, t.start.lon], ...t.stops.map(s => [s.p.lat, s.p.lon])];
+  if (tourState.back) line.push([t.start.lat, t.start.lon]);
+  const pl = L.polyline(line, { color: accent(), weight: 5, dashArray: "10 6" }).addTo(selLayer);
+  t.stops.forEach((s, i) => L.marker([s.p.lat, s.p.lon], { icon: L.divIcon({ className: "", html: `<div class="wp-icon">${i + 1}</div>`, iconSize: [22, 22] }) })
+    .bindTooltip(`${i + 1}. ${esc(s.p.name)} ${hm(s.arrive)}`).on("click", () => openDetail("place", s.p.id)).addTo(selLayer));
+  mainMap.fitBounds(pl.getBounds(), { padding: [40, 40] });
+}
+function drinkBadges(d) {
+  const b = [];
+  if (d.gbg) b.push("Good Beer Guide"); if (d.craft) b.push("Craft beer"); if (d.real_ale) b.push("Real ale");
+  if (d.micropub) b.push("Micropub"); if (d.taproom) b.push("Taproom"); if (d.cider) b.push("Real cider");
+  if (d.food && d.food !== "none") b.push(d.food === "full meals" ? "Food" : "Snacks"); if (d.garden) b.push("Garden");
+  if (d.dogs) b.push("Dogs welcome"); if (d.live_music) b.push("Live music");
+  return b;
+}
+
+
+// ---- Suggest from ticked interests (same rules as Interests.swift) ----
+const INTERESTS = [
+  ["museums", "Museums & galleries", p => p.category === "museum", false, ["morning", "afternoon"]],
+  ["history", "History & churches", p => ["history", "church"].includes(p.category), false, ["morning", "afternoon"]],
+  ["sights", "Sights & attractions", p => p.category === "sight", false, ["morning", "afternoon"]],
+  ["beaches", "Beaches & rock pools", p => p.category === "beach", true, ["morning", "afternoon"]],
+  ["walks", "Walks", null, true, ["morning", "afternoon"]],
+  ["wildlife", "Wildlife, nature & hides", p => ["hide", "nature"].includes(p.category), true, ["morning", "afternoon"]],
+  ["photo", "Photo spots & views", p => ["photo", "viewpoint"].includes(p.category), true, ["evening", "morning"]],
+  ["family", "Family days out", p => p.category === "family" || (p.tags || []).includes("kids"), false, ["morning", "afternoon"]],
+  ["dayTrips", "Day trips", p => p.category === "daytrip", false, ["morning"]],
+  ["cafes", "Cafés & treats", p => ["cafe", "food"].includes(p.category), false, ["afternoon", "morning"]],
+  ["restaurants", "Restaurants", p => p.category === "restaurant", false, ["evening"]],
+  ["pubs", "Pubs", p => p.category === "pub", false, ["evening"]],
+  ["craftBeer", "Breweries & craft beer", p => p.category === "brewery" || (p.category === "pub" && p.drink && (p.drink.craft || p.drink.micropub)), false, ["afternoon", "evening"]],
+  ["vineyards", "Vineyards & tastings", p => p.category === "vineyard", false, ["afternoon", "morning"]],
+  ["shopping", "Shopping", p => p.category === "shop", false, ["afternoon", "morning"]],
+  ["markets", "Markets", p => p.category === "market", false, ["afternoon", "morning"]],
+  ["events", "Events, shows & festivals", null, false, []],
+];
+let interestSel = new Set(store.get("explorer-interests", ["museums", "history", "beaches", "walks", "photo", "cafes", "pubs", "events"]));
+let perDay = store.get("explorer-perday", 3);
+function openSuggest() {
+  current = null;
+  $("#detailIn").innerHTML = `<button class="close" id="dclose">✕ Close</button><h2>✨ Suggest my week</h2>
+    <div class="hint">Tick what you'd like to do. Empty days are filled fairly: each part of the day goes to the least-used of your choices that suits it and the forecast (wet → indoor, very windy → no beaches/exposed walks, sunset spots only on clear evenings), open at that time, within your base &amp; radius, nearest first.</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 12px;margin:12px 0">${INTERESTS.map(([k, label]) =>
+      `<label style="display:flex;gap:6px;align-items:center"><input type="checkbox" data-int="${k}" ${interestSel.has(k) ? "checked" : ""}> ${label}</label>`).join("")}</div>
+    <div class="row" style="justify-content:flex-start;margin:4px 0 10px"><button id="sAll">All</button><button id="sNone">None</button>
+      <label>Up to <select id="sPer">${[1, 2, 3, 4].map(n => `<option ${n == perDay ? "selected" : ""}>${n}</option>`).join("")}</select> things a day</label></div>
+    <button class="primary" id="sGo">Suggest my week</button> <span class="hint">Only empty days are filled.</span>`;
+  $("#detail").classList.add("open");
+  $("#dclose").onclick = closeDetail;
+  setTimeout(() => mainMap && mainMap.invalidateSize(), 80);
+  const read = () => { interestSel = new Set([...document.querySelectorAll("[data-int]")].filter(c => c.checked).map(c => c.dataset.int));
+    perDay = +$("#sPer").value; store.set("explorer-interests", [...interestSel]); store.set("explorer-perday", perDay); };
+  $("#sAll").onclick = () => { document.querySelectorAll("[data-int]").forEach(c => c.checked = true); read(); };
+  $("#sNone").onclick = () => { document.querySelectorAll("[data-int]").forEach(c => c.checked = false); read(); };
+  $("#detailIn").onchange = read;
+  $("#sGo").onclick = () => { read(); suggestFair(); closeDetail(); };
+}
+function suggestFair() {
+  if (!interestSel.size) return;
+  const order = INTERESTS.filter(i => interestSel.has(i[0]));
+  const used = new Set(plan.map(i => i.r).filter(Boolean)), count = {};
+  let rotate = 0;
+  const quality = p => (!(p.tags || []).includes("osm") ? 2 : 0) + (p.drink && p.drink.gbg ? 1.5 : 0) + Math.min(((p.drink || {}).awards || []).length, 2)
+    + (p.hygiene === "5" ? 0.3 : 0) - km(p.lat, p.lon) * 0.25;
+  const pools = {};
+  order.forEach(([k, , match]) => { if (match) pools[k] = DATA.places.filter(p => match(p) && inRange(p.lat, p.lon)).sort((a, b) => quality(b) - quality(a)); });
+  const walks = DATA.walks.filter(w => inRange(w.points[0]?.lat, w.points[0]?.lon)).sort((a, b) => km(a.points[0].lat, a.points[0].lon) - km(b.points[0].lat, b.points[0].lon));
+  const WIN = { morning: [600, 720], afternoon: [840, 960], evening: [1080, 1260] };
+  const slotOf = t => !t ? "afternoon" : +t.slice(0, 2) < 12 ? "morning" : +t.slice(0, 2) < 17 ? "afternoon" : "evening";
+  const add = (d, k, r, t, s, tm = null, n = null) => plan.push({ id: String(Math.random()).slice(2), d, k, r, t, s, tm, n });
+  weekDays().forEach(d => {
+    const k = key(d);
+    if (k < todayKey || plan.some(x => x.d === k)) return;
+    const w = weather[k], wet = w && (w.rain >= 4 || w.rainH >= 4), windy = w && w.gust >= 38;
+    const filled = new Set(); let added = 0;
+    if (interestSel.has("events")) {
+      const e = DATA.events.find(e => { const o = occurs(e, d); return o && !o.ongoing && inRange(e.lat, e.lon) && !used.has(e.id); });
+      if (e) { const s = slotOf(e.start_time); add(k, "event", e.id, e.title, s, e.start_time); used.add(e.id); filled.add(s); count.events = (count.events || 0) + 1; added++; }
+    }
+    for (const slot of SLOTS) {
+      if (filled.has(slot) || added >= perDay) continue;
+      const suitable = order.filter(([key_, , , outdoor, slots]) => key_ !== "events" && slots.includes(slot) && !(wet && outdoor)
+        && !(windy && (key_ === "beaches" || key_ === "walks")) && !(key_ === "photo" && slot === "evening" && w && (w.cloudSunset ?? 0) > 80));
+      const idx = x => (order.indexOf(x) - rotate + order.length) % order.length;
+      suitable.sort((a, b) => ((count[a[0]] || 0) - (count[b[0]] || 0)) || (idx(a) - idx(b)));
+      rotate++;
+      for (const it of suitable) {
+        let ok = false;
+        if (it[0] === "walks") {
+          const wk = walks.find(x => !used.has(x.id));
+          if (wk) {
+            const lw = (DATA.tides[k] || []).find(t => t[1] === "L");
+            add(k, "walk", wk.id, wk.title, slot, null, [w ? `${Math.round(w.tmax)}°C` : null, wk.tide && lw ? `low water ${lw[0]}` : null].filter(Boolean).join("; ") || null);
+            used.add(wk.id); ok = true;
+          }
+        } else {
+          const p = (pools[it[0]] || []).find(p => !used.has(p.id) && (isOpen(p.hours_osm, d, WIN[slot][0], WIN[slot][1], false) ?? true));
+          if (p) {
+            const sunset = it[0] === "photo" && slot === "evening" && DATA.sunset[k];
+            add(k, "place", p.id, p.name, slot, sunset ? hm(Math.max(0, +sunset.slice(0, 2) * 60 + +sunset.slice(3) - 45)) : null,
+                sunset ? `Sunset ${DATA.sunset[k]}` : (wet ? "Wet day - indoor" : null));
+            used.add(p.id); ok = true;
+          }
+        }
+        if (ok) { count[it[0]] = (count[it[0]] || 0) + 1; added++; break; }
+      }
+    }
+  });
+  save();
 }
 
 // ---- map search ----
@@ -792,14 +1085,18 @@ $("#msearch").onkeydown = e => { if (e.key === "Enter" && mhits.length) { $("#mr
 document.addEventListener("click", e => { if (!e.target.closest(".msearch")) $("#mresults").style.display = "none"; });
 
 // base pickers
-let pickMap = null, picked = null;
+let pickMap = null, picked = null, pickingHome = false;
 $("#baseSel").onchange = e => {
   const v = e.target.value;
-  if (v === "__gps") {
+  if (v === "__home") { setBase({ name: "Home", lat: home.lat, lon: home.lon }); return; }
+  if (v === "__homehere") { home = { lat: base.lat, lon: base.lon }; store.set("explorer-home", home); setBase({ name: "Home" }); return; }
+  if (v === "__sethome") { pickingHome = true; e.target.value = "__pick"; }
+  else pickingHome = false;
+  if (e.target.value === "__gps") {
     if (!navigator.geolocation) { alert("This browser cannot share its location."); renderBase(); return; }
     navigator.geolocation.getCurrentPosition(p => setBase({ name: "My location", lat: p.coords.latitude, lon: p.coords.longitude }),
       () => { alert("Location not available - pick on the map instead."); renderBase(); }, { timeout: 10000 });
-  } else if (v === "__pick") {
+  } else if (e.target.value === "__pick") {
     renderBase();
     if (!window.L) { alert("The map needs an internet connection."); return; }
     $("#pickDlg").showModal();
@@ -816,7 +1113,11 @@ $("#baseSel").onchange = e => {
     if (t) setBase({ name: t[0], lat: t[1], lon: t[2] });
   }
 };
-$("#pickOk").onclick = () => { if (picked) setBase({ name: $("#pickName").value.trim() || "Our base", lat: picked.lat, lon: picked.lng }); $("#pickDlg").close(); };
+$("#pickOk").onclick = () => {
+  if (picked && pickingHome) { home = { lat: picked.lat, lon: picked.lng }; store.set("explorer-home", home); setBase({ name: "Home", lat: home.lat, lon: home.lon }); }
+  else if (picked) setBase({ name: $("#pickName").value.trim() || "Our base", lat: picked.lat, lon: picked.lng });
+  $("#pickDlg").close();
+};
 $("#pickCancel").onclick = () => $("#pickDlg").close();
 $("#radiusSel").onchange = e => setBase({ radius: +e.target.value });
 

@@ -16,6 +16,14 @@ final class BaseStore: ObservableObject {
     @Published var lon: Double { didSet { save() } }
     /// 0 = any distance.
     @Published var radiusKm: Double { didSet { save() } }
+    /// Home, set once; one tap makes it the base.
+    @Published var homeLat: Double? { didSet { save() } }
+    @Published var homeLon: Double? { didSet { save() } }
+    var home: CLLocationCoordinate2D? {
+        guard let a = homeLat, let b = homeLon else { return nil }
+        return .init(latitude: a, longitude: b)
+    }
+    var isHome: Bool { mode == .fixed && name == "Home" }
 
     struct Town: Hashable { let name: String; let lat: Double; let lon: Double }
 
@@ -35,6 +43,8 @@ final class BaseStore: ObservableObject {
         lat = d.object(forKey: "base_lat") as? Double ?? Sun.birchington.latitude
         lon = d.object(forKey: "base_lon") as? Double ?? Sun.birchington.longitude
         radiusKm = d.object(forKey: "base_radius") as? Double ?? 0
+        homeLat = d.object(forKey: "home_lat") as? Double
+        homeLon = d.object(forKey: "home_lon") as? Double
     }
 
     private func save() {
@@ -44,6 +54,17 @@ final class BaseStore: ObservableObject {
         d.set(lat, forKey: "base_lat")
         d.set(lon, forKey: "base_lon")
         d.set(radiusKm, forKey: "base_radius")
+        d.set(homeLat, forKey: "home_lat")
+        d.set(homeLon, forKey: "home_lon")
+    }
+
+    func setHome(_ c: CLLocationCoordinate2D) {
+        homeLat = c.latitude
+        homeLon = c.longitude
+    }
+
+    func useHome() {
+        if let h = home { set("Home", h) }
     }
 
     var fixed: CLLocationCoordinate2D { .init(latitude: lat, longitude: lon) }
@@ -77,7 +98,7 @@ final class BaseStore: ObservableObject {
     }
 
     func label(_ location: LocationModel) -> String {
-        var place = name
+        var place = name == "Home" ? "🏠 Home" : name
         if mode == .gps { place = location.location == nil ? "My position (waiting…)" : "My position" }
         if radiusKm == 0 { return place }
         return "\(place) · \(Int(radiusKm)) km"
@@ -106,6 +127,7 @@ struct BaseSheet: View {
     @EnvironmentObject var location: LocationModel
     @Environment(\.dismiss) private var dismiss
     @State private var picking = false
+    @State private var pickingHome = false
 
     private var count: Int {
         store.places.filter { base.within($0.coordinate, location) }.count
@@ -114,6 +136,33 @@ struct BaseSheet: View {
     var body: some View {
         NavigationStack {
             Form {
+                Section {
+                    if base.home != nil {
+                        Button { base.useHome() } label: {
+                            HStack {
+                                Label("Home", systemImage: "house.fill")
+                                Spacer()
+                                if base.isHome { Image(systemName: "checkmark") }
+                            }
+                        }
+                    }
+                    Menu {
+                        if let l = location.location {
+                            Button("Where I am now (GPS)") { base.setHome(l.coordinate); base.useHome() }
+                        }
+                        if base.mode == .fixed && !base.isHome {
+                            Button("The current base (\(base.name))") { base.setHome(base.fixed); base.useHome() }
+                        }
+                        Button("Pick on the map…") { pickingHome = true }
+                        if base.home != nil {
+                            Button("Forget home", role: .destructive) { base.homeLat = nil; base.homeLon = nil }
+                        }
+                    } label: {
+                        Label(base.home == nil ? "Set my home…" : "Change home…", systemImage: "house")
+                    }
+                } header: { SectionHead("Home") }
+                .listRowBackground(theme.t.surface)
+
                 Section {
                     Button {
                         base.mode = .gps
@@ -171,6 +220,7 @@ struct BaseSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
             .sheet(isPresented: $picking) { PickSpotView() }
+            .sheet(isPresented: $pickingHome) { PickSpotView(forHome: true) }
         }
         .presentationDetents([.large])
     }
@@ -181,26 +231,34 @@ struct PickSpotView: View {
     @EnvironmentObject var theme: ThemeStore
     @EnvironmentObject var base: BaseStore
     @Environment(\.dismiss) private var dismiss
+    var forHome = false
     @State private var centre = Sun.birchington
     @State private var label = "My base"
 
     var body: some View {
         NavigationStack {
             ZStack {
-                CentreTrackingMap(start: base.fixed, centre: $centre)
+                CentreTrackingMap(start: base.home ?? base.fixed, centre: $centre)
                     .ignoresSafeArea(edges: .bottom)
                 Image(systemName: "plus").font(.system(size: 30, weight: .light)).foregroundStyle(.red)
                     .allowsHitTesting(false)
             }
             .safeAreaInset(edge: .bottom) {
                 VStack(spacing: 8) {
-                    TextField("Name (e.g. our cottage)", text: $label)
-                        .textFieldStyle(.roundedBorder)
+                    if !forHome {
+                        TextField("Name (e.g. our cottage)", text: $label)
+                            .textFieldStyle(.roundedBorder)
+                    }
                     Button {
-                        base.set(label.trimmingCharacters(in: .whitespaces).isEmpty ? "My base" : label, centre)
+                        if forHome {
+                            base.setHome(centre)
+                            base.useHome()
+                        } else {
+                            base.set(label.trimmingCharacters(in: .whitespaces).isEmpty ? "My base" : label, centre)
+                        }
                         dismiss()
                     } label: {
-                        Text("Use this spot").font(.headline).frame(maxWidth: .infinity).padding(.vertical, 12)
+                        Text(forHome ? "This is my home" : "Use this spot").font(.headline).frame(maxWidth: .infinity).padding(.vertical, 12)
                             .foregroundStyle(theme.t.onPrimary).background(theme.t.primary, in: RoundedRectangle(cornerRadius: 12))
                     }
                     .buttonStyle(.plain)
@@ -208,7 +266,7 @@ struct PickSpotView: View {
                 .padding(14)
                 .background(theme.t.surface)
             }
-            .navigationTitle("Move the map to your base")
+            .navigationTitle(forHome ? "Move the map to your home" : "Move the map to your base")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } } }
         }

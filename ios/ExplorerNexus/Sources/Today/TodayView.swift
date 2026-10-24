@@ -210,8 +210,9 @@ struct TodayView: View {
         LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 10) {
             shortcut("What's on", "party.popper.fill", Color(hex: 0xE5598F), .whatsOn)
             shortcut("Tide tables", "water.waves", Color(hex: 0x2E9BD6), .tides)
-            shortcut("Photo spots & hides", "camera.fill", Color(hex: 0xD9483B), .photo)
+            shortcut("Wildlife, photo spots & views", "binoculars.fill", Color(hex: 0xD9483B), .photo)
             shortcut("Practical info", "info.circle.fill", Color(hex: 0x6E7781), .info)
+            shortcut("Tour builder (pub crawl…)", "map.fill", Color(hex: 0xB8862E), .tour)
         }
     }
 

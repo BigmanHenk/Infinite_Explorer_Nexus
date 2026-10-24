@@ -32,7 +32,7 @@ struct PhotoView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 8) {
                         BaseChip()
-                        Chip(text: "Hides", symbol: "bird", on: hidesOnly) { hidesOnly.toggle() }
+                        Chip(text: "Wildlife & hides", symbol: "bird", on: hidesOnly) { hidesOnly.toggle() }
                         ForEach(subjects, id: \.self) { s in
                             Chip(text: s.capitalized, on: subject == s) { subject = subject == s ? nil : s }
                         }
@@ -54,7 +54,7 @@ struct PhotoView: View {
             } header: { SectionHead("\(spots.count) spots") }
         }
         .themedList()
-        .navigationTitle("Photo spots & hides")
+        .navigationTitle("Wildlife, photo & views")
         .navigationBarTitleDisplayMode(.inline)
     }
 

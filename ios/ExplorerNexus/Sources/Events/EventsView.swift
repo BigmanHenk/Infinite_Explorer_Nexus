@@ -180,7 +180,10 @@ struct EventDetailView: View {
                     }
                     planning = PlanTarget(kind: .event, refID: event.id, title: event.title, time: event.startTime, days: days)
                 }
-                if let c = event.coordinate { TravelCard(to: c, name: event.venue) }
+                if let c = event.coordinate {
+                    TravelCard(to: c, name: event.venue)
+                    ParkingCard(to: c)
+                }
                 Card {
                     Text(event.description).foregroundStyle(theme.t.onBackground)
                         .fixedSize(horizontal: false, vertical: true).textSelection(.enabled)

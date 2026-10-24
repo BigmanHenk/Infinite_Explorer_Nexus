@@ -1,0 +1,970 @@
+{
+ "the-minnis-restaurant": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "Shepherd Neame house: Master Brew and Whitstable Bay Pale Ale on cask (same venue as Minnis Bay Bar & Brasserie).",
+  "source_urls": [
+   "https://camra.org.uk/pubs/minnis-bay-bar-brasserie-birchington-on-sea-130406",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "minnis-bay-bar-brasserie": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "Shepherd Neame house: two regular cask ales, Master Brew and Whitstable Bay Pale Ale; monthly band nights.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/minnis-bay-bar-brasserie-birchington-on-sea-130406",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://www.theminnis.co.uk/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "king-ethelbert-inn-reculver": {
+  "craft": null,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "Two changing cask ales, usually at least one from a Kent brewery.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/king-ethelbert-reculver-132772",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "waves-bar-minnis-bay": {
+  "craft": null,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "Cafe-bar; CAMRA lists no cask ale.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/waves-bar-birchington-on-sea-130570",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://www.the-waves-bedbreakfast.com/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "old-bay-alehouse": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "snacks",
+  "dogs": true,
+  "gbg": null,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "About three changing cask ales on gravity, always one local; occasional real cider; bar snacks and a monthly curry night. CAMRA cites Good Beer Guide 2020-2022; current-edition listing not confirmed.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/old-bay-alehouse-birchington-on-sea-130565",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "wagtails-cafe-bar": {
+  "craft": null,
+  "real_ale": null,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "snacks",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Licensed neighbourhood cafe; drinks range not published.",
+  "source_urls": [
+   "https://thechattycafescheme.co.uk/venue/wagtails-cafe-and-bar",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "christies-wine-bar": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "Two handpumps used in rotation; Fuller's London Pride the usual cask beer.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/christies-wine-bar-birchington-on-sea-130518",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://christieswinebar.wixsite.com/my-site-1",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "seaview-birchington": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": null,
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "One regular cask ale (Timothy Taylor Landlord); sport on TV and on a big screen in the garden.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/seaview-birchington-on-sea-130435",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://www.facebook.com/TheSeaviewPub",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "wheel-alehouse": {
+  "craft": true,
+  "real_ale": false,
+  "micropub": true,
+  "taproom": false,
+  "cider": null,
+  "food": "snacks",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": true,
+  "notes": "Craft-beer micropub: EcoKeg-style keg beers plus specialist cans and bottles; no cask. Cheese boards.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/wheel-alehouse-birchington-on-sea-130520",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://www.facebook.com/TheWheelAleHouse",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "the-powell-birchington": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "One regular cask ale (usually Doom Bar) plus one changing beer, often local (e.g. Wantsum).",
+  "source_urls": [
+   "https://camra.org.uk/pubs/powell-birchington-on-sea-130419",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "cow-shed-bar-grill-birchington": {
+  "craft": null,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "Steak restaurant whose bar carries cask ales, wines and gins (our research; not CAMRA-listed).",
+  "source_urls": [
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "bake-and-alehouse-westgate": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "none",
+  "dogs": true,
+  "gbg": false,
+  "awards": [
+   "Thanet CAMRA Pub of the Year 2019",
+   "Thanet CAMRA Pub of the Year 2020",
+   "Thanet CAMRA Micropub of the Year 2019",
+   "Thanet CAMRA Micropub of the Year 2020"
+  ],
+  "garden": null,
+  "live_music": false,
+  "notes": "Six to eight real ales straight from the cask, mostly from Kent breweries; real and fruit ciders; no music or TV.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/bake-alehouse-westgate-on-sea-130356",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "pauls-bar-bistro-westgate": {
+  "craft": null,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "Bistro-bar; CAMRA lists no cask ale. Weekly quiz, live events at weekends.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/pauls-bar-bistro-westgate-on-sea-130529",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "gingers-westgate": {
+  "craft": null,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "none",
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "Evening bar with an upstairs karaoke booth; CAMRA lists no cask ale.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/gingers-bar-westgate-on-sea-130543",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "swan-by-the-sea-westgate": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "Regular cask: Fuller's London Pride and Gadds' No.5, plus a third ale in summer.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/swan-westgate-on-sea-130444",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "finbars-westgate": {
+  "craft": null,
+  "real_ale": null,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Small restaurant above the West Bay Cafe; drinks range not published.",
+  "source_urls": [
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "sun-inn-st-nicholas-at-wade": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "Two changing cask ales, e.g. London Pride or Harvey's Sussex Best.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/sun-inn-st-nicholas-at-wade-130443",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://facebook.com/TheSunInnStNichs",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "bell-inn-st-nicholas-at-wade": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "One regular cask ale; CAMRA Real Heritage Pub with handpumps dated 1937. Food on Sundays.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/bell-inn-st-nicholas-at-wade-130363",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "wantsum-brewery-tap-kent-barn": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": true,
+  "cider": true,
+  "food": "snacks",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "About three of Wantsum's own changing cask beers plus real cider (Dudda's Tun); occasional food; summer beer festival.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/wantsum-brewery-tap-st-nicholas-at-wade-130567",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://wantsumbrewery.co.uk/tap-room",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "two-halves-margate": {
+  "craft": null,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "none",
+  "dogs": true,
+  "gbg": true,
+  "awards": [
+   "Thanet CAMRA Pub of the Year 2022",
+   "Thanet CAMRA Micropub of the Year 2022"
+  ],
+  "garden": null,
+  "live_music": false,
+  "notes": "About five changing cask ales on gravity plus real cider (Dudda's Tun); quiet, no TV or music. Awards from our stored description.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/two-halves-margate-130539",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://www.instagram.com/thetwohalves",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "mechanical-elephant-margate": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": false,
+  "food": "full meals",
+  "dogs": false,
+  "gbg": true,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Wetherspoon: three regular plus four changing cask ales, many from local breweries; Cask Marque; beer festivals.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/mechanical-elephant-margate-130405",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://www.jdwetherspoon.com/pubs/all-pubs/england/kent/the-mechanical-elephant-margate",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "kebbells-broadstairs": {
+  "craft": null,
+  "real_ale": null,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [
+   "Kent Life Food and Drink Awards 2025: Best Bar"
+  ],
+  "garden": null,
+  "live_music": null,
+  "notes": "Seafood bar/restaurant; beer range not published.",
+  "source_urls": [
+   "https://kebbells.com/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "tartar-frigate-broadstairs": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "One regular plus two changing cask ales; seafood restaurant upstairs.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/tartar-frigate-broadstairs-130445",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://tartarfrigate.co.uk/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "magnet-micropub-broadstairs": {
+  "craft": true,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "snacks",
+  "dogs": true,
+  "gbg": true,
+  "awards": [
+   "Thanet CAMRA Pub of the Year 2024",
+   "Kent Life Food and Drink Awards 2025: Pub of the Year"
+  ],
+  "garden": true,
+  "live_music": true,
+  "notes": "About four changing Kent and national cask ales plus craft keg; real ciders (Saxby's, Biddenden, Canterbury Cider); monthly jam sessions.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/magnet-broadstairs-130573",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://www.facebook.com/TheMagnetMicropub",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "royal-victoria-pavilion-ramsgate": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": false,
+  "food": "full meals",
+  "dogs": false,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "Wetherspoon: three regular plus three changing cask ales; Cask Marque; CAMRA 'outstanding conversion' listing.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/royal-victoria-pavilion-ramsgate-130569",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://www.jdwetherspoon.com/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "montefiore-arms-ramsgate": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": false,
+  "cider": true,
+  "food": null,
+  "dogs": null,
+  "gbg": true,
+  "awards": [
+   "Thanet CAMRA Pub of the Year 2024"
+  ],
+  "garden": true,
+  "live_music": null,
+  "notes": "One regular plus three changing cask ales; real cider (Biddenden); quiz nights.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/montefiore-arms-ramsgate-130407",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://montefiorearms.co.uk/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "gadds-ramsgate-brewery-tasting-room": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": true,
+  "cider": null,
+  "food": "none",
+  "dogs": true,
+  "gbg": false,
+  "awards": [
+   "CAMRA Champion Beer of Britain 2026: Silver, strong stouts and porters (Black Pearl)"
+  ],
+  "garden": true,
+  "live_music": true,
+  "notes": "Brewery shop and tasting room: about four changing Gadds' beers plus one regular, to drink in or take away.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/gadds-beer-shop-tasting-room-broadstairs-130568",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://www.ramsgatebrewery.co.uk/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "shivering-sands-brewery-tap-room": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": true,
+  "cider": null,
+  "food": "none",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "Brewery tap: usually two or three of its own beers to drink in or take away; limited opening.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/shivering-sands-brewery-tap-room-manston-130580",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "lifeboat-ale-cider-house-margate": {
+  "craft": true,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": true,
+  "cider": true,
+  "food": null,
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": true,
+  "notes": "Run by Floc since March 2026: Floc craft beers plus a few guests and a couple of cask ales; long-standing real cider and perry house.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/lifeboat-ale-cider-house-margate-130400",
+   "https://thanet.camra.org.uk/pubguide",
+   "https://flocbrewing.com/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "floc-brewery-taproom-canterbury": {
+  "craft": true,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": true,
+  "cider": null,
+  "food": "full meals",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "12 keg wall taps of Floc's own hop-forward, unfiltered beer plus cans; cask only occasionally; food truck.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/floc-brewing-taproom-canterbury-196111",
+   "https://flocbrewing.com/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "foundry-canterbury-brewers-distillers": {
+  "craft": true,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": true,
+  "cider": true,
+  "food": "full meals",
+  "dogs": null,
+  "gbg": true,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "Brewpub: three house cask ales plus keg beers and ciders, mostly made on site; taster paddles; own spirits.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/foundry-brew-pub-canterbury-132821",
+   "https://canterburybrewers-distillers.co.uk/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "shepherd-neame-brewery-tours-faversham": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": true,
+  "cider": null,
+  "food": null,
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Brewery tours end in the visitor-centre bar with a tasting of Shepherd Neame ales and lagers.",
+  "source_urls": [
+   "https://www.shepherdneame.co.uk/brewery/tours",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "simpsons-wine-estate-barham": {
+  "craft": false,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": false,
+  "cider": false,
+  "food": "none",
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Wine estate: tastings of its own English sparkling and still wines.",
+  "source_urls": [
+   "https://www.simpsonswine.com/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "barnsole-vineyard-staple": {
+  "craft": false,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": false,
+  "cider": false,
+  "food": "none",
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Boutique vineyard, Pinot Noir a speciality; tastings and tours.",
+  "source_urls": [
+   "https://www.barnsole.co.uk/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "woolton-farm-kentish-pip": {
+  "craft": false,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": true,
+  "cider": true,
+  "food": "full meals",
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Kentish Pip cider and Woolton wines; tasting flights in The Barn bar and restaurant.",
+  "source_urls": [
+   "https://wooltonfarm.co.uk/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "time-and-tide-taphouse-sandwich": {
+  "craft": true,
+  "real_ale": false,
+  "micropub": true,
+  "taproom": true,
+  "cider": true,
+  "food": "none",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "Brewery micropub: 12 keg-conditioned Time & Tide beers plus canned craft; real cider from Nightingale; no cask.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/time-tide-taphouse-sandwich-142671",
+   "https://www.timeandtidebrewing.co.uk/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "docker-brewery-taproom-folkestone": {
+  "craft": true,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": true,
+  "cider": null,
+  "food": "full meals",
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": true,
+  "notes": "Fruit-forward, hoppy keg beers straight from 500-litre tanks; no cask; wine, cider and pizza.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/docker-brewery-taproom-folkestone-200111",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "chartham-vineyard": {
+  "craft": false,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": false,
+  "cider": false,
+  "food": "none",
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Vineyard shop and guided walks with tasting (Bacchus, Pinot Gris).",
+  "source_urls": [
+   "http://charthamvineyard.co.uk/",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "goody-ales-herne": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": false,
+  "taproom": true,
+  "cider": true,
+  "food": "snacks",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "Brewery bar: about four of Goody's own changing cask beers plus real cider (Broomfield or Biddenden); 'Firkins at Full Moon' nights; Green Hop festival.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/cathedral-herne-132841",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "xylo-margate-brewbar": {
+  "craft": true,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": true,
+  "cider": null,
+  "food": "none",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Bar with a 4-barrel cellar brewery: house beers mostly keg and cans, plus many guests. CAMRA ticks cask ale but says the beers tend to be non-cask.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/xylo-margate-130575",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "fez-micropub-margate": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "none",
+  "dogs": null,
+  "gbg": true,
+  "awards": [],
+  "garden": null,
+  "live_music": false,
+  "notes": "Constantly changing cask ales and ciders on gravity from a cooled cellar room; short wine list; no TV or music.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/fez-margate-130538",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "ales-of-the-unexpected-margate": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "none",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": true,
+  "notes": "Three to four changing cask ales from the cask plus real cider (Dudda's Tun); quizzes, cribbage and Sunday-afternoon music.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/ales-of-the-unexpected-margate-130525",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "laughing-barrel-cliftonville": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "snacks",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "Six to eight cask ales and a large range of ciders and perries on gravity, mostly Kentish (e.g. Wantsum, Goody); pizza, pork pies, scotch eggs.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/laughing-barrel-cliftonville-130493",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "hair-of-the-dog-minster": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "none",
+  "dogs": true,
+  "gbg": false,
+  "awards": [
+   "Thanet CAMRA Micropub of the Year 2022 (runner-up)"
+  ],
+  "garden": null,
+  "live_music": null,
+  "notes": "About three changing cask ales on gravity, often Kentish (e.g. Wantsum), plus real cider; cash only. Was in GBG 2023.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/hair-of-the-dog-minster-in-thanet-130528",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "conqueror-alehouse-ramsgate": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "snacks",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "About three changing cask ales on gravity, always one local, plus ciders and perries.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/conqueror-alehouse-ramsgate-130375",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "hovelling-boat-inn-ramsgate": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "snacks",
+  "dogs": true,
+  "gbg": true,
+  "awards": [],
+  "garden": true,
+  "live_music": null,
+  "notes": "Up to six cask ales on gravity (e.g. Bristol Beer Factory, Burning Sky, Gadds') plus ciders and perries; filled rolls.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/hovelling-boat-inn-ramsgate-130519",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "the-pub-micropub-ramsgate": {
+  "craft": true,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "none",
+  "dogs": true,
+  "gbg": true,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Cellared cask ales, craft keg, occasional German draught and a craft can fridge; real ciders (Dudda's Tun, Biddenden and others); Oktoberfest.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/pub-ramsgate-ramsgate-130576",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "mind-the-gap-broadstairs": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": true,
+  "food": "none",
+  "dogs": true,
+  "gbg": true,
+  "awards": [],
+  "garden": null,
+  "live_music": true,
+  "notes": "About four changing cask ales plus real cider and perry on gravity from chilled cabinets.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/mind-the-gap-broadstairs-130545",
+   "https://thanet.camra.org.uk/pubguide",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "butchers-arms-herne-first-micropub": {
+  "craft": false,
+  "real_ale": true,
+  "micropub": true,
+  "taproom": false,
+  "cider": null,
+  "food": "none",
+  "dogs": true,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": false,
+  "notes": "Britain's first micropub: one regular plus changing guest cask ales from the barrel; takeaway beer; LocAle.",
+  "source_urls": [
+   "https://camra.org.uk/pubs/butchers-arms-herne-132732",
+   "own stored description (explorer.sqlite)"
+  ]
+ },
+ "offvine-kent-wine-tours": {
+  "craft": false,
+  "real_ale": false,
+  "micropub": false,
+  "taproom": false,
+  "cider": false,
+  "food": "none",
+  "dogs": null,
+  "gbg": false,
+  "awards": [],
+  "garden": null,
+  "live_music": null,
+  "notes": "Driven tours to Kent and East Sussex vineyards with tastings; not a venue.",
+  "source_urls": [
+   "https://offvine.co.uk/",
+   "own stored description (explorer.sqlite)"
+  ]
+ }
+}

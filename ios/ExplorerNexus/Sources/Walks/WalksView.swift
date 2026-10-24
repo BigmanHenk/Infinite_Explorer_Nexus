@@ -144,7 +144,10 @@ struct WalkDetailView: View {
                     .buttonStyle(.plain)
                     PlanButton { planning = PlanTarget(kind: .walk, refID: walk.id, title: walk.title) }
                 }
-                if let s = walk.points.first { TravelCard(to: s.coordinate, name: walk.start) }
+                if let s = walk.points.first {
+                    TravelCard(to: s.coordinate, name: walk.start)
+                    ParkingCard(to: s.coordinate)
+                }
                 Card {
                     Text(walk.description).foregroundStyle(theme.t.onBackground)
                         .fixedSize(horizontal: false, vertical: true).textSelection(.enabled)

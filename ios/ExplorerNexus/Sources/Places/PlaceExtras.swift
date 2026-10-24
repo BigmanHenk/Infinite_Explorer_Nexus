@@ -113,7 +113,7 @@ struct PlaceExtras: View {
 
     var body: some View {
         let h = place.hours
-        if h.known || place.hygiene != nil || place.menuURL != nil || place.isEatDrink {
+        if h.known || place.hygiene != nil || place.menuURL != nil || place.isEatDrink || place.drink != nil {
             Card {
                 if h.known {
                     HStack {
@@ -147,6 +147,16 @@ struct PlaceExtras: View {
                         }
                         Spacer()
                         if let u = place.hygieneURL.flatMap(URL.init(string:)) { Link(destination: u) { Image(systemName: "info.circle") } }
+                    }
+                }
+                if let d = place.drink, !d.badges.isEmpty || d.notes != nil {
+                    Divider().overlay(theme.t.outline)
+                    if !d.badges.isEmpty {
+                        Text(d.badges.joined(separator: " · ")).font(.caption.weight(.semibold)).foregroundStyle(theme.t.primary)
+                    }
+                    if let n = d.notes { Text(n).font(.caption).foregroundStyle(theme.t.onBackground) }
+                    if let a = d.awards, !a.isEmpty {
+                        Label(a.joined(separator: "; "), systemImage: "rosette").font(.caption).foregroundStyle(theme.t.onSurfaceVariant)
                     }
                 }
                 if let m = place.menuURL, let u = URL(string: m) {

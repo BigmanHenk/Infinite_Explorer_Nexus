@@ -23,7 +23,7 @@ import osmium
 
 from common import CONTENT, DETAIL, OSM_FILE, RESEARCH, WIDE, WORK
 
-PLACE_FILES = ["places_birchington.json", "places_thanet.json", "places_food.json", "places_drink.json", "photo_spots.json", "places_ev.json"]
+PLACE_FILES = ["places_birchington.json", "places_thanet.json", "places_food.json", "places_drink.json", "photo_spots.json", "places_wildlife_extra.json", "places_scenic_extra.json", "places_ev.json", "places_osm.json"]
 EVENT_FILES = ["events_winter.json", "events_2027.json"]
 
 
@@ -238,7 +238,7 @@ def main():
         summary TEXT, description TEXT, address TEXT, postcode TEXT, phone TEXT, website TEXT, opening_hours TEXT,
         price TEXT, dogs TEXT, accessibility TEXT, tips TEXT, duration_min INTEGER, tags TEXT, source_urls TEXT,
         verified TEXT, subjects TEXT, best_time TEXT, tide TEXT, wildlife TEXT, facilities TEXT,
-        hours_osm TEXT, menu_url TEXT, hygiene TEXT, hygiene_date TEXT, hygiene_url TEXT);
+        hours_osm TEXT, menu_url TEXT, hygiene TEXT, hygiene_date TEXT, hygiene_url TEXT, drink TEXT);
     CREATE TABLE events (id TEXT PRIMARY KEY, title TEXT, category TEXT, venue TEXT, town TEXT, lat REAL, lon REAL,
         start_date TEXT, end_date TEXT, start_time TEXT, end_time TEXT, recurrence TEXT, price TEXT, website TEXT,
         booking TEXT, description TEXT, confidence TEXT, source_urls TEXT, verified TEXT);
@@ -253,6 +253,8 @@ def main():
         page TEXT, url TEXT);
     CREATE INDEX photos_owner ON photos (owner);
     CREATE TABLE streets (name TEXT, town TEXT, lat REAL, lon REAL);
+    CREATE TABLE parking (name TEXT, lat REAL, lon REAL, fee TEXT, capacity INTEGER, disabled INTEGER,
+        operator TEXT, hours TEXT, maxstay TEXT, kind TEXT);
     """)
 
     # places
@@ -271,6 +273,7 @@ def main():
     hours = opt("hours.json")        # structured opening_hours (OSM syntax) per id
     menus = opt("menus.json")
     hygiene = opt("hygiene.json")
+    drinks = opt("drink_attributes.json")   # CAMRA / venue facts for pubs, taprooms
     # websites found dead or hijacked (menu research 2026-10-23)
     DEAD_SITES = ("conqueror-alehouse.co.uk", "thepubmicropub.com", "kakawaartisan.com")
     for p in all_places:
@@ -287,8 +290,8 @@ def main():
         if cat == "takeaway":
             cat = "food"
         hy = hygiene.get(pid) or {}
-        h_osm = hours.get(pid) or (p.get("opening_hours") if cat == "ev" else None) or ("24/7" if cat == "ev" else None)
-        db.execute("INSERT INTO places VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+        h_osm = hours.get(pid) or p.get("hours_osm") or (p.get("opening_hours") if cat == "ev" else None) or ("24/7" if cat == "ev" else None)
+        db.execute("INSERT INTO places VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
             pid, p.get("name"), cat, p.get("town") or "", p["lat"], p["lon"], s(p.get("summary")) or "",
             s(p.get("description")) or "", s(p.get("address")), s(p.get("postcode")), s(p.get("phone")),
             s(p.get("website")), s(p.get("opening_hours")), s(p.get("price")), s(p.get("dogs")),
@@ -297,7 +300,8 @@ def main():
             ",".join(p.get("tags") or []), "\n".join(p.get("source_urls") or []), p.get("verified"),
             ",".join(p.get("subjects") or []), s(p.get("best_time")), s(p.get("tide")), s(p.get("wildlife")),
             s(p.get("facilities")), h_osm, (menus.get(pid) or {}).get("menu_url"),
-            str(hy["rating"]) if hy else None, hy.get("date"), hy.get("url")))
+            str(hy["rating"]) if hy else None, hy.get("date"), hy.get("url"),
+            json.dumps({k: v for k, v in drinks[pid].items() if k != "source_urls"}) if pid in drinks else None))
         n_places += 1
     for f in facts:
         db.execute("INSERT INTO facts VALUES (?,?)", (f.get("topic"), f.get("text")))
@@ -379,7 +383,7 @@ def main():
                 if l.is_empty:
                     continue
                 c = l.interpolate(0.5, normalized=True)
-                if not (DETAIL[1] <= c.y <= DETAIL[3] and DETAIL[0] <= c.x <= DETAIL[2]):
+                if not (WIDE[1] <= c.y <= WIDE[3] and WIDE[0] <= c.x <= WIDE[2]):
                     continue
                 town = min(towns, key=lambda t: (t[1] - c.y) ** 2 + ((t[2] - c.x) * 0.62) ** 2)[0] if towns else ""
                 key = (name, town)
@@ -388,6 +392,54 @@ def main():
         db.executemany("INSERT INTO streets VALUES (?,?,?,?)",
                        [(n, t, round(la, 6), round(lo, 6)) for (n, t), (_, la, lo) in sorted(best.items())])
         print(f"  {len(best)} streets in the search index")
+
+    # public car parks (OpenStreetMap) - the apps pick the nearest few for each destination
+    class Parks(osmium.SimpleHandler):
+        def __init__(self):
+            super().__init__()
+            self.rows = []
+
+        def add(self, t, lat, lon):
+            if t.get("amenity") != "parking" or t.get("access") in ("private", "no", "customers", "permit", "residents"):
+                return
+            if t.get("parking") in ("street_side", "lane", "on_kerb") and not t.get("name"):
+                return
+            if not (WIDE[1] <= lat <= WIDE[3] and WIDE[0] <= lon <= WIDE[2]):
+                return
+            try:
+                cap = int(t.get("capacity", "0").split(";")[0])
+            except ValueError:
+                cap = 0
+            if not t.get("name") and cap < 15:
+                return
+            try:
+                dis = int(t.get("capacity:disabled", "0"))
+            except ValueError:
+                dis = 1 if t.get("capacity:disabled") == "yes" else 0
+            fee = {"yes": "Pay & display", "no": "Free"}.get(t.get("fee", ""), t.get("fee"))
+            if t.get("charge"):
+                fee = (fee + " · " if fee else "") + t["charge"]
+            self.rows.append((t.get("name") or "Car park", round(lat, 6), round(lon, 6), fee, cap or None, dis or None,
+                              t.get("operator"), t.get("opening_hours"), t.get("maxstay"),
+                              t.get("parking") or "surface"))
+
+        def node(self, n):
+            self.add(n.tags, n.location.lat, n.location.lon)
+
+        def area(self, a):
+            if a.tags.get("amenity") != "parking":
+                return
+            try:
+                ring = next(iter(a.outer_rings()))
+                pts = [(nd.lat, nd.lon) for nd in ring]
+            except Exception:
+                return
+            self.add(a.tags, sum(p[0] for p in pts) / len(pts), sum(p[1] for p in pts) / len(pts))
+
+    pk = Parks()
+    pk.apply_file(str(OSM_FILE), locations=True)
+    db.executemany("INSERT INTO parking VALUES (?,?,?,?,?,?,?,?,?,?)", pk.rows)
+    print(f"  {len(pk.rows)} public car parks")
 
     # photos (s07_photos.py): owner = place id or "walk:<id>"
     pj = WORK / "photos.json"
@@ -414,14 +466,13 @@ def main():
     db.close()
     print(f"{n_places} places, {n_events} events, {len(walks)} walks -> {out} ({out.stat().st_size / 1e6:.1f} MB)")
 
-    # map tiles in two files (GitHub refuses single files over 100 MB): z9-16 and z17
+    # map tiles in three files (GitHub refuses single files over 100 MB): z9-15, z16, z17
     tiles = WORK / "map.sqlite"
     if tiles.exists():
-        old = CONTENT / "map.sqlite"
-        if old.exists():
+        for old in list(CONTENT.glob("map*.sqlite")):
             old.unlink()
         src = sqlite3.connect(tiles)
-        for name, lo, hi in (("map-lo.sqlite", 0, 16), ("map-hi.sqlite", 17, 30)):
+        for name, lo, hi in (("map-a.sqlite", 0, 15), ("map-b.sqlite", 16, 16), ("map-c.sqlite", 17, 30)):
             dst_path = CONTENT / name
             if dst_path.exists():
                 dst_path.unlink()

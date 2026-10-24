@@ -2,14 +2,15 @@ import MapKit
 import SwiftUI
 import UIKit
 
-/// The offline map tiles: bundled map-lo.sqlite (z9-16) and map-hi.sqlite (z17), rendered on
+/// The offline map tiles: bundled map-a.sqlite (z9-15), map-b (z16) and map-c (z17), rendered on
 /// the PC from OpenStreetMap by tools/build/s02_tiles.py; 512-px images on the 256 grid. Deeper than the deepest
 /// level (or outside the detailed area) the nearest rendered parent tile is cropped and
 /// scaled up, so zooming in never shows blank squares.
 final class OfflineTileOverlay: MKTileOverlay {
     static let shared = OfflineTileOverlay()
-    private let lo: SQLiteDB?
-    private let hi: SQLiteDB?
+    private let zoomA: SQLiteDB?    // z9-15
+    private let zoomB: SQLiteDB?    // z16
+    private let zoomC: SQLiteDB?    // z17
     private(set) var maxRendered = 17
     private let cache = NSCache<NSString, NSData>()
 
@@ -17,15 +18,16 @@ final class OfflineTileOverlay: MKTileOverlay {
         func open(_ name: String) -> SQLiteDB? {
             Bundle.main.path(forResource: name, ofType: "sqlite", inDirectory: "Content").flatMap { SQLiteDB(path: $0) }
         }
-        lo = open("map-lo")
-        hi = open("map-hi")
+        zoomA = open("map-a")
+        zoomB = open("map-b")
+        zoomC = open("map-c")
         super.init(urlTemplate: nil)
         canReplaceMapContent = true
         tileSize = CGSize(width: 256, height: 256)
         minimumZ = 9
         maximumZ = 20
         cache.countLimit = 300
-        lo?.query("SELECT value FROM meta WHERE key = 'maxzoom'") { r in
+        zoomA?.query("SELECT value FROM meta WHERE key = 'maxzoom'") { r in
             if let v = r.string(0), let z = Int(v) { self.maxRendered = z }
         }
     }
@@ -34,7 +36,7 @@ final class OfflineTileOverlay: MKTileOverlay {
         let key = "\(z)/\(x)/\(y)" as NSString
         if let d = cache.object(forKey: key) { return d as Data }
         var out: Data?
-        (z >= 17 ? hi : lo)?.query("SELECT data FROM tiles WHERE z = ? AND x = ? AND y = ?", [z, x, y]) { r in out = r.data(0) }
+        (z >= 17 ? zoomC : (z == 16 ? zoomB : zoomA))?.query("SELECT data FROM tiles WHERE z = ? AND x = ? AND y = ?", [z, x, y]) { r in out = r.data(0) }
         if let out { cache.setObject(out as NSData, forKey: key) }
         return out
     }

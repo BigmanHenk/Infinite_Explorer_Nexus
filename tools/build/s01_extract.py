@@ -16,9 +16,9 @@ from shapely import wkb
 from shapely.geometry import box, LineString, Point
 from shapely.ops import linemerge, split, unary_union
 
-from common import DETAIL, WIDE, WORK, OSM_FILE
+from common import DETAIL, DETAIL_BOXES, WIDE, WORK, OSM_FILE
 
-detail_box = box(*DETAIL)
+detail_box = unary_union([box(*b) for b in DETAIL_BOXES])
 wide_box = box(*WIDE)
 
 ROAD_MAJOR = {"motorway", "trunk", "primary", "motorway_link", "trunk_link", "primary_link"}
@@ -103,8 +103,8 @@ class Handler(osmium.SimpleHandler):
             g = wkb.loads(self.wkb.create_linestring(w), hex=True)
         except Exception:
             return
-        inner = kind in ("road_minor", "path", "steps", "track", "stream", "pier_line")
-        if not g.intersects(detail_box if inner else wide_box):
+        # all roads and paths across the whole area (street-level map z13-15 everywhere)
+        if not g.intersects(wide_box):
             return
         self.out.append((kind, t.get("name") or t.get("ref") or "", g))
 
@@ -126,7 +126,7 @@ class Handler(osmium.SimpleHandler):
             return
         if not g.is_valid:
             g = g.buffer(0)
-        test = wide_box if kind in WIDE_AREAS else detail_box
+        test = detail_box if kind == "building" else wide_box   # buildings only where we draw z16
         if not g.intersects(test):
             return
         self.out.append((kind, t.get("name", ""), g))

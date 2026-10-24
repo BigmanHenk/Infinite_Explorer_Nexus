@@ -21,7 +21,7 @@ from shapely import affinity
 from shapely.geometry import box, LineString, MultiLineString, Polygon, MultiPolygon, GeometryCollection
 from shapely.strtree import STRtree
 
-from common import WORK, DETAIL, WIDE, CORE, ZOOM_WIDE, ZOOM_DETAIL, ZOOM_CORE, TILE_PX
+from common import WORK, DETAIL, DETAIL_BOXES, WIDE, CORE, ZOOM_WIDE, ZOOM_DETAIL, ZOOM_CORE, TILE_PX
 
 META = 8
 BUF = 96  # px around a metatile so lines/labels continue over the edges
@@ -413,14 +413,22 @@ def main():
 
     with Pool(args.workers, initializer=init_worker, initargs=(str(mp),)) as pool:
         for z in range(z0, z1 + 1):
-            bb = WIDE if z in ZOOM_WIDE else (CORE if z >= ZOOM_CORE else DETAIL)
-            x0, y0, x1, y1 = tile_range(bb, z)
+            boxes = [WIDE] if z <= 15 else ([CORE] if z >= ZOOM_CORE else DETAIL_BOXES)
+            ranges = [tile_range(b, z) for b in boxes]
+            x0 = min(r[0] for r in ranges); y0 = min(r[1] for r in ranges)
+            x1 = max(r[2] for r in ranges); y1 = max(r[3] for r in ranges)
             bounds_px = (x0 * TILE_PX, y0 * TILE_PX, (x1 + 1) * TILE_PX, (y1 + 1) * TILE_PX)
             # label features: only those inside this zoom's box
             labels = place_labels(z, feats, places, bounds_px)
+            wanted = set()
+            for rx0, ry0, rx1, ry1 in ranges:
+                for ty in range(ry0, ry1 + 1):
+                    for tx in range(rx0, rx1 + 1):
+                        wanted.add((tx, ty))
+            metas = sorted({(tx // META, ty // META) for tx, ty in wanted})
             jobs = []
-            for my in range(y0 // META, y1 // META + 1):
-                for mx in range(x0 // META, x1 // META + 1):
+            for mx, my in metas:
+                if True:
                     lo_x = mx * META * TILE_PX - BUF - 300
                     lo_y = my * META * TILE_PX - BUF - 300
                     hi_x = (mx + 1) * META * TILE_PX + BUF + 300
@@ -432,7 +440,7 @@ def main():
             db.execute("DELETE FROM tiles WHERE z = ?", (z,))
             for res in pool.imap_unordered(render_meta, jobs):
                 for zz, x, y, png in res:
-                    if x0 <= x <= x1 and y0 <= y <= y1:
+                    if (x, y) in wanted:
                         db.execute("INSERT OR REPLACE INTO tiles VALUES (?,?,?,?)", (zz, x, y, png))
                         count += 1
                         nbytes += len(png)

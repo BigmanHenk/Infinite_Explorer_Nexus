@@ -13,6 +13,7 @@ struct PlannerView: View {
     @State private var editing: PlanItem?
     @State private var confirmClear = false
     @State private var showQR = false
+    @State private var showSuggest = false
 
     var body: some View {
         ScrollView {
@@ -30,9 +31,10 @@ struct PlannerView: View {
         .navigationTitle("My week")
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button {
-                    planner.suggestWeek(store: store, weather: weather, origin: base.origin(location)) { base.within($0, location) }
-                } label: { Label("Suggest", systemImage: "wand.and.stars") }
+                Button { showSuggest = true } label: { Label("Suggest", systemImage: "wand.and.stars") }
+            }
+            ToolbarItem(placement: .topBarTrailing) {
+                NavigationLink(value: Screen.tour) { Image(systemName: "map") }
             }
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
@@ -54,6 +56,7 @@ struct PlannerView: View {
             Button("Clear week", role: .destructive) { planner.clearWeek() }
         }
         .sheet(item: $editing) { PlanItemEditor(item: $0) }
+        .sheet(isPresented: $showSuggest) { SuggestSheet() }
         .sheet(isPresented: $showQR) { PlanQRView(items: planner.weekDays.flatMap { planner.items(on: $0) }) }
         .explorerDestinations()
         .task { await weather.refresh() }
@@ -220,6 +223,68 @@ struct PlanQRView: View {
             .navigationTitle("Plan QR code")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Close") { dismiss() } } }
+        }
+    }
+}
+
+/// Tick what you would like to do; Suggest spreads it fairly over the empty days of the week,
+/// led by the forecast, opening hours and your base & radius.
+struct SuggestSheet: View {
+    @EnvironmentObject var theme: ThemeStore
+    @EnvironmentObject var store: Store
+    @EnvironmentObject var planner: PlannerStore
+    @EnvironmentObject var weather: WeatherStore
+    @EnvironmentObject var base: BaseStore
+    @EnvironmentObject var location: LocationModel
+    @EnvironmentObject var interests: InterestStore
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        NavigationStack {
+            Form {
+                Section {
+                    ForEach(Interest.allCases) { i in
+                        Toggle(isOn: Binding(get: { interests.chosen.contains(i) },
+                                             set: { on in if on { interests.chosen.insert(i) } else { interests.chosen.remove(i) } })) {
+                            Label(i.label, systemImage: i.symbol)
+                        }
+                    }
+                } header: {
+                    HStack {
+                        SectionHead("What would you like to do?")
+                        Spacer()
+                        Button(interests.chosen.count == Interest.allCases.count ? "None" : "All") {
+                            interests.chosen = interests.chosen.count == Interest.allCases.count ? [] : Set(Interest.allCases)
+                        }
+                        .font(.caption.weight(.semibold))
+                    }
+                }
+                .listRowBackground(theme.t.surface)
+                Section {
+                    Stepper("Up to \(interests.perDay) things a day", value: $interests.perDay, in: 1...4)
+                    HStack { BaseChip(); Spacer() }
+                    Text(weather.days.isEmpty ? "No forecast saved yet - outdoor plans are not weather-checked."
+                         : "Wet days get indoor choices; very windy days skip beaches and exposed walks; sunset spots only on clear evenings.")
+                        .font(.caption).foregroundStyle(.secondary)
+                } header: { SectionHead("How") }
+                .listRowBackground(theme.t.surface)
+                Section {
+                    Button {
+                        planner.suggestFair(store: store, weather: weather, interests: interests.chosen, perDay: interests.perDay,
+                                            origin: base.origin(location)) { base.within($0, location) }
+                        dismiss()
+                    } label: {
+                        Label("Suggest my week", systemImage: "wand.and.stars").font(.headline).frame(maxWidth: .infinity)
+                    }
+                    .disabled(interests.chosen.isEmpty)
+                    Text("Only empty days are filled - clear a day first to re-plan it.").font(.caption2).foregroundStyle(.secondary)
+                }
+                .listRowBackground(theme.t.surface)
+            }
+            .themedList()
+            .navigationTitle("Suggest")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar { ToolbarItem(placement: .cancellationAction) { Button("Close") { dismiss() } } }
         }
     }
 }

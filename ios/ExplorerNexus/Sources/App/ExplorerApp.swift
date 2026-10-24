@@ -8,6 +8,7 @@ struct ExplorerApp: App {
     @StateObject private var location = LocationModel()
     @StateObject private var weather = WeatherStore()
     @StateObject private var base = BaseStore()
+    @StateObject private var interests = InterestStore()
 
     var body: some Scene {
         WindowGroup {
@@ -17,6 +18,7 @@ struct ExplorerApp: App {
                 .environmentObject(location)
                 .environmentObject(weather)
                 .environmentObject(base)
+                .environmentObject(interests)
                 .environmentObject(Store.shared)
                 .preferredColorScheme(.dark)
                 .tint(theme.t.primary)

@@ -14,12 +14,13 @@ struct ExplorerDestinations: ViewModifier {
                 case .photo: PhotoView()
                 case .info: InfoView()
                 case .settings: SettingsView()
+                case .tour: TourView()
                 }
             }
     }
 }
 
-enum Screen: Hashable { case whatsOn, tides, photo, info, settings }
+enum Screen: Hashable { case whatsOn, tides, photo, info, settings, tour }
 
 extension View {
     func explorerDestinations() -> some View { modifier(ExplorerDestinations()) }
