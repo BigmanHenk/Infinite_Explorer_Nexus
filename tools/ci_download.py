@@ -11,6 +11,7 @@ import json
 import subprocess
 import sys
 import time
+import urllib.error
 import urllib.request
 import zipfile
 from pathlib import Path
@@ -27,10 +28,25 @@ def token():
     sys.exit("No GitHub login found - run any git push once so Git Credential Manager stores it.")
 
 
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *a, **k):
+        return None
+
+
 def api(url, tok, raw=False):
     req = urllib.request.Request(url, headers={"Authorization": f"Bearer {tok}", "Accept": "application/vnd.github+json"})
-    with urllib.request.urlopen(req, timeout=120) as r:
-        return r.read() if raw else json.load(r)
+    if not raw:
+        with urllib.request.urlopen(req, timeout=120) as r:
+            return json.load(r)
+    # artifact downloads redirect to storage that must NOT get the GitHub token
+    try:
+        with urllib.request.build_opener(_NoRedirect).open(req, timeout=120) as r:
+            return r.read()
+    except urllib.error.HTTPError as e:
+        if e.code not in (301, 302, 303, 307, 308):
+            raise
+        with urllib.request.urlopen(e.headers["Location"], timeout=600) as r:
+            return r.read()
 
 
 def main():
