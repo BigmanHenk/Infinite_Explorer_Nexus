@@ -6,6 +6,8 @@ on a new machine everything needed to carry on. Read it first, then `README.md`.
 
 ## 1. Set up a new laptop (Windows)
 
+The full guide with Sideloadly is in `docs/LAPTOP_SETUP.md`; this is the short version.
+
 1. Install **Git for Windows** (it includes Git Credential Manager), **Python 3.12**,
    **VS Code**, and the **Claude Code** extension or CLI.
 2. Get the code:

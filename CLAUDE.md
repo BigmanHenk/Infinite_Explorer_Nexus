@@ -3,6 +3,8 @@
 The offline iPhone sightseeing and week-planner app "Explorer" (Birchington / Thanet / East
 Kent), plus a PC planner web page.
 
+**New laptop? Follow `docs/LAPTOP_SETUP.md` step by step (it says which steps need the owner).**
+
 **Read `docs/HANDOVER.md` first.** It covers setup, workflow, the repository map, the content
 pipeline, the decisions to keep to, and the open items.
 
