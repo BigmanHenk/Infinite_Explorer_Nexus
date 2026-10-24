@@ -194,7 +194,9 @@ def main():
     CACHE.mkdir(parents=True, exist_ok=True)
     done = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {"places": {}, "walks": {}}
     db = sqlite3.connect(CONTENT / "explorer.sqlite")
-    places = db.execute("SELECT id, name, town, lat, lon, category FROM places").fetchall()
+    # researched places only - the ~3,600 OpenStreetMap entries (osm-..., ev-...) would take hours
+    places = db.execute("SELECT id, name, town, lat, lon, category FROM places "
+                        "WHERE id NOT LIKE 'osm-%' AND id NOT LIKE 'ev-%'").fetchall()
     if args.limit:
         places = places[: args.limit]
     for i, (pid, name, town, lat, lon, cat) in enumerate(places):

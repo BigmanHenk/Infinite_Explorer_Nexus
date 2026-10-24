@@ -4072,6 +4072,34 @@
 "verified": "2026-10-24"
 },
 {
+"id": "osm-node-331530857",
+"name": "Bird hide, Stodmarsh National Nature Reserve",
+"category": "hide",
+"town": "Hersden",
+"lat": 51.306515,
+"lon": 1.182799,
+"summary": "Bird hide · Stodmarsh National Nature Reserve",
+"description": "Bird hide near Hersden (from OpenStreetMap).",
+"address": null,
+"postcode": null,
+"phone": null,
+"website": null,
+"opening_hours": null,
+"hours_osm": null,
+"price": null,
+"dogs": null,
+"accessibility": null,
+"tips": null,
+"duration_min": null,
+"tags": [
+"osm"
+],
+"source_urls": [
+"https://www.openstreetmap.org/node/331530857"
+],
+"verified": "2026-10-24"
+},
+{
 "id": "osm-node-331819936",
 "name": "Oaten Hill Local Express",
 "category": "shop",
@@ -4967,34 +4995,6 @@
 ],
 "source_urls": [
 "https://www.openstreetmap.org/node/352850084"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-node-352866697",
-"name": "Sea Wall Hide",
-"category": "hide",
-"town": "Harty",
-"lat": 51.344541,
-"lon": 0.896704,
-"summary": "Bird hide · Harty",
-"description": "Bird hide near Harty (from OpenStreetMap). Run by Kent Wildlife Trust.",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/node/352866697"
 ],
 "verified": "2026-10-24"
 },
@@ -9391,34 +9391,6 @@
 ],
 "source_urls": [
 "https://www.openstreetmap.org/node/894153442"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-node-918427318",
-"name": "Viewing Mound",
-"category": "viewpoint",
-"town": "Upstreet",
-"lat": 51.320435,
-"lon": 1.205185,
-"summary": "Viewpoint · Upstreet",
-"description": "Viewpoint near Upstreet (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": "24/7",
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/node/918427318"
 ],
 "verified": "2026-10-24"
 },
@@ -19520,34 +19492,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-node-5766550116",
-"name": "Fan Bay Deep Shelter",
-"category": "sight",
-"town": "St. Margaret's at Cliffe",
-"lat": 51.136367,
-"lon": 1.360484,
-"summary": "Attraction · St. Margaret's at Cliffe",
-"description": "Attraction near St. Margaret's at Cliffe (from OpenStreetMap). Run by National Trust.",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": "https://www.nationaltrust.org.uk/visit/kent/the-white-cliffs-of-dover/the-fan-bay-deep-shelter-project-at-the-white-cliffs-of-dover",
-"opening_hours": "\"Please visit the National Trust website for updated opening times\"",
-"hours_osm": "\"Please visit the National Trust website for updated opening times\"",
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/node/5766550116"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-node-5766561616",
 "name": "Fern & Farrow Farm Shop",
 "category": "shop",
@@ -19798,34 +19742,6 @@
 ],
 "source_urls": [
 "https://www.openstreetmap.org/node/5908160138"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-node-5991077522",
-"name": "Fan Bay Sound Mirrors",
-"category": "sight",
-"town": "St. Margaret's at Cliffe",
-"lat": 51.135974,
-"lon": 1.360917,
-"summary": "Attraction · St. Margaret's at Cliffe",
-"description": "Attraction near St. Margaret's at Cliffe (from OpenStreetMap). Run by National Trust.",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": "\"Please visit the National Trust website for updated opening times\"",
-"hours_osm": "\"Please visit the National Trust website for updated opening times\"",
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/node/5991077522"
 ],
 "verified": "2026-10-24"
 },
@@ -24908,34 +24824,6 @@
 ],
 "source_urls": [
 "https://www.openstreetmap.org/node/8179515118"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-node-8179515119",
-"name": "The Deal Pier Kitchen",
-"category": "restaurant",
-"town": "Deal",
-"lat": 51.223783,
-"lon": 1.408937,
-"summary": "Restaurant · Deal",
-"description": "Restaurant in Deal (from OpenStreetMap).",
-"address": "Beach Street",
-"postcode": "CT14 6HY",
-"phone": "+44 1304 368228",
-"website": "https://dealpierkitchen.com/",
-"opening_hours": "Mo-Th 10:00-16:00; Fr-Su 09:00-17:00",
-"hours_osm": "Mo-Th 10:00-16:00; Fr-Su 09:00-17:00",
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/node/8179515119"
 ],
 "verified": "2026-10-24"
 },
@@ -38107,34 +37995,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-node-10768999784",
-"name": "Walmer Castle Cafe",
-"category": "cafe",
-"town": "Walmer",
-"lat": 51.200628,
-"lon": 1.400628,
-"summary": "Café · Walmer",
-"description": "Café near Walmer (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/node/10768999784"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-node-10794997392",
 "name": "Comics & Sci-Fi World",
 "category": "shop",
@@ -43659,34 +43519,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-node-12873158200",
-"name": "The Toll Bridge",
-"category": "restaurant",
-"town": "Sandwich",
-"lat": 51.27592,
-"lon": 1.341662,
-"summary": "Restaurant · Sandwich",
-"description": "Restaurant near Sandwich (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/node/12873158200"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-node-12873180103",
 "name": "Strand Street Kitchen & Bar",
 "category": "cafe",
@@ -48593,35 +48425,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-way-4489067",
-"name": "Dane John Gardens",
-"category": "nature",
-"town": "St. Mildred's",
-"lat": 51.275413,
-"lon": 1.078516,
-"summary": "Park · St. Mildred's",
-"description": "Park near St. Mildred's (from OpenStreetMap). Wheelchair accessible.",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": "Wheelchair accessible",
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm",
-"wheelchair"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/4489067"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-way-4592303",
 "name": "King George Ⅵ Park",
 "category": "nature",
@@ -49266,34 +49069,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-way-29135853",
-"name": "Dane Park",
-"category": "nature",
-"town": "Margate",
-"lat": 51.384941,
-"lon": 1.392755,
-"summary": "Park · Margate",
-"description": "Park in Margate (from OpenStreetMap). Run by Thanet District Council.",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/29135853"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-way-29354154",
 "name": "Bowens Field",
 "category": "nature",
@@ -49605,34 +49380,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-way-39218139",
-"name": "Walmer Castle",
-"category": "sight",
-"town": "Upper Walmer",
-"lat": 51.200266,
-"lon": 1.399678,
-"summary": "Attraction · Upper Walmer",
-"description": "Attraction near Upper Walmer (from OpenStreetMap). Listed heritage site. Run by English Heritage.",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": "https://www.english-heritage.org.uk/visit/places/walmer-castle-and-gardens/",
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/39218139"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-way-39218993",
 "name": "Constable's Gate",
 "category": "history",
@@ -49741,34 +49488,6 @@
 ],
 "source_urls": [
 "https://www.openstreetmap.org/way/51731025"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-way-54907726",
-"name": "Kearsney Abbey Gardens",
-"category": "nature",
-"town": "Kearsney",
-"lat": 51.146283,
-"lon": 1.270323,
-"summary": "Park · Kearsney",
-"description": "Park near Kearsney (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/54907726"
 ],
 "verified": "2026-10-24"
 },
@@ -51935,34 +51654,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-way-93661988",
-"name": "St Margaret's Bay",
-"category": "beach",
-"town": "St. Margaret's at Cliffe",
-"lat": 51.150534,
-"lon": 1.386051,
-"summary": "Beach · St. Margaret's at Cliffe",
-"description": "Beach near St. Margaret's at Cliffe (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": "24/7",
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/93661988"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-way-93661996",
 "name": "Ramsgate Sands",
 "category": "beach",
@@ -54097,34 +53788,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-way-133886293",
-"name": "Gazen Salts Nature Reserve",
-"category": "nature",
-"town": "Sandwich",
-"lat": 51.281099,
-"lon": 1.334662,
-"summary": "Nature reserve · Sandwich",
-"description": "Nature reserve near Sandwich (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/133886293"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-way-133895869",
 "name": "Tesco",
 "category": "shop",
@@ -54743,34 +54406,6 @@
 ],
 "source_urls": [
 "https://www.openstreetmap.org/way/142483508"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-way-144380079",
-"name": "Ellington Park",
-"category": "nature",
-"town": "St. Lawrence",
-"lat": 51.337561,
-"lon": 1.407709,
-"summary": "Park · St. Lawrence",
-"description": "Park near St. Lawrence (from OpenStreetMap). Run by Thanet District Council; Friends of Ellington Park.",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": "http://www.friendsofellingtonpark.org.uk/",
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/144380079"
 ],
 "verified": "2026-10-24"
 },
@@ -57247,34 +56882,6 @@
 ],
 "source_urls": [
 "https://www.openstreetmap.org/way/167370354"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-way-167792638",
-"name": "Samphire Hoe Country Park",
-"category": "nature",
-"town": "Aycliffe",
-"lat": 51.104304,
-"lon": 1.271024,
-"summary": "Park · Aycliffe",
-"description": "Park near Aycliffe (from OpenStreetMap).",
-"address": "Samphire Road",
-"postcode": "CT17 9FL",
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/167792638"
 ],
 "verified": "2026-10-24"
 },
@@ -59893,34 +59500,6 @@
 ],
 "source_urls": [
 "https://www.openstreetmap.org/way/223416854"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-way-223416855",
-"name": "South Foreland",
-"category": "history",
-"town": "St. Margaret's at Cliffe",
-"lat": 51.140368,
-"lon": 1.371137,
-"summary": "Lighthouse · St. Margaret's at Cliffe",
-"description": "Lighthouse near St. Margaret's at Cliffe (from OpenStreetMap). Run by National Trust.",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/223416855"
 ],
 "verified": "2026-10-24"
 },
@@ -69731,118 +69310,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-way-440202872",
-"name": "Reedbed Hide",
-"category": "hide",
-"town": "Hersden",
-"lat": 51.306905,
-"lon": 1.185947,
-"summary": "Bird hide · Hersden",
-"description": "Bird hide near Hersden (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/440202872"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-way-440203355",
-"name": "Marsh Hide",
-"category": "hide",
-"town": "Upstreet",
-"lat": 51.311866,
-"lon": 1.193467,
-"summary": "Bird hide · Upstreet",
-"description": "Bird hide near Upstreet (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/440203355"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-way-440203907",
-"name": "Harrison's Drove Hide",
-"category": "hide",
-"town": "Upstreet",
-"lat": 51.315712,
-"lon": 1.204856,
-"summary": "Bird hide · Upstreet",
-"description": "Bird hide near Upstreet (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/440203907"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-way-440204014",
-"name": "David Feast's Hide",
-"category": "hide",
-"town": "Upstreet",
-"lat": 51.318666,
-"lon": 1.202871,
-"summary": "Bird hide · Upstreet",
-"description": "Bird hide near Upstreet (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/440204014"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-way-448042264",
 "name": "Shop on the Green",
 "category": "shop",
@@ -72797,34 +72264,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-way-562015815",
-"name": "Neptune's Tower",
-"category": "history",
-"town": "Kingsgate",
-"lat": 51.386994,
-"lon": 1.441117,
-"summary": "Historic ruins · Kingsgate",
-"description": "Historic ruins near Kingsgate (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/562015815"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-way-563143181",
 "name": "Super Pizza",
 "category": "restaurant",
@@ -73046,34 +72485,6 @@
 ],
 "source_urls": [
 "https://www.openstreetmap.org/way/567068015"
-],
-"verified": "2026-10-24"
-},
-{
-"id": "osm-way-567070239",
-"name": "Clock Tower",
-"category": "sight",
-"town": "Herne Bay",
-"lat": 51.373008,
-"lon": 1.126364,
-"summary": "Attraction · Herne Bay",
-"description": "Attraction near Herne Bay (from OpenStreetMap). Run by Canterbury City Council.",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/567070239"
 ],
 "verified": "2026-10-24"
 },
@@ -96114,34 +95525,6 @@
 "verified": "2026-10-24"
 },
 {
-"id": "osm-way-1177906324",
-"name": "Tower Hide",
-"category": "hide",
-"town": "Upstreet",
-"lat": 51.311228,
-"lon": 1.186805,
-"summary": "Bird hide · Upstreet",
-"description": "Bird hide near Upstreet (from OpenStreetMap).",
-"address": null,
-"postcode": null,
-"phone": null,
-"website": null,
-"opening_hours": null,
-"hours_osm": null,
-"price": null,
-"dogs": null,
-"accessibility": null,
-"tips": null,
-"duration_min": null,
-"tags": [
-"osm"
-],
-"source_urls": [
-"https://www.openstreetmap.org/way/1177906324"
-],
-"verified": "2026-10-24"
-},
-{
 "id": "osm-way-1181122547",
 "name": "Griffins Head",
 "category": "pub",
@@ -98914,6 +98297,34 @@
 ],
 "source_urls": [
 "https://www.openstreetmap.org/way/1345262913"
+],
+"verified": "2026-10-24"
+},
+{
+"id": "osm-way-1347428606",
+"name": "Bird hide, Monk's Wall Nature Reserve",
+"category": "hide",
+"town": "Sandwich",
+"lat": 51.284276,
+"lon": 1.331929,
+"summary": "Bird hide · Monk's Wall Nature Reserve",
+"description": "Bird hide near Sandwich (from OpenStreetMap).",
+"address": null,
+"postcode": null,
+"phone": null,
+"website": null,
+"opening_hours": null,
+"hours_osm": null,
+"price": null,
+"dogs": null,
+"accessibility": null,
+"tips": null,
+"duration_min": null,
+"tags": [
+"osm"
+],
+"source_urls": [
+"https://www.openstreetmap.org/way/1347428606"
 ],
 "verified": "2026-10-24"
 },

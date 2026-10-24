@@ -59,7 +59,9 @@ class H(osmium.SimpleHandler):
         self.out = {}
 
     def take(self, t, lat, lon, oid, area_m2=0):
-        name = t.get("name")
+        name = t.get("name") or ("Bird hide" if t.get("leisure") == "bird_hide" else None)
+        if name == "Bird hide" and t.get("operator"):
+            name = f"Bird hide ({t['operator']})"
         if not name or not (WIDE[1] <= lat <= WIDE[3] and WIDE[0] <= lon <= WIDE[2]):
             return
         if t.get("access") in ("private", "no"):
@@ -140,11 +142,11 @@ class H(osmium.SimpleHandler):
         }
 
     def node(self, n):
-        if n.tags.get("name"):
+        if n.tags.get("name") or n.tags.get("leisure") == "bird_hide":
             self.take(n.tags, n.location.lat, n.location.lon, f"node/{n.id}")
 
     def area(self, a):
-        if not a.tags.get("name"):
+        if not a.tags.get("name") and a.tags.get("leisure") != "bird_hide":
             return
         try:
             ring = next(iter(a.outer_rings()))
@@ -179,10 +181,26 @@ def main():
             e["town"] = min(towns, key=lambda t: (t[1] - e["lat"]) ** 2 + ((t[2] - e["lon"]) * 0.62) ** 2)[0]
             e["summary"] = e["summary"] + " · " + e["town"]
             e["description"] = e["description"].replace(" (from OpenStreetMap).", f" near {e['town']} (from OpenStreetMap).", 1)
+    # unnamed hides: name them after the nearest nature reserve / park
+    reserves = [e for e in h.out.values() if e["category"] == "nature" and e["name"] != "Bird hide"]
+    for e in h.out.values():
+        if e["name"] == "Bird hide" and reserves:
+            r = min(reserves, key=lambda x: (x["lat"] - e["lat"]) ** 2 + ((x["lon"] - e["lon"]) * 0.62) ** 2)
+            if hav(r["lat"], r["lon"], e["lat"], e["lon"]) < 2500:
+                e["name"] = f"Bird hide, {r['name']}"
+                e["summary"] = f"Bird hide · {r['name']}"
+    researched_hides = []
+    for f in RESEARCHED:
+        p = RESEARCH / f
+        if p.exists():
+            researched_hides += [(x["lat"], x["lon"]) for x in json.loads(p.read_text(encoding="utf-8")) if x.get("category") == "hide" and x.get("lat")]
     out = []
     dup = 0
     for e in h.out.values():
         n = norm(e["name"])
+        if e["category"] == "hide" and any(hav(e["lat"], e["lon"], a, b) < 200 for a, b in researched_hides):
+            dup += 1
+            continue
         if any(k[1] and hav(e["lat"], e["lon"], k[1], k[2]) < 250 and
                (n in k[0] or k[0] in n or difflib.SequenceMatcher(None, n, k[0]).ratio() > 0.7) for k in known):
             dup += 1

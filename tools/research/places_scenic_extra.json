@@ -1,0 +1,1070 @@
+[
+ {
+  "id": "south-foreland-lighthouse-photo",
+  "name": "South Foreland Lighthouse from the cliff path",
+  "category": "photo",
+  "town": "St Margaret's at Cliffe",
+  "lat": 51.14037,
+  "lon": 1.37114,
+  "summary": "White Victorian lighthouse on the cliff top above the Strait of Dover, a classic subject against big skies and shipping lanes.",
+  "description": "The South Foreland Upper Lighthouse was built in 1843 on the cliffs between Dover and St Margaret's Bay to warn ships off the Goodwin Sands. It was the first lighthouse to use an electric light, and Guglielmo Marconi chose it for early experiments with wireless radio. It was switched off in 1988 and now belongs to the National Trust, which runs guided tours of the tower. For photographers the appeal is the clean white tower standing alone on open chalk grassland, with ferries and cargo ships crossing the Strait of Dover behind it. The cliff-top path from the White Cliffs visitor centre approaches it across open downland, which gives plenty of foreground options. The older Lower Lighthouse, decommissioned in 1904, still stands further down the cliff to the east but is privately owned.",
+  "opening_hours": "Tower visits are by guided tour only; check the National Trust page for tour days and times (weather closures happen)",
+  "price": "Tower tour: adult £8, child £4, family £20, under-5s free (National Trust, 2026); grounds free",
+  "dogs": "Dog-friendly site (National Trust 'two pawprint' rating); keep on a lead near livestock and cliff edges",
+  "accessibility": "Ground floor accessible; many stairs with handrail to upper floors; grounds have loose gravel, uneven ground and steep slopes",
+  "tips": "No on-site parking: walk about 2 miles along the cliff top from the White Cliffs of Dover visitor centre, or about a mile from St Margaret's village or bay.",
+  "duration_min": 150,
+  "tags": [
+   "coast",
+   "history",
+   "lighthouse",
+   "national-trust",
+   "walk",
+   "dogs"
+  ],
+  "subjects": [
+   "lighthouse",
+   "chalk grassland",
+   "shipping in the Strait of Dover",
+   "big skies"
+  ],
+  "best_time": "Late afternoon into sunset with side light on the white tower; clear days for shipping on the horizon",
+  "tide": null,
+  "source_urls": [
+   "https://www.nationaltrust.org.uk/visit/kent/south-foreland-lighthouse",
+   "https://en.wikipedia.org/wiki/South_Foreland_Lighthouses"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "white-cliffs-of-dover-langdon-cliffs",
+  "name": "White Cliffs of Dover, Langdon Cliffs",
+  "category": "photo",
+  "town": "Dover",
+  "lat": 51.13157,
+  "lon": 1.33745,
+  "summary": "Chalk cliffs up to 110 m high above Dover's ferry port, with France visible across the Channel on clear days.",
+  "description": "The White Cliffs of Dover run for about 13 km either side of the town and rise to around 110 metres. Their bright face is Late Cretaceous chalk streaked with dark bands of flint, and the cliff top carries chalk grassland rich in wild flowers, butterflies and birds; the stretch from Dover to Kingsdown is protected as a Site of Special Scientific Interest. The National Trust looks after the section east of the town from its visitor centre at Langdon Cliffs. From here a cliff-top path heads east towards South Foreland, with views down onto the Eastern Docks, where ferries come and go, and across the Strait to the French coast around 32 km away on a clear day. The classic shot of the cliff face itself is taken looking back west along the curve of the cliffs from further along the path.",
+  "opening_hours": "Cliff-top paths open at all times; visitor centre and café hours vary by season (see National Trust)",
+  "price": "Free to walk; car park charge for non-members of the National Trust",
+  "dogs": "Dogs welcome; keep on a lead near grazing animals and away from the cliff edge",
+  "accessibility": "Paths near the visitor centre are fairly level; further along they are uneven, grassy and steep in places",
+  "tips": "Stay well back from the edge: the chalk is unstable and unfenced for long stretches. Morning light falls on the port; evening light warms the cliff face.",
+  "duration_min": 120,
+  "tags": [
+   "coast",
+   "national-trust",
+   "walk",
+   "dogs",
+   "views",
+   "wildlife"
+  ],
+  "subjects": [
+   "chalk cliffs",
+   "ferries in Dover harbour",
+   "French coast",
+   "chalk grassland flowers and butterflies"
+  ],
+  "best_time": "Clear days after rain for the French coast; golden hour for warm light on the chalk",
+  "tide": null,
+  "source_urls": [
+   "https://en.wikipedia.org/wiki/White_Cliffs_of_Dover",
+   "https://www.nationaltrust.org.uk/visit/kent/the-white-cliffs-of-dover"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "samphire-hoe",
+  "name": "Samphire Hoe",
+  "category": "viewpoint",
+  "town": "Dover",
+  "lat": 51.1043,
+  "lon": 1.27102,
+  "summary": "Country park built from Channel Tunnel spoil at the foot of the White Cliffs, with sea walls, wild flowers and cliff views.",
+  "description": "Samphire Hoe is a country park about 3 km west of Dover that did not exist before the 1990s: it was made from some 4.9 million cubic metres of chalk marl dug out during the Channel Tunnel excavations and laid at the foot of Shakespeare Cliff. The land is owned by Getlink and managed by the White Cliffs Countryside Project. You reach it through a single-lane road tunnel controlled by traffic lights. The name comes from rock samphire, a fleshy plant once gathered from the Dover cliffs, pickled and sent to London, which Shakespeare mentions in King Lear; a 'hoe' is a spit of land running out into the sea. Today the site mixes chalk grassland and sea wall, with the white cliffs rising directly behind it, making it a calm, low-level place to look up at the cliffs rather than down from them.",
+  "opening_hours": "Check the Samphire Hoe website for current gate times",
+  "price": "Free entry; car park charge applies",
+  "dogs": "Dogs welcome on the paths; follow site signage",
+  "accessibility": "Flat surfaced paths around much of the site and along the sea wall",
+  "tips": "There is a car park, toilets and a café on site. The sea wall is a good spot to watch Channel shipping and the light on the cliffs.",
+  "duration_min": 90,
+  "tags": [
+   "coast",
+   "nature",
+   "walk",
+   "dogs",
+   "views",
+   "free"
+  ],
+  "subjects": [
+   "White Cliffs from below",
+   "sea wall",
+   "chalk grassland flowers"
+  ],
+  "best_time": "Morning to midday when the sun lights the cliffs above the park",
+  "tide": null,
+  "source_urls": [
+   "https://en.wikipedia.org/wiki/Samphire_Hoe"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "deal-pier-photo",
+  "name": "Deal Pier",
+  "category": "photo",
+  "town": "Deal",
+  "lat": 51.22375,
+  "lon": 1.40743,
+  "summary": "Kent's last fully intact leisure pier, a long concrete line out to sea that makes a strong subject for long exposures.",
+  "description": "Deal Pier is the only fully intact leisure pier left in Kent. The present structure is the town's third: it was opened by the Duke of Edinburgh in November 1957, after an earlier Victorian pier designed by Eugenius Birch was lost. It was heavily refurbished in 1997 and a modern pier-head restaurant was added in 2008. Its long, straight run of concrete piles makes it one of the best leading-line subjects on the East Kent coast, either from the shingle beside it or from underneath, where the rows of legs repeat into the distance. Anglers line the rails for much of the year. Looking along the shore you also get Deal's steep shingle beach, fishing boats pulled up on the stones and the seafront terraces of the old town.",
+  "opening_hours": null,
+  "price": "Free to walk the pier",
+  "dogs": null,
+  "accessibility": "Level deck from the promenade",
+  "tips": "Shoot from the shingle beside the pier for the repeating legs; a neutral-density filter smooths the sea for long exposures.",
+  "duration_min": 60,
+  "tags": [
+   "coast",
+   "pier",
+   "free",
+   "fishing"
+  ],
+  "subjects": [
+   "pier legs and leading lines",
+   "shingle beach",
+   "fishing boats",
+   "anglers"
+  ],
+  "best_time": "Sunrise (the pier faces east out to sea), or blue hour with the pier lights on",
+  "tide": "Lower water exposes more of the shingle beside the pier",
+  "source_urls": [
+   "https://en.wikipedia.org/wiki/Deal_Pier"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "herne-bay-pier-and-clock-tower",
+  "name": "Herne Bay Clock Tower and stranded pier-head",
+  "category": "photo",
+  "town": "Herne Bay",
+  "lat": 51.37301,
+  "lon": 1.12636,
+  "summary": "An 1837 seafront clock tower plus the old pier-head left standing alone out at sea since the 1978 storm.",
+  "description": "Herne Bay's seafront offers two contrasting subjects. The Clock Tower of 1837 is a Grade II listed, Portland-stone tower about 23 metres high, paid for by the wealthy widow Ann Thwaytes and thought to be one of the earliest purpose-built free-standing clock towers in the country; it now also serves as a Boer War memorial. A short walk west is the stub of Herne Bay Pier. The third pier on the site was famously long, at over 1,150 metres, but a storm in 1978 wrecked it and most was dismantled in 1980, leaving the landward end and the old pier-head standing alone far out in the sea. That isolated pier-head on the horizon is the town's signature photograph, especially at sunset or with a long exposure. Neptune's Arm, the breakwater along the front, gives another angle.",
+  "opening_hours": "Seafront open at all times",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "Level seafront promenade",
+  "tips": "Use a telephoto from Neptune's Arm or the promenade to compress the stranded pier-head against the setting sun.",
+  "duration_min": 60,
+  "tags": [
+   "coast",
+   "history",
+   "pier",
+   "free",
+   "sunset"
+  ],
+  "subjects": [
+   "Clock Tower",
+   "stranded pier-head",
+   "Neptune's Arm breakwater",
+   "seafront"
+  ],
+  "best_time": "Sunset over the sea to the north-west; blue hour for the lit clock tower",
+  "tide": null,
+  "source_urls": [
+   "https://en.wikipedia.org/wiki/Herne_Bay_Pier",
+   "https://en.wikipedia.org/wiki/Clock_Tower,_Herne_Bay"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "louisa-bay-broadstairs-photo",
+  "name": "Louisa Bay, Broadstairs",
+  "category": "photo",
+  "town": "Broadstairs",
+  "lat": 51.35563,
+  "lon": 1.44264,
+  "summary": "Small tucked-away bay just south of Viking Bay, with chalk cliffs, rock pools and a promenade café.",
+  "description": "Louisa Bay is the quiet little sister of Viking Bay, a few minutes' walk south along the promenade below the Broadstairs cliffs. It is one of the town's seven bays, along with Botany, Kingsgate, Joss, Stone, Viking and Dumpton Gap, and has held a Seaside Award. The bay is small and sheltered, backed by white chalk with a café on the promenade, and at low water the chalk reef in front of it opens up into rock pools and wave-cut ledges. Local walking guides note that it was renamed after a relative of the engineer who bridged the gorge that leads down to it. For photography it works best at low tide, when the exposed reef, pools and seaweed make strong foregrounds with the cliffs and the curve of the coast towards Dumpton.",
+  "opening_hours": "Beach open at all times",
+  "price": "Free",
+  "dogs": "Dogs must be on a lead 10am-6pm, 1 May to 30 September",
+  "accessibility": "Reached along the promenade from Viking Bay; the sand itself has no level route",
+  "tips": "Check tide times: the sand almost disappears as the tide comes in. Combine with the promenade walk from Viking Bay to Dumpton Gap.",
+  "duration_min": 60,
+  "tags": [
+   "coast",
+   "beach",
+   "rock-pools",
+   "free",
+   "kids"
+  ],
+  "subjects": [
+   "chalk cliffs",
+   "rock pools and reef ledges",
+   "seaweed textures",
+   "promenade"
+  ],
+  "best_time": "Early morning, when the low sun from the east lights the reef and cliffs",
+  "tide": "Low tide essential for the reef and rock pools; the beach is largely covered at high water",
+  "source_urls": [
+   "https://www.visitthanet.co.uk/attractions/louisa-bay-2247/",
+   "https://visitthanet.co.uk/attractions/the-seven-bays-of-broadstairs-133384",
+   "https://visitsoutheastengland.com/things-to-do/louisa-bay-p359021",
+   "https://www.komoot.com/highlight/7243320",
+   "https://www.dogwalksnearme.co.uk/walks/kent/louisa-bay"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "ellington-park-ramsgate",
+  "name": "Ellington Park, Ramsgate",
+  "category": "viewpoint",
+  "town": "Ramsgate",
+  "lat": 51.33756,
+  "lon": 1.40771,
+  "summary": "Victorian 12-acre town park with more than 400 trees, a café and play areas, free and dog friendly.",
+  "description": "Ellington Park is Ramsgate's main inland Victorian park, a 12-acre green space laid out in 1893 by the nurserymen Cheal and Son, the same firm behind Victoria Gardens in Broadstairs. More than 400 trees shade its lawns and paths, making it a pleasant contrast to the open, windswept cliff tops of the coast. Today it is a lively community park with a café that serves hot and cold food and has plenty of outdoor seating, play areas for children and even a small book shop. It is a calm place for a break on a walk through the town, and in autumn the mature trees put on a good display of colour. Entry is free and dogs are welcome.",
+  "opening_hours": null,
+  "price": "Free",
+  "dogs": "Dog friendly",
+  "accessibility": "Paths through the park; check individual routes for slopes",
+  "tips": "Visit in autumn for leaf colour under the old trees; the café makes it an easy family stop.",
+  "duration_min": 45,
+  "tags": [
+   "park",
+   "free",
+   "dogs",
+   "kids",
+   "cafe",
+   "history"
+  ],
+  "subjects": [
+   "mature trees",
+   "autumn colour",
+   "Victorian park layout"
+  ],
+  "best_time": "Autumn afternoons for leaf colour; spring for fresh green",
+  "tide": null,
+  "source_urls": [
+   "https://www.visitramsgate.co.uk/attractions/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "king-george-vi-memorial-park-ramsgate",
+  "name": "King George VI Memorial Park and Italianate Glasshouse",
+  "category": "viewpoint",
+  "town": "Ramsgate",
+  "lat": 51.34279,
+  "lon": 1.43351,
+  "summary": "18-acre cliff-top park between Ramsgate and Broadstairs, once Moses Montefiore's estate, with a rare Victorian glasshouse.",
+  "description": "High on the chalk cliffs between Ramsgate and Broadstairs, this 18-acre park was once the grounds of East Cliff Lodge, the home of the philanthropist Sir Moses Montefiore. The borough council bought the land in 1946 and renamed it in memory of King George VI; the house itself was later demolished. Today it offers open lawns, woodland paths and wide views out over the sea. Its star feature is the Italianate Glasshouse of 1832, near the Montefiore Avenue entrance, which Montefiore acquired from Bretton Hall in Yorkshire; it is listed and described by the Kent Gardens Trust as the county's only public park conservatory. The glasshouse opens seasonally, roughly spring to autumn. The park also has a café and a play area, and its cliff edge looks down onto the coast path towards Dumpton Gap.",
+  "opening_hours": "Park open daily; Italianate Glasshouse seasonal (roughly spring to autumn, closed in winter)",
+  "price": "Free",
+  "dogs": "Dog friendly",
+  "accessibility": "Gardens are wheelchair accessible; the glasshouse interior is not",
+  "tips": "Enter from Montefiore Avenue for the glasshouse; walk to the cliff edge for the sea view, then drop down to the promenade.",
+  "duration_min": 60,
+  "tags": [
+   "park",
+   "free",
+   "dogs",
+   "kids",
+   "cafe",
+   "history",
+   "views"
+  ],
+  "subjects": [
+   "Italianate Glasshouse",
+   "sea panorama from the cliff top",
+   "woodland paths"
+  ],
+  "best_time": "Morning, with the sun over the sea to the east; summer for the glasshouse planting",
+  "tide": null,
+  "source_urls": [
+   "https://www.visitramsgate.co.uk/attractions/",
+   "https://www.parksandgardens.org/places/king-george-vi-memorial-park-ramsgate",
+   "https://heritage.kent.gov.uk/Monument/MKE76250",
+   "https://www.visitramsgate.co.uk/the-italianate-glasshouse/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "victoria-gardens-broadstairs",
+  "name": "Victoria Gardens and Bandstand, Broadstairs",
+  "category": "viewpoint",
+  "town": "Broadstairs",
+  "lat": 51.357,
+  "lon": 1.44222,
+  "summary": "Sheltered Victorian cliff-top gardens with a bandstand, overlooking the curve of Viking Bay.",
+  "description": "Victoria Gardens is a string of sheltered gardens along the top of the chalk cliffs above Viking Bay, laid out in 1892 by the nurserymen J. Cheal and Sons and opened, according to the Broadstairs town trail, by Princess Louise, a daughter of Queen Victoria. They are owned by Broadstairs and St Peter's Town Council. The gardens are the classic place to look down over Viking Bay, its jetty and the town behind, and they have a bandstand that has been moved to a central position facing the bay, a clock tower and an Anglo-Indian style shelter topped with a Viking ship. In summer the bandstand hosts concerts and events, and the café kiosk nearby serves drinks with a view.",
+  "opening_hours": "Open at all times",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "Level promenade paths along the cliff top",
+  "tips": "Stand at the cliff rail for the postcard view of Viking Bay and the jetty; come at high tide for a full bay of water.",
+  "duration_min": 30,
+  "tags": [
+   "park",
+   "free",
+   "views",
+   "history",
+   "coast"
+  ],
+  "subjects": [
+   "Viking Bay from above",
+   "bandstand",
+   "jetty",
+   "Victorian shelter"
+  ],
+  "best_time": "Morning sun over the bay; summer evenings for bandstand events",
+  "tide": "High tide fills Viking Bay for the classic view; low tide shows the sand and harbour",
+  "source_urls": [
+   "https://parksandgardens.org/places/victoria-gardens-broadstairs",
+   "https://visitthanet.co.uk/media/6912/broadstairs-town-trail.pdf",
+   "https://www.visitthanet.co.uk/attractions/broadstairs-bandstand"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "dane-park-margate",
+  "name": "Dane Park, Margate",
+  "category": "viewpoint",
+  "town": "Margate",
+  "lat": 51.38494,
+  "lon": 1.39276,
+  "summary": "Late-Victorian park on land given to Margate by John Woodward, with a dolphin memorial fountain and big old trees.",
+  "description": "Dane Park was laid out in 1896 on former farmland that John Woodward bought at auction and presented to the town; it was formally opened by the Lord Mayor of London on 1 June 1898. In its Victorian heyday it had a large lake, rustic bridges, swans, peacocks, refreshment rooms and a bandstand. Those have gone, but the park keeps its spacious lawns, mature trees and a memorial fountain to Woodward, erected by Margate Corporation, with heraldic dolphins holding up basins and a female figure on top. It is now owned by Thanet District Council and is a quiet green break from the busy seafront, with a children's play area.",
+  "opening_hours": null,
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "Mostly level grass and paths",
+  "tips": "Look for the Woodward memorial fountain; the park is a short walk inland from Margate's Old Town.",
+  "duration_min": 40,
+  "tags": [
+   "park",
+   "free",
+   "history",
+   "kids"
+  ],
+  "subjects": [
+   "Woodward memorial fountain",
+   "mature trees",
+   "open lawns"
+  ],
+  "best_time": "Autumn for tree colour; soft afternoon light for the fountain",
+  "tide": null,
+  "source_urls": [
+   "https://www.parksandgardens.org/places/dane-park-margate-1",
+   "https://heritage.kent.gov.uk/Monument/MKE76256",
+   "https://theisleofthanetnews.com/2024/05/08/historic-dane-park-lodge-goes-on-sale-market-for-the-first-time/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "kearsney-abbey-and-russell-gardens",
+  "name": "Kearsney Abbey and Russell Gardens",
+  "category": "viewpoint",
+  "town": "Temple Ewell (Dover)",
+  "lat": 51.14628,
+  "lon": 1.27032,
+  "summary": "Two restored heritage parks either side of Alkham Road, with lakes, swans and a Thomas Mawson formal garden.",
+  "description": "Kearsney Abbey and Russell Gardens face each other across Alkham Road on the edge of Dover and are the district's most important historic parks. Despite the name, there was never a monastery: Kearsney Abbey takes its name from a Gothic-revival mansion built in 1820-22 for the Dover banker John Minet Fector. Its grounds are now open parkland around lakes fed by the River Dour, popular for picnics and feeding the waterfowl. Russell Gardens, across the road, is a Grade II registered formal garden designed around 1900 by the celebrated landscape architect Thomas Mawson for Kearsney Court, the home of paper-mill owner Edward Barlow. A National Lottery 'Parks for People' project, completed in 2021, restored Mawson's terraces and water features, the listed billiard room, and added a new café and visitor building and a circular lakeside walk with a new bridge.",
+  "opening_hours": "Parks open daily; café hours vary (see Dover District Council)",
+  "price": "Free entry; car park charges may apply",
+  "dogs": "Dogs welcome; follow signage around the lakes and formal gardens",
+  "accessibility": "Level lakeside paths in Kearsney Abbey; Russell Gardens has terraces and steps",
+  "tips": "Walk the circular lakeside path, then cross Alkham Road for the Mawson terraces; the café is in the Abbey grounds.",
+  "duration_min": 90,
+  "tags": [
+   "park",
+   "free",
+   "dogs",
+   "kids",
+   "cafe",
+   "history",
+   "nature"
+  ],
+  "subjects": [
+   "lake reflections",
+   "swans and waterfowl",
+   "Mawson formal terraces",
+   "billiard room ruin"
+  ],
+  "best_time": "Still mornings for lake reflections; autumn for tree colour",
+  "tide": null,
+  "source_urls": [
+   "https://www.dover.gov.uk/News/Press-Releases/2019/Thomas-Mawson-Revival-Underway-at-Lottery-Funded-Kearsney-Parks.aspx",
+   "https://greenflagaward.org/park-summary/?park=3940",
+   "https://www.templeewellparishcouncil.gov.uk/community/temple-ewell-18455/kearsney-parks",
+   "https://www.kentonline.co.uk/dover/news/restoration-to-edwardian-glory-199511/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "rspb-blean-woods",
+  "name": "RSPB Blean Woods",
+  "category": "viewpoint",
+  "town": "Rough Common (Canterbury)",
+  "lat": 51.29743,
+  "lon": 1.0694,
+  "summary": "Ancient woodland reserve just outside Canterbury with coppice, heath and waymarked trails, home of the rare heath fritillary.",
+  "description": "The Blean is one of the largest stretches of ancient woodland in southern England, and the RSPB's Blean Woods reserve protects a big slice of it just north-west of Canterbury. The reserve is a patchwork of coppiced woodland, tall high forest, sunny glades and heathland, managed to keep that variety. Four waymarked nature trails, from about 1.5 to 13 kilometres, lead through it, and one is suitable for wheelchairs. Spring brings nightingales and a carpet of woodland flowers, and the reserve is known for lesser spotted woodpeckers. Above all it is a stronghold of the nationally rare heath fritillary butterfly, whose caterpillars feed on common cow-wheat, a plant that thrives in freshly cut coppice. It is a peaceful, shady contrast to the open coast, and beautiful in autumn colour.",
+  "opening_hours": "Trails open daily; check the RSPB page for car park times",
+  "price": "Free (donations welcome)",
+  "dogs": "Check RSPB guidance before visiting; keep dogs on leads on reserve trails",
+  "accessibility": "One of the four trails is suitable for wheelchair access; others are unsurfaced and can be muddy",
+  "tips": "Park at the woodland car park off Rough Common Road (CT2 9DD). Visit on a sunny day in early summer to look for heath fritillaries in the coppice glades.",
+  "duration_min": 120,
+  "tags": [
+   "nature",
+   "woodland",
+   "walk",
+   "wildlife",
+   "free"
+  ],
+  "subjects": [
+   "heath fritillary butterflies",
+   "coppice woodland",
+   "woodland birds",
+   "autumn colour"
+  ],
+  "best_time": "Late May to July for heath fritillaries and nightingales; October-November for autumn colour",
+  "tide": null,
+  "source_urls": [
+   "https://rspb.org.uk/days-out/reserves/blean-woods",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.theblean.co.uk/visiting-the-blean/where-to-go/woodlands/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "st-margarets-bay-photo",
+  "name": "St Margaret's Bay and the Dover Patrol Monument",
+  "category": "photo",
+  "town": "St Margaret's at Cliffe",
+  "lat": 51.15053,
+  "lon": 1.38605,
+  "summary": "Shingle cove under white cliffs, England's closest point to France and the classic start for Channel swimmers.",
+  "description": "St Margaret's Bay is a small shingle cove tucked under the chalk cliffs just north of South Foreland, about 21 miles from France, which is why so many cross-Channel swims start here. The first successful international submarine telegraph cable was laid from the bay to France in 1851. At the north end, on the cliff top at Leathercote Point, stands the granite Dover Patrol Monument, remembering the patrol that guarded the Channel in both world wars; this headland also marks the official boundary between the North Sea and the English Channel. For photographers the bay offers white cliffs rising straight from the beach, groynes running into clear water, and the monument silhouetted on the skyline. The Pines Garden, just up the hill, has a lake, a cascade and a statue of Winston Churchill.",
+  "opening_hours": "Beach open at all times",
+  "price": "Free; pay car park at the bay",
+  "dogs": null,
+  "accessibility": "Steep road and steps down to the bay; shingle beach",
+  "tips": "Swimming is easiest at mid to high tide; at low water rocks and slippery clay ledges are exposed. The Coastguard pub sits at the bottom of the road.",
+  "duration_min": 90,
+  "tags": [
+   "coast",
+   "beach",
+   "history",
+   "views",
+   "swimming"
+  ],
+  "subjects": [
+   "white cliffs from the beach",
+   "Dover Patrol Monument",
+   "groynes",
+   "Channel shipping"
+  ],
+  "best_time": "Early morning: the bay faces east, so sunrise lights the cliffs and the sea",
+  "tide": "Mid to high tide for clean shingle and water; low tide exposes rocks and clay ledges",
+  "source_urls": [
+   "https://en.wikipedia.org/wiki/St_Margaret%27s_at_Cliffe",
+   "https://kentdowns.org.uk/top-downs/st-margarets-bay/",
+   "https://www.active-traveller.com/travel/dover-to-deal-wild-swimming-walk-kent"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "sandwich-quay-barbican-toll-bridge",
+  "name": "Sandwich Quay, Barbican and Toll Bridge",
+  "category": "photo",
+  "town": "Sandwich",
+  "lat": 51.27573,
+  "lon": 1.3419,
+  "summary": "Chequered flint Barbican gatehouse and 1892 swing bridge on the River Stour, Sandwich's most photographed corner.",
+  "description": "Sandwich's riverside quay is where the medieval Cinque Port meets the River Stour, and it packs several photogenic subjects into a short stretch. The flint-and-stone chequered Barbican guards the town end of the bridge and long served as its toll house; its date is debated, with older guidebooks arguing it is Tudor rather than medieval. The Grade II listed Toll Bridge beside it is a swing bridge of 1892, on a crossing that a plaque says has carried tolls, first as a ferry, since 1127; tolls were finally abolished in 1977. A short walk east along the quay is the Fisher Gate, built around 1384 with brick upper storeys added about 1578, the only original medieval town gate to survive. Boats moored on the Stour, the old quayside houses and reflections on still days complete the scene.",
+  "opening_hours": "Quay and bridge open at all times",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "Level quayside paths",
+  "tips": "Cross to the north bank for the classic view of the Barbican and bridge reflected in the Stour.",
+  "duration_min": 45,
+  "tags": [
+   "history",
+   "river",
+   "free",
+   "architecture"
+  ],
+  "subjects": [
+   "Barbican gatehouse",
+   "swing bridge",
+   "Fisher Gate",
+   "river reflections",
+   "moored boats"
+  ],
+  "best_time": "Calm mornings or evenings for reflections; blue hour with the town lights",
+  "tide": "The Stour here is tidal: higher water gives fuller reflections",
+  "source_urls": [
+   "https://en.wikipedia.org/wiki/Sandwich_Toll_Bridge",
+   "https://en.wikipedia.org/wiki/Sandwich,_Kent",
+   "https://historicengland.org.uk/listing/the-list/list-entry/1005184",
+   "https://heritage.kent.gov.uk/Monument/MKE25820"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "whitstable-tankerton-beach-huts-sunset",
+  "name": "Whitstable beach huts at sunset (Tankerton)",
+  "category": "photo",
+  "town": "Whitstable",
+  "lat": 51.36411,
+  "lon": 1.04386,
+  "summary": "Rows of colourful huts below grassy slopes, facing north-west for sunsets over the Thames Estuary.",
+  "description": "Whitstable looks broadly north-west across the Thames Estuary, which is why it is known for its sunsets over the water. East of the harbour, the shingle beach at Tankerton is lined with colourful beach huts set against gently rising grassy slopes; Canterbury City Council lists 378 huts across four areas, Tankerton West, Tankerton East, Marine Crescent and Long Rock. The rows of painted huts make a cheerful repeating subject by day and a silhouette line against an orange sky in the evening, with the Isle of Sheppey on the far side of the estuary. At low tide The Street, a natural shingle spit, runs around half a mile straight out to sea and gives a leading line into the sunset, but the water returns quickly from both sides.",
+  "opening_hours": "Open at all times",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "Promenade below the slopes is level; the beach is shingle",
+  "tips": "Shoot the hut rows from the top of the slopes for a layered view, then walk down to the shingle for low-angle silhouettes.",
+  "duration_min": 60,
+  "tags": [
+   "coast",
+   "beach",
+   "sunset",
+   "free"
+  ],
+  "subjects": [
+   "colourful beach huts",
+   "sunset over the Thames Estuary",
+   "The Street shingle spit",
+   "Isle of Sheppey horizon"
+  ],
+  "best_time": "Sunset, especially from spring to autumn when the sun sets further north over the estuary",
+  "tide": "Low tide to see and walk The Street; watch the incoming tide, which floods in from both sides",
+  "source_urls": [
+   "https://www.whitstable.co.uk/whitstable-beaches",
+   "https://www.canterbury.gov.uk/sites/default/files/2025-07/Tankerton%20West%20TW75%20beach%20hut%20brochure.pdf"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "folkestone-harbour-arm-lighthouse",
+  "name": "Folkestone Harbour Arm and lighthouse",
+  "category": "photo",
+  "town": "Folkestone",
+  "lat": 51.07601,
+  "lon": 1.19521,
+  "summary": "Restored railway pier ending in a lighthouse, with sweeping views back to Folkestone's cliffs and the Channel.",
+  "description": "Folkestone's Harbour Arm was the departure point for soldiers heading to the Western Front in the First World War and later the railway terminal for the Folkestone-Boulogne ferry. After the ferries ended it was restored and reopened as a leisure and food destination in 2014-15, keeping original features such as the old signal box, now a café. At its tip stands the lighthouse built during an outer pier extension in 1897-1904, now home to a champagne bar. For the 2014 Folkestone Triennial the artist Ian Hamilton Finlay's line 'Weather is a third to place and time' was painted on it as part of the town's Folkestone Artworks. From the end of the arm you look back on the harbour, the beach, the Leas cliff-top and the town, and out across the Channel.",
+  "opening_hours": "Arm open daily in season; food outlets have their own hours (see folkestoneharbourarm.co.uk)",
+  "price": "Free to walk",
+  "dogs": null,
+  "accessibility": "Long level walk along the arm",
+  "tips": "Walk to the lighthouse at sunset for the view back over the town; in winter many outlets close midweek.",
+  "duration_min": 75,
+  "tags": [
+   "coast",
+   "history",
+   "free",
+   "food",
+   "sunset",
+   "art"
+  ],
+  "subjects": [
+   "lighthouse",
+   "harbour and town skyline",
+   "Channel views",
+   "old railway features"
+  ],
+  "best_time": "Golden hour and sunset looking back west over the town and cliffs",
+  "tide": null,
+  "source_urls": [
+   "https://www.folkestoneandhythe.co.uk/stories/folkestone-harbour-arm/",
+   "https://folkestoneharbourarm.co.uk/outlets/the-lighthouse-champagne-bar/",
+   "https://lighthouseaccommodation.co.uk/listings/folkestone-lighthouse/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "the-leas-folkestone",
+  "name": "The Leas and Zig Zag Path, Folkestone",
+  "category": "viewpoint",
+  "town": "Folkestone",
+  "lat": 51.0754,
+  "lon": 1.17101,
+  "summary": "Mile-long Victorian cliff-top promenade with a bandstand and Channel views, linked to the beach by a 1920s Zig Zag Path.",
+  "description": "The Leas is Folkestone's grand cliff-top promenade, a mile of lawns, flowerbeds and an ornate bandstand looking out across the Channel towards France. Below it, the wooded slopes of the Lower Leas Coastal Park drop to the beach. Two historic routes connect the levels. The Leas Lift, a water-balanced funicular opened in September 1885 and listed Grade II*, was only the third of its type in the country; it closed in 2017 and is awaiting restoration. The Zig Zag Path was built in 1920-21 by James Pulham and Son, using unemployed local men, and winds down the cliff through artificial rock grottoes made of Pulhamite, a rock-like cement. Walking down through its caves and bends and then along the coastal park makes a good circular stroll.",
+  "opening_hours": "Open at all times",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "The Leas promenade is level; the Zig Zag Path is a gentle but long ramp with bends",
+  "tips": "Walk along the top, take the Zig Zag Path down to the coastal park, and return along the sea front to the Harbour Arm.",
+  "duration_min": 90,
+  "tags": [
+   "coast",
+   "views",
+   "history",
+   "free",
+   "walk",
+   "park"
+  ],
+  "subjects": [
+   "Channel views from the cliff top",
+   "bandstand",
+   "Pulhamite grottoes",
+   "coastal park"
+  ],
+  "best_time": "Clear days for the French coast; late afternoon light on the promenade",
+  "tide": null,
+  "source_urls": [
+   "https://parksandgardens.org/places/leas-the-folkestone",
+   "https://pulham.org.uk/2014/10/13/chapter-40-1920-21-the-leas-zigzag-path-folkestone-kent/",
+   "https://heritage.kent.gov.uk/Monument/MKE32262",
+   "https://en.wikipedia.org/wiki/Lower_Leas_Coastal_Park",
+   "https://travelfeed.com/@guides/folkestone-beach-zig-zag-path-2026"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "westgate-gardens-canterbury",
+  "name": "Westgate Gardens, Canterbury",
+  "category": "photo",
+  "town": "Canterbury",
+  "lat": 51.28027,
+  "lon": 1.07381,
+  "summary": "11-acre riverside park along the Stour beside the medieval Westgate, given to the city in 1936.",
+  "description": "Westgate Gardens stretches along the River Stour from the medieval Westgate, one of Canterbury's best-loved green spaces. The land belonged to the Williamson family's house, Tower House, and in 1936 Stephen and Catherine Williamson gave the house and grounds to the city on condition they stayed public. Catherine Williamson had the Victorian wings of the house taken down and laid the grounds out as an 11-acre riverside park and walk. At the Westgate end stands the former church of Holy Cross, built at the end of the 14th century. For photography the gardens combine the river, flower borders, old trees and the towers of the Westgate, and punts gliding along the Stour add life to riverside shots.",
+  "opening_hours": "Open daily",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "Level riverside paths",
+  "tips": "Frame the Westgate towers from the river path, or catch a punt passing under the trees.",
+  "duration_min": 45,
+  "tags": [
+   "park",
+   "river",
+   "history",
+   "free",
+   "city"
+  ],
+  "subjects": [
+   "River Stour",
+   "Westgate towers",
+   "flower borders",
+   "punts"
+  ],
+  "best_time": "Morning for soft light along the river; spring and summer for flowers",
+  "tide": null,
+  "source_urls": [
+   "https://www.canterbury-archaeology.org.uk/westgate-gardens"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "dane-john-gardens-canterbury",
+  "name": "Dane John Gardens and Mound, Canterbury",
+  "category": "viewpoint",
+  "town": "Canterbury",
+  "lat": 51.27541,
+  "lon": 1.07852,
+  "summary": "Georgian public garden inside the city walls, with a Roman-era mound you can climb and a walk along the ramparts.",
+  "description": "Dane John Gardens lies just inside Canterbury's city walls. Its centrepiece, the Dane John Mound, began as a Roman burial mound; the Romans built the city wall around it, and the Normans set their first castle on top before moving to the stone castle to the west. In 1790 Alderman James Simmons leased the land and turned it into one of the earliest public gardens of its kind, raising the mound by about four metres and adding a terrace walk and a formal avenue; the city council took it over in 1836. The mound is a scheduled monument, and a spiral path leads up to a commemorative pinnacle at the summit. From there, and from the terrace walk along the top of the rampart, you look out over the city rooftops.",
+  "opening_hours": "Open daily",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "The gardens are level; the mound path and wall walk involve slopes and steps",
+  "tips": "Climb the mound and then follow the wall-top walk for a raised view of the city.",
+  "duration_min": 40,
+  "tags": [
+   "park",
+   "history",
+   "free",
+   "views",
+   "city"
+  ],
+  "subjects": [
+   "Dane John Mound",
+   "city walls",
+   "views over Canterbury rooftops",
+   "avenue of trees"
+  ],
+  "best_time": "Late afternoon from the mound; autumn for the tree avenue",
+  "tide": null,
+  "source_urls": [
+   "https://en.wikipedia.org/wiki/Dane_John_Mound",
+   "https://www.canterbury-archaeology.org.uk/dane-john-gardens",
+   "https://historicengland.org.uk/listing/the-list/list-entry/1001360"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "fan-bay-sound-mirrors",
+  "name": "Fan Bay Deep Shelter and sound mirrors",
+  "category": "photo",
+  "town": "Dover",
+  "lat": 51.13597,
+  "lon": 1.36092,
+  "summary": "First World War concrete sound mirrors and WWII tunnels in the White Cliffs, seen on National Trust guided tours.",
+  "description": "Hidden in the cliffs about 2.5 km east of the National Trust White Cliffs visitor centre, the Fan Bay Deep Shelter is a set of tunnels dug in 1940-41 to house the crews of the gun battery above. Abandoned and later buried, they were dug out and restored by the National Trust and are now shown on guided tours only. The tunnels lie around 70 feet down, reached by 125 steps, and are unlit, so visitors wear hard hats and head torches. The tour also brings you up close to a pair of First World War sound mirrors, curved concrete dishes carved into the chalk that were an early way of listening for approaching aircraft. Their strange shapes make striking photographs, and the cliff walk out offers views over the Dover Strait to France.",
+  "opening_hours": "Guided tours only, sold first come first served at the tunnel entrance; check the National Trust page for days and times",
+  "price": "Tour: adult £15, child £7 (National Trust page, 2026)",
+  "dogs": "Not on the underground tour",
+  "accessibility": "125 steps and uneven tunnels; ages 12 and over only, maximum 12 per tour",
+  "tips": "Allow time for the 1.5-mile cliff walk from the visitor centre and arrive early, as tours fill up.",
+  "duration_min": 150,
+  "tags": [
+   "history",
+   "national-trust",
+   "coast",
+   "walk",
+   "wartime"
+  ],
+  "subjects": [
+   "sound mirrors",
+   "wartime tunnels",
+   "cliff-top views of the Dover Strait"
+  ],
+  "best_time": "Daytime tours; clear days for the view to France on the walk",
+  "tide": null,
+  "source_urls": [
+   "https://www.nationaltrust.org.uk/the-white-cliffs-of-dover/features/visiting-fan-bay-deep-shelter",
+   "https://visitkent.co.uk/attractions/fan-bay-deep-shelter-2052",
+   "https://www.whitecliffscountry.org.uk/things-to-do/experiences/all-experiences/fan-bay-deep-shelter"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "dover-western-heights-drop-redoubt",
+  "name": "Dover Western Heights and Drop Redoubt",
+  "category": "photo",
+  "town": "Dover",
+  "lat": 51.12284,
+  "lon": 1.30769,
+  "summary": "Napoleonic-era hilltop forts above Dover with deep ditches and views across the harbour to the castle.",
+  "description": "The Western Heights is a huge complex of fortifications on the hill west of Dover's harbour, begun during the Napoleonic Wars to defend the port against a French invasion and finished in the 1860s. Its most dramatic element is the Drop Redoubt, a polygonal fort ringed by deep, steep-sided ditches cut into the chalk. Nearby is the Grand Shaft, a triple-helix staircase sunk through the cliff so troops could reach the town below quickly. The site is in English Heritage guardianship, and the Western Heights Preservation Society opens the interiors on selected dates. Outside those, the exterior of the Drop Redoubt and its ditches can be seen from the surrounding footpaths during daylight. From the heights you get one of the best views over Dover: the ferry port, the town and Dover Castle on the opposite hill.",
+  "opening_hours": "Exterior viewable from footpaths in reasonable daylight hours; interior tours and open weekends on selected dates (see doverwesternheights.org and English Heritage)",
+  "price": "Exterior free; open weekends have charged admission (adult £5 at the June 2026 open weekend)",
+  "dogs": null,
+  "accessibility": "Steep cliff-side location with uneven grass surfaces",
+  "tips": "Late afternoon light falls on Dover Castle across the valley; keep to paths, as the ditches have sheer drops.",
+  "duration_min": 75,
+  "tags": [
+   "history",
+   "views",
+   "english-heritage",
+   "fortifications",
+   "free"
+  ],
+  "subjects": [
+   "Drop Redoubt ditches",
+   "Dover Castle across the valley",
+   "ferry port",
+   "Grand Shaft"
+  ],
+  "best_time": "Late afternoon to sunset for warm light on Dover Castle; clear days for France",
+  "tide": null,
+  "source_urls": [
+   "https://www.english-heritage.org.uk/visit/whats-on/western-heights-hods/",
+   "https://doverwesternheights.org/upcoming-drop-redoubt-open-weekend/",
+   "https://www.kentonline.co.uk/dover/news/how-we-defended-our-country-132375/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "devils-kneading-trough-wye-downs",
+  "name": "Devil's Kneading Trough, Wye Downs",
+  "category": "viewpoint",
+  "town": "Wye",
+  "lat": 51.1679,
+  "lon": 0.97026,
+  "summary": "Deep dry chalk valley on the Kent Downs with views over the Weald to Romney Marsh and the Channel.",
+  "description": "The Devil's Kneading Trough is a steep-sided dry valley, or coombe, cut into the scarp of the North Downs above Wye, within the Wye National Nature Reserve. Natural England explains that coombes like this were carved towards the end of the last Ice Age, when repeated freezing and thawing broke up the chalk and meltwater swept it away. From the rim the view opens out across the flat Kentish Weald to Romney Marsh and, on a clear day, to the English Channel, which makes it one of the classic viewpoints of the Kent Downs National Landscape. The slopes carry some of the finest chalk grassland in Kent, grazed by cattle and sheep to keep the turf short, and are known for wild flowers including rare orchids such as the late spider orchid.",
+  "opening_hours": "Open access land, open at all times",
+  "price": "Free",
+  "dogs": "Keep dogs on a lead where livestock are grazing",
+  "accessibility": "Rough, steep grassland; the valley sides are very steep",
+  "tips": "Park at the Wye National Nature Reserve car park on the downs road and walk to the valley rim. Early summer is best for orchids.",
+  "duration_min": 90,
+  "tags": [
+   "nature",
+   "views",
+   "walk",
+   "free",
+   "wildflowers"
+  ],
+  "subjects": [
+   "dry chalk valley",
+   "Weald and Romney Marsh panorama",
+   "orchids and chalk grassland",
+   "grazing cattle"
+  ],
+  "best_time": "Early morning with mist in the Weald, or May-June for orchids",
+  "tide": null,
+  "source_urls": [
+   "https://kentdowns.org.uk/top-downs/devils-kneading-trough/",
+   "https://publications.naturalengland.org.uk/file/6257702456000512"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "hands-and-molecule-pegwell-bay",
+  "name": "Hands and Molecule sculpture, West Cliff, Ramsgate",
+  "category": "photo",
+  "town": "Ramsgate",
+  "lat": 51.32664,
+  "lon": 1.40365,
+  "summary": "Bronze hands cradling a molecule on the West Cliff promenade, framed against the wide sweep of Pegwell Bay.",
+  "description": "On Ramsgate's West Cliff promenade, looking out over Pegwell Bay, a pair of giant bronze hands rises from the grass holding a molecular structure. The sculpture, about 2.4 metres tall, is by David Barnes. It was commissioned by Sustrans and funded by Pfizer to mark the opening of National Cycle Network route 15, the Viking Coastal Trail, and was installed by Thanet District Council in 2000. In 2021 it was voted seventh in a Sky Arts poll of the nation's favourite free outdoor artworks. Photographers like it because it gives a strong foreground to the broad view across Pegwell Bay towards Sandwich Bay and the Stour estuary, especially as the sun drops in the west.",
+  "opening_hours": "Open at all times",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "On a level cliff-top promenade",
+  "tips": "Shoot low so the hands frame the bay; the Viking Coastal Trail cycle route passes right by.",
+  "duration_min": 20,
+  "tags": [
+   "art",
+   "coast",
+   "free",
+   "views",
+   "cycling"
+  ],
+  "subjects": [
+   "bronze sculpture",
+   "Pegwell Bay panorama",
+   "sunset sky"
+  ],
+  "best_time": "Sunset over Pegwell Bay to the west and south-west",
+  "tide": "High tide fills Pegwell Bay; low tide reveals the mudflats and their reflections",
+  "source_urls": [
+   "https://www.visitramsgate.co.uk/?p=25517",
+   "https://visitthanet.co.uk/attractions/hands-and-molecules-106649",
+   "https://www.thegreatbritainguide.com/place/hands-and-molecule/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "walmer-castle-gardens",
+  "name": "Walmer Castle and Gardens",
+  "category": "viewpoint",
+  "town": "Walmer (Deal)",
+  "lat": 51.20027,
+  "lon": 1.39968,
+  "summary": "Tudor artillery castle beside the sea with celebrated gardens, including the Queen Mother's Garden.",
+  "description": "Walmer Castle stands near the shore between Walmer and Kingsdown, one of the low, rounded artillery forts built under Henry VIII to guard the Downs anchorage, and later the official residence of the Lords Warden of the Cinque Ports. Today it is run by English Heritage and is known as much for its gardens as for the castle. Highlights include the Queen Mother's Garden, designed by Penelope Hobhouse and created in 1997 as English Heritage's gift for the Queen Mother's 95th birthday: a walled garden of red brick with a central lily pool, a summerhouse and a clipped yew mount. There is also a kitchen garden, the Broadwalk with its long borders, and woodland walks, while the castle bastions look out across the beach to the sea.",
+  "opening_hours": "Seasonal; see English Heritage for current days and times",
+  "price": "Admission charged (free for English Heritage members); see English Heritage for prices",
+  "dogs": null,
+  "accessibility": "Gardens have mostly level paths; parts of the castle involve steps",
+  "tips": "Combine with a walk along the seafront to Deal Castle and the pier.",
+  "duration_min": 120,
+  "tags": [
+   "history",
+   "gardens",
+   "english-heritage",
+   "coast",
+   "castle"
+  ],
+  "subjects": [
+   "Queen Mother's Garden",
+   "Broadwalk borders",
+   "castle bastions",
+   "sea views"
+  ],
+  "best_time": "Late spring and summer for the gardens in flower",
+  "tide": null,
+  "source_urls": [
+   "https://www.english-heritage.org.uk/visit/places/walmer-castle-and-gardens/things-to-do/queen-mothers-garden-new/",
+   "https://www.english-heritage.org.uk/visit/places/walmer-castle-and-gardens/history-and-stories/garden-history/",
+   "https://heritage.kent.gov.uk/Designation/DKE19416",
+   "https://kentattractions.co.uk/attractions/walmer-castle-gardens/",
+   "https://en.wikipedia.org/wiki/Walmer_Castle"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "sandwich-ramparts-walk",
+  "name": "Sandwich town ramparts: Bulwarks, Mill Wall, Rope Walk and The Butts",
+  "category": "viewpoint",
+  "town": "Sandwich",
+  "lat": 51.27318,
+  "lon": 1.33747,
+  "summary": "Raised green walk along England's most complete surviving medieval earth ramparts, circling old Sandwich.",
+  "description": "Sandwich is still partly ringed by its medieval earth defences, and four sections of them, the Bulwarks, Mill Wall, Rope Walk and The Butts, form a public walk around the old town. A broad path runs along the top of the steep grassy banks, looking in over the rooftops and church towers on one side and out across fields and streams on the other. The Kent Gardens Trust describes these as the main part of the most complete example of medieval earth ramparts surviving in England, and they have been kept as public walks since the mid-19th century. Rope Walk is the long straight stretch where rope makers laid out their ropes; The Butts is said to have been an archery practice ground. Information boards explain each section and the Delf and Butt streams alongside.",
+  "opening_hours": "Open at all times",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "Grassy and gravel paths on top of banks, with slopes and steps at access points",
+  "tips": "Join the ramparts from the quay and follow them round, then return through the medieval streets past the Guildhall.",
+  "duration_min": 60,
+  "tags": [
+   "history",
+   "walk",
+   "free",
+   "town",
+   "views"
+  ],
+  "subjects": [
+   "medieval ramparts",
+   "town rooftops and church towers",
+   "tree-lined paths"
+  ],
+  "best_time": "Autumn for tree colour along the banks; soft evening light over the town",
+  "tide": null,
+  "source_urls": [
+   "https://parksandgardens.org/places/butts-the-and-ropewalk-the-sandwich",
+   "https://heritage.kent.gov.uk/Monument/MKE76282",
+   "https://www.theglobetrotter.co.uk/2018/08/sandwich-historic-town-trail.html"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "kingsdown-oldstairs-bay",
+  "name": "Kingsdown and Oldstairs Bay",
+  "category": "viewpoint",
+  "town": "Kingsdown (Deal)",
+  "lat": 51.17997,
+  "lon": 1.40386,
+  "summary": "Quiet shingle shore where the White Cliffs begin, with chalk ledges at low tide and a cliff-top path south.",
+  "description": "Kingsdown is a small village on the coast south of Deal, and it is here that the White Cliffs begin: Dover District Council notes that the steep chalk cliffs start at Kingsdown, with Oldstairs Bay at the southern end of the village. The beach is mostly shingle, but low tide uncovers patches of sand and a chalk shelf running out to sea, especially at Oldstairs Bay. Looking south, the first white cliffs rise in a long line towards St Margaret's, while to the north the shore runs flat towards Walmer and Deal. The village lies on the Saxon Shore Way and the White Cliffs Country Trail, and walkers can follow the cliff-top path to St Margaret's Bay.",
+  "opening_hours": "Open at all times",
+  "price": "Free; on-road parking near Oldstairs Bay",
+  "dogs": null,
+  "accessibility": "Shingle beach; cliff-top paths are unsurfaced",
+  "tips": "Any return along the foreshore to St Margaret's depends on the tide and involves scrambling over chalk falls; check tide times first and stay away from the cliff base.",
+  "duration_min": 90,
+  "tags": [
+   "coast",
+   "beach",
+   "walk",
+   "free",
+   "views"
+  ],
+  "subjects": [
+   "start of the White Cliffs",
+   "chalk shelf at low tide",
+   "shingle shore"
+  ],
+  "best_time": "Morning, when the low sun from the east lights the cliffs",
+  "tide": "Low tide exposes the chalk shelf and sandy patches at Oldstairs Bay",
+  "source_urls": [
+   "https://www.dover.gov.uk/Environment/Coast--Rivers/Coast-Protection/Our-Coastal-Environment.aspx",
+   "https://en.wikipedia.org/wiki/Kingsdown,_Dover",
+   "https://ukfossils.co.uk/kingsdown/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "kingsgate-cliff-top-neptunes-tower",
+  "name": "Kingsgate cliff top and Neptune's Tower folly",
+  "category": "viewpoint",
+  "town": "Kingsgate (Broadstairs)",
+  "lat": 51.38699,
+  "lon": 1.44112,
+  "summary": "Cliff-top path past the ruin of an 18th-century folly, with views over Kingsgate Bay's chalk cove.",
+  "description": "The cliff top above Kingsgate Bay is scattered with the remains of the follies built by Henry Fox, the first Lord Holland, who settled here in the 1760s after coming to Thanet for his health. The bay was later called the King's Gate after Charles II's ship was forced ashore by a storm in 1683. On the cliff edge stands Neptune's Tower, listed as Arx Ruohim: a miniature flint version of one of Henry VIII's forts, whose central brick tower once held a statue of Neptune. Only the flint base, around three metres high, now survives, along with a fake inscription crediting it to the Saxon king Vortigern. From the path you look down into the chalk cove and along the coast towards Botany Bay and North Foreland.",
+  "opening_hours": "Open at all times",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "Cliff-top grass paths and pavements",
+  "tips": "Walk the cliff top between Botany Bay and Kingsgate to see Kingsgate Castle and the folly ruins; keep back from the edge.",
+  "duration_min": 40,
+  "tags": [
+   "coast",
+   "history",
+   "views",
+   "free",
+   "walk"
+  ],
+  "subjects": [
+   "folly ruin",
+   "chalk cove from above",
+   "Kingsgate Castle on the skyline"
+  ],
+  "best_time": "Morning light on the cove; sunrise over the sea",
+  "tide": "High tide fills the cove for the classic view from above",
+  "source_urls": [
+   "https://heritage.kent.gov.uk/Designation/DKE3919",
+   "https://en.wikipedia.org/wiki/Holland_House,_Kingsgate",
+   "https://www.kentarchaeology.org.uk/journal/71/follies-kingsgate",
+   "https://ramblers.org.uk/go-walking/routes/kent-coastline-walk-margate-broadstairs"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "madeira-walk-albion-place-gardens",
+  "name": "Madeira Walk cascade and Albion Place Gardens, Ramsgate",
+  "category": "viewpoint",
+  "town": "Ramsgate",
+  "lat": 51.3325,
+  "lon": 1.42206,
+  "summary": "Victorian Pulhamite rock gorge and waterfall below a cliff-top garden with views over the Royal Harbour.",
+  "description": "Madeira Walk was built in the early 1890s to carry traffic down from the town to the harbour, under the borough engineer W. A. McIntosh Valon. James Pulham and Son clad its sides in Pulhamite, an artificial rock, so that the road looks as if it runs through a natural gorge, and added a cascading waterfall; the cost, close to £60,000, earned the falls the local nickname 'ratepayers' tears'. The rock gardens and cascade are listed. Directly above lie Albion Place Gardens, open cliff top until the late 1700s, later embellished with Pulhamite rockwork along their southern edge and replanted in 1984. From the gardens there is a fine panorama over the Royal Harbour, its marina and the sweep of the coast.",
+  "opening_hours": "Open at all times",
+  "price": "Free",
+  "dogs": null,
+  "accessibility": "Madeira Walk is a sloping road with pavements; the gardens have paths and some steps",
+  "tips": "Photograph the waterfall from the pavement opposite, then climb to Albion Place Gardens for the harbour view.",
+  "duration_min": 30,
+  "tags": [
+   "history",
+   "views",
+   "free",
+   "town",
+   "gardens"
+  ],
+  "subjects": [
+   "Pulhamite waterfall",
+   "Royal Harbour panorama",
+   "Victorian rockwork"
+  ],
+  "best_time": "Morning for harbour views; overcast days for even light on the waterfall",
+  "tide": null,
+  "source_urls": [
+   "https://www.visitramsgate.co.uk/attractions/",
+   "https://heritage.kent.gov.uk/Monument/MKE35351",
+   "https://heritage.kent.gov.uk/Monument/MKE76010",
+   "https://pulham.org.uk/2014/09/07/chapter-21-1894-madeira-walk-ramsgate-kent",
+   "https://www.francisfrith.com/ramsgate/ramsgate-madeira-walk-waterfall-1901_48043"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "dungeness-dark-sky",
+  "name": "Dungeness and Romney Marsh night skies",
+  "category": "photo",
+  "town": "Dungeness",
+  "lat": 50.91374,
+  "lon": 0.96971,
+  "summary": "Kent's darkest recorded skies, on a bleak shingle headland with two lighthouses for night-sky foregrounds.",
+  "description": "For true dark skies you have to leave the lit-up Thanet coast and head south-west to Romney Marsh. A 2020 Kent Life feature reported that the darkest skies in Kent have been recorded at Dungeness, Woodchurch and High Halden, and that the low population of the marsh means the Milky Way can often be seen with the naked eye. Dungeness itself is a vast, flat shingle headland, one of the strangest landscapes in Britain, with scattered fishermen's huts, abandoned boats and two lighthouses: the old black lighthouse, now a visitor attraction, and the newer one nearer the sea. These give strong silhouettes against a starry sky. The nature reserve and RSPB site nearby add wildlife interest by day. It is a long drive from Birchington, so plan it as a dedicated night trip.",
+  "opening_hours": "Open land, accessible at night; the Old Lighthouse has its own daytime opening hours",
+  "price": "Free (Old Lighthouse admission charged)",
+  "dogs": null,
+  "accessibility": "Loose shingle everywhere away from the road and boardwalks",
+  "tips": "Go on a moonless, clear night and let your eyes adapt for 20 minutes; the power station is lit, so face away from it for the darkest sky. Respect private huts and gardens.",
+  "duration_min": 180,
+  "tags": [
+   "dark-sky",
+   "astronomy",
+   "coast",
+   "night",
+   "daytrip"
+  ],
+  "subjects": [
+   "Milky Way",
+   "lighthouses as silhouettes",
+   "abandoned boats on shingle",
+   "star trails"
+  ],
+  "best_time": "Clear moonless nights; late summer for the Milky Way core low in the south",
+  "tide": null,
+  "source_urls": [
+   "https://www.magzter.com/article/Lifestyle/Kent-Life/LOOK-UP",
+   "https://gostargazing.co.uk/regions/county/kent/"
+  ],
+  "verified": "2026-10-24"
+ }
+]

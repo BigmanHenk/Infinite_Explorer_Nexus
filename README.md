@@ -1,5 +1,7 @@
 # Infinite Explorer Nexus
 
+**Downloads:** https://github.com/BigmanHenk/Infinite_Explorer_Nexus/releases/latest (iPhone app + PC planner) · **PC planner online:** https://bigmanhenk.github.io/Infinite_Explorer_Nexus/
+
 An offline iPhone sightseeing guide and week planner for Birchington-on-Sea and the Isle of
 Thanet (home-screen name **Explorer**). Everything works without signal. The only things that
 need a connection are the weather forecast (it is kept for offline use) and the website and
@@ -54,6 +56,7 @@ python tools/build/s10_hygiene.py            # Food Standards Agency hygiene rat
 python tools/build/s11_osm_pois.py           # all East Kent places of interest from OpenStreetMap
 python tools/publish_site.py                 # PC planner + tiles to GitHub Pages
 python tools/ci_download.py                  # wait for the iPhone build, download Explorer.ipa
+python tools/make_release.py                 # IPA + PC page on the GitHub release "latest"
 ```
 
 New machine? Read `docs/HANDOVER.md`.

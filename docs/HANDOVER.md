@@ -43,6 +43,7 @@ The full guide with Sideloadly is in `docs/LAPTOP_SETUP.md`; this is the short v
 | Change the app | Edit `ios/ExplorerNexus/Sources/**`, commit, push. A push touching `ios/**` builds on GitHub Actions; the repo is public, so builds are free. |
 | Get the IPA | `python tools/ci_download.py`. It waits for the build and saves `Desktop\Explorer iPhone\Explorer.ipa`, or prints the compiler errors. |
 | Rebuild content (DB) | `python tools/build/s04_database.py`. It writes `ios/ExplorerNexus/Content/*.sqlite`. |
+| Publish downloads | `python tools/ci_download.py`, then `python tools/make_release.py`. This updates the GitHub release "latest" (IPA + PC page + setup guide). |
 | Update the PC page | `python tools/build/s06_pc_planner.py` updates `planner/Explorer Planner.html`; `python tools/publish_site.py` publishes it to https://bigmanhenk.github.io/Infinite_Explorer_Nexus/ (needs `tools/work/map.sqlite`). |
 
 There is **no Mac**. Swift is only compiled on GitHub Actions, so review Swift by eye
@@ -148,12 +149,19 @@ when new places should get photos.
 
 ## 7. Open items
 
-- **Research still running when this was written:** `places_wildlife_extra.json` (every
-  individual bird hide, seal watching…) and `places_scenic_extra.json` (photo and beauty
-  spots). s04 already lists both files, so if they're missing, re-run that research in the
-  SCHEMA.md format, then run s07, s04, s06 and publish_site.
 - **Not yet tested on a phone:** the latest features (tour builder, Suggest tick boxes,
-  parking, home, wider map). Check the IPA on the iPhone.
+  parking, home, wider map). Check the IPA on the iPhone and fix what he reports.
 - **Opening-hours gaps:** 57 researched places have unknown hours. Seasonal venues show
-  "unknown" outside their published season.
+  "unknown" outside their published season. OSM places carry OSM's own hours, where there
+  are any.
 - **Dead websites** are removed in s04 (DEAD_SITES); add new ones there if found.
+- **Photos:** s07 searches only researched places (OSM entries would take hours). 135 OSM
+  places got photos before that limit was added.
+
+## 8. Downloads for the owner
+
+- **https://github.com/BigmanHenk/Infinite_Explorer_Nexus/releases/latest:** Explorer.ipa,
+  Explorer.Planner.html and LAPTOP_SETUP.md. Update it with `python tools/ci_download.py`,
+  then `python tools/make_release.py`.
+- **https://bigmanhenk.github.io/Infinite_Explorer_Nexus/:** the PC planner online, always
+  current after `tools/publish_site.py`.

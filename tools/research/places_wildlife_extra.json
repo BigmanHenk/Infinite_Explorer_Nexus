@@ -1,0 +1,960 @@
+[
+ {
+  "id": "stodmarsh-reedbed-hide",
+  "name": "Reedbed Hide, Stodmarsh NNR",
+  "category": "hide",
+  "town": "Stodmarsh",
+  "lat": 51.3069,
+  "lon": 1.18596,
+  "summary": "Step-free hide at the Stodmarsh end looking over open reedbed: a classic place to wait for bitterns and harriers.",
+  "description": "Reedbed Hide is the closest hide to the Stodmarsh village car park and the easiest one on the reserve to get into. A short gravel spur off the woodland trail leads to it, and from the windows you look across a sea of reed broken by open channels. Stodmarsh is one of the key reedbed sites in England; its shallow lakes formed through subsidence from the old Chislet Colliery in the early 20th century, and extra reedbeds were created in the 1980s and 1990s. The reward for patience here is a bittern flying low over the reeds, marsh harriers quartering the beds, bearded tits calling in the stems and water rails squealing out of sight. In winter hen harriers may come in late in the day. Because it is so close to the car park it suits a short visit or the last hour of light.",
+  "opening_hours": "Reserve open at all times (Natural England National Nature Reserve).",
+  "price": "Free entry. Stodmarsh car park: voluntary charge via RingGo; Grove Ferry: Kent Country Parks pay & display.",
+  "dogs": null,
+  "accessibility": "A wheelchair can enter via a gently sloping path, but window shelves are high and there is no low wheelchair slot. Path is rolled gravel and can be muddy in winter.",
+  "tips": "In winter arrive an hour before sunset for harriers; bring binoculars, as much of the action is distant.",
+  "duration_min": 45,
+  "tags": [
+   "birds",
+   "free",
+   "wheelchair",
+   "nature",
+   "reedbed"
+  ],
+  "subjects": [
+   "bittern",
+   "marsh harrier",
+   "bearded tit",
+   "reedbed landscapes"
+  ],
+  "best_time": "All year; winter late afternoons for harriers, spring for booming bitterns and warblers.",
+  "tide": null,
+  "wildlife": [
+   "bittern",
+   "marsh harrier",
+   "bearded tit",
+   "Cetti's warbler",
+   "water rail",
+   "hen harrier (winter)"
+  ],
+  "facilities": "Toilets (incl. accessible) and bike racks at Stodmarsh car park (CT3 4BA).",
+  "source_urls": [
+   "https://birdingforall.com/sitefiles/stodmarsh-reserve/",
+   "https://en.wikipedia.org/wiki/Stodmarsh_SSSI",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.birdguides.com/articles/rarity-finders-white-tailed-lapwing-in-kent",
+   "https://www.openstreetmap.org/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "stodmarsh-tower-hide",
+  "name": "Tower Hide, Stodmarsh NNR",
+  "category": "hide",
+  "town": "Stodmarsh",
+  "lat": 51.31123,
+  "lon": 1.18681,
+  "summary": "Raised hide on stilts beside the main lake at the Stodmarsh end, with glass windows giving all-round views.",
+  "description": "Tower Hide stands on stilts at the edge of the main lake, a short walk from the Stodmarsh car park along the trail through wet alder woodland. Its height and glazed windows on all sides make it the best place on the western part of the reserve to scan both the open water and the reedbeds around it. In winter the lake can hold grebes, goldeneye and sometimes smew, while marsh harriers drift over the reeds all year. On passage, black terns and ospreys are possible, and in summer hobbies hawk over the water while reed and sedge warblers sing below. Stodmarsh's old hides were taken down and replaced with larger, better placed ones in recent years. The raised view also suits wide landscape photographs of the Stour valley.",
+  "opening_hours": "Reserve open at all times (Natural England National Nature Reserve).",
+  "price": "Free entry. Stodmarsh car park: voluntary charge via RingGo; Grove Ferry: Kent Country Parks pay & display.",
+  "dogs": null,
+  "accessibility": "Not wheelchair accessible: reached only by steep steps. Woodland boardwalk can occasionally flood.",
+  "tips": "Combine with Reedbed Hide on the 1.1 km trail loop from the Stodmarsh car park.",
+  "duration_min": 45,
+  "tags": [
+   "birds",
+   "free",
+   "nature",
+   "lake"
+  ],
+  "subjects": [
+   "wildfowl",
+   "marsh harrier",
+   "lake panoramas"
+  ],
+  "best_time": "Winter for ducks and grebes; May-September for hobbies; spring and autumn for passage terns.",
+  "tide": null,
+  "wildlife": [
+   "goldeneye",
+   "smew (winter)",
+   "grebes",
+   "marsh harrier",
+   "hobby",
+   "black tern (passage)",
+   "reed warbler"
+  ],
+  "facilities": "None at the hide; toilets at Stodmarsh car park.",
+  "source_urls": [
+   "https://birdingforall.com/sitefiles/stodmarsh-reserve/",
+   "https://en.wikipedia.org/wiki/Stodmarsh_SSSI",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.birdguides.com/articles/rarity-finders-white-tailed-lapwing-in-kent",
+   "https://www.openstreetmap.org/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "stodmarsh-marsh-hide",
+  "name": "Marsh Hide, Stodmarsh NNR",
+  "category": "hide",
+  "town": "Stodmarsh",
+  "lat": 51.31186,
+  "lon": 1.19348,
+  "summary": "Hide on the central trail between Stodmarsh and Grove Ferry, overlooking open marsh and pools.",
+  "description": "Marsh Hide sits on the central trail that links the Stodmarsh and Grove Ferry ends of the reserve, so it makes a natural stop on a walk through the whole valley. It looks out over marsh and pools, a good setting for waders on passage such as green and wood sandpipers, ruff and greenshank, and for ducks in winter. Marsh harriers cross the view throughout the year, bitterns are present in the surrounding reeds, and in spring cuckoos call from the scrub. The hide is approached up a slope and has steps at the entrance, so it is not suitable for wheelchairs. With more than 6 km of paths, including a circular route round the reserve, it is easy to build Marsh Hide into a half-day walk.",
+  "opening_hours": "Reserve open at all times (Natural England National Nature Reserve).",
+  "price": "Free entry. Stodmarsh car park: voluntary charge via RingGo; Grove Ferry: Kent Country Parks pay & display.",
+  "dogs": null,
+  "accessibility": "Not wheelchair accessible: incline then stairs into the hide; single-height viewing slots.",
+  "tips": "Walk the full valley path from Stodmarsh to Grove Ferry to visit all the hides; paths can be wet in winter.",
+  "duration_min": 40,
+  "tags": [
+   "birds",
+   "free",
+   "nature",
+   "walk"
+  ],
+  "subjects": [
+   "waders",
+   "marsh harrier",
+   "wetland"
+  ],
+  "best_time": "Spring and autumn passage for waders; winter for ducks.",
+  "tide": null,
+  "wildlife": [
+   "green sandpiper",
+   "wood sandpiper",
+   "ruff",
+   "greenshank",
+   "marsh harrier",
+   "cuckoo"
+  ],
+  "facilities": "None at the hide.",
+  "source_urls": [
+   "https://birdingforall.com/sitefiles/stodmarsh-reserve/",
+   "https://en.wikipedia.org/wiki/Stodmarsh_SSSI",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.birdguides.com/articles/rarity-finders-white-tailed-lapwing-in-kent",
+   "https://www.openstreetmap.org/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "grove-ferry-david-feast-hide",
+  "name": "David Feast's Hide, Grove Ferry (Stodmarsh NNR)",
+  "category": "hide",
+  "town": "Upstreet",
+  "lat": 51.31867,
+  "lon": 1.2029,
+  "summary": "Ramped hide at the Grove Ferry end of Stodmarsh, facing wet grassland where waders and wildfowl gather.",
+  "description": "David Feast's Hide is the main hide at the Grove Ferry end of Stodmarsh National Nature Reserve, an area where wetland habitat was restored by English Nature, now Natural England. Shallow floods draw in ducks and geese in winter and a good mix of waders on spring and autumn passage, such as ruff, little stint and curlew sandpiper, with spoonbills also recorded. Marsh harriers hunt over the area all year and barn owls are resident in the valley. The approach is a compacted stone or mown-grass track from the Grove Ferry gate, and the hide has a ramp. It pairs well with the nearby viewing ramp (a raised mound with partly screened benches) and Harrison's Drove Hide for a short visit from the Grove Ferry car park.",
+  "opening_hours": "Reserve open at all times (Natural England National Nature Reserve).",
+  "price": "Free entry. Stodmarsh car park: voluntary charge via RingGo; Grove Ferry: Kent Country Parks pay & display.",
+  "dogs": null,
+  "accessibility": "Ramped access with one low viewing window; other windows open upwards and are out of reach from a wheelchair. Track is compacted stone or mown grass with sandy patches.",
+  "tips": "Park in the Kent Country Parks pay & display opposite the Grove Ferry Inn; the pub car park charges non-customers.",
+  "duration_min": 45,
+  "tags": [
+   "birds",
+   "free",
+   "wheelchair",
+   "nature"
+  ],
+  "subjects": [
+   "waders",
+   "wildfowl",
+   "marsh harrier"
+  ],
+  "best_time": "Spring and autumn passage; winter for wildfowl.",
+  "tide": null,
+  "wildlife": [
+   "ruff",
+   "little stint (passage)",
+   "curlew sandpiper (passage)",
+   "spoonbill (passage)",
+   "marsh harrier",
+   "barn owl"
+  ],
+  "facilities": "Accessible toilet (RADAR key) at the Grove Ferry country park car park (CT3 4BP).",
+  "source_urls": [
+   "https://birdingforall.com/sitefiles/stodmarsh-reserve/",
+   "https://en.wikipedia.org/wiki/Stodmarsh_SSSI",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.birdguides.com/articles/rarity-finders-white-tailed-lapwing-in-kent",
+   "https://www.openstreetmap.org/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "grove-ferry-harrisons-drove-hide",
+  "name": "Harrison's Drove Hide, Grove Ferry (Stodmarsh NNR)",
+  "category": "hide",
+  "town": "Upstreet",
+  "lat": 51.31571,
+  "lon": 1.20486,
+  "summary": "Ramped hide south of the Grove Ferry entrance, overlooking reed-fringed marsh.",
+  "description": "Harrison's Drove Hide lies a short walk south of the Grove Ferry entrance, along a drove track heading into the heart of the reserve. Its outlook mixes open water with reed, so it offers a chance of waders and dabbling ducks alongside reedbed birds. Bearded tits, Cetti's warblers, water rails and kingfishers are all present in the valley year-round. In summer hobbies chase insects over the marsh, and in winter hen harriers and peregrines hunt across the area. Together with David Feast's Hide and the viewing ramp it makes an easy hour's circuit from the Grove Ferry car park, and the main path continues west to Marsh Hide and the Stodmarsh end. Otters and water voles also live in the reserve, though they are rarely seen.",
+  "opening_hours": "Reserve open at all times (Natural England National Nature Reserve).",
+  "price": "Free entry. Stodmarsh car park: voluntary charge via RingGo; Grove Ferry: Kent Country Parks pay & display.",
+  "dogs": null,
+  "accessibility": "Ramped access, standard internal layout. Path beyond the viewing ramp can be soggy in winter.",
+  "tips": "Start at Grove Ferry for the most step-free hides; the Stodmarsh-end Tower Hide has steep steps.",
+  "duration_min": 40,
+  "tags": [
+   "birds",
+   "free",
+   "wheelchair",
+   "nature"
+  ],
+  "subjects": [
+   "reedbed birds",
+   "waders",
+   "raptors"
+  ],
+  "best_time": "All year; summer for hobbies, winter for harriers and peregrines.",
+  "tide": null,
+  "wildlife": [
+   "bearded tit",
+   "Cetti's warbler",
+   "water rail",
+   "kingfisher",
+   "hobby",
+   "hen harrier (winter)",
+   "otter"
+  ],
+  "facilities": "Toilets at the Grove Ferry country park car park.",
+  "source_urls": [
+   "https://birdingforall.com/sitefiles/stodmarsh-reserve/",
+   "https://en.wikipedia.org/wiki/Stodmarsh_SSSI",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.birdguides.com/articles/rarity-finders-white-tailed-lapwing-in-kent",
+   "https://www.openstreetmap.org/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "oare-marshes-east-flood-hide",
+  "name": "East Flood Hide, Oare Marshes",
+  "category": "hide",
+  "town": "Oare, Faversham",
+  "lat": 51.34176,
+  "lon": 0.89005,
+  "summary": "Wheelchair-accessible hide over the East Flood at Oare Marshes, one of Kent's best close-range wader spots.",
+  "description": "Oare Marshes, north of Faversham on the edge of the Swale estuary, is a Kent Wildlife Trust reserve of grazing marsh, freshwater dykes, open-water scrapes, reedbed and saltmarsh, described as one of the last grazing marshes left in Kent. The East Flood is its centrepiece: a shallow lagoon beside the approach road where waders and ducks feed and rest. The hide overlooking it is the reserve's accessible hide, about 300 m from a disabled-only car park. Around 250 bird species have been recorded at Oare. In winter look for black-tailed godwits, brent geese and hen harriers; in summer garganey and terns; little egrets, barn owls and ringed plovers are present all year. Autumn and winter are regarded as the best seasons. The site lies within the Swale Ramsar site, SPA and SSSI.",
+  "opening_hours": "Open at all times (Kent Wildlife Trust).",
+  "price": "Free entry; car park charged £2.50 weekdays, £3.50 weekends via RingGo (location 684764).",
+  "dogs": "On a lead; stay on the public right of way and keep dogs out of water, ditches and saltmarsh.",
+  "accessibility": "Wheelchair accessible hide; disabled-only parking about 300 m away; RADAR gates. A full circuit may not be possible in wet conditions.",
+  "tips": "The road past the flood also gives good views, so stay in your car or keep low to avoid flushing the birds.",
+  "duration_min": 60,
+  "tags": [
+   "birds",
+   "wheelchair",
+   "nature",
+   "estuary"
+  ],
+  "subjects": [
+   "waders",
+   "black-tailed godwit",
+   "wildfowl"
+  ],
+  "best_time": "Autumn and winter; summer for garganey and terns.",
+  "tide": "The flood is freshwater and can be watched at any state of tide.",
+  "wildlife": [
+   "black-tailed godwit",
+   "brent goose (winter)",
+   "hen harrier (winter)",
+   "short-eared owl (winter)",
+   "garganey (summer)",
+   "little egret",
+   "barn owl",
+   "ringed plover"
+  ],
+  "facilities": "Car park opposite the Watch House near Harty Ferry Road (ME13 0QD).",
+  "source_urls": [
+   "https://www.kentwildlifetrust.org.uk/nature-reserves/oare-marshes",
+   "https://en.wikipedia.org/wiki/Oare_Marshes",
+   "https://www.openstreetmap.org/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "oare-marshes-sea-wall-hide",
+  "name": "Sea Wall Hide, Oare Marshes",
+  "category": "hide",
+  "town": "Oare, Faversham",
+  "lat": 51.34454,
+  "lon": 0.8967,
+  "summary": "Kent Wildlife Trust hide at the corner of the sea wall at Oare, looking over marsh and out to the Swale estuary.",
+  "description": "Sea Wall Hide stands at a corner of the sea wall that wraps around Oare Marshes, where the reserve meets the Swale, the channel separating the Isle of Sheppey from mainland Kent. From here you can scan both the grazing marsh and scrapes inland and the open estuary with its saltmarsh edges, where sea lavender and golden samphire grow. The estuary side is good for wintering brent geese and waders, while marsh harriers and short-eared owls hunt over the marsh in winter. In spring and summer bearded tits and sedge warblers can be found in the reeds, and common and little terns visit the estuary in summer. The sea wall path is level and surfaced with compacted roadstone, and continues as a circular walk around the reserve back towards the East Flood.",
+  "opening_hours": "Open at all times (Kent Wildlife Trust).",
+  "price": "Free entry; car park charged £2.50 weekdays, £3.50 weekends via RingGo (location 684764).",
+  "dogs": "On a lead; stay on the public right of way and keep dogs out of water, ditches and saltmarsh.",
+  "accessibility": "OSM tags the hide itself as not wheelchair accessible; the sea wall path to it is level, compacted roadstone, and seasonally accessible.",
+  "tips": "Walk the full sea wall circuit for estuary and marsh views; it is exposed, so dress for wind.",
+  "duration_min": 60,
+  "tags": [
+   "birds",
+   "nature",
+   "estuary",
+   "walk"
+  ],
+  "subjects": [
+   "estuary birds",
+   "brent geese",
+   "saltmarsh"
+  ],
+  "best_time": "Autumn and winter for geese, waders and raptors; summer for terns.",
+  "tide": "Estuary views change with the tide; the mudflats are exposed at low water.",
+  "wildlife": [
+   "brent goose (winter)",
+   "marsh harrier",
+   "short-eared owl (winter)",
+   "bearded tit",
+   "common tern (summer)",
+   "little tern (summer)"
+  ],
+  "facilities": "None at the hide.",
+  "source_urls": [
+   "https://www.kentwildlifetrust.org.uk/nature-reserves/oare-marshes",
+   "https://en.wikipedia.org/wiki/Oare_Marshes",
+   "https://www.openstreetmap.org/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "grove-ferry-viewing-mound",
+  "name": "Viewing Mound, Grove Ferry (Stodmarsh NNR)",
+  "category": "hide",
+  "town": "Upstreet",
+  "lat": 51.32043,
+  "lon": 1.20519,
+  "summary": "Raised, ramped viewing mound near the Grove Ferry entrance with a wide view over the restored wet grassland.",
+  "description": "Close to the Grove Ferry entrance of Stodmarsh National Nature Reserve, the viewing mound (also called the viewing ramp) is an earth platform with partly screened benches that lifts you above the reeds for a wide panorama over the restored wetland. It is open rather than enclosed, so it is a good place to scan for raptors: marsh harriers are present all year, hen harriers and peregrines hunt here in winter, and hobbies and the occasional red kite or osprey pass in spring and autumn. Below, the shallow floods attract lapwings, ducks and passage waders. Because it needs no hide door or bench time, it is a quick stop for visitors who only have a few minutes, and it is easy to reach on the compacted limestone path from the car park.",
+  "opening_hours": "Reserve open at all times (Natural England National Nature Reserve).",
+  "price": "Free; Grove Ferry Kent Country Parks car park is pay & display.",
+  "dogs": null,
+  "accessibility": "Inclined ramp suitable for fit, self-propelled wheelchair users; steps also lead down to the path. Path from the car park is compacted limestone, accessible all year.",
+  "tips": "Good for a quick look on a dull day; continue to David Feast's Hide for closer views.",
+  "duration_min": 20,
+  "tags": [
+   "birds",
+   "free",
+   "wheelchair",
+   "nature",
+   "viewpoint"
+  ],
+  "subjects": [
+   "raptors",
+   "wetland panorama",
+   "waders"
+  ],
+  "best_time": "Winter afternoons for harriers; spring and autumn for passage raptors.",
+  "tide": null,
+  "wildlife": [
+   "marsh harrier",
+   "hen harrier (winter)",
+   "peregrine",
+   "hobby",
+   "lapwing"
+  ],
+  "facilities": "Accessible toilet (RADAR key) at the Grove Ferry car park; Grove Ferry Inn nearby.",
+  "source_urls": [
+   "https://birdingforall.com/sitefiles/stodmarsh-reserve/",
+   "https://en.wikipedia.org/wiki/Stodmarsh_SSSI",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.openstreetmap.org/"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "sandwich-bay-restharrow-scrape-hide",
+  "name": "Restharrow Scrape hide, Sandwich Bay",
+  "category": "hide",
+  "town": "Sandwich Bay",
+  "lat": 51.26312,
+  "lon": 1.38449,
+  "summary": "Sandwich Bay Bird Observatory's wetland scrape, a short walk from the sea, with breeding lapwings and avocets.",
+  "description": "Restharrow Scrape is a small wetland reserve on the Sandwich Bay Estate, roughly midway between Sandwich and Deal and only a few hundred metres inland from the beach. It was created in 2002 and bought by the Sandwich Bay Bird Observatory Trust in 2018, and is still maturing as a home for waterbirds. Lapwings and little grebes breed here, avocets first nested in 2018, and wagtails and linnets feed around the edges, while brown hares are often seen in the fields. Because Sandwich Bay is a major landfall for migrants, the scrape can turn up passing waders and other surprises in spring and autumn. The scrape has more than one hide; OpenStreetMap marks the main one used here. Across the road lies Restharrow Dunes, a grazed dune grassland reserve of mainly botanical interest.",
+  "opening_hours": "Restharrow Scrape is open to the public (no set hours published). Observatory field centre open daily 10:00-16:00.",
+  "price": "Free. Cars entering the private Sandwich Bay Estate pay a discretionary £1 fee (non-members); SBBOT members park free with a 'B' sticker.",
+  "dogs": null,
+  "accessibility": "SBBOT members with recognised mobility issues can get a limited 'BS' sticker allowing them to drive as far as the scrape.",
+  "tips": "Drive in only via Guilford Road (the Estate uses number-plate cameras) and leave by the same entrance; never park on the Observatory access track. Check the SBBOT sightings page before you go.",
+  "duration_min": 45,
+  "tags": [
+   "birds",
+   "nature",
+   "coast",
+   "migration"
+  ],
+  "subjects": [
+   "lapwing",
+   "avocet",
+   "migrant birds",
+   "brown hare"
+  ],
+  "best_time": "Spring for breeding waders and migrants; autumn passage.",
+  "tide": null,
+  "wildlife": [
+   "lapwing",
+   "little grebe",
+   "avocet",
+   "linnet",
+   "wagtails",
+   "brown hare"
+  ],
+  "facilities": "Field centre at Guilford Road, CT13 9PF (01304 617341).",
+  "source_urls": [
+   "https://sbbot.org.uk/our-wildlife-reserves-recording-area/",
+   "https://sbbot.org.uk/visit-us/",
+   "https://payhip.com/b/E3CeS",
+   "https://www.openstreetmap.org/node/5829166932"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "gazen-salts-nature-reserve-sandwich",
+  "name": "Gazen Salts Nature Reserve, Sandwich",
+  "category": "hide",
+  "town": "Sandwich",
+  "lat": 51.28223,
+  "lon": 1.33515,
+  "summary": "Volunteer-run 15-acre reserve on the River Stour in Sandwich, with a lake, small hides and a river viewing platform.",
+  "description": "Gazen Salts is a peaceful pocket of woodland, wetland and meadow just off Strand Street in Sandwich, bordered on three sides by the River Stour. It was set up in 1973 and is still looked after by a volunteer group. A lake with benches lets you sit and watch the resident ducks and other wildfowl, herons stalk the margins and kingfishers are regularly seen; great white egrets have also turned up. OpenStreetMap shows two small hide buildings in the reserve, and a little viewing platform on the river side looks over the mud banks where waders may be feeding. A feeding station draws woodland birds, and speckled wood butterflies dance along the shady paths in summer. It is an easy add-on to a walk around medieval Sandwich, only a few minutes from the town centre.",
+  "opening_hours": "Open seven days a week (no set hours published).",
+  "price": "Free.",
+  "dogs": "No dogs, except assistance dogs.",
+  "accessibility": "Wood-chip paths that get muddy when wet; main paths are easier for wheelchairs and pushchairs in dry weather. Buggy and bike park near the entrance.",
+  "tips": "Use the pay & display car park on Strand Street next to the reserve; there are no facilities inside, but the town centre is about 8 minutes' walk.",
+  "duration_min": 45,
+  "tags": [
+   "birds",
+   "free",
+   "nature",
+   "kids",
+   "town"
+  ],
+  "subjects": [
+   "kingfisher",
+   "heron",
+   "wildfowl",
+   "woodland birds"
+  ],
+  "best_time": "All year; winter for wildfowl, summer for butterflies.",
+  "tide": "Best when mud banks on the River Stour are exposed, as waders may then feed below the viewing platform.",
+  "wildlife": [
+   "kingfisher",
+   "grey heron",
+   "great white egret",
+   "wildfowl",
+   "woodland birds",
+   "speckled wood"
+  ],
+  "facilities": "No facilities in the reserve; town centre shops and toilets nearby. Address: Strand Street, Sandwich CT13 9HN.",
+  "source_urls": [
+   "https://www.whitecliffscountry.org.uk/things-to-do/attractions/all-attractions/gazen-salts-nature-reserve",
+   "https://visitkent.co.uk/attractions/gazen-salts-nature-reserve-2100",
+   "https://www.openstreetmap.org/way/133886293"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "ham-fen-beaver-reserve",
+  "name": "Ham Fen beaver reserve (guided safaris only)",
+  "category": "hide",
+  "town": "Sandwich",
+  "lat": 51.24889,
+  "lon": 1.33611,
+  "summary": "Kent's last surviving ancient fen, where Kent Wildlife Trust released beavers in 2002: visited on guided evening safaris.",
+  "description": "Ham Fen, just west of Sandwich, is a Kent Wildlife Trust reserve described as the last surviving ancient fen in Kent, with deep peat, running water, reeds and tall wildflowers. Drainage in the 18th century and again in the early 1980s badly damaged it, and in 2002 the Trust released Eurasian beavers here, the first return of the species to Britain in a contained reserve. The beavers have since built dams of logs and mud, raising the water table and creating deep pools that help the peat fen recover; their lodge is several metres across with an underwater entrance. Kingfishers favour the quiet beaver pool, turtle doves now breed among dead oaks standing in the water, and cattle and water buffalo graze the fen. The site is normally closed, so the only way in is a guided evening safari.",
+  "opening_hours": "Not open to the public; access only on Kent Wildlife Trust guided evening safaris (book via the Trust's events pages).",
+  "price": "Safari tickets via Kent Wildlife Trust (price varies by event).",
+  "dogs": "No public access.",
+  "accessibility": "Marshy paths on guided walks only; ask the Trust when booking.",
+  "tips": "Beavers are nocturnal and the Trust warns sightings on safaris are unlikely; go for the fen, the dams and the dusk atmosphere. There is no signage at the Hay Lane entrance.",
+  "duration_min": 120,
+  "tags": [
+   "nature",
+   "guided",
+   "beavers",
+   "rare"
+  ],
+  "subjects": [
+   "beaver dams and lodge",
+   "fen landscape",
+   "kingfisher"
+  ],
+  "best_time": "Summer evening safaris.",
+  "tide": null,
+  "wildlife": [
+   "Eurasian beaver",
+   "kingfisher",
+   "turtle dove",
+   "water buffalo (grazing)"
+  ],
+  "facilities": "None.",
+  "source_urls": [
+   "https://en.wikipedia.org/wiki/Ham_Fen",
+   "https://kentwildlifetrust.org.uk/blog/ham-fen-coombe-down",
+   "https://www.kentwildlifetrust.org.uk/news/kent-wildlife-trust-first-organisation-introduce-beavers-back-britain-celebrate-over-20-years"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "samphire-hoe-samphire-tower",
+  "name": "Samphire Tower, Samphire Hoe",
+  "category": "hide",
+  "town": "Dover",
+  "lat": 51.10483,
+  "lon": 1.27656,
+  "summary": "Wooden lookout tower on Samphire Hoe, the chalk-grassland reserve built from Channel Tunnel spoil below Shakespeare Cliff.",
+  "description": "Samphire Hoe is a 30-hectare country park and nature reserve at the foot of the white cliffs west of Dover, made from almost 5 million cubic metres of chalk marl dug out during the Channel Tunnel works and opened to the public in 1997. It is owned by Getlink and run by the White Cliffs Countryside Partnership. The new land has grown into rare chalk grassland, with up to 40 flowering plant species in a single square metre, including the nationally rare early spider orchid in spring and rock sea lavender and rock samphire in July. Samphire Tower, a tall blue wooden lookout, gives a raised view over the meadows and out to sea. Peregrines patrol the cliffs, kestrels hunt over the grass, and stonechats, meadow pipits and rock pipits are regulars.",
+  "opening_hours": "Samphire Hoe open daily 07:00 until dusk.",
+  "price": "Free entry; parking charges may apply.",
+  "dogs": "Dog-friendly site.",
+  "accessibility": "Described as wheelchair friendly, with a 2 km trail and Blue Badge bays; the tower itself is climbed by steps.",
+  "tips": "Reach the Hoe through the single-lane, traffic-light controlled tunnel off the A20; scan the cliff face for peregrines.",
+  "duration_min": 90,
+  "tags": [
+   "nature",
+   "coast",
+   "dogs",
+   "wheelchair",
+   "viewpoint"
+  ],
+  "subjects": [
+   "peregrine",
+   "chalk grassland orchids",
+   "white cliffs"
+  ],
+  "best_time": "April-May for early spider orchids; July for sea lavender; all year for peregrines.",
+  "tide": null,
+  "wildlife": [
+   "peregrine",
+   "kestrel",
+   "stonechat",
+   "rock pipit",
+   "meadow pipit",
+   "early spider orchid"
+  ],
+  "facilities": "Refreshment kiosk, toilets and baby changing; Samphire Road, Dover CT17 9FL.",
+  "source_urls": [
+   "https://en.wikipedia.org/wiki/Samphire_Hoe",
+   "https://www.whitecliffscountry.org.uk/things-to-do/attractions/all-attractions/samphire-hoe",
+   "https://www.openstreetmap.org/node/298421629"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "reculver-wantsum-mouth-winter-birds",
+  "name": "Wantsum mouth, Reculver sea wall (winter birds)",
+  "category": "hide",
+  "town": "Reculver",
+  "lat": 51.3771,
+  "lon": 1.23509,
+  "summary": "Information-board stop on the sea wall where the old Wantsum Channel meets the sea: winter buntings, owls and seabirds.",
+  "description": "East of Reculver Towers the sea wall runs across the flat Wantsum marshes, the drained bed of the channel that once made Thanet an island. Where the River Wantsum reaches the sea there is an information board, a convenient place to stop and scan both the grazing marsh inland and the shingle, saltmarsh and sea in front. In winter this stretch is known for snow buntings on the shingle, brent geese on the shore and fields, and short-eared owls, which sometimes come in off the sea and hunt over the rough grass. Offshore, red-throated divers and common scoters can be picked out with a telescope, and spring and autumn bring migrants along the coast. There is no hide or shelter, so it suits a walk between Reculver and Minnis Bay rather than a long sit.",
+  "opening_hours": "Open access sea wall path (Saxon Shore Way), any time.",
+  "price": "Free; Reculver car park by the towers is pay & display.",
+  "dogs": "Thanet Coast Project asks dog walkers to keep dogs on a lead near resting or feeding shorebirds, especially at high tide.",
+  "accessibility": "Wide, flat sea wall path, rated easy and shared with cyclists; exposed and windy.",
+  "tips": "Check the tide before you go: at high water shorebirds crowd onto the remaining beach and are easily disturbed, so give roosting birds a wide berth.",
+  "duration_min": 60,
+  "tags": [
+   "birds",
+   "free",
+   "coast",
+   "walk",
+   "winter",
+   "dogs"
+  ],
+  "subjects": [
+   "snow bunting",
+   "short-eared owl",
+   "brent geese",
+   "seabirds offshore"
+  ],
+  "best_time": "November-March; spring and autumn migration.",
+  "tide": "High water is possible on the shore here; check a Reculver tide table. Shorebirds roost on the upper beach at high tide.",
+  "wildlife": [
+   "snow bunting (winter)",
+   "short-eared owl (winter)",
+   "brent goose",
+   "red-throated diver",
+   "common scoter",
+   "corn bunting"
+  ],
+  "facilities": "None on the sea wall; café, visitor centre and toilets at Reculver, or at Minnis Bay to the east.",
+  "source_urls": [
+   "https://www.birdingplaces.eu/birdingplaces/united-kingdom/reculver",
+   "https://www.thanetcoast.org.uk/your-turn-to-help-the-turnstone/",
+   "https://www.openstreetmap.org/node/9794396720"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "south-swale-nature-reserve",
+  "name": "South Swale Nature Reserve (Kent Wildlife Trust)",
+  "category": "hide",
+  "town": "Seasalter",
+  "lat": 51.34294,
+  "lon": 0.91882,
+  "summary": "Large, wild estuary reserve between Faversham and Seasalter: winter geese, waders, harriers and owls along the sea wall.",
+  "description": "South Swale is a 420-hectare Kent Wildlife Trust reserve on the southern shore of the Swale, facing the Isle of Sheppey. It is a big, open, rather wild place of mudflats, saltmarsh, reedbed, shingle beach and flower-rich grassland, with no hides: you watch from the public footpath on the landward side of the sea wall. In winter the mud and fields hold brent geese, wigeon, dunlin, turnstones, avocets, oystercatchers and ringed plovers, while short-eared owls, marsh harriers and merlins hunt overhead. Summer brings skylarks, reed warblers and bearded reedlings, butterflies and rare bees, and coastal plants such as yellow horned-poppy, golden samphire, sea-lavender and sea-purslane on the shingle and saltmarsh. It makes a quieter alternative to nearby Oare Marshes.",
+  "opening_hours": "Open at all times.",
+  "price": "Free; limited roadside parking along Faversham Road.",
+  "dogs": "On leads at all times; cattle and sheep graze year-round.",
+  "accessibility": "Footpath on the landward side of the sea wall, entered through a small kissing gate; often very muddy. No facilities.",
+  "tips": "Stay on the public right of way, keep off the beach and do not enter the Castle Coote sanctuary area; birds roost there undisturbed.",
+  "duration_min": 90,
+  "tags": [
+   "birds",
+   "free",
+   "nature",
+   "estuary",
+   "walk",
+   "dogs"
+  ],
+  "subjects": [
+   "brent geese",
+   "waders",
+   "short-eared owl",
+   "coastal flowers"
+  ],
+  "best_time": "Winter for birds; summer for flowers and butterflies.",
+  "tide": "Waders feed on the mudflats as the tide falls and are pushed closer at higher tides.",
+  "wildlife": [
+   "brent goose",
+   "wigeon",
+   "dunlin",
+   "avocet",
+   "short-eared owl (winter)",
+   "marsh harrier",
+   "merlin (winter)",
+   "bearded reedling"
+  ],
+  "facilities": "None; postcode for navigation CT5 4BP.",
+  "source_urls": [
+   "https://www.kentwildlifetrust.org.uk/nature-reserves/south-swale",
+   "https://www.openstreetmap.org/node/684317215"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "rspb-blean-woods",
+  "name": "RSPB Blean Woods",
+  "category": "hide",
+  "town": "Rough Common, Canterbury",
+  "lat": 51.29743,
+  "lon": 1.0694,
+  "summary": "Ancient coppice woodland and heath north-west of Canterbury: nightingales, woodpeckers and the rare heath fritillary.",
+  "description": "Blean Woods is an RSPB reserve of old woodland on the edge of Canterbury and forming part of the Blean Woods National Nature Reserve. The mix of coppiced woodland, tall high forest, sunny glades and patches of heathland supports a rich range of wildlife. In spring nightingales sing from the coppice and great and lesser spotted woodpeckers drum, and on summer evenings woodcock perform their roding display flights over the clearings. The reserve is a stronghold for the heath fritillary, a rare butterfly that depends on freshly cut coppice, and other butterflies fill the glades. Hazel dormice and bats also live here. Several waymarked nature trails of 1.5 to 13 km wind through the wood, one of them suitable for wheelchairs.",
+  "opening_hours": "Car park open 08:00-20:00.",
+  "price": null,
+  "dogs": "Allowed on public footpaths under close control.",
+  "accessibility": "Natural site with unimproved paths; one of the four trails is wheelchair accessible according to Natural England. Contact the reserve if unsure.",
+  "tips": "Visit on a warm, sunny June day for heath fritillaries in the newly coppiced glades; car park height barrier is 1.8 m.",
+  "duration_min": 120,
+  "tags": [
+   "nature",
+   "birds",
+   "woodland",
+   "butterflies",
+   "dogs",
+   "free"
+  ],
+  "subjects": [
+   "nightingale",
+   "heath fritillary",
+   "woodpeckers",
+   "woodland"
+  ],
+  "best_time": "April-May for nightingales; June for heath fritillaries; summer evenings for roding woodcock.",
+  "tide": null,
+  "wildlife": [
+   "nightingale",
+   "lesser spotted woodpecker",
+   "great spotted woodpecker",
+   "woodcock",
+   "heath fritillary",
+   "hazel dormouse"
+  ],
+  "facilities": "No toilets on site (nearest in Canterbury, about 2 miles); picnic area. Rough Common Road, CT2 9DD.",
+  "source_urls": [
+   "https://www.rspb.org.uk/days-out/reserves/blean-woods",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.openstreetmap.org/node/2192294280"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "swale-nnr-shellness-hide",
+  "name": "Swale NNR hide, Shellness (Isle of Sheppey)",
+  "category": "hide",
+  "town": "Leysdown-on-Sea",
+  "lat": 51.36667,
+  "lon": 0.92666,
+  "summary": "Remote hide on the raised bank west of Shellness, overlooking grazing marsh at the eastern tip of the Isle of Sheppey.",
+  "description": "The Swale National Nature Reserve covers grazing marsh with ditches and a large population of waterfowl at the south-east corner of the Isle of Sheppey, looking across the Swale to the Kent mainland. Visitors usually drive south from Leysdown-on-Sea along a rough, potholed shore track to a small car park near Shellness, then walk west along a raised bank for about a mile to this hide; a second hide lies to the north, sometimes reached through grazing cattle. In winter the reserve hosts a high-tide roost of waders, birds of prey hunting over the open ground, and, when the meadows flood, large numbers of ducks, geese and waders. The site is low-lying and exposed to the sea, often colder than inland and sometimes misty, which adds to its remote, wild feel.",
+  "opening_hours": null,
+  "price": "Free (National Nature Reserve).",
+  "dogs": null,
+  "accessibility": "Rough unpaved access track and a mile's walk along a grassy raised bank; not suitable for wheelchairs.",
+  "tips": "Bring a telescope and warm clothes. Walk the track from Leysdown if you would rather spare your car the potholes; from the west, park considerately near Harty church.",
+  "duration_min": 120,
+  "tags": [
+   "birds",
+   "free",
+   "nature",
+   "estuary",
+   "remote"
+  ],
+  "subjects": [
+   "wader roost",
+   "raptors",
+   "wildfowl"
+  ],
+  "best_time": "Winter; spring and autumn passage.",
+  "tide": "Visit around high tide in winter, when waders gather at the roost.",
+  "wildlife": [
+   "waders (high-tide roost)",
+   "wildfowl",
+   "birds of prey"
+  ],
+  "facilities": "Small car park at the end of the Shellness track (OSM 'Swale National Nature Reserve Car Park'); no other facilities.",
+  "source_urls": [
+   "https://www.birdingplaces.eu/birdingplaces/united-kingdom/swale-national-nature-reserve",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.openstreetmap.org/way/1036586990"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "wye-nnr-devils-kneading-trough",
+  "name": "Wye NNR and the Devil's Kneading Trough",
+  "category": "hide",
+  "town": "Wye",
+  "lat": 51.1679,
+  "lon": 0.97026,
+  "summary": "Chalk downland reserve above Wye with a dramatic dry valley, more than 21 orchid species and sweeping views over Romney Marsh.",
+  "description": "Wye National Nature Reserve, owned and managed by Natural England, protects steep chalk grassland on the North Downs escarpment east of Ashford. Its best-known feature is the Devil's Kneading Trough, a deep, sharply cut coombe shaped by frost weathering at the end of the last ice age. More than 21 orchid species grow on the reserve, including lady, fly, man and spider orchids and the very rare late spider-orchid, and uncommon insects include the Duke of Burgundy butterfly and the black-veined moth. Around 50 bird species breed here, among them hawfinch, lesser spotted woodpecker and kestrel, and adders, grass snakes, slow-worms and common lizards bask on the warm slopes. Marked trails cross Broad Downs and the coombe, with wide views over the Weald, Romney Marsh and towards the Channel coast.",
+  "opening_hours": "Open access downland (National Nature Reserve).",
+  "price": "Free; two car parks on Coldharbour Lane with a voluntary RingGo donation.",
+  "dogs": null,
+  "accessibility": "Steep, uneven grassland slopes; marked trails, but few formal paths elsewhere.",
+  "tips": "Come on a sunny day in late May or June for orchids and butterflies; watch for basking adders on paths and give them space.",
+  "duration_min": 120,
+  "tags": [
+   "nature",
+   "free",
+   "views",
+   "orchids",
+   "butterflies",
+   "walk"
+  ],
+  "subjects": [
+   "orchids",
+   "Duke of Burgundy",
+   "chalk landscape",
+   "views"
+  ],
+  "best_time": "May-July for orchids and butterflies.",
+  "tide": null,
+  "wildlife": [
+   "late spider-orchid",
+   "lady orchid",
+   "Duke of Burgundy",
+   "black-veined moth",
+   "hawfinch",
+   "adder"
+  ],
+  "facilities": "Car parks on Coldharbour Lane (postcode TN25 5HE). Wye station is the nearest railway stop.",
+  "source_urls": [
+   "https://en.wikipedia.org/wiki/Wye_and_Crundale_Downs",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.openstreetmap.org/way/104876151"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "lydden-temple-ewell-reserve",
+  "name": "Lydden Temple Ewell (James Teacher Reserve)",
+  "category": "hide",
+  "town": "Temple Ewell",
+  "lat": 51.1529,
+  "lon": 1.26954,
+  "summary": "Steep chalk downland near Dover alive with butterflies, including Adonis blues and silver-spotted skippers, in summer.",
+  "description": "Lydden Temple Ewell is a 90-hectare Kent Wildlife Trust reserve of steep chalk grassland on the slopes above Temple Ewell, just north-west of Dover, and is also a National Nature Reserve. Grazed by cattle to keep the turf short and flower-rich, it is one of the best places in East Kent to see chalk downland butterflies: more than 20 species have been recorded, including the brilliant Adonis blue and the scarce silver-spotted skipper. In summer the slopes are bright with wildflowers and orchids and loud with crickets and grasshoppers; the rare wart-biter cricket may be found, and the Tiree twist moth was rediscovered here in 2025. The climb is steep, but the slopes give a real sense of old, flower-rich downland and wide views over the surrounding hills.",
+  "opening_hours": "Open at all times; best May-August. Volunteer work parties on Tuesdays and Thursdays (occasionally Saturdays).",
+  "price": "Free; reserve car park behind the old George and Dragon pub.",
+  "dogs": "On a lead at all times (cattle graze the site).",
+  "accessibility": "Very steep, rugged and uneven chalk and grass paths, slippery when wet; narrow entrance path with kissing gates. Not suitable for wheelchairs.",
+  "tips": "Go on a warm, sunny, still day between late May and August for butterflies; wear shoes with good grip. Postcode CT16 3DE (what3words walks.horses.movie).",
+  "duration_min": 90,
+  "tags": [
+   "nature",
+   "free",
+   "butterflies",
+   "orchids",
+   "walk"
+  ],
+  "subjects": [
+   "Adonis blue",
+   "silver-spotted skipper",
+   "chalk grassland flowers"
+  ],
+  "best_time": "May-August.",
+  "tide": null,
+  "wildlife": [
+   "Adonis blue",
+   "silver-spotted skipper",
+   "orchids",
+   "wart-biter cricket",
+   "Tiree twist moth"
+  ],
+  "facilities": "Reserve car park; no bicycle parking or toilets listed.",
+  "source_urls": [
+   "https://www.kentwildlifetrust.org.uk/nature-reserves/lydden-temple-ewell-james-teacher-reserve",
+   "https://www.gov.uk/government/publications/kents-national-nature-reserves/kents-national-nature-reserves",
+   "https://www.openstreetmap.org/node/524397810"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "west-blean-thornden-woods-bison",
+  "name": "West Blean and Thornden Woods (Kent bison)",
+  "category": "hide",
+  "town": "Herne Bay",
+  "lat": 51.35046,
+  "lon": 1.13428,
+  "summary": "Ancient woodland near Herne Bay where Kent Wildlife Trust's free-roaming European bison are reshaping the forest.",
+  "description": "West Blean and Thornden Woods is a 490-hectare Kent Wildlife Trust reserve of ancient oak woodland and coppice between Canterbury and Herne Bay, part of a Site of Special Scientific Interest. It is home to a herd of free-roaming European bison, which graze and browse as natural 'ecosystem engineers' alongside Iron Age pigs and other grazers. Their activity opens up the dense plantation woodland and create the varied glades that benefit dormice, nightingales, bats and hundreds of insect species. The bison roam 150 hectares of fenced woodland that the public cannot enter, so sightings from public paths or the bison bridges are uncommon. A 3 km hard track crosses the wood and five waymarked trails branch off it, including a one-mile surfaced circuit.",
+  "opening_hours": "Open all year round.",
+  "price": "Free entry; car park £2.00 weekdays, £2.50 weekends via RingGo (32512).",
+  "dogs": "On a lead; livestock present. Dog waste bins provided.",
+  "accessibility": "Partly accessible: disabled parking spaces and a circular one-mile all-weather route (about 30 minutes) with wheelchair-accessible information boards.",
+  "tips": "The Trust's guided Bison Ranger Experiences, which use collar tracking, are the most reliable way to see the bison; sightings are still not guaranteed.",
+  "duration_min": 120,
+  "tags": [
+   "nature",
+   "woodland",
+   "bison",
+   "dogs",
+   "walk",
+   "kids"
+  ],
+  "subjects": [
+   "European bison",
+   "ancient woodland",
+   "nightingale"
+  ],
+  "best_time": "All year; spring for nightingales and woodland flowers.",
+  "tide": null,
+  "wildlife": [
+   "European bison",
+   "Iron Age pig",
+   "hazel dormouse",
+   "nightingale",
+   "bats"
+  ],
+  "facilities": "Car park on Thornden Wood Road, CT6 7NZ; disabled spaces.",
+  "source_urls": [
+   "https://www.kentwildlifetrust.org.uk/nature-reserves/west-blean-and-thornden-woods",
+   "https://www.openstreetmap.org/way/4554227"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "seaton-little-stour-walk",
+  "name": "Seaton gravel pits and Little Stour path",
+  "category": "hide",
+  "town": "Wickhambreaux",
+  "lat": 51.28351,
+  "lon": 1.1908,
+  "summary": "Quiet streamside path along the Little Stour past old gravel pits, good for nightingales, cuckoos and kingfishers in spring.",
+  "description": "Near the pretty village of Wickhambreaux, a few kilometres south of Stodmarsh, a public path follows the Little Stour past a string of flooded former gravel pits around the hamlet of Seaton. The lakes themselves are fenced private fishing waters, but the narrow streamside trail and unpaved lane let you listen and look along their edges. In spring and early summer this is a good place to hear nightingales singing from the thickets and cuckoos calling across the valley, while sedge warblers chatter in the waterside vegetation, swallows hawk over the water, kingfishers dart along the stream and tufted ducks dot the pits. It is a flat, easy, out-and-back walk with no facilities, making a peaceful extra on a day spent at Stodmarsh or Grove Ferry.",
+  "opening_hours": "Public path, open access.",
+  "price": "Free; roadside parking in Wickhambreaux.",
+  "dogs": null,
+  "accessibility": "Flat but narrow trail and unpaved road; not surfaced.",
+  "tips": "Keep to the public stream path, as the pits are private fishing lakes. Go early on a May morning for the best birdsong.",
+  "duration_min": 60,
+  "tags": [
+   "birds",
+   "free",
+   "nature",
+   "walk",
+   "quiet"
+  ],
+  "subjects": [
+   "nightingale",
+   "cuckoo",
+   "kingfisher"
+  ],
+  "best_time": "April-July.",
+  "tide": null,
+  "wildlife": [
+   "nightingale",
+   "cuckoo",
+   "kingfisher",
+   "sedge warbler",
+   "tufted duck",
+   "swallow"
+  ],
+  "facilities": "None.",
+  "source_urls": [
+   "https://www.birdingplaces.eu/en/birdingplaces/united-kingdom/seaton-gravel-pits",
+   "https://www.openstreetmap.org/node/29202974"
+  ],
+  "verified": "2026-10-24"
+ },
+ {
+  "id": "sandwich-bay-dunes-shore-nnr",
+  "name": "Sandwich Bay dunes and shore (Sandwich and Pegwell Bay NNR)",
+  "category": "hide",
+  "town": "Sandwich Bay",
+  "lat": 51.28754,
+  "lon": 1.37688,
+  "summary": "Wild dunes and shingle at the southern end of the Sandwich and Pegwell Bay reserve: nesting shorebirds and lizard orchids.",
+  "description": "The southern part of the 615-hectare Sandwich and Pegwell Bay National Nature Reserve, managed by Kent Wildlife Trust, is a sweep of sand dunes, shingle beach and dune grassland facing Sandwich Bay. In summer oystercatchers and ringed plovers nest on the shingle. The duneland is famous for the lizard orchid, as well as Deptford pink and plenty of butterflies, and Highland cattle and occasionally Konik horses graze the grassland. In autumn and winter flocks of dunlin, sanderling and grey plover feed along the tideline, and the wider reserve is internationally important for waders and wildfowl. It pairs naturally with a visit to the bird observatory and Restharrow Scrape nearby.",
+  "opening_hours": "Open all day, all year.",
+  "price": "Sandwich Bay toll road: £7 per car (Kent Wildlife Trust, 2026).",
+  "dogs": "Off lead under control from the car park to Prince's Enclosure; on a lead within Prince's Enclosure; not allowed in the restricted area.",
+  "accessibility": "Sandy, unsurfaced paths and beach; not suitable for wheelchairs.",
+  "tips": "Keep well away from nesting birds on the shingle in spring and summer; look for lizard orchids in the dunes in June and July.",
+  "duration_min": 90,
+  "tags": [
+   "nature",
+   "coast",
+   "beach",
+   "orchids",
+   "birds"
+  ],
+  "subjects": [
+   "lizard orchid",
+   "ringed plover",
+   "dune landscape",
+   "waders"
+  ],
+  "best_time": "June-July for orchids and nesting shorebirds; autumn and winter for waders.",
+  "tide": "Waders feed along the shoreline; watch the tideline in autumn and winter.",
+  "wildlife": [
+   "lizard orchid",
+   "Deptford pink",
+   "oystercatcher",
+   "ringed plover",
+   "sanderling",
+   "grey plover",
+   "dunlin"
+  ],
+  "facilities": "Information point; no toilets mentioned on the reserve page.",
+  "source_urls": [
+   "https://www.kentwildlifetrust.org.uk/nature-reserves/sandwich-and-pegwell-bay",
+   "https://winghamwildlifepark.co.uk/beckys-top-five-birdwatching-spots-in-south-east-kent/",
+   "https://www.openstreetmap.org/node/1106284399"
+  ],
+  "verified": "2026-10-24"
+ }
+]

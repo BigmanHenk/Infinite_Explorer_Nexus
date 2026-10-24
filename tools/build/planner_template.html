@@ -599,11 +599,20 @@ let mainMap = null, shownLayer = null, selLayer = null, baseLayer = null, curren
 function initMap() {
   if (!window.L) { $("#bigmap").innerHTML = '<p class="hint" style="padding:16px">The map needs an internet connection on this PC.</p>'; return; }
   mainMap = L.map("bigmap", { preferCanvas: true, scrollWheelZoom: true, minZoom: 9, maxBounds: [[50.95, 0.6], [51.6, 1.75]] }).setView([base.lat, base.lon], 13);
-  L.tileLayer(OSM.url, { minZoom: 9, maxZoom: 19, maxNativeZoom: 17, attribution: OSM.attribution, errorTileUrl: BLANK }).addTo(mainMap);
+  addTileLayers(mainMap);
   addFullscreen(mainMap);
   shownLayer = L.layerGroup().addTo(mainMap);
   selLayer = L.layerGroup().addTo(mainMap);
   drawBase();
+}
+// Our tiles exist to z15 everywhere, z16 in Thanet + day-trip towns, z17 in Thanet. Three layers
+// stacked, so each place zooms on using its sharpest level (enlarged) instead of going blank.
+const TRANSPARENT = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
+function addTileLayers(m) {
+  L.tileLayer(OSM.url, { minZoom: 9, maxZoom: 19, maxNativeZoom: 15, attribution: OSM.attribution, errorTileUrl: BLANK }).addTo(m);
+  L.tileLayer(OSM.url, { minZoom: 16, maxZoom: 19, minNativeZoom: 16, maxNativeZoom: 16, errorTileUrl: TRANSPARENT }).addTo(m);
+  L.tileLayer(OSM.url, { minZoom: 17, maxZoom: 19, minNativeZoom: 17, maxNativeZoom: 17, errorTileUrl: TRANSPARENT,
+                         bounds: [[51.30, 1.17], [51.40, 1.45]] }).addTo(m);
 }
 function drawBase() {
   if (!mainMap) return;
@@ -1102,7 +1111,7 @@ $("#baseSel").onchange = e => {
     $("#pickDlg").showModal();
     if (!pickMap) {
       pickMap = L.map("pickMap", { scrollWheelZoom: true });
-      L.tileLayer(OSM.url, { minZoom: 9, maxZoom: 19, maxNativeZoom: 17, attribution: OSM.attribution }).addTo(pickMap);
+      addTileLayers(pickMap);
       let mk = null;
       pickMap.on("click", ev => { picked = ev.latlng; if (mk) mk.remove(); mk = L.marker(picked).addTo(pickMap); $("#pickOk").disabled = false; });
     }
