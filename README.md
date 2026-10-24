@@ -39,7 +39,7 @@ in the page.
 ## Building the content (PC, Python 3.12)
 
 ```
-pip install osmium shapely pycairo pillow utide scipy     (add --trusted-host flags on this PC)
+pip install -r requirements.txt     (add --trusted-host flags if Avast breaks pip)
 curl -L -o tools/osm/kent.osm.pbf https://download.geofabrik.de/europe/united-kingdom/england/kent-latest.osm.pbf
 python tools/build/s00_tide_download.py      # a year of EA tide gauge data (Dover, Sheerness)
 python tools/build/s01_extract.py            # map features from the OSM extract
@@ -48,7 +48,15 @@ python tools/build/s03_tides.py              # harmonic fit, Margate placed and 
 python tools/build/s04_database.py           # explorer.sqlite + routed walks + map tile files
 python tools/build/s05_icons.py              # app icons for every Nexus theme
 python tools/build/s06_pc_planner.py         # planner/Explorer Planner.html
+python tools/build/s07_photos.py             # Wikimedia Commons photos (cached in tools/work/photos)
+python tools/build/s09_ev.py                 # EV charge points, Allstar networks marked
+python tools/build/s10_hygiene.py            # Food Standards Agency hygiene ratings
+python tools/build/s11_osm_pois.py           # all East Kent places of interest from OpenStreetMap
+python tools/publish_site.py                 # PC planner + tiles to GitHub Pages
+python tools/ci_download.py                  # wait for the iPhone build, download Explorer.ipa
 ```
+
+New machine? Read `docs/HANDOVER.md`.
 
 The research data lives in `tools/research/*.json`, and `SCHEMA.md` describes it.
 

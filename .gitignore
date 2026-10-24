@@ -1,7 +1,15 @@
 tools/osm/
-tools/work/
+# build work area: rebuildable (map.sqlite, features*.pkl, site/, previews) is ignored,
+# but the caches that cannot be fetched again are kept in git:
+#   photos/ + photos.json  (Commons downloads), tide/ + tides.pkl (EA keeps only ~1 year online)
+tools/work/*
+!tools/work/photos/
+!tools/work/photos.json
+!tools/work/tide/
+!tools/work/tides.pkl
 __pycache__/
 *.xcodeproj
 ios/ExplorerNexus/build/
 ios/ExplorerNexus/Payload/
 *.ipa
+.venv/

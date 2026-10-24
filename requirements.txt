@@ -1,0 +1,8 @@
+# Content build (tools/build). Python 3.12.
+osmium==4.3.2
+shapely==2.2.0
+pycairo==1.29.2
+pillow==12.1.1
+utide==0.4.0
+scipy==1.18.0
+numpy==2.4.3
