@@ -83,10 +83,15 @@ also downloads the current `Explorer.ipa` to `Desktop\Explorer iPhone\`.
 
 ## Step 4 — Claude + 👤 YOU: Sideloadly (installing the app on the iPhone)
 
-1. **Claude** opens https://sideloadly.io in the browser:
-   `Start-Process https://sideloadly.io`.
-   **👤 YOU** download the Windows installer and install it. It isn't on winget, and
-   installers from other sites can't be trusted.
+1. **Claude** installs Sideloadly itself:
+   - First try `winget search Sideloadly`. If a package from the official publisher exists,
+     install it with winget.
+   - Otherwise fetch the official page https://sideloadly.io and find the **Windows**
+     download link on it. Only use a link served from the sideloadly.io domain; never a
+     mirror or another download site.
+   - Download the installer to the Downloads folder and start it with `Start-Process`.
+   - **👤 YOU** click **Yes** on the Windows "allow changes" prompt, then Next / Install.
+   - Claude checks that Sideloadly appears in the Start menu or under Program Files.
 2. **👤 YOU** plug the iPhone into the laptop with a cable, unlock it and tap **Trust This
    Computer**. iTunes may need to be opened once so the drivers load.
 3. **👤 YOU** in Sideloadly:
